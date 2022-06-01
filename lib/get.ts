@@ -1,4 +1,5 @@
-import {ALBUM_INCLUDE, PRISMA_CLIENT} from './constants'
+import { ALBUM_INCLUDE } from './constants'
+import prisma from './prisma'
 
 /**
  * It takes an array and returns a random element from that array
@@ -11,11 +12,11 @@ export function randomPick(array: any[]) {
 }
 
 export async function pickRandom(count: number) {
-  const itemCount = await PRISMA_CLIENT.album.count()
+  const itemCount = await prisma.album.count()
   const skip = Math.max(0, Math.floor(Math.random() * itemCount) - count)
   const orderBy = randomPick(['id', 'releaseDate', 'title'])
   const order = randomPick(['asc', 'desc'])
-  const albums = await PRISMA_CLIENT.album.findMany({
+  const albums = await prisma.album.findMany({
     take: count,
     skip,
     orderBy: {
