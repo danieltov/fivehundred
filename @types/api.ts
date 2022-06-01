@@ -1,3 +1,5 @@
+import { Album, DetailWithAlbums } from './ui'
+
 export type ScrapedAlbum = {
   COVER: string
   TITLE: string
@@ -5,4 +7,12 @@ export type ScrapedAlbum = {
   RELEASE_DATE: string
   GENRES: string[]
   DESCRIPTORS: string[]
+}
+
+export type AlbumsResponse = {
+  data: Album[]
+}
+
+export type DetailsResponse = {
+  data: DetailWithAlbums[]
 }
