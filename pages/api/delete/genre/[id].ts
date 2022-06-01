@@ -1,4 +1,6 @@
-import {PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 /**
  * It deletes an genre from the database and returns the deleted genre
@@ -6,22 +8,22 @@ import {PRISMA_CLIENT} from '../../../../utils/api/constants'
  * @param res - The response object.
  * @returns The genre that was deleted.
  */
-export default function handler(req, res) {
-  const {id} = req.params
+export default async function handler(req, res) {
+  const { id } = req.params
   if (id) {
     try {
-      const genre = PRISMA_CLIENT.genre.delete({
+      const genre = await prisma.genre.delete({
         where: {
           id,
         },
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...genre}))
+      return res.end(JSON.stringify({ ...genre }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }

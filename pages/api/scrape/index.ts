@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
+import { PrismaClient } from '@prisma/client'
 import puppeteer from 'puppeteer-extra'
 import StealthPlugin from 'puppeteer-extra-plugin-stealth'
-import {ScrapedAlbum} from '../../../@types/api'
+import { ScrapedAlbum } from '../../../@types/api'
 import {
   ALBUM_ARTIST_SELECTOR,
   ALBUM_COVER_SELECTOR,
@@ -9,8 +10,9 @@ import {
   ALBUM_DESCRIPTOR_SELECTOR,
   ALBUM_TITLE_SELECTOR,
   LUCKY_DUCKY_BASE,
-  PRISMA_CLIENT,
-} from '../../../utils/api/constants'
+} from '../../../lib/constants'
+
+const prisma = new PrismaClient()
 
 /**
  * It scrapes the album page for the album with the given query, saves the scraped
@@ -51,27 +53,27 @@ export default async function handler(req, res) {
     await browser.close()
 
     // save to DB
-    await PRISMA_CLIENT.album.create({
+    await prisma.album.create({
       data: {
         title: album.TITLE,
         coverArt: album.COVER,
         releaseDate: album.RELEASE_DATE,
         artist: {
           connectOrCreate: {
-            where: {name: album.ARTIST},
-            create: {name: album.ARTIST},
+            where: { name: album.ARTIST },
+            create: { name: album.ARTIST },
           },
         },
         genres: {
           connectOrCreate: album.GENRES.map((genre) => ({
-            where: {name: genre},
-            create: {name: genre},
+            where: { name: genre },
+            create: { name: genre },
           })),
         },
         descriptors: {
           connectOrCreate: album.DESCRIPTORS.map((descriptor) => ({
-            where: {name: descriptor},
-            create: {name: descriptor},
+            where: { name: descriptor },
+            create: { name: descriptor },
           })),
         },
       },
@@ -79,9 +81,9 @@ export default async function handler(req, res) {
 
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
-    return res.end(JSON.stringify({...album}))
+    return res.end(JSON.stringify({ ...album }))
   }
   res.statusCode = 404
   res.setHeader('Content-Type', 'application/json')
-  return res.end(JSON.stringify({error: 'Bad request'}))
+  return res.end(JSON.stringify({ error: 'Bad request' }))
 }

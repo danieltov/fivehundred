@@ -1,4 +1,6 @@
-import {PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 /**
  * It takes a query parameter called id, uses it to query the Prisma database, and
@@ -10,7 +12,7 @@ import {PRISMA_CLIENT} from '../../../../utils/api/constants'
 export default async function handler(req, res) {
   if (req.query.id) {
     try {
-      const genre = await PRISMA_CLIENT.genre.findUnique({
+      const genre = await prisma.genre.findUnique({
         where: {
           id: req.query.id,
         },
@@ -20,11 +22,11 @@ export default async function handler(req, res) {
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...genre}))
+      return res.end(JSON.stringify({ ...genre }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }

@@ -1,4 +1,6 @@
-import {PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 /**
  * It takes a query parameter called `id` and uses it to fetch an artist from the
@@ -10,7 +12,7 @@ import {PRISMA_CLIENT} from '../../../../utils/api/constants'
 export default async function handler(req, res) {
   if (req.query.id) {
     try {
-      const artist = await PRISMA_CLIENT.artist.findUnique({
+      const artist = await prisma.artist.findUnique({
         where: {
           id: req.query.id,
         },
@@ -20,11 +22,11 @@ export default async function handler(req, res) {
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...artist}))
+      return res.end(JSON.stringify({ ...artist }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }

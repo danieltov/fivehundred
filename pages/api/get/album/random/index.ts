@@ -1,4 +1,4 @@
-import {pickRandom} from '../../../../../utils/api/get'
+import { pickRandom } from '../../../../../lib/get'
 
 /**
  * It picks a random album from the database, and returns it as a JSON object
@@ -11,5 +11,5 @@ export default async function handler(req, res) {
 
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
-  return res.end(JSON.stringify({...randomAlbum}))
+  return res.end(JSON.stringify({ ...randomAlbum }))
 }

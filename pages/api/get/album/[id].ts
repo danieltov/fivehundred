@@ -1,4 +1,5 @@
-import {ALBUM_INCLUDE, PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { ALBUM_INCLUDE } from '../../../../lib/constants'
+import prisma from '../../../../lib/prisma'
 
 /**
  * It takes a query parameter called `id` and uses it to query the Prisma database
@@ -11,7 +12,7 @@ import {ALBUM_INCLUDE, PRISMA_CLIENT} from '../../../../utils/api/constants'
 export default async function handler(req, res) {
   if (req.query.id) {
     try {
-      const album = await PRISMA_CLIENT.album.findUnique({
+      const album = await prisma.album.findUnique({
         where: {
           id: req.query.id,
         },
@@ -19,11 +20,11 @@ export default async function handler(req, res) {
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...album}))
+      return res.end(JSON.stringify({ ...album }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }

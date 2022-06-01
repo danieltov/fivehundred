@@ -1,4 +1,6 @@
-import {PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 /**
  * It takes in a request and a response object, and then it updates a tier in the
@@ -7,11 +9,11 @@ import {PRISMA_CLIENT} from '../../../../utils/api/constants'
  * @param res - The response object.
  * @returns The updated tier
  */
-export default function handler(req, res) {
-  const {id, data} = req.params
+export default async function handler(req, res) {
+  const { id, data } = req.params
   if (id) {
     try {
-      const tier = PRISMA_CLIENT.tier.update({
+      const tier = await prisma.tier.update({
         where: {
           id,
         },
@@ -19,11 +21,11 @@ export default function handler(req, res) {
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...tier}))
+      return res.end(JSON.stringify({ ...tier }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }

@@ -1,4 +1,4 @@
-import {pickRandom} from '../../../../../utils/api/get'
+import { pickRandom } from '../../../../../lib/get'
 
 /**
  * It takes a count parameter from the query string, uses that to pick a random
@@ -9,5 +9,5 @@ export default async function handler(req, res) {
 
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
-  return res.end(JSON.stringify({...randomAlbum}))
+  return res.end(JSON.stringify({ data: randomAlbum }))
 }

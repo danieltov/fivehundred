@@ -1,4 +1,6 @@
-import {PRISMA_CLIENT} from '../../../../utils/api/constants'
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
 
 /**
  * It takes a query parameter called `id` and returns the descriptor with that id
@@ -9,7 +11,7 @@ import {PRISMA_CLIENT} from '../../../../utils/api/constants'
 export default async function handler(req, res) {
   if (req.query.id) {
     try {
-      const descriptor = await PRISMA_CLIENT.descriptor.findUnique({
+      const descriptor = await prisma.descriptor.findUnique({
         where: {
           id: req.query.id,
         },
@@ -19,11 +21,11 @@ export default async function handler(req, res) {
       })
       res.statusCode = 200
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({...descriptor}))
+      return res.end(JSON.stringify({ ...descriptor }))
     } catch (error) {
       res.statusCode = 500
       res.setHeader('Content-Type', 'application/json')
-      return res.end(JSON.stringify({error}))
+      return res.end(JSON.stringify({ error }))
     }
   }
 }
