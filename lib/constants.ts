@@ -15,3 +15,16 @@ export const ALBUM_INCLUDE = {
   descriptors: true,
   tier: true,
 }
+
+/* UI */
+export const colorsA = ['#bef57c', '#f7a784', '#eb5050', '#92dbe1', '#9376e4']
+export const colorsB = ['#42c8b0', '#d36f88', '#fc8d45', '#4575f3', '#f3c345']
+export const colorsAll = [...colorsA, ...colorsB]
+
+export const links = [
+  { text: 'A Plus', path: '/a-plus' },
+  { text: 'Albums', path: '/albums' },
+  { text: 'Artists', path: '/artists' },
+  { text: 'Genres', path: '/genres' },
+  { text: 'Vibes', path: '/vibes' },
+]
