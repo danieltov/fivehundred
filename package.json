@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,10 +15,13 @@
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/six-caps": "^4.5.8",
     "@prisma/client": "^3.14.0",
     "cross-fetch": "^3.1.5",
+    "enquire": "^0.0.2",
     "framer-motion": "^6.3.4",
     "jsdom": "^19.0.0",
+    "json2mq": "^0.2.0",
     "next": "12.1.6",
     "prisma": "^3.14.0",
     "puppeteer": "^14.1.1",
@@ -28,11 +31,14 @@
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
     "react-query": "^3.39.0",
-    "reset-css": "^5.0.1"
+    "react-slick": "^0.29.0",
+    "reset-css": "^5.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/jsdom": "^16.2.14",
     "@types/react": "^18.0.9",
+    "@types/react-slick": "^0.23.8",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "babel-plugin-superjson-next": "^0.4.3",
