@@ -1,4 +1,6 @@
-import { Box, Heading } from '@chakra-ui/layout'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { Box, Heading, Link } from '@chakra-ui/layout'
+import NextLink from 'next/link'
 import React from 'react'
 import Slider from 'react-slick'
 import { Album, Detail } from '../@types/ui'
@@ -52,40 +54,58 @@ export const Shelf = React.memo(({ items, type }: Props) => {
             pauseOnHover={false}
           >
             <Box key={0} height={getStripeHeight(items.length)} m={0} bg={bgColors[0]}>
-              <Heading
-                padding={3}
-                fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
-                textAlign={isEven ? 'right' : 'left'}
-              >
-                {isAlbum &&
-                  `${item.artist[0]?.name}: ${item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title}`}
-                {isDetail && `${item.name}`}
-                {isHome && `${item.text}`}
-              </Heading>
+              <NextLink href={`${item.path}?bg=${bgColors[0].replace('#', '')}`} as={item.path}>
+                <Link>
+                  <Heading
+                    padding={3}
+                    fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
+                    textAlign={isEven ? 'right' : 'left'}
+                  >
+                    {isAlbum &&
+                      `${item.artist[0]?.name}: ${
+                        item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title
+                      }`}
+                    {isDetail && `${item.name}`}
+                    {isHome && `${item.text}`}
+                  </Heading>
+                </Link>
+              </NextLink>
             </Box>
             <Box key={0} height={getStripeHeight(items.length)} m={0} bg={bgColors[1]}>
-              <Heading
-                padding={3}
-                fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
-                textAlign={isEven ? 'right' : 'left'}
-              >
-                {isAlbum &&
-                  `${item.artist[0]?.name}: ${item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title}`}
-                {isDetail && `${item.name}`}
-                {isHome && `${item.text}`}
-              </Heading>
+              <NextLink href={`${item.path}?bg=${bgColors[1].replace('#', '')}`} as={item.path}>
+                <Link>
+                  <Heading
+                    padding={3}
+                    fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
+                    textAlign={isEven ? 'right' : 'left'}
+                  >
+                    {isAlbum &&
+                      `${item.artist[0]?.name}: ${
+                        item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title
+                      }`}
+                    {isDetail && `${item.name}`}
+                    {isHome && `${item.text}`}
+                  </Heading>
+                </Link>
+              </NextLink>
             </Box>
             <Box key={0} height={getStripeHeight(items.length)} m={0} bg={bgColors[2]}>
-              <Heading
-                padding={3}
-                fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
-                textAlign={isEven ? 'right' : 'left'}
-              >
-                {isAlbum &&
-                  `${item.artist[0]?.name}: ${item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title}`}
-                {isDetail && `${item.name}`}
-                {isHome && `${item.text}`}
-              </Heading>
+              <NextLink href={`${item.path}?bg=${bgColors[2].replace('#', '')}`} as={item.path}>
+                <Link>
+                  <Heading
+                    padding={3}
+                    fontSize={isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']}
+                    textAlign={isEven ? 'right' : 'left'}
+                  >
+                    {isAlbum &&
+                      `${item.artist[0]?.name}: ${
+                        item.title.length > 36 ? `${item.title.slice(0, 36)}...` : item.title
+                      }`}
+                    {isDetail && `${item.name}`}
+                    {isHome && `${item.text}`}
+                  </Heading>
+                </Link>
+              </NextLink>
             </Box>
           </Slider>
         )
