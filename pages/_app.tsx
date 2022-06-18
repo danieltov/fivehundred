@@ -10,7 +10,14 @@ import { Menu } from '../components/Menu'
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false, refetchOnReconnect: false } },
 })
-const theme = extendTheme({})
+const theme = extendTheme({
+  styles: {
+    global: {
+      html: { overflowX: 'hidden' },
+      'a:hover': { textDecoration: 'none!important' },
+    },
+  },
+})
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

@@ -6,7 +6,7 @@ import { links } from '../lib/constants'
 const Home = () => {
   const type = useConst('home')
   return (
-    <Box as="main" mt="50px" width="100%" height="100vh">
+    <Box as="main" mt="50px" width="100vw" maxWidth="100vw">
       <Shelf items={links} type={type} />
     </Box>
   )
