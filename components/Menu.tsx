@@ -11,7 +11,6 @@ import {
 } from '@chakra-ui/react'
 import '@fontsource/six-caps'
 import NextLink from 'next/link'
-import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { links } from '../lib/constants'
 
@@ -27,7 +26,6 @@ export const Menu = () => {
         p={2}
         position="fixed"
         top="0"
-        // zIndex="sticky"
         justifyContent="space-between"
         alignItems="center"
       >
@@ -53,10 +51,9 @@ export const Menu = () => {
           <DrawerCloseButton />
           <DrawerBody bg="white" p="40px" justifyContent="center" alignItems="center" display="flex" flexDir="column">
             {links.map((link) => (
-              <NextLink href={link.path} passHref>
-                <Link>
+              <NextLink href={link.path} passHref key={link.text}>
+                <Link onClick={onClose}>
                   <Heading
-                    key={link.text}
                     as="h3"
                     fontSize={['4rem', null, '8rem']}
                     lineHeight={0.9}
