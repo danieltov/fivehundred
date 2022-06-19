@@ -1,10 +1,9 @@
 import { Box } from '@chakra-ui/layout'
 import { Shelf } from '../../components/Shelf'
+import { slugify } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const ArtistShelf = ({ albums }) => {
-  // eslint-disable-next-line no-console
-  console.log('%c albums', 'background:deepskyblue;padding:15px;font-weight:bold;color:white;', { albums })
   return (
     <Box as="main" mt="50px" width="100%" height="100vh">
       <Shelf items={albums} type="album" />
@@ -14,10 +13,11 @@ const ArtistShelf = ({ albums }) => {
 
 export async function getStaticProps(context) {
   const { slug } = context.params
+
   const artist = await prisma.artist.findFirst({
     where: {
       name: {
-        contains: slug[0].replaceAll(/-/g, ' '),
+        endsWith: slug[0].split('-').pop(),
       },
     },
     include: {
@@ -31,9 +31,7 @@ export async function getStaticProps(context) {
     props: {
       albums: artist.albums.map((album) => ({
         ...album,
-        path: `/album/${album.artist[0].name.replaceAll(' ', '-').toLowerCase()}/${album.title
-          .replaceAll(' ', '-')
-          .toLowerCase()}`,
+        path: `/album/${slugify(album.artist[0].name)}/${slugify(album.title)}`,
       })),
     },
   }
@@ -43,12 +41,15 @@ export async function getStaticPaths() {
   const artists = await prisma.artist.findMany({
     include: { albums: true },
   })
+
   return {
-    paths: artists.map((artist) => ({
-      params: {
-        slug: [artist.name.replaceAll(' ', '-').toLowerCase()],
-      },
-    })),
+    paths: artists.map((artist) => {
+      return {
+        params: {
+          slug: [slugify(artist.name)],
+        },
+      }
+    }),
     fallback: false,
   }
 }

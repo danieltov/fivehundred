@@ -3,7 +3,7 @@ import { Shelf } from '../../components/Shelf'
 import { shelfProps, slugify } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
-const GenresShelf = ({ albums }) => {
+const VibesShelf = ({ albums }) => {
   return (
     <Box as="main" {...shelfProps}>
       <Shelf items={albums} type="album" />
@@ -13,7 +13,7 @@ const GenresShelf = ({ albums }) => {
 
 export async function getStaticProps(context) {
   const { slug } = context.params
-  const genre = await prisma.genre.findFirst({
+  const descriptor = await prisma.descriptor.findFirst({
     where: {
       OR: [{ name: { contains: slug[0].replaceAll(/-/g, ' ') } }, { name: { contains: slug[0] } }],
     },
@@ -26,7 +26,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      albums: genre.albums.map((album) => ({
+      albums: descriptor.albums.map((album) => ({
         ...album,
         path: `/album/${slugify(album.artist[0].name)}/${slugify(album.title)}`,
       })),
@@ -35,17 +35,17 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const genres = await prisma.genre.findMany({
+  const descriptors = await prisma.descriptor.findMany({
     include: { albums: true },
   })
   return {
-    paths: genres.map((genre) => ({
+    paths: descriptors.map((descriptor) => ({
       params: {
-        slug: [slugify(genre.name)],
+        slug: [slugify(descriptor.name)],
       },
     })),
     fallback: false,
   }
 }
 
-export default GenresShelf
+export default VibesShelf
