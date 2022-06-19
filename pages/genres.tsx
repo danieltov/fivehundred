@@ -2,6 +2,7 @@
 import { Box } from '@chakra-ui/layout'
 import { useConst } from '@chakra-ui/react'
 import { Shelf } from '../components/Shelf'
+import { slugify } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const GenresPage = ({ genres }) => {
@@ -28,7 +29,7 @@ export async function getStaticProps() {
         .filter((genre) => genre._count.albums > 2)
         .map((genre) => ({
           ...genre,
-          path: `genre/${genre.name.replaceAll(' ', '-').toLowerCase()}`,
+          path: `genre/${slugify(genre.name)}`,
         })),
     },
   }

@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/layout'
 import { useConst } from '@chakra-ui/react'
 import { Shelf } from '../components/Shelf'
-import { ALBUM_INCLUDE } from '../lib/constants'
+import { ALBUM_INCLUDE, slugify } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const AlbumsPage = ({ albums }) => {
@@ -22,9 +22,7 @@ export async function getStaticProps() {
     props: {
       albums: albums.map((album) => ({
         ...album,
-        path: `/album/${album.artist[0].name.replaceAll(' ', '-').toLowerCase()}/${album.title
-          .replaceAll(' ', '-')
-          .toLowerCase()}`,
+        path: `/album/${slugify(album.artist[0].name)}/${slugify(album.title)}`,
       })),
     },
   }
