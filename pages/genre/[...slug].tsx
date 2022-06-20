@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/layout'
+import { GetStaticPropsContext } from 'next'
 import { Shelf } from '../../components/Shelf'
 import { shelfProps, slugify } from '../../lib/constants'
 import prisma from '../../lib/prisma'
@@ -11,11 +12,11 @@ const GenresShelf = ({ albums }) => {
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context: GetStaticPropsContext) {
   const { slug } = context.params
   const genre = await prisma.genre.findFirst({
     where: {
-      OR: [{ name: { contains: slug[0].replaceAll(/-/g, ' ') } }, { name: { contains: slug[0] } }],
+      AND: [{ name: { startsWith: slug[0].split('-')[0] } }, { name: { endsWith: slug[0].split('-').pop() } }],
     },
     include: {
       albums: {

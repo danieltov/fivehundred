@@ -16,9 +16,21 @@ export async function getStaticProps(context) {
 
   const artist = await prisma.artist.findFirst({
     where: {
-      name: {
-        endsWith: slug[0].split('-').pop(),
-      },
+      OR: [
+        {
+          name: { equals: slug[0] },
+        },
+        {
+          name: {
+            endsWith: slug[0].split('-').pop(),
+          },
+        },
+        {
+          name: {
+            startsWith: slug[0].split('-')[0],
+          },
+        },
+      ],
     },
     include: {
       albums: {
