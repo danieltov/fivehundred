@@ -32,7 +32,7 @@ export const AlbumSummary = ({ album }: Props) => {
   const scheme = colorsAll.filter((color) => !color.includes(router.query.bg as string))
 
   return (
-    <Box pb="10">
+    <Box pb="10" px={[1, null, 0]}>
       <Heading
         fontSize={['3.5rem', null, '7rem', '10rem']}
         fontWeight={200}
@@ -42,11 +42,18 @@ export const AlbumSummary = ({ album }: Props) => {
         {getTitle(album)}
       </Heading>
       {album && (
-        <Grid h="500px" px={10} m={5} templateRows="repeat(2, 1fr)" templateColumns="repeat(5, 1fr)" gap={4}>
-          <GridItem rowSpan={3} colSpan="auto">
+        <Grid
+          // h="500px"
+          px={[0, null, null, 10]}
+          m={5}
+          templateRows={['1fr', null, null, 'repeat(2, 1fr)']}
+          templateColumns={['1fr', null, null, 'repeat(5, 1fr)']}
+          gap={4}
+        >
+          <GridItem rowSpan={[1, null, null, 3]} colSpan="auto">
             <Art coverArt={album.coverArt} />
           </GridItem>
-          <GridItem colSpan={4} ml="7.5%">
+          <GridItem colSpan={[1, null, null, 4]} ml={[0, 0, 0, '7.5%']}>
             <Heading>Genres</Heading>
             {album.genres.map((genre, i) => {
               const bg = scheme[i % scheme.length]
@@ -67,7 +74,7 @@ export const AlbumSummary = ({ album }: Props) => {
               )
             })}
           </GridItem>
-          <GridItem colSpan={4} ml="7.5%">
+          <GridItem colSpan={[1, null, null, 4]} ml={[0, 0, 0, '7.5%']}>
             <Heading>Vibes</Heading>
             {album.descriptors.map((descriptor, i) => {
               const bg = scheme[i % scheme.length]
