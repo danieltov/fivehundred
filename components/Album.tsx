@@ -16,7 +16,10 @@ const getTitle = (album: Album) => {
   if (!album) return 'No Album'
   return (
     <>
-      {`${album.artist[0].name}: `}
+      <NextLink href={`/artist/${slugify(album.artist[0].name)}`} passHref>
+        <Link fontWeight={300}>{album.artist[0].name}</Link>
+      </NextLink>
+      {': '}
       <Text as="span" fontStyle="italic">
         {album.title}
       </Text>
