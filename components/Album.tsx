@@ -4,7 +4,7 @@ import { Tag } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Album } from '../@types/ui'
-import { colorsAll, slugify } from '../lib/constants'
+import { colorsAll } from '../lib/constants'
 import { isLight } from '../lib/utils'
 import { Art } from './Art'
 
@@ -16,7 +16,7 @@ const getTitle = (album: Album) => {
   if (!album) return 'No Album'
   return (
     <>
-      <NextLink href={`/artist/${slugify(album.artist[0].name)}`} passHref>
+      <NextLink href={`/artist/${album.artist[0].slug}`} passHref>
         <Link fontWeight={300}>{album.artist[0].name}</Link>
       </NextLink>
       {': '}
@@ -67,7 +67,7 @@ export const AlbumSummary = ({ album }: Props) => {
                   bg={bg}
                   color={isLight(bg) ? 'black' : 'white'}
                 >
-                  <NextLink href={`/genre/${slugify(genre.name)}`}>
+                  <NextLink href={`/genre/${genre.slug}`}>
                     <Link>{genre.name}</Link>
                   </NextLink>
                 </Tag>
@@ -88,7 +88,7 @@ export const AlbumSummary = ({ album }: Props) => {
                   bg={bg}
                   color={isLight(bg) ? 'black' : 'white'}
                 >
-                  <NextLink href={`/vibe/${slugify(descriptor.name)}`}>
+                  <NextLink href={`/vibe/${descriptor.slug}`}>
                     <Link>{descriptor.name}</Link>
                   </NextLink>
                 </Tag>

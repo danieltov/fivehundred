@@ -2,7 +2,6 @@
 import { Box } from '@chakra-ui/layout'
 import { useConst } from '@chakra-ui/react'
 import { Shelf } from '../components/Shelf'
-import { slugify } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const ArtistsPage = ({ artists }) => {
@@ -23,13 +22,14 @@ export async function getStaticProps() {
       },
     },
   })
+
   return {
     props: {
       artists: artists
-        .filter((artist) => artist._count.albums > 1)
+        .filter((artist) => artist.albums.length > 1)
         .map((artist) => ({
           ...artist,
-          path: `artist/${slugify(artist.name)}`,
+          path: `artist/${artist.slug}`,
         })),
     },
   }

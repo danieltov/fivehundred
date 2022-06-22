@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/layout'
 import { Shelf } from '../../components/Shelf'
-import { shelfProps, slugify } from '../../lib/constants'
+import { shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const VibesShelf = ({ albums }) => {
@@ -15,7 +15,7 @@ export async function getStaticProps(context) {
   const { slug } = context.params
   const descriptor = await prisma.descriptor.findFirst({
     where: {
-      OR: [{ name: { contains: slug[0].replaceAll(/-/g, ' ') } }, { name: { contains: slug[0] } }],
+      slug: slug[0],
     },
     include: {
       albums: {
@@ -28,7 +28,7 @@ export async function getStaticProps(context) {
     props: {
       albums: descriptor.albums.map((album) => ({
         ...album,
-        path: `/album/${slugify(album.artist[0].name)}/${slugify(album.title)}`,
+        path: `/album/${album.artist[0].slug}/${album.slug}`,
       })),
     },
   }
@@ -41,7 +41,7 @@ export async function getStaticPaths() {
   return {
     paths: descriptors.map((descriptor) => ({
       params: {
-        slug: [slugify(descriptor.name)],
+        slug: [descriptor.slug],
       },
     })),
     fallback: false,

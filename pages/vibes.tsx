@@ -2,7 +2,6 @@
 import { Box } from '@chakra-ui/layout'
 import { useConst } from '@chakra-ui/react'
 import { Shelf } from '../components/Shelf'
-import { slugify } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const VibesPage = ({ vibes }) => {
@@ -29,7 +28,7 @@ export async function getStaticProps() {
         .filter((descriptor) => descriptor._count.albums > 5)
         .map((descriptor) => ({
           ...descriptor,
-          path: `vibe/${slugify(descriptor.name)}`,
+          path: `vibe/${descriptor.slug}`,
         })),
     },
   }

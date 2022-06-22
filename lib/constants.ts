@@ -29,11 +29,3 @@ export const links = [
 ]
 
 export const shelfProps = { mt: '50px', width: '100%', height: '100%', minHeight: '100vh' }
-
-// String
-export const slugify = (str: string) =>
-  str
-    .replace(/[^0-9a-zA-Z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u024F()]/g, '-')
-    .replace(/ /g, '-')
-    .replace(/^-+|-+(?=-|$)/g, '')
-    .toLowerCase()

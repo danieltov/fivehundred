@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
 import { useRouter } from 'next/router'
 import { AlbumSummary } from '../../../components/Album'
-import { ALBUM_INCLUDE, shelfProps, slugify } from '../../../lib/constants'
+import { ALBUM_INCLUDE, shelfProps } from '../../../lib/constants'
 import prisma from '../../../lib/prisma'
 
 const AlbumSummaryPage = ({ album }) => {
@@ -20,19 +20,10 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 
   const album = await prisma.album.findFirst({
     where: {
+      slug: title,
       artist: {
         some: {
-          name: {
-            contains: artist.split('-').pop(),
-          },
-        },
-      },
-      title: {
-        contains: title.split('-').pop(),
-      },
-      OR: {
-        title: {
-          contains: title.split('-')[0],
+          slug: artist,
         },
       },
     },
@@ -49,7 +40,7 @@ export async function getStaticPaths() {
   const albums = await prisma.album.findMany({
     include: {
       artist: {
-        select: { name: true },
+        select: { slug: true },
       },
     },
   })
@@ -57,9 +48,8 @@ export async function getStaticPaths() {
     paths: albums.map((album) => {
       return {
         params: {
-          artist: slugify(album.artist[0].name),
-          title: slugify(album.title),
-          id: album.id,
+          artist: album.artist[0].slug,
+          title: album.slug,
         },
       }
     }),

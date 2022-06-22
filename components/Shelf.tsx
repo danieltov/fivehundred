@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Heading, Link } from '@chakra-ui/layout'
+import { useMediaQuery } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import React from 'react'
 import Slider from 'react-slick'
@@ -20,6 +21,7 @@ type Props =
 const getStripeHeight = (count: number) => (count < 8 ? `calc(100vh/${count - 0.75})` : `calc(100vh/6.5)`)
 
 export const Shelf = React.memo(({ items, type }: Props) => {
+  const [isMobile] = useMediaQuery('(max-width: 768px)')
   const isAlbum = type === 'album'
   const isDetail = type === 'detail'
   const isHome = type === 'home'
@@ -27,8 +29,10 @@ export const Shelf = React.memo(({ items, type }: Props) => {
     <Box
       sx={{
         '& .slick-slide div': {
-          marginY: '-7px',
-          marginX: '-1px',
+          ...(!isMobile && {
+            marginY: '-7px',
+            marginX: '-1px',
+          }),
         },
       }}
     >
@@ -39,7 +43,7 @@ export const Shelf = React.memo(({ items, type }: Props) => {
           <Slider
             key={`slider-${item.id || item.text}`}
             arrows={false}
-            autoplay
+            autoplay={!isMobile}
             dots={false}
             draggable={false}
             infinite
