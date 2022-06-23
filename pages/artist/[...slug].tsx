@@ -1,10 +1,11 @@
 import { Box } from '@chakra-ui/layout'
 import { Shelf } from '../../components/Shelf'
+import { shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const ArtistShelf = ({ albums }) => {
   return (
-    <Box as="main" mt="50px" width="100%" height="100vh">
+    <Box as="main" {...shelfProps}>
       <Shelf items={albums} type="album" />
     </Box>
   )

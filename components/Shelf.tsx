@@ -18,7 +18,14 @@ type Props =
       }[]
     }
 
-const getStripeHeight = (count: number) => (count < 8 ? `calc(100vh/${count - 0.75})` : `calc(100vh/6.5)`)
+const getStripeHeight = (count: number) => {
+  switch (true) {
+    case count === 5:
+      return `calc(24vh)`
+    default:
+      return 'calc(100vh/6.25)'
+  }
+}
 
 export const Shelf = React.memo(({ items, type }: Props) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
