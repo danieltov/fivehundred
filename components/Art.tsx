@@ -35,7 +35,7 @@ export const Art = ({ coverArt }: Props) => {
       display="inline-block"
       position="relative"
     >
-      <Image src={coverArt} position="relative" zIndex="banner" width="full" height="full" display="block" />
+      <Image src={coverArt} position="relative" zIndex="docked" width="full" height="full" display="block" />
     </Box>
   )
 }

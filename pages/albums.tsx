@@ -7,7 +7,7 @@ import prisma from '../lib/prisma'
 const AlbumsPage = ({ albums }) => {
   const type = useConst('album')
   return (
-    <Box as="main" mt="50px" width="100vw" maxWidth="100vw">
+    <Box as="main" width="100vw" maxWidth="100vw">
       <Shelf items={albums} type={type} />
     </Box>
   )

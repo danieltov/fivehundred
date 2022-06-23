@@ -24,10 +24,11 @@ export const Menu = () => {
         height="50px"
         bg="white"
         p={2}
-        position="fixed"
+        position="sticky"
         top="0"
         justifyContent="space-between"
         alignItems="center"
+        zIndex="sticky"
       >
         <NextLink href="/" passHref>
           <Link>

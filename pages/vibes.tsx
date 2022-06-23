@@ -7,7 +7,7 @@ import prisma from '../lib/prisma'
 const VibesPage = ({ vibes }) => {
   const type = useConst('detail')
   return (
-    <Box as="main" mt="50px" width="100vw" maxWidth="100vw">
+    <Box as="main" width="100vw" maxWidth="100vw">
       <Shelf items={vibes} type={type} />
     </Box>
   )

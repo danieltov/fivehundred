@@ -28,4 +28,4 @@ export const links = [
   { text: 'Vibes', path: '/vibes' },
 ]
 
-export const shelfProps = { mt: '50px', width: '100%', height: '100%' }
+export const shelfProps = { width: '100%', height: '100%' }

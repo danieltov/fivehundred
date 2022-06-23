@@ -7,7 +7,7 @@ import prisma from '../lib/prisma'
 const ArtistsPage = ({ artists }) => {
   const type = useConst('detail')
   return (
-    <Box as="main" mt="50px" width="100vw" maxWidth="100vw" height="100%">
+    <Box as="main" width="100vw" maxWidth="100vw" height="100%">
       <Shelf items={artists} type={type} />
     </Box>
   )

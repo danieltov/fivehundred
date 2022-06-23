@@ -7,7 +7,7 @@ import prisma from '../lib/prisma'
 const GenresPage = ({ genres }) => {
   const type = useConst('detail')
   return (
-    <Box as="main" mt="50px" width="100vw" maxWidth="100vw">
+    <Box as="main" width="100vw" maxWidth="100vw">
       <Shelf items={genres} type={type} />
     </Box>
   )
