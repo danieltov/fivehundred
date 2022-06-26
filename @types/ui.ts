@@ -1,10 +1,10 @@
-export interface Detail {
+export type Detail = {
   id: string
   name: string
   slug: string
 }
 
-export interface Album {
+export type Album = {
   artist: Detail[]
   coverArt: string
   descriptors: Detail[]
@@ -18,6 +18,11 @@ export interface Album {
   title: string
   isAPlus: boolean
 }
-export interface DetailWithAlbums extends Detail {
+export type DetailWithAlbums = Detail & {
   albums?: Album[]
+}
+
+export type HomeItem = {
+  text: string
+  path: string
 }
