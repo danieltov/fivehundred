@@ -12,6 +12,7 @@ export const Art = ({ coverArt }: Props) => {
     <Box
       as="picture"
       width={['100%', '500px']}
+      maxWidth={['100%', '500px']}
       height={['100%', '500px']}
       _after={
         isMobile
