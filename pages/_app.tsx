@@ -14,8 +14,7 @@ const queryClient = new QueryClient({
 const theme = extendTheme({
   styles: {
     global: {
-      'body, html': { backgroundColor: 'ivory' },
-      html: { overflowX: 'hidden' },
+      'body, html': { backgroundColor: 'ivory', overflowX: 'hidden', position: 'relative' },
       'a:hover': { textDecoration: 'none!important' },
     },
   },
