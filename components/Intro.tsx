@@ -34,20 +34,20 @@ const NO_RENDER = ['/']
 
 const Intro = () => {
   const router = useRouter()
-  const pathname = router.pathname
+  const { pathname, asPath } = router
   return (
-    !NO_RENDER.includes(router.pathname) && (
+    !NO_RENDER.includes(pathname) && (
       <Flex
         direction="column"
         alignItems="center"
         as="section"
         minHeight="250px"
         textAlign="center"
-        py={'100px'}
+        py="100px"
         bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
       >
         <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
-          {TEXT[pathname]?.title ?? `${unslugify(router.asPath)}`}
+          {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
         </Heading>
         <Text width="33%">{TEXT[pathname]?.description}</Text>
       </Flex>

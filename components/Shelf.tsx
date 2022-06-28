@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box } from '@chakra-ui/layout'
-import { useRouter } from 'next/router'
 import React from 'react'
 import { Album, Detail, HomeItem } from '../@types/ui'
 import Intro from './Intro'
@@ -12,8 +11,6 @@ type Props =
   | { type: 'home'; items: HomeItem[] }
 
 export const Shelf = React.memo(({ items, type }: Props) => {
-  const router = useRouter()
-  console.log('router.pathname', router.pathname)
   const isAlbum = type === 'album'
   const isDetail = type === 'detail'
   const isHome = type === 'home'
