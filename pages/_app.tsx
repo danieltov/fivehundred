@@ -28,14 +28,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <title>Five Hundred</title>
           <meta
             name="description"
-            content="The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way. The project is powered by Next and Prisma."
+            content="The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way."
           />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@danieltovario" />
-          <meta name="twitter:title" content="Five Hundred: A project from Daniel Tovar" />
+          <meta name="twitter:title" content="Five Hundred - A digital record collection" />
           <meta
             name="twitter:description"
-            content="The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way. The project is powered by Next and Prisma."
+            content="The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way."
           />
           <meta name="twitter:image" content="/twitter-image.jpg" />
           <meta name="twitter:image:alt" content="Screenshot of the Five Hundred home page" />

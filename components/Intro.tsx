@@ -14,7 +14,7 @@ const TEXT = {
   },
   '/albums': {
     title: 'Albums',
-    description: 'Every last one of them.',
+    description: 'Every last one of them a gem.',
   },
   '/artists': {
     title: 'Artists',
@@ -49,7 +49,7 @@ const Intro = () => {
         <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
           {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
         </Heading>
-        <Text width="33%">{TEXT[pathname]?.description}</Text>
+        <Text width={['70%', null, null, '33%']}>{TEXT[pathname]?.description}</Text>
       </Flex>
     )
   )

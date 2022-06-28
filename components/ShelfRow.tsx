@@ -39,7 +39,6 @@ type Props = {
 
 const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
   const wrapper = useRef<HTMLDivElement | undefined>()
-  const q = gsap.utils.selector(wrapper)
   const router = useRouter()
   const isHome = router.route === '/'
   const isEven = !(itemIndex % 2)
@@ -50,6 +49,7 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
     const boxWidth = toPX('100vw')
     const totalWidth = boxWidth * 3
     const duration = 60
+    const q = gsap.utils.selector(wrapper)
     const boxes = q('.box')
     const xValue = `${isEven ? '+' : '-'}=${totalWidth}`
     const mod = gsap.utils.wrap(0, totalWidth)
@@ -58,7 +58,7 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
       x: (i) => i * boxWidth,
     })
 
-    const tl = gsap.timeline({ repeat: -1 })
+    const tl = gsap.timeline({ repeat: 3 })
 
     tl.to(boxes, {
       x: xValue,
@@ -66,11 +66,10 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
       duration,
       ease: 'none',
     })
-  }, [count, isEven, itemIndex, q])
+  }, [count, isEven, itemIndex])
 
   return (
     <Box
-      key={path}
       className="wrapper"
       ref={wrapper}
       position="relative"

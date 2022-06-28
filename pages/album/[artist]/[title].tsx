@@ -2,15 +2,17 @@ import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
 import { useRouter } from 'next/router'
 import { AlbumSummary } from '../../../components/Album'
-import { ALBUM_INCLUDE, shelfProps } from '../../../lib/constants'
+import { ALBUM_INCLUDE, colorsAll, shelfProps } from '../../../lib/constants'
 import prisma from '../../../lib/prisma'
 
 const AlbumSummaryPage = ({ album }) => {
   const router = useRouter()
 
+  const bg = router.query.bg ? `#${router.query.bg}` : colorsAll[Math.floor(Math.random() * colorsAll.length)]
+
   return (
-    <Box as="main" {...shelfProps} bg={`#${router.query.bg}`}>
-      <AlbumSummary album={album} />
+    <Box as="main" {...shelfProps} bg={bg}>
+      <AlbumSummary album={album} bg={bg} />
     </Box>
   )
 }

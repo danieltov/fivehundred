@@ -15,6 +15,13 @@ const VibesPage = ({ vibes }) => {
 
 export async function getStaticProps() {
   const descriptors = await prisma.descriptor.findMany({
+    where: {
+      name: {
+        not: {
+          contains: 'vocals',
+        },
+      },
+    },
     include: { albums: true, _count: true },
     orderBy: {
       albums: {

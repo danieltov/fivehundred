@@ -2,7 +2,6 @@
 import { Box, Grid, GridItem, Heading, Link, Text } from '@chakra-ui/layout'
 import { Tag } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
 import { Album } from '../@types/ui'
 import { colorsAll } from '../lib/constants'
 import { isLight } from '../lib/utils'
@@ -10,6 +9,7 @@ import { Art } from './Art'
 
 type Props = {
   album: Album
+  bg: string
 }
 
 const getTitle = (album: Album) => {
@@ -28,9 +28,8 @@ const getTitle = (album: Album) => {
   )
 }
 
-export const AlbumSummary = ({ album }: Props) => {
-  const router = useRouter()
-  const scheme = colorsAll.filter((color) => !color.includes(router.query.bg as string))
+export const AlbumSummary = ({ album, bg }: Props) => {
+  const scheme = colorsAll.filter((color) => !color.includes(bg))
 
   return (
     <Box pb="10" px={[1, null, 0]}>
@@ -56,7 +55,7 @@ export const AlbumSummary = ({ album }: Props) => {
           <GridItem colSpan={[1, null, null, 4]} ml={[0, 0, 0, '7.5%']}>
             <Heading>Genres</Heading>
             {album.genres.map((genre, i) => {
-              const bg = scheme[i % scheme.length]
+              const genreBG = scheme[i % scheme.length]
               return (
                 <Tag
                   size="lg"
@@ -64,8 +63,8 @@ export const AlbumSummary = ({ album }: Props) => {
                   marginX={5}
                   marginY={2.5}
                   borderRadius="full"
-                  bg={bg}
-                  color={isLight(bg) ? 'black' : 'white'}
+                  bg={genreBG}
+                  color={isLight(genreBG) ? 'black' : 'white'}
                 >
                   <NextLink href={`/genre/${genre.slug}`}>
                     <Link>{genre.name}</Link>
@@ -77,7 +76,7 @@ export const AlbumSummary = ({ album }: Props) => {
           <GridItem colSpan={[1, null, null, 4]} ml={[0, 0, 0, '7.5%']}>
             <Heading>Vibes</Heading>
             {album.descriptors.map((descriptor, i) => {
-              const bg = scheme[i % scheme.length]
+              const vibeBG = scheme[i % scheme.length]
               return (
                 <Tag
                   size="lg"
@@ -85,8 +84,8 @@ export const AlbumSummary = ({ album }: Props) => {
                   marginX={5}
                   marginY={2.5}
                   borderRadius="full"
-                  bg={bg}
-                  color={isLight(bg) ? 'black' : 'white'}
+                  bg={vibeBG}
+                  color={isLight(vibeBG) ? 'black' : 'white'}
                 >
                   <NextLink href={`/vibe/${descriptor.slug}`}>
                     <Link>{descriptor.name}</Link>

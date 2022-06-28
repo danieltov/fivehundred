@@ -5,7 +5,7 @@ import { colorsAll } from '../lib/constants'
 
 export const Footer = () => {
   return (
-    <Grid as="footer" padding="28" templateColumns={['1fr', null, 'repeat(2, 1fr)']} gap={5}>
+    <Grid as="footer" padding={[14, null, 28]} templateColumns={['1fr', null, 'repeat(2, 1fr)']} gap={5}>
       <GridItem>
         <Heading as="h3" size="lg">
           A project from{' '}
@@ -22,8 +22,8 @@ export const Footer = () => {
           About
         </Heading>
         <Text>
-          The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and
-          trace their various styles and moods, in a colorful, visual way. The project is powered by{' '}
+          The goal of Five Hundred is to catalogue a lifetime library of my favorite albums, to collect and trace their
+          various styles and moods, in a colorful, visual way. The project is powered by{' '}
           <NextLink href="https://nextjs.org/" passHref>
             <Link isExternal fontWeight="bolder" color={colorsAll[2]}>
               Next
