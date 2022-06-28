@@ -11,6 +11,7 @@ import {
   ALBUM_TITLE_SELECTOR,
   LUCKY_DUCKY_BASE,
 } from '../../../lib/constants'
+import { slugify } from '../../../lib/utils'
 
 const prisma = new PrismaClient()
 
@@ -58,22 +59,23 @@ export default async function handler(req, res) {
         title: album.TITLE,
         coverArt: album.COVER,
         releaseDate: album.RELEASE_DATE,
+        slug: slugify(album.TITLE),
         artist: {
           connectOrCreate: {
-            where: { name: album.ARTIST },
-            create: { name: album.ARTIST },
+            where: { slug: slugify(album.TITLE) },
+            create: { name: album.ARTIST, slug: slugify(album.ARTIST) },
           },
         },
         genres: {
           connectOrCreate: album.GENRES.map((genre) => ({
-            where: { name: genre },
-            create: { name: genre },
+            where: { slug: slugify(genre) },
+            create: { name: genre, slug: slugify(genre) },
           })),
         },
         descriptors: {
           connectOrCreate: album.DESCRIPTORS.map((descriptor) => ({
-            where: { name: descriptor },
-            create: { name: descriptor },
+            where: { slug: slugify(descriptor) },
+            create: { name: descriptor, slug: slugify(descriptor) },
           })),
         },
       },

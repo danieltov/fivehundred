@@ -6,15 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Artist {
   albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
-  slug   String?
+  slug   String  @unique
 }
 
 model Album {
@@ -28,7 +28,7 @@ model Album {
   owned       Boolean      @default(false)
   ownedDate   DateTime?
   releaseDate DateTime
-  slug        String?
+  slug        String       @unique
   title       String
 }
 
@@ -36,12 +36,12 @@ model Genre {
   albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
-  slug   String?
+  slug   String  @unique
 }
 
 model Descriptor {
   albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
-  slug   String?
+  slug   String  @unique
 }
