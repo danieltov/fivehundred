@@ -70,7 +70,7 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
 
   return (
     <Box
-      key={itemIndex}
+      key={path}
       className="wrapper"
       ref={wrapper}
       position="relative"
@@ -79,14 +79,7 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
       overflow="hidden"
       left="-100%"
     >
-      <Box
-        className="box"
-        width="100vw"
-        position="absolute"
-        key={0}
-        height="100%"
-        bg={bgColors[itemIndex % bgColors.length]}
-      >
+      <Box className="box" width="100vw" position="absolute" height="100%" bg={bgColors[itemIndex % bgColors.length]}>
         <NextLink href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -99,7 +92,6 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
         className="box"
         width="100vw"
         position="absolute"
-        key={1}
         height="100%"
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
@@ -115,7 +107,6 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
         className="box"
         width="100vw"
         position="absolute"
-        key={2}
         height="100%"
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
