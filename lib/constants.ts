@@ -19,6 +19,13 @@ export const ALBUM_INCLUDE = {
 export const colorsA = ['#bef57c', '#f7a784', '#eb5050', '#92dbe1', '#9376e4']
 export const colorsB = ['#42c8b0', '#d36f88', '#fc8d45', '#4575f3', '#f3c345']
 export const colorsAll = [...colorsA, ...colorsB]
+export const colorPages = {
+  '/a-plus': '#f57cbe',
+  '/albums': '#45fc8d',
+  '/artists': '#5050eb',
+  '/genres': '#e49376',
+  '/descriptors': '#dbe192',
+}
 
 export const links = [
   { text: 'A Plus', path: '/a-plus' },

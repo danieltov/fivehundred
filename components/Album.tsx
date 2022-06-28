@@ -23,6 +23,7 @@ const getTitle = (album: Album) => {
       <Text as="span" fontStyle="italic">
         {album.title}
       </Text>
+      <Text as="span"> ({new Date(album.releaseDate).getFullYear()})</Text>
     </>
   )
 }
@@ -43,7 +44,6 @@ export const AlbumSummary = ({ album }: Props) => {
       </Heading>
       {album && (
         <Grid
-          // h="500px"
           px={[0, null, null, 10]}
           m={5}
           templateRows={['1fr', null, null, 'repeat(2, 1fr)']}

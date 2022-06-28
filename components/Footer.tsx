@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Grid, GridItem, Heading, Link, Text } from '@chakra-ui/layout'
 import NextLink from 'next/link'
+import { colorsAll } from '../lib/constants'
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         <Heading as="h3" size="lg">
           A project from{' '}
           <NextLink href="https://danieltovar.io" passHref>
-            <Link isExternal fontWeight="bolder">
+            <Link isExternal fontWeight="bolder" color={colorsAll[5]}>
               Daniel Tovar
             </Link>
           </NextLink>
@@ -21,8 +22,20 @@ export const Footer = () => {
           About
         </Heading>
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim fugit corrupti, officiis quisquam rerum
-          consectetur repudiandae quidem quaerat nisi dolorum est libero amet pariatur.
+          The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and
+          trace their various styles and moods, in a colorful, visual way. The project is powered by{' '}
+          <NextLink href="https://nextjs.org/" passHref>
+            <Link isExternal fontWeight="bolder" color={colorsAll[2]}>
+              Next
+            </Link>
+          </NextLink>{' '}
+          and{' '}
+          <NextLink href="https://www.prisma.io/" passHref>
+            <Link isExternal fontWeight="bolder" color={colorsAll[4]}>
+              Prisma
+            </Link>
+          </NextLink>
+          .
         </Text>
       </GridItem>
     </Grid>
