@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@danieltovario" />
-          <meta name="twitter:title" content="Five Hundred - A digital record collection" />
+          <meta name="twitter:title" content="Five Hundred, a digital record collection" />
           <meta
             name="twitter:description"
             content="The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way."
