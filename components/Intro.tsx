@@ -18,15 +18,15 @@ const TEXT = {
   },
   '/artists': {
     title: 'Artists',
-    description: 'The artists whose names came up most often when cataloguing this library.',
+    description: 'The names came up most often when cataloguing this library.',
   },
   '/genres': {
     title: 'Genres',
-    description: 'The styles of music that dominate this library.',
+    description: 'I reach out for these styles most often.',
   },
   '/vibes': {
     title: 'Vibes',
-    description: 'The moods I gravitate to in my lifetime of listening.',
+    description: 'The moods that color my listening.',
   },
 }
 
