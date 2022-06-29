@@ -17,9 +17,5 @@ export function slugify(str: string) {
 }
 
 export function unslugify(str: string) {
-  return str
-    .replace(/[-/]/g, ' ')
-    .replace(/^\w|\b\w/g, (letter) => letter.toUpperCase())
-    .trim()
-    .replace(' ', ': ')
+  return str.replace('r-b', 'R&B').replace(/[-/]/g, ' ').trim().replace(' ', ': ')
 }

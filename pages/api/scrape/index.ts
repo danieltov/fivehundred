@@ -62,7 +62,7 @@ export default async function handler(req, res) {
         slug: slugify(album.TITLE),
         artist: {
           connectOrCreate: {
-            where: { slug: slugify(album.TITLE) },
+            where: { slug: slugify(album.ARTIST) },
             create: { name: album.ARTIST, slug: slugify(album.ARTIST) },
           },
         },
