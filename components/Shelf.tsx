@@ -27,7 +27,16 @@ export const Shelf = React.memo(({ items, type }: Props) => {
               {isHome && `${item.text}`}
             </>
           )
-          return <ShelfRow key={item.path} text={RowText} count={items.length} itemIndex={i} path={item.path} />
+          return (
+            <ShelfRow
+              key={item.path}
+              text={RowText}
+              count={items.length}
+              itemIndex={i}
+              path={item.path}
+              cover={item.coverArt}
+            />
+          )
         })}
       </Box>
     </>

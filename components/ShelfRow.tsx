@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Box, Heading, Link } from '@chakra-ui/layout'
+import { Box, Flex, Heading, Link } from '@chakra-ui/layout'
 import gsap from 'gsap'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -29,6 +29,7 @@ type Props = {
   count: number
   itemIndex: number
   path: string
+  cover: string
 }
 
 /**
@@ -37,7 +38,7 @@ type Props = {
  *
  */
 
-const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
+const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
   const wrapper = useRef<HTMLDivElement | undefined>()
   const router = useRouter()
   const isHome = router.route === '/'
@@ -78,7 +79,16 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
       overflow="hidden"
       left="-100%"
     >
-      <Box className="box" width="100vw" position="absolute" height="100%" bg={bgColors[itemIndex % bgColors.length]}>
+      <Flex
+        justifyContent="space-between"
+        flexDirection={isEven ? 'row' : 'row-reverse'}
+        className="box"
+        width="100vw"
+        position="absolute"
+        height="100%"
+        bg={bgColors[itemIndex % bgColors.length]}
+      >
+        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
         <NextLink href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -86,14 +96,17 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
             </Heading>
           </Link>
         </NextLink>
-      </Box>
-      <Box
+      </Flex>
+      <Flex
+        justifyContent="space-between"
+        flexDirection={isEven ? 'row' : 'row-reverse'}
         className="box"
         width="100vw"
         position="absolute"
         height="100%"
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
+        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
         <NextLink href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -101,14 +114,17 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
             </Heading>
           </Link>
         </NextLink>
-      </Box>
-      <Box
+      </Flex>
+      <Flex
+        justifyContent="space-between"
+        flexDirection={isEven ? 'row' : 'row-reverse'}
         className="box"
         width="100vw"
         position="absolute"
         height="100%"
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
+        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
         <NextLink href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -116,7 +132,7 @@ const ShelfRow = ({ text, count, itemIndex, path }: Props) => {
             </Heading>
           </Link>
         </NextLink>
-      </Box>
+      </Flex>
     </Box>
   )
 }
