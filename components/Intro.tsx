@@ -7,6 +7,11 @@ import { unslugify } from '../lib/utils'
  * Constants
  */
 const TEXT = {
+  '/': {
+    title: 'Five Hundred',
+    description:
+      'The goal of Five Hundred is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way.',
+  },
   '/a-plus': {
     title: 'A-Plus',
     description:
@@ -30,28 +35,24 @@ const TEXT = {
   },
 }
 
-const NO_RENDER = ['/']
-
 const Intro = () => {
   const router = useRouter()
   const { pathname, asPath } = router
   return (
-    !NO_RENDER.includes(pathname) && (
-      <Flex
-        direction="column"
-        alignItems="center"
-        as="section"
-        minHeight="250px"
-        textAlign="center"
-        py="100px"
-        bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
-      >
-        <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
-          {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
-        </Heading>
-        <Text width={['70%', null, null, '33%']}>{TEXT[pathname]?.description}</Text>
-      </Flex>
-    )
+    <Flex
+      direction="column"
+      alignItems="center"
+      as="section"
+      minHeight="250px"
+      textAlign="center"
+      py="100px"
+      bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
+    >
+      <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
+        {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
+      </Heading>
+      <Text width={['70%', null, null, '33%']}>{TEXT[pathname]?.description}</Text>
+    </Flex>
   )
 }
 
