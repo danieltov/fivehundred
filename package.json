@@ -18,6 +18,7 @@
     "@emotion/styled": "^11.8.1",
     "@fontsource/six-caps": "^4.5.8",
     "@prisma/client": "^3.14.0",
+    "chrome-aws-lambda": "^10.1.0",
     "cross-fetch": "^3.1.5",
     "enquire": "^0.0.2",
     "framer-motion": "^6.3.4",

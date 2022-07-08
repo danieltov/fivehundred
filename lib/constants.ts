@@ -14,6 +14,12 @@ export const ALBUM_INCLUDE = {
   genres: true,
   descriptors: true,
 }
+export const DETAIL_INCLUDE = {
+  include: { artist: true },
+  orderBy: {
+    title: 'asc',
+  },
+} as const
 
 /* UI */
 export const colorsA = ['#bef57c', '#f7a784', '#eb5050', '#92dbe1', '#9376e4']

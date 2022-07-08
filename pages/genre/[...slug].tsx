@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
 import { Shelf } from '../../components/Shelf'
-import { shelfProps } from '../../lib/constants'
+import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const GenresShelf = ({ albums }) => {
@@ -19,9 +19,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
       slug: slug[0],
     },
     include: {
-      albums: {
-        include: { artist: true },
-      },
+      albums: DETAIL_INCLUDE,
     },
   })
 

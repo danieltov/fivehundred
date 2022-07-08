@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/layout'
 import { Shelf } from '../../components/Shelf'
-import { shelfProps } from '../../lib/constants'
+import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const VibesShelf = ({ albums }) => {
@@ -18,9 +18,7 @@ export async function getStaticProps(context) {
       slug: slug[0],
     },
     include: {
-      albums: {
-        include: { artist: true },
-      },
+      albums: DETAIL_INCLUDE,
     },
   })
 
