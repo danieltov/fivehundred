@@ -88,7 +88,13 @@ const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
         height="100%"
         bg={bgColors[itemIndex % bgColors.length]}
       >
-        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
+        {cover && (
+          <NextLink href={path}>
+            <Link>
+              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+            </Link>
+          </NextLink>
+        )}
         <NextLink href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -106,7 +112,13 @@ const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
         height="100%"
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
-        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
+        {cover && (
+          <NextLink href={path}>
+            <Link>
+              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+            </Link>
+          </NextLink>
+        )}
         <NextLink href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
@@ -124,7 +136,13 @@ const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
         height="100%"
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
-        {cover && <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />}
+        {cover && (
+          <NextLink href={path}>
+            <Link>
+              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+            </Link>
+          </NextLink>
+        )}
         <NextLink href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`} as={path}>
           <Link>
             <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
