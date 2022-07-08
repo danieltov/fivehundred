@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import { PrismaClient } from '@prisma/client'
-import puppeteer from 'puppeteer-extra'
-import StealthPlugin from 'puppeteer-extra-plugin-stealth'
+import puppeteer from 'puppeteer'
 import { ScrapedAlbum } from '../../../@types/api'
 import {
   ALBUM_ARTIST_SELECTOR,
@@ -24,7 +23,6 @@ const prisma = new PrismaClient()
  */
 export default async function handler(req, res) {
   if (req.query.query && typeof req.query.query === 'string') {
-    puppeteer.use(StealthPlugin())
     const browser = await puppeteer.launch({
       headless: true,
     })
