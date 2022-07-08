@@ -10,7 +10,7 @@ const TEXT = {
   '/': {
     title: 'Five Hundred',
     description:
-      'The goal of Five Hundred is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way.',
+      'Thanks for stopping by! This project catalogues a lifetime library of my favorite albums and aims to collect and trace their various styles and moods, in a colorful, visual way. Please start exploring below.',
   },
   '/a-plus': {
     title: 'A-Plus',
