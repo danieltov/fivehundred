@@ -1,4 +1,4 @@
-import prisma from '../../../../lib/prisma'
+import prisma from '../../../lib/prisma'
 
 /**
  * It fetches all descriptors and their associated albums from the database and

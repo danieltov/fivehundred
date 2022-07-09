@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { PrismaClient } from '@prisma/client'
 import chromium from 'chrome-aws-lambda'
-import { ScrapedAlbum } from '../../../@types/api'
+import { ScrapedAlbum } from '../../@types/api'
 import {
   ALBUM_ARTIST_SELECTOR,
   ALBUM_COVER_SELECTOR,
@@ -9,8 +9,8 @@ import {
   ALBUM_DESCRIPTOR_SELECTOR,
   ALBUM_TITLE_SELECTOR,
   LUCKY_DUCKY_BASE,
-} from '../../../lib/constants'
-import { slugify } from '../../../lib/utils'
+} from '../../lib/constants'
+import { slugify } from '../../lib/utils'
 
 const prisma = new PrismaClient()
 
