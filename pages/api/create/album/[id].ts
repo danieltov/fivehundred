@@ -1,4 +1,4 @@
-import prisma from '../../../lib/prisma'
+import prisma from '../../../../lib/prisma'
 
 /**
  * It creates a new album in the database and returns it
