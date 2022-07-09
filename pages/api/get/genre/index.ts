@@ -1,4 +1,4 @@
-import prisma from '../../../lib/prisma'
+import prisma from '../../../../lib/prisma'
 
 /**
  * It fetches all genres from the database, and returns them as JSON

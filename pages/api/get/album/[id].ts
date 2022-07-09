@@ -1,5 +1,5 @@
-import { ALBUM_INCLUDE } from '../../../lib/constants'
-import prisma from '../../../lib/prisma'
+import { ALBUM_INCLUDE } from '../../../../lib/constants'
+import prisma from '../../../../lib/prisma'
 
 /**
  * It takes a query parameter called `id` and uses it to query the Prisma database

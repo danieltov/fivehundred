@@ -1,4 +1,4 @@
-import { pickRandom } from '../../../../lib/get'
+import { pickRandom } from '../../../../../lib/get'
 
 /**
  * It takes a count parameter from the query string, uses that to pick a random

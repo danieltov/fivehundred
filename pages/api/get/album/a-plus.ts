@@ -1,5 +1,5 @@
-import { ALBUM_INCLUDE } from '../../../lib/constants'
-import prisma from '../../../lib/prisma'
+import { ALBUM_INCLUDE } from '../../../../lib/constants'
+import prisma from '../../../../lib/prisma'
 
 /**
  * It fetches all albums from the database, and returns them as JSON

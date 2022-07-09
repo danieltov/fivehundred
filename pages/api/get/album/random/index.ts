@@ -1,4 +1,4 @@
-import { pickRandom } from '../../../../lib/get'
+import { pickRandom } from '../../../../../lib/get'
 
 /**
  * It picks a random album from the database, and returns it as a JSON object
