@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Flex, Heading, Link } from '@chakra-ui/layout'
+import { useMediaQuery } from '@chakra-ui/react'
 import gsap from 'gsap'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -30,7 +31,7 @@ type Props = {
   itemIndex: number
   path: string
   cover: string
-  isMobile: boolean
+  disableAnimation: boolean
 }
 
 /**
@@ -39,7 +40,11 @@ type Props = {
  *
  */
 
-const ShelfRow = ({ text, count, itemIndex, path, cover, isMobile }: Props) => {
+const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Props) => {
+  const [isMobile] = useMediaQuery('(max-width: 768px)', {
+    ssr: true,
+    fallback: true,
+  })
   const wrapper = useRef<HTMLDivElement | undefined>()
   const router = useRouter()
   const isHome = router.route === '/'
@@ -56,31 +61,37 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, isMobile }: Props) => {
     const xValue = `${isEven ? '+' : '-'}=${totalWidth}`
     const mod = gsap.utils.wrap(0, totalWidth)
 
-    if (!isMobile)
+    if (!disableAnimation)
       gsap.set(boxes, {
         x: (i) => i * boxWidth,
       })
 
-    const tl = !isMobile && gsap.timeline({ repeat: 3 })
+    const tl = !disableAnimation && gsap.timeline({ repeat: 3 })
 
-    if (!isMobile)
+    if (!disableAnimation)
       tl.to(boxes, {
         x: xValue,
         modifiers: { x: (x) => `${mod(parseFloat(x))}px` },
         duration,
         ease: 'none',
       })
-  }, [count, isEven, isMobile, itemIndex])
+  }, [count, isEven, disableAnimation, itemIndex])
+
+  const leftValue = () => {
+    if (isMobile && disableAnimation) return '0'
+    if (disableAnimation) return '-7.5px'
+    return '-100%'
+  }
 
   return (
     <Box
       className="wrapper"
-      ref={isMobile ? null : wrapper}
+      ref={disableAnimation ? null : wrapper}
       position="relative"
       width="250%"
       height={getStripeHeight(count)}
       overflow="hidden"
-      left={isMobile ? 0 : '-100%'}
+      left={leftValue()}
     >
       <Flex
         justifyContent="space-between"

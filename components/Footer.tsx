@@ -9,7 +9,13 @@ export const Footer = () => {
   const { pathname } = router
 
   return (
-    <Grid as="footer" padding={[14, null, 28]} templateColumns={['1fr', null, 'repeat(2, 1fr)']} gap={5}>
+    <Grid
+      as="footer"
+      padding={[14, null, 28]}
+      templateColumns={['1fr', null, 'repeat(2, 1fr)']}
+      gap={5}
+      alignItems="center"
+    >
       <GridItem>
         <Heading as="h3" size="lg">
           A project from{' '}

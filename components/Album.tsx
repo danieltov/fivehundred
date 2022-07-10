@@ -60,8 +60,7 @@ export const AlbumSummary = ({ album, bg }: Props) => {
                 <Tag
                   size="lg"
                   key={genre.name}
-                  marginX={5}
-                  marginY={2.5}
+                  m={2}
                   borderRadius="full"
                   bg={genreBG}
                   color={isLight(genreBG) ? 'black' : 'white'}
@@ -81,8 +80,7 @@ export const AlbumSummary = ({ album, bg }: Props) => {
                 <Tag
                   size="lg"
                   key={descriptor.name}
-                  marginX={5}
-                  marginY={2.5}
+                  m={2}
                   borderRadius="full"
                   bg={vibeBG}
                   color={isLight(vibeBG) ? 'black' : 'white'}

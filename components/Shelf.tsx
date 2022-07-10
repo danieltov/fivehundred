@@ -91,7 +91,7 @@ export const Shelf = React.memo(({ items, type }: Props) => {
               itemIndex={i}
               path={item.path}
               cover={item.coverArt}
-              isMobile={isMobile && items.length >= 20}
+              disableAnimation={pathname === '/albums' || (isMobile && items.length >= 20)}
             />
           )
         })}
