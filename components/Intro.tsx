@@ -9,7 +9,7 @@ const TEXT = {
   '/': {
     title: 'Five Hundred',
     description:
-      'Thanks for stopping by! This project catalogues a lifetime library of my favorite albums and aims to collect and trace their various styles and moods, in a colorful, visual way. Please start exploring below.',
+      'Thanks for stopping by! 💛 This project catalogs a lifetime library of my favorite albums. The idea is to collect and trace their various styles and moods in a fun, colorful way. This is an evolving project but please pull out your 🎧 and feel free to explore! ✨',
   },
   '/a-plus': {
     title: 'A-Plus',

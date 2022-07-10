@@ -26,7 +26,7 @@ export const Menu = () => {
         height="50px"
         bg="ivory"
         p={2}
-        position="sticky"
+        position="fixed"
         top="0"
         justifyContent="space-between"
         alignItems="center"
