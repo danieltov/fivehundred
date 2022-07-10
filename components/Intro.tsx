@@ -1,6 +1,5 @@
-import { Flex, Heading, Text } from '@chakra-ui/layout'
+import { Heading, Text } from '@chakra-ui/layout'
 import { useRouter } from 'next/router'
-import { colorPages, colorsB } from '../lib/constants'
 import { unslugify } from '../lib/utils'
 
 /**
@@ -39,20 +38,12 @@ const Intro = () => {
   const router = useRouter()
   const { pathname, asPath } = router
   return (
-    <Flex
-      direction="column"
-      alignItems="center"
-      as="section"
-      minHeight="250px"
-      textAlign="center"
-      py="100px"
-      bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
-    >
+    <>
       <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
         {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
       </Heading>
       <Text width={['70%', null, null, '33%']}>{TEXT[pathname]?.description}</Text>
-    </Flex>
+    </>
   )
 }
 
