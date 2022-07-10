@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Flex } from '@chakra-ui/layout'
-import { Input } from '@chakra-ui/react'
+import { Input, useMediaQuery } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { Album, Detail, HomeItem } from '../@types/ui'
@@ -24,6 +24,10 @@ type Props =
 export const Shelf = React.memo(({ items, type }: Props) => {
   const [query, setQuery] = useState<string>()
   const [content, setContent] = useState<Props['items']>(() => items)
+  const [isMobile] = useMediaQuery('(max-width: 768px)', {
+    ssr: true,
+    fallback: true,
+  })
 
   const isAlbum = type === 'album'
   const isDetail = type === 'detail'
@@ -61,7 +65,7 @@ export const Shelf = React.memo(({ items, type }: Props) => {
             placeholder="Filter albums..."
             _placeholder={{ color: 'inherit' }}
             size="lg"
-            w="sm"
+            w={isMobile ? 'xs' : 'sm'}
             mt="10"
             variant="flushed"
             value={query}
@@ -87,6 +91,7 @@ export const Shelf = React.memo(({ items, type }: Props) => {
               itemIndex={i}
               path={item.path}
               cover={item.coverArt}
+              isMobile={isMobile && content.length >= 20}
             />
           )
         })}

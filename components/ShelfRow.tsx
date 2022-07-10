@@ -30,6 +30,7 @@ type Props = {
   itemIndex: number
   path: string
   cover: string
+  isMobile: boolean
 }
 
 /**
@@ -38,7 +39,7 @@ type Props = {
  *
  */
 
-const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
+const ShelfRow = ({ text, count, itemIndex, path, cover, isMobile }: Props) => {
   const wrapper = useRef<HTMLDivElement | undefined>()
   const router = useRouter()
   const isHome = router.route === '/'
@@ -55,29 +56,31 @@ const ShelfRow = ({ text, count, itemIndex, path, cover }: Props) => {
     const xValue = `${isEven ? '+' : '-'}=${totalWidth}`
     const mod = gsap.utils.wrap(0, totalWidth)
 
-    gsap.set(boxes, {
-      x: (i) => i * boxWidth,
-    })
+    if (!isMobile)
+      gsap.set(boxes, {
+        x: (i) => i * boxWidth,
+      })
 
-    const tl = gsap.timeline({ repeat: 3 })
+    const tl = !isMobile && gsap.timeline({ repeat: 3 })
 
-    tl.to(boxes, {
-      x: xValue,
-      modifiers: { x: (x) => `${mod(parseFloat(x))}px` },
-      duration,
-      ease: 'none',
-    })
-  }, [count, isEven, itemIndex])
+    if (!isMobile)
+      tl.to(boxes, {
+        x: xValue,
+        modifiers: { x: (x) => `${mod(parseFloat(x))}px` },
+        duration,
+        ease: 'none',
+      })
+  }, [count, isEven, isMobile, itemIndex])
 
   return (
     <Box
       className="wrapper"
-      ref={wrapper}
+      ref={isMobile ? null : wrapper}
       position="relative"
       width="250%"
       height={getStripeHeight(count)}
       overflow="hidden"
-      left="-100%"
+      left={isMobile ? 0 : '-100%'}
     >
       <Flex
         justifyContent="space-between"

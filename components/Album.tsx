@@ -32,7 +32,7 @@ export const AlbumSummary = ({ album, bg }: Props) => {
   const scheme = colorsAll.filter((color) => !color.includes(bg))
 
   return (
-    <Box pb="10" px={[1, null, 0]}>
+    <Box pb="10" px={[1, null, 0]} mt="50px">
       <Heading
         fontSize={['3.5rem', null, '7rem', '10rem']}
         fontWeight={200}
