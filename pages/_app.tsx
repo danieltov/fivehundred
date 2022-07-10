@@ -41,6 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           <meta name="twitter:image:alt" content="Screenshot of the Five Hundred home page" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
           <link rel="icon" href="/favicon.ico" />
+          <script defer data-domain="fivehundred.danieltovar.io" src="https://plausible.io/js/plausible.js" />
         </Head>
         <Menu />
         <Component {...pageProps} />
