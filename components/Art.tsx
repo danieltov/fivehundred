@@ -40,7 +40,7 @@ export const Art = ({ coverArt }: Props) => {
       position='relative'
     >
       <Image
-        src={coverArt}
+        src={coverArt || '/no-cover.png'}
         alt='Album cover art'
         position='relative'
         zIndex='docked'

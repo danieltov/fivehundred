@@ -116,18 +116,16 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[itemIndex % bgColors.length]}
       >
-        {cover && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
+        <NextLink href={path}>
+          <Link>
+            <Box
+              minWidth={getStripeHeight(count)}
+              height='100%'
+              bgImg={`url(${cover || '/no-cover.png'})`}
+              bgSize='cover'
+            />
+          </Link>
+        </NextLink>
         <NextLink
           href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`}
           as={path}
@@ -158,18 +156,16 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
-        {cover && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
+        <NextLink href={path}>
+          <Link>
+            <Box
+              minWidth={getStripeHeight(count)}
+              height='100%'
+              bgImg={`url(${cover || '/no-cover.png'})`}
+              bgSize='cover'
+            />
+          </Link>
+        </NextLink>
         <NextLink
           href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`}
           as={path}
@@ -200,18 +196,16 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
-        {cover && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
+        <NextLink href={path}>
+          <Link>
+            <Box
+              minWidth={getStripeHeight(count)}
+              height='100%'
+              bgImg={`url(${cover || '/no-cover.png'})`}
+              bgSize='cover'
+            />
+          </Link>
+        </NextLink>
         <NextLink
           href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`}
           as={path}
