@@ -1,5 +1,6 @@
 import { Box } from '@chakra-ui/layout'
 import { Image, useMediaQuery } from '@chakra-ui/react'
+
 import { Album } from '../@types/ui'
 
 type Props = {
@@ -10,7 +11,7 @@ export const Art = ({ coverArt }: Props) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
   return (
     <Box
-      as="picture"
+      as='picture'
       width={['100%', '500px']}
       maxWidth={['100%', '500px']}
       height={['100%', '500px']}
@@ -35,10 +36,18 @@ export const Art = ({ coverArt }: Props) => {
           left: '25%',
         },
       }}
-      display="inline-block"
-      position="relative"
+      display='inline-block'
+      position='relative'
     >
-      <Image src={coverArt} position="relative" zIndex="docked" width="full" height="full" display="block" />
+      <Image
+        src={coverArt}
+        alt='Album cover art'
+        position='relative'
+        zIndex='docked'
+        width='full'
+        height='full'
+        display='block'
+      />
     </Box>
   )
 }

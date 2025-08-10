@@ -3,6 +3,7 @@ import { Box, Flex } from '@chakra-ui/layout'
 import { Input, useMediaQuery } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+
 import { Album, Detail, HomeItem } from '../@types/ui'
 import { colorPages, colorsB } from '../lib/constants'
 import Intro from './Intro'
@@ -21,7 +22,7 @@ type Props =
  * Component
  *
  */
-export const Shelf = React.memo(({ items, type }: Props) => {
+const ShelfComponent = ({ items, type }: Props) => {
   const [query, setQuery] = useState<string>()
   const [content, setContent] = useState<Props['items']>(() => items)
   const [isMobile] = useMediaQuery('(max-width: 768px)', {
@@ -51,23 +52,23 @@ export const Shelf = React.memo(({ items, type }: Props) => {
   return (
     <>
       <Flex
-        direction="column"
-        alignItems="center"
-        as="section"
-        minHeight="250px"
-        textAlign="center"
-        py="100px"
+        direction='column'
+        alignItems='center'
+        as='section'
+        minHeight='250px'
+        textAlign='center'
+        py='100px'
         bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
       >
         <Intro />
         {isAlbum && (content.length > 10 || query !== undefined) && (
           <Input
-            placeholder="Filter albums..."
+            placeholder='Filter albums...'
             _placeholder={{ color: 'inherit' }}
-            size="lg"
+            size='lg'
             w={isMobile ? 'xs' : 'sm'}
-            mt="10"
-            variant="flushed"
+            mt='10'
+            variant='flushed'
             value={query}
             onChange={(e) => setQuery(e.target.value.toLowerCase())}
           />
@@ -91,11 +92,15 @@ export const Shelf = React.memo(({ items, type }: Props) => {
               itemIndex={i}
               path={item.path}
               cover={item.coverArt}
-              disableAnimation={pathname === '/albums' || (isMobile && items.length >= 20)}
+              disableAnimation={isMobile}
             />
           )
         })}
       </Box>
     </>
   )
-})
+}
+
+ShelfComponent.displayName = 'Shelf'
+
+export const Shelf = React.memo(ShelfComponent)

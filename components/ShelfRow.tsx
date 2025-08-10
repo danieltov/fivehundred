@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactNode, useEffect, useRef } from 'react'
+
 import { colorsA, colorsB } from '../lib/constants'
 
 /**
@@ -83,83 +84,150 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
     return '-100%'
   }
 
+  // Utility to compute contrasting color (black or white)
+  const getContrastColor = (hex: string) => {
+    // Remove '#' if present
+    const sanitizedHex = hex.replace('#', '')
+    // Parse r, g, b
+    const r = parseInt(sanitizedHex.substring(0, 2), 16)
+    const g = parseInt(sanitizedHex.substring(2, 4), 16)
+    const b = parseInt(sanitizedHex.substring(4, 6), 16)
+    // Calculate luminance
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
+    return luminance > 0.5 ? '#111' : '#fff'
+  }
+
   return (
     <Box
-      className="wrapper"
+      className='wrapper'
       ref={disableAnimation ? null : wrapper}
-      position="relative"
-      width="250%"
+      position='relative'
+      width='250%'
       height={getStripeHeight(count)}
-      overflow="hidden"
+      overflow='hidden'
       left={leftValue()}
     >
       <Flex
-        justifyContent="space-between"
+        justifyContent='space-between'
         flexDirection={isEven ? 'row' : 'row-reverse'}
-        className="box"
-        width="100vw"
-        position="absolute"
-        height="100%"
+        className='box'
+        width='100vw'
+        position='absolute'
+        height='100%'
         bg={bgColors[itemIndex % bgColors.length]}
       >
         {cover && (
           <NextLink href={path}>
             <Link>
-              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover})`}
+                bgSize='cover'
+              />
             </Link>
           </NextLink>
         )}
-        <NextLink href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`} as={path}>
+        <NextLink
+          href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`}
+          as={path}
+        >
           <Link>
-            <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
+            <Heading
+              padding={3}
+              fontSize={fontSize}
+              textAlign={isEven ? 'right' : 'left'}
+              fontWeight='normal'
+              _hover={!isMobile ? {
+                color: getContrastColor(bgColors[itemIndex % bgColors.length]),
+                fontWeight: 800,
+                transition: 'font-weight 0.5s'
+              } : {}}
+            >
               {text}
             </Heading>
           </Link>
         </NextLink>
       </Flex>
       <Flex
-        justifyContent="space-between"
+        justifyContent='space-between'
         flexDirection={isEven ? 'row' : 'row-reverse'}
-        className="box"
-        width="100vw"
-        position="absolute"
-        height="100%"
+        className='box'
+        width='100vw'
+        position='absolute'
+        height='100%'
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
         {cover && (
           <NextLink href={path}>
             <Link>
-              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover})`}
+                bgSize='cover'
+              />
             </Link>
           </NextLink>
         )}
-        <NextLink href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`} as={path}>
+        <NextLink
+          href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`}
+          as={path}
+        >
           <Link>
-            <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
+            <Heading
+              padding={3}
+              fontSize={fontSize}
+              textAlign={isEven ? 'right' : 'left'}
+              fontWeight='normal'
+              _hover={!isMobile ? {
+                color: getContrastColor(bgColors[(itemIndex + 1) % bgColors.length]),
+                fontWeight: 800,
+                transition: 'font-weight 0.5s'
+              } : {}}
+            >
               {text}
             </Heading>
           </Link>
         </NextLink>
       </Flex>
       <Flex
-        justifyContent="space-between"
+        justifyContent='space-between'
         flexDirection={isEven ? 'row' : 'row-reverse'}
-        className="box"
-        width="100vw"
-        position="absolute"
-        height="100%"
+        className='box'
+        width='100vw'
+        position='absolute'
+        height='100%'
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
         {cover && (
           <NextLink href={path}>
             <Link>
-              <Box minWidth={getStripeHeight(count)} height="100%" bgImg={`url(${cover})`} bgSize="cover" />
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover})`}
+                bgSize='cover'
+              />
             </Link>
           </NextLink>
         )}
-        <NextLink href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`} as={path}>
+        <NextLink
+          href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`}
+          as={path}
+        >
           <Link>
-            <Heading padding={3} fontSize={fontSize} textAlign={isEven ? 'right' : 'left'}>
+            <Heading
+              padding={3}
+              fontSize={fontSize}
+              textAlign={isEven ? 'right' : 'left'}
+              fontWeight='normal'
+              _hover={!isMobile ? {
+                color: getContrastColor(bgColors[(itemIndex + 2) % bgColors.length]),
+                fontWeight: 800,
+                transition: 'font-weight 0.5s'
+              } : {}}
+            >
               {text}
             </Heading>
           </Link>

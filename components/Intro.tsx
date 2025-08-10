@@ -1,5 +1,6 @@
 import { Heading, Text } from '@chakra-ui/layout'
 import { useRouter } from 'next/router'
+
 import { unslugify } from '../lib/utils'
 
 /**
@@ -39,7 +40,11 @@ const Intro = () => {
   const { pathname, asPath } = router
   return (
     <>
-      <Heading fontSize={['3.5rem', null, '7rem', '10rem']} fontWeight={200} textTransform="uppercase">
+      <Heading
+        fontSize={['2.5rem', null, '5rem', '7rem']}
+        fontWeight={200}
+        textTransform='uppercase'
+      >
         {TEXT[pathname]?.title ?? `${unslugify(asPath)}`}
       </Heading>
       <Text width={['70%', null, null, '33%']}>{TEXT[pathname]?.description}</Text>
