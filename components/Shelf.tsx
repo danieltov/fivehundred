@@ -93,6 +93,7 @@ const ShelfComponent = ({ items, type }: Props) => {
               path={item.path}
               cover={item.coverArt}
               disableAnimation={isMobile}
+              type={type}
             />
           )
         })}

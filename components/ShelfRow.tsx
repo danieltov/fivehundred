@@ -33,6 +33,7 @@ type Props = {
   path: string
   cover: string
   disableAnimation: boolean
+  type: 'album' | 'detail' | 'home'
 }
 
 /**
@@ -41,7 +42,7 @@ type Props = {
  *
  */
 
-const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Props) => {
+const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation, type }: Props) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)', {
     ssr: true,
     fallback: true,
@@ -116,16 +117,18 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[itemIndex % bgColors.length]}
       >
-        <NextLink href={path}>
-          <Link>
-            <Box
-              minWidth={getStripeHeight(count)}
-              height='100%'
-              bgImg={`url(${cover || '/no-cover.png'})`}
-              bgSize='cover'
-            />
-          </Link>
-        </NextLink>
+        {type === 'album' && (
+          <NextLink href={path}>
+            <Link>
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover || '/no-cover.png'})`}
+                bgSize='cover'
+              />
+            </Link>
+          </NextLink>
+        )}
         <NextLink
           href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`}
           as={path}
@@ -156,16 +159,18 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[(itemIndex + 1) % bgColors.length]}
       >
-        <NextLink href={path}>
-          <Link>
-            <Box
-              minWidth={getStripeHeight(count)}
-              height='100%'
-              bgImg={`url(${cover || '/no-cover.png'})`}
-              bgSize='cover'
-            />
-          </Link>
-        </NextLink>
+        {type === 'album' && (
+          <NextLink href={path}>
+            <Link>
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover || '/no-cover.png'})`}
+                bgSize='cover'
+              />
+            </Link>
+          </NextLink>
+        )}
         <NextLink
           href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`}
           as={path}
@@ -196,16 +201,18 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation }: Pro
         height='100%'
         bg={bgColors[(itemIndex + 2) % bgColors.length]}
       >
-        <NextLink href={path}>
-          <Link>
-            <Box
-              minWidth={getStripeHeight(count)}
-              height='100%'
-              bgImg={`url(${cover || '/no-cover.png'})`}
-              bgSize='cover'
-            />
-          </Link>
-        </NextLink>
+        {type === 'album' && (
+          <NextLink href={path}>
+            <Link>
+              <Box
+                minWidth={getStripeHeight(count)}
+                height='100%'
+                bgImg={`url(${cover || '/no-cover.png'})`}
+                bgSize='cover'
+              />
+            </Link>
+          </NextLink>
+        )}
         <NextLink
           href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`}
           as={path}
