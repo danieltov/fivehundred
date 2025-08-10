@@ -1,13 +1,14 @@
 import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
+
 import { Shelf } from '../../components/Shelf'
 import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const GenresShelf = ({ albums }) => {
   return (
-    <Box as="main" {...shelfProps}>
-      <Shelf items={albums} type="album" />
+    <Box as='main' {...shelfProps}>
+      <Shelf items={albums} type='album' />
     </Box>
   )
 }

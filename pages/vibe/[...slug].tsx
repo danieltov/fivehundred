@@ -1,12 +1,13 @@
 import { Box } from '@chakra-ui/layout'
+
 import { Shelf } from '../../components/Shelf'
 import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const VibesShelf = ({ albums }) => {
   return (
-    <Box as="main" {...shelfProps}>
-      <Shelf items={albums} type="album" />
+    <Box as='main' {...shelfProps}>
+      <Shelf items={albums} type='album' />
     </Box>
   )
 }
