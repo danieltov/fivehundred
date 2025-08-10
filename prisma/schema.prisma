@@ -1,28 +1,22 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider          = "postgresql"
-  url               = env("DATABASE_URL")
-  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+  url               = env("DB_URL")
+  shadowDatabaseUrl = env("SHADOW_DB_URL")
 }
 
 model Artist {
-  albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
   slug   String  @unique
+  albums Album[]
 }
 
 model Album {
-  artist      Artist[]
   coverArt    String
-  descriptors Descriptor[]
-  genres      Genre[]
   id          String       @id @default(cuid())
   isAPlus     Boolean      @default(false)
   lastPlayed  DateTime?
@@ -31,18 +25,25 @@ model Album {
   releaseDate DateTime
   slug        String       @unique
   title       String
+  appleMusicUrl String?
+  spotifyUri    String?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @default(now()) @updatedAt
+  artist        Artist[]
+  descriptors   Descriptor[]
+  genres        Genre[]
 }
 
 model Genre {
-  albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
   slug   String  @unique
+  albums Album[]
 }
 
 model Descriptor {
-  albums Album[]
   id     String  @id @default(cuid())
   name   String  @unique
   slug   String  @unique
+  albums Album[]
 }

@@ -17,6 +17,8 @@ export type Album = {
   slug: string
   title: string
   isAPlus: boolean
+  spotifyUri?: string
+  appleMusicUrl?: string
 }
 export type DetailWithAlbums = Detail & {
   albums?: Album[]
