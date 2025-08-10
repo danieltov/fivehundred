@@ -1,15 +1,18 @@
-
 /* Prisma */
 export const ALBUM_INCLUDE = {
   artist: true,
   genres: true,
   descriptors: true,
 }
-export const DETAIL_INCLUDE = {
-  include: { artist: true },
-  orderBy: {
-    title: 'asc',
-  },
+
+export const SHELF_ALBUM_INCLUDE = {
+  artist: { select: { name: true, slug: true } }
+} as const
+
+export const ALBUM_DETAIL_INCLUDE = {
+  artist: { select: { name: true, slug: true } },
+  genres: { select: { name: true, slug: true } },
+  descriptors: { select: { name: true, slug: true } }
 } as const
 
 /* UI */

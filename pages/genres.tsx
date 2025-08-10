@@ -16,7 +16,10 @@ const GenresPage = ({ genres }) => {
 
 export async function getStaticProps() {
   const genres = await prisma.genre.findMany({
-    include: { _count: true },
+    where: {
+      albums: { some: {} }
+    },
+    include: { _count: { select: { albums: true } } },
     orderBy: {
       albums: {
         _count: 'desc',
@@ -25,12 +28,10 @@ export async function getStaticProps() {
   })
   return {
     props: {
-      genres: genres
-        .filter((genre) => genre._count.albums > 2)
-        .map((genre) => ({
-          ...genre,
-          path: `genre/${genre.slug}`,
-        })),
+      genres: genres.map((genre) => ({
+        ...genre,
+        path: `genre/${genre.slug}`,
+      })),
     },
   }
 }

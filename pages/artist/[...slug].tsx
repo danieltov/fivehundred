@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/layout'
 
 import { Shelf } from '../../components/Shelf'
-import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
+import { SHELF_ALBUM_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const ArtistShelf = ({ albums }) => {
@@ -18,7 +18,10 @@ export async function getStaticProps(context) {
   const artist = await prisma.artist.findFirst({
     where: { slug: slug[0] },
     include: {
-      albums: DETAIL_INCLUDE,
+      albums: {
+        include: SHELF_ALBUM_INCLUDE,
+        orderBy: { title: 'asc' }
+      },
     },
   })
 
@@ -34,7 +37,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const artists = await prisma.artist.findMany({
-    include: { albums: true },
+    select: { slug: true },
   })
 
   return {

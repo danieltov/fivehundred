@@ -17,13 +17,20 @@ const VibesPage = ({ vibes }) => {
 export async function getStaticProps() {
   const descriptors = await prisma.descriptor.findMany({
     where: {
-      name: {
-        not: {
-          contains: 'vocals',
+      AND: [
+        {
+          name: {
+            not: {
+              contains: 'vocals',
+            },
+          },
         },
-      },
+        {
+          albums: { some: {} }
+        }
+      ]
     },
-    include: { albums: false, _count: true },
+    include: { _count: { select: { albums: true } } },
     orderBy: {
       albums: {
         _count: 'desc',
@@ -32,12 +39,10 @@ export async function getStaticProps() {
   })
   return {
     props: {
-      vibes: descriptors
-        .filter((descriptor) => descriptor._count.albums > 5)
-        .map((descriptor) => ({
-          ...descriptor,
-          path: `vibe/${descriptor.slug}`,
-        })),
+      vibes: descriptors.map((descriptor) => ({
+        ...descriptor,
+        path: `vibe/${descriptor.slug}`,
+      })),
     },
   }
 }

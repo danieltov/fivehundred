@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/layout'
 import { useConst } from '@chakra-ui/react'
 
 import { Shelf } from '../components/Shelf'
+import { SHELF_ALBUM_INCLUDE } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const APlusPage = ({ albums }) => {
@@ -15,7 +16,7 @@ const APlusPage = ({ albums }) => {
 
 export async function getStaticProps() {
   const albums = await prisma.album.findMany({
-    include: { artist: true },
+    include: SHELF_ALBUM_INCLUDE,
     where: {
       isAPlus: true,
     },

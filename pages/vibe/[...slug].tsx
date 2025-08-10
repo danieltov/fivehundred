@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/layout'
 
 import { Shelf } from '../../components/Shelf'
-import { DETAIL_INCLUDE, shelfProps } from '../../lib/constants'
+import { SHELF_ALBUM_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const VibesShelf = ({ albums }) => {
@@ -19,7 +19,10 @@ export async function getStaticProps(context) {
       slug: slug[0],
     },
     include: {
-      albums: DETAIL_INCLUDE,
+      albums: {
+        include: SHELF_ALBUM_INCLUDE,
+        orderBy: { title: 'asc' }
+      },
     },
   })
 
@@ -35,7 +38,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const descriptors = await prisma.descriptor.findMany({
-    include: { albums: true },
+    select: { slug: true },
   })
   return {
     paths: descriptors.map((descriptor) => ({

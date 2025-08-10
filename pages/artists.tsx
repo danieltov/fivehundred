@@ -16,7 +16,10 @@ const ArtistsPage = ({ artists }) => {
 
 export async function getStaticProps() {
   const artists = await prisma.artist.findMany({
-    include: { albums: false, _count: true },
+    where: {
+      albums: { some: {} },
+    },
+    include: { _count: { select: { albums: true } } },
     orderBy: {
       albums: {
         _count: 'desc',
@@ -26,12 +29,10 @@ export async function getStaticProps() {
 
   return {
     props: {
-      artists: artists
-        .filter((artist) => artist.albums.length > 1)
-        .map((artist) => ({
-          ...artist,
-          path: `artist/${artist.slug}`,
-        })),
+      artists: artists.map((artist) => ({
+        ...artist,
+        path: `artist/${artist.slug}`,
+      })),
     },
   }
 }
