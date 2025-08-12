@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -75,6 +76,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <Menu />
         <Component {...pageProps} />
         <Footer />
+        <Analytics />
       </ChakraProvider>
     </QueryClientProvider>
   )

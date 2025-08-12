@@ -34,12 +34,7 @@ yarn-error.log*
 
 # vscode
 .vscode
-/.idea/codeStyles/codeStyleConfig.xml
-/.idea/codeStyles/Project.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/.gitignore
-/.idea/copilotDiffState.xml
-/.idea/fivehundred.iml
-/.idea/modules.xml
-/.idea/prettier.xml
-/.idea/vcs.xml
+/.idea/*
+
+# logs
+logs/
