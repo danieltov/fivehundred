@@ -17,7 +17,7 @@ const GenresPage = ({ genres }) => {
 export async function getStaticProps() {
   const genres = await prisma.genre.findMany({
     where: {
-      albums: { some: {} }
+      albums: { some: {} },
     },
     include: { _count: { select: { albums: true } } },
     orderBy: {

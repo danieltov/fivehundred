@@ -6,7 +6,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
 import { Footer } from '../components/Footer'
@@ -59,7 +59,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             name='twitter:description'
             content='The goal of the Five Hundred project is to catalogue a lifetime library of my favorite albums, to collect and trace their various styles and moods, in a colorful, visual way.'
           />
-          <meta name='twitter:image' content='/twitter-image.jpg' />
+          <meta name='twitter:image' content='/twitter-image.png' />
           <meta name='twitter:image:alt' content='Screenshot of the Five Hundred home page' />
           <meta
             name='viewport'

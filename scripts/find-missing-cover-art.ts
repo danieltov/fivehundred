@@ -1,10 +1,8 @@
-import { PrismaClient } from '@prisma/client'
 import * as fs from 'fs/promises'
 import * as path from 'path'
 
 import { getCoverArtFromMBID } from '../lib/musicbrainz'
-
-const prisma = new PrismaClient()
+import prisma from '../lib/prisma'
 
 async function findAndUpdateMissingCoverArt() {
   const failed: Array<{ id: string; title: string; artist: string[]; reason: string }> = []
@@ -15,7 +13,7 @@ async function findAndUpdateMissingCoverArt() {
     await fs.mkdir(logsDir, { recursive: true })
     console.log('🔍 Searching for albums missing cover art...')
     const albums = await prisma.album.findMany({
-      where: { OR: [{ coverArt: undefined }, { coverArt: '' }] },
+      where: { OR: [{ coverArt: undefined }, { coverArt: '' }, { coverArt: '/no-cover.png' }] },
       include: { artist: true },
     })
     console.log(`Found ${albums.length} albums without cover art.`)
@@ -29,12 +27,22 @@ async function findAndUpdateMissingCoverArt() {
         const { searchMusicBrainzReleaseGroup } = await import('../lib/musicbrainz')
         mbid = await searchMusicBrainzReleaseGroup(artistNames[0], album.title)
       } catch (e) {
-        failed.push({ id: album.id, title: album.title, artist: artistNames, reason: 'MBID lookup error' })
+        failed.push({
+          id: album.id,
+          title: album.title,
+          artist: artistNames,
+          reason: 'MBID lookup error',
+        })
         console.log('  ❌ MBID lookup error')
         continue
       }
       if (!mbid) {
-        failed.push({ id: album.id, title: album.title, artist: artistNames, reason: 'No MBID found' })
+        failed.push({
+          id: album.id,
+          title: album.title,
+          artist: artistNames,
+          reason: 'No MBID found',
+        })
         console.log('  ❌ No MBID found')
         continue
       }
@@ -42,7 +50,12 @@ async function findAndUpdateMissingCoverArt() {
       try {
         coverArt = await getCoverArtFromMBID(mbid)
       } catch (e) {
-        failed.push({ id: album.id, title: album.title, artist: artistNames, reason: 'Cover art lookup error' })
+        failed.push({
+          id: album.id,
+          title: album.title,
+          artist: artistNames,
+          reason: 'Cover art lookup error',
+        })
         console.log('  ❌ Cover art lookup error')
         continue
       }
@@ -51,11 +64,21 @@ async function findAndUpdateMissingCoverArt() {
           await prisma.album.update({ where: { id: album.id }, data: { coverArt } })
           console.log('  ✅ Cover art found and updated')
         } catch (e) {
-          failed.push({ id: album.id, title: album.title, artist: artistNames, reason: 'DB update error' })
+          failed.push({
+            id: album.id,
+            title: album.title,
+            artist: artistNames,
+            reason: 'DB update error',
+          })
           console.log('  ❌ DB update error')
         }
       } else {
-        failed.push({ id: album.id, title: album.title, artist: artistNames, reason: 'No cover art found' })
+        failed.push({
+          id: album.id,
+          title: album.title,
+          artist: artistNames,
+          reason: 'No cover art found',
+        })
         console.log('  ❌ No cover art found')
       }
       // Be nice to APIs

@@ -3,7 +3,7 @@
  * Metadata (genres/descriptors) now sourced from AllMusic CSV
  */
 
-import { getAllMusicAlbumData } from './allmusic'
+import { getAllMusicAlbumData } from './parse-allmusic-csv'
 
 // MusicBrainz API types
 interface MusicBrainzSearchResponse {
@@ -48,35 +48,117 @@ export async function searchMusicBrainzReleaseGroup(
   title: string
 ): Promise<string | null> {
   try {
-    const query = encodeURIComponent(`releasegroup:"${title}" AND artist:"${artist}"`)
-    const url = `https://musicbrainz.org/ws/2/release-group?query=${query}&fmt=json&limit=5`
+    // Try multiple query strategies for better results
+    const queries = [
+      `release:"${title}" AND artist:"${artist}"`,
+      `release:"${title}"`,
+      `"${title}" AND artist:"${artist}"`,
+      `"${title}"`,
+    ]
 
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'FiveHundred/1.0.0 (https://github.com/danieltov/fivehundred)',
-      },
-    })
+    for (const [index, queryString] of queries.entries()) {
+      const query = encodeURIComponent(queryString)
+      const url = `https://musicbrainz.org/ws/2/release-group/?query=${query}&fmt=json&limit=3`
 
-    if (!response.ok) {
-      console.error(`MusicBrainz search failed: ${response.status}`)
-      return null
+      console.log(`Trying MusicBrainz query ${index + 1}/${queries.length}: ${queryString}`)
+
+      // Retry logic for 503 errors (rate limiting)
+      let response: Response | null = null
+      let retryCount = 0
+      const maxRetries = 3
+
+      while (retryCount <= maxRetries) {
+        try {
+          response = await fetch(url, {
+            headers: {
+              'User-Agent': 'FiveHundred/1.0.0 (https://github.com/danieltov/fivehundred)',
+            },
+          })
+
+          if (response.ok) {
+            break
+          } else if (response.status === 503) {
+            // Rate limited - wait longer before retrying
+            const waitTime = Math.min(1000 * Math.pow(2, retryCount), 8000) // Exponential backoff, max 8 seconds
+            console.log(
+              `Rate limited (503), waiting ${waitTime}ms before retry ${retryCount + 1}/${maxRetries}`
+            )
+            await new Promise((resolve) => setTimeout(resolve, waitTime))
+            retryCount++
+          } else {
+            console.error(`MusicBrainz search failed: ${response.status}`)
+            break
+          }
+        } catch (fetchError) {
+          console.error(`Network error on attempt ${retryCount + 1}:`, fetchError)
+          if (retryCount === maxRetries) throw fetchError
+          await new Promise((resolve) => setTimeout(resolve, 1000))
+          retryCount++
+        }
+      }
+
+      if (!response || !response.ok) {
+        console.error(`All retries failed for query ${index + 1}`)
+        continue
+      }
+
+      const data: MusicBrainzSearchResponse = await response.json()
+
+      if (!data['release-groups'] || data['release-groups'].length === 0) {
+        console.log(`No results for query ${index + 1}`)
+        continue
+      }
+
+      console.log(`Found ${data['release-groups'].length} results for query ${index + 1}`)
+
+      // Filter for albums only
+      const albumResults = data['release-groups'].filter((rg) => rg['primary-type'] === 'Album')
+      console.log(`${albumResults.length} album results`)
+
+      if (albumResults.length === 0) {
+        console.log(`No album results for query ${index + 1}`)
+        continue
+      }
+
+      // Strategy 1: Look for perfect score matches first
+      const perfectMatch = albumResults.find((rg) => rg.score === 100)
+      if (perfectMatch) {
+        console.log(
+          `Found perfect score match: ${perfectMatch.title} by ${perfectMatch['artist-credit'][0]?.artist.name} (score: ${perfectMatch.score})`
+        )
+        return perfectMatch.id
+      }
+
+      // Strategy 2: Look for exact artist and high score
+      const exactArtistMatch = albumResults.find(
+        (rg) =>
+          rg['artist-credit'][0]?.artist.name.toLowerCase() === artist.toLowerCase() &&
+          rg.score >= 80
+      )
+      if (exactArtistMatch) {
+        console.log(
+          `Found exact artist match: ${exactArtistMatch.title} by ${exactArtistMatch['artist-credit'][0]?.artist.name} (score: ${exactArtistMatch.score})`
+        )
+        return exactArtistMatch.id
+      }
+
+      // Strategy 3: Look for high score matches (relaxed artist matching)
+      const highScoreMatch = albumResults.find((rg) => rg.score >= 90)
+      if (highScoreMatch) {
+        console.log(
+          `Found high-score match: ${highScoreMatch.title} by ${highScoreMatch['artist-credit'][0]?.artist.name} (score: ${highScoreMatch.score})`
+        )
+        return highScoreMatch.id
+      }
+
+      // Add delay between queries to be respectful
+      if (index < queries.length - 1) {
+        await new Promise((resolve) => setTimeout(resolve, 1000))
+      }
     }
 
-    const data: MusicBrainzSearchResponse = await response.json()
-
-    // Find best match by score and exact title/artist match
-    const exactMatch = data['release-groups'].find(
-      (rg) => rg['primary-type'] === 'album' &&
-        rg['artist-credit'][0]?.artist.name.toLowerCase() === artist.toLowerCase() &&
-        rg.title.toLowerCase() === title.toLowerCase()
-    )
-
-    if (exactMatch) {
-      return exactMatch.id
-    }
-
-    // Fallback to highest scoring result
-    return data['release-groups'][0]?.id || null
+    console.log('No suitable matches found in any query')
+    return null
   } catch (error) {
     console.error('MusicBrainz search error:', error)
     return null
@@ -88,19 +170,35 @@ export async function searchMusicBrainzReleaseGroup(
  */
 export async function getCoverArtFromMBID(mbid: string): Promise<string | null> {
   try {
-    // Try different sizes, prefer 500px
-    const sizes = ['500', '1200', '250', '']
+    // Try different sizes, prefer 1200px
+    const sizes = ['1200', '500', '250', '']
 
     for (const size of sizes) {
       const url = `https://coverartarchive.org/release-group/${mbid}/front${size ? `-${size}` : ''}`
 
-      try {
-        const response = await fetch(url, { method: 'HEAD' })
-        if (response.ok) {
-          return url
+      // Retry logic for 503 errors
+      let retryCount = 0
+      const maxRetries = 3
+
+      while (retryCount <= maxRetries) {
+        try {
+          const response = await fetch(url, { method: 'HEAD' })
+          if (response.ok) {
+            return url
+          } else if (response.status === 503) {
+            const waitTime = Math.min(1000 * Math.pow(2, retryCount), 5000)
+            console.log(`Cover Art Archive rate limited, waiting ${waitTime}ms`)
+            await new Promise((resolve) => setTimeout(resolve, waitTime))
+            retryCount++
+          } else {
+            // Not found or other error, try next size
+            break
+          }
+        } catch (fetchError) {
+          if (retryCount === maxRetries) break
+          await new Promise((resolve) => setTimeout(resolve, 1000))
+          retryCount++
         }
-      } catch {
-        // Continue to next size
       }
     }
 

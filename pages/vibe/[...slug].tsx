@@ -1,13 +1,13 @@
 import { Box } from '@chakra-ui/layout'
 
-import { Shelf } from '../../components/Shelf'
+import { MarqueeShelf } from '../../components/MarqueeShelf'
 import { SHELF_ALBUM_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const VibesShelf = ({ albums }) => {
   return (
     <Box as='main' {...shelfProps}>
-      <Shelf items={albums} type='album' />
+      <MarqueeShelf items={albums} />
     </Box>
   )
 }
@@ -21,7 +21,7 @@ export async function getStaticProps(context) {
     include: {
       albums: {
         include: SHELF_ALBUM_INCLUDE,
-        orderBy: { title: 'asc' }
+        orderBy: { updatedAt: 'desc' },
       },
     },
   })

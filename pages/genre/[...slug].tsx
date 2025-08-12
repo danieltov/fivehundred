@@ -1,14 +1,14 @@
 import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
 
-import { Shelf } from '../../components/Shelf'
+import { MarqueeShelf } from '../../components/MarqueeShelf'
 import { SHELF_ALBUM_INCLUDE, shelfProps } from '../../lib/constants'
 import prisma from '../../lib/prisma'
 
 const GenresShelf = ({ albums }) => {
   return (
     <Box as='main' {...shelfProps}>
-      <Shelf items={albums} type='album' />
+      <MarqueeShelf items={albums} />
     </Box>
   )
 }
@@ -22,7 +22,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     include: {
       albums: {
         include: SHELF_ALBUM_INCLUDE,
-        orderBy: { title: 'asc' }
+        orderBy: { title: 'desc' },
       },
     },
   })
@@ -39,7 +39,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 
 export async function getStaticPaths() {
   const genres = await prisma.genre.findMany({
-    select: { slug: true }
+    select: { slug: true },
   })
   return {
     paths: genres.map((genre) => ({

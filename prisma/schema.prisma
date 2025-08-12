@@ -16,19 +16,21 @@ model Artist {
 }
 
 model Album {
-  coverArt    String
-  id          String       @id @default(cuid())
-  isAPlus     Boolean      @default(false)
-  lastPlayed  DateTime?
-  owned       Boolean      @default(false)
-  ownedDate   DateTime?
-  releaseDate DateTime
-  slug        String       @unique
-  title       String
+  coverArt      String
+  id            String       @id @default(cuid())
+  isAPlus       Boolean      @default(false)
+  lastPlayed    DateTime?
+  owned         Boolean      @default(false)
+  ownedDate     DateTime?
+  releaseDate   DateTime
+  slug          String       @unique
+  title         String
   appleMusicUrl String?
   spotifyUri    String?
-  createdAt     DateTime   @default(now())
-  updatedAt     DateTime   @default(now()) @updatedAt
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @default(now()) @updatedAt
+  topRanking    Int?
+  allMusicId    String?
   artist        Artist[]
   descriptors   Descriptor[]
   genres        Genre[]

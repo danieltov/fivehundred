@@ -1,5 +1,7 @@
 import { Box } from '@chakra-ui/layout'
-import { Image, useMediaQuery } from '@chakra-ui/react'
+import { Skeleton, useMediaQuery } from '@chakra-ui/react'
+import Image from 'next/image'
+import { useState } from 'react'
 
 import { Album } from '../@types/ui'
 
@@ -8,7 +10,10 @@ type Props = {
 }
 
 export const Art = ({ coverArt }: Props) => {
+  const [imageLoaded, setImageLoaded] = useState(false)
+  const [imageError, setImageError] = useState(false)
   const [isMobile] = useMediaQuery('(max-width: 768px)')
+
   return (
     <Box
       as='picture'
@@ -39,14 +44,44 @@ export const Art = ({ coverArt }: Props) => {
       display='inline-block'
       position='relative'
     >
+      {!imageLoaded && (
+        <Skeleton
+          w='100%'
+          h='100%'
+          position='absolute'
+          top={0}
+          left={0}
+          borderRadius='md'
+          zIndex={2}
+          opacity={1}
+        />
+      )}
       <Image
-        src={coverArt || '/no-cover.png'}
+        src={imageError ? '/no-cover.png' : coverArt || '/no-cover.png'}
         alt='Album cover art'
-        position='relative'
-        zIndex='docked'
-        width='full'
-        height='full'
-        display='block'
+        width={500}
+        height={500}
+        sizes='(max-width: 768px) 100vw, 500px'
+        quality={85}
+        priority={false}
+        onLoad={() => setImageLoaded(true)}
+        onError={() => {
+          if (!imageError && coverArt) {
+            setImageError(true)
+            setImageLoaded(false)
+          } else {
+            setImageLoaded(true)
+          }
+        }}
+        style={{
+          objectFit: 'cover',
+          width: '100%',
+          height: '100%',
+          position: 'relative',
+          zIndex: 1,
+          opacity: imageLoaded ? 1 : 0,
+          transition: 'opacity 0.2s ease-in-out',
+        }}
       />
     </Box>
   )

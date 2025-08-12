@@ -1,15 +1,14 @@
 import { Box } from '@chakra-ui/layout'
-import { useConst } from '@chakra-ui/react'
 
-import { Shelf } from '../components/Shelf'
+import { MarqueeShelf } from '../components/MarqueeShelf'
 import { SHELF_ALBUM_INCLUDE } from '../lib/constants'
 import prisma from '../lib/prisma'
 
 const APlusPage = ({ albums }) => {
-  const type = useConst('album')
   return (
     <Box as='main' width='100vw' maxWidth='100vw'>
-      <Shelf items={albums} type={type} />
+      {/*<Shelf items={albums} type={type} />*/}
+      <MarqueeShelf items={albums} showRanking={false} />
     </Box>
   )
 }
@@ -20,7 +19,7 @@ export async function getStaticProps() {
     where: {
       isAPlus: true,
     },
-    orderBy: { title: 'asc' },
+    orderBy: { updatedAt: 'desc' },
   })
   return {
     props: {

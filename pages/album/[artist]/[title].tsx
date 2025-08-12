@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/layout'
 import { GetStaticPropsContext } from 'next'
 import { useRouter } from 'next/router'
+import { useMemo } from 'react'
 
 import { AlbumSummary } from '../../../components/Album'
 import { ALBUM_INCLUDE, colorsAll, shelfProps } from '../../../lib/constants'
@@ -9,9 +10,11 @@ import prisma from '../../../lib/prisma'
 const AlbumSummaryPage = ({ album }) => {
   const router = useRouter()
 
-  const bg = router.query.bg
-    ? `#${router.query.bg}`
-    : colorsAll[Math.floor(Math.random() * colorsAll.length)]
+  const bg = useMemo(() => {
+    return router.query.bg
+      ? `#${router.query.bg}`
+      : colorsAll[Math.floor(Math.random() * colorsAll.length)]
+  }, [router.query.bg])
 
   return (
     <Box as='main' {...shelfProps} bg={bg}>

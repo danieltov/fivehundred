@@ -33,6 +33,10 @@ const TEXT = {
     title: 'Vibes',
     description: 'The moods that color my listening.',
   },
+  '/top-50': {
+    title: 'Top 50',
+    description: 'The ones I’d save first in a fire—ranked.',
+  },
 }
 
 const Intro = () => {

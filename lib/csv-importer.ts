@@ -367,7 +367,7 @@ async function importRecord(record: AllMusicCSVRecord): Promise<ImportResult> {
         slug: albumSlug,
         releaseDate,
         coverArt: mbData.coverArt || '',
-        isAPlus: true, // true for now
+        isAPlus: false, // true for now
         artist: {
           connect: [{ id: artist.id }],
         },

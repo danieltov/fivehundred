@@ -28,7 +28,12 @@ prisma.$use(async (params, next) => {
       params.args.data.title = decodeHtmlEntities(params.args.data.title)
     }
     // If spotifyUri is missing, try to fetch it
-    if (!params.args.data.spotifyUri && params.args.data.artist && Array.isArray(params.args.data.artist.connect) && params.args.data.artist.connect.length > 0) {
+    if (
+      !params.args.data.spotifyUri &&
+      params.args.data.artist &&
+      Array.isArray(params.args.data.artist.connect) &&
+      params.args.data.artist.connect.length > 0
+    ) {
       // Fetch artist name from DB
       const artistId = params.args.data.artist.connect[0].id
       const artist = await prisma.artist.findUnique({ where: { id: artistId } })

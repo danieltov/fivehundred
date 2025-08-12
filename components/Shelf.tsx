@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Box, Flex } from '@chakra-ui/layout'
+import { Box, Flex, Text, VStack } from '@chakra-ui/layout'
 import { Input, useMediaQuery } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 
 import { Album, Detail, HomeItem } from '../@types/ui'
 import { colorPages, colorsB } from '../lib/constants'
@@ -13,16 +13,18 @@ import ShelfRow from './ShelfRow'
  * Types
  */
 type Props =
-  | { type: 'album'; items?: Album[] }
-  | { type: 'detail'; items?: Detail[] }
-  | { type: 'home'; items: HomeItem[] }
+  | { type: 'album'; items?: Album[]; showRanking?: boolean }
+  | { type: 'detail'; items?: Detail[]; showRanking?: boolean }
+  | { type: 'home'; items: HomeItem[]; showRanking?: boolean }
 
 /**
  *
  * Component
  *
  */
-const ShelfComponent = ({ items, type }: Props) => {
+const ShelfComponent = ({ items, type, showRanking = false }: Props) => {
+  const isDevelopment = process.env.NODE_ENV === 'development'
+
   const [query, setQuery] = useState<string>()
   const [content, setContent] = useState<Props['items']>(() => items)
   const [isMobile] = useMediaQuery('(max-width: 768px)', {
@@ -35,6 +37,10 @@ const ShelfComponent = ({ items, type }: Props) => {
   const isHome = type === 'home'
   const router = useRouter()
   const { pathname } = router
+
+  const bg = useMemo(() => {
+    return colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]
+  }, [pathname])
 
   useEffect(() => {
     if (query !== undefined && isAlbum) {
@@ -49,6 +55,33 @@ const ShelfComponent = ({ items, type }: Props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query])
 
+  if (!isDevelopment || isDevelopment) {
+    return (
+      <Flex
+        direction='column'
+        alignItems='center'
+        justifyContent='center'
+        as='section'
+        minHeight='100vh'
+        textAlign='center'
+        py='100px'
+        bg={bg}
+      >
+        <VStack spacing={6}>
+          <Text fontSize='6xl' fontWeight='bold' color='white'>
+            🚧
+          </Text>
+          <Text fontSize='2xl' fontWeight='bold' color='white'>
+            Under Construction
+          </Text>
+          <Text fontSize='lg' color='white' opacity={0.8} maxWidth='400px'>
+            This page is currently being worked on and will be available soon.
+          </Text>
+        </VStack>
+      </Flex>
+    )
+  }
+
   return (
     <>
       <Flex
@@ -58,7 +91,7 @@ const ShelfComponent = ({ items, type }: Props) => {
         minHeight='250px'
         textAlign='center'
         py='100px'
-        bg={colorPages[pathname] ?? colorsB[Math.floor(Math.random() * colorsB.length)]}
+        bg={bg}
       >
         <Intro />
         {isAlbum && (content.length > 10 || query !== undefined) && (
@@ -92,8 +125,9 @@ const ShelfComponent = ({ items, type }: Props) => {
               itemIndex={i}
               path={item.path}
               cover={item.coverArt}
-              disableAnimation={isMobile}
+              disableAnimation
               type={type}
+              ranking={showRanking && isAlbum ? item.topRanking : undefined}
             />
           )
         })}

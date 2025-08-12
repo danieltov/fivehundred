@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Box, Grid, GridItem, Heading, Link, Text } from '@chakra-ui/layout'
-import { Tag } from '@chakra-ui/react'
+import { IconButton, Tag } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
+import { IoChevronBack } from 'react-icons/io5'
 
 import { Album } from '../@types/ui'
 import { colorsAll } from '../lib/constants'
@@ -31,9 +33,27 @@ const getTitle = (album: Album) => {
 
 export const AlbumSummary = ({ album, bg }: Props) => {
   const scheme = colorsAll.filter((color) => !color.includes(bg))
+  const router = useRouter()
+
+  const handleBackClick = () => {
+    router.back()
+  }
 
   return (
     <Box pb='10' px={[1, null, 0]} mt='50px'>
+      <Box mb={4}>
+        <IconButton
+          aria-label='Go back'
+          icon={<IoChevronBack />}
+          variant='ghost'
+          size='lg'
+          onClick={handleBackClick}
+          _hover={{
+            bg: 'blackAlpha.100',
+          }}
+        />
+      </Box>
+
       <Heading
         fontSize={['2.5rem', null, '5rem', '7rem']}
         fontWeight={200}

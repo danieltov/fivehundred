@@ -19,11 +19,11 @@ async function updateSpotifyUris() {
     // Step 4: Query albums missing Spotify URIs
     const albumsWithoutUri = await prisma.album.findMany({
       where: {
-        spotifyUri: null
+        spotifyUri: null,
       },
       include: {
-        artist: true // Include artist relation
-      }
+        artist: true, // Include artist relation
+      },
     })
 
     stats.total = albumsWithoutUri.length
@@ -37,7 +37,7 @@ async function updateSpotifyUris() {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
     const logsDir = `${process.cwd()}/logs`
     const failLogFile = `${logsDir}/spotify-uri-failures-${timestamp}.json`
-    await import('fs/promises').then(fs => fs.mkdir(logsDir, { recursive: true }))
+    await import('fs/promises').then((fs) => fs.mkdir(logsDir, { recursive: true }))
     const failedAlbums: any[] = []
 
     // Step 5: Process each album with rate limiting
@@ -65,7 +65,7 @@ async function updateSpotifyUris() {
           // Step 7: Update database
           await prisma.album.update({
             where: { id: album.id },
-            data: { spotifyUri }
+            data: { spotifyUri },
           })
 
           console.log(`✅ Updated with URI: ${spotifyUri}`)
@@ -73,23 +73,35 @@ async function updateSpotifyUris() {
         } else {
           console.log(`❌ No Spotify match found`)
           stats.failed++
-          failedAlbums.push({ id: album.id, title: album.title, artist: primaryArtist, reason: 'No Spotify match found' })
+          failedAlbums.push({
+            id: album.id,
+            title: album.title,
+            artist: primaryArtist,
+            reason: 'No Spotify match found',
+          })
         }
       } catch (error) {
         console.error(`❌ Error processing ${album.title}:`, error)
         stats.failed++
-        failedAlbums.push({ id: album.id, title: album.title, artist: primaryArtist, reason: String(error) })
+        failedAlbums.push({
+          id: album.id,
+          title: album.title,
+          artist: primaryArtist,
+          reason: String(error),
+        })
       }
 
       // Step 8: Rate limiting (100ms between requests)
       if (i < albumsWithoutUri.length - 1) {
-        await new Promise(resolve => setTimeout(resolve, 100))
+        await new Promise((resolve) => setTimeout(resolve, 100))
       }
     }
 
     // Write failures log if any
     if (failedAlbums.length > 0) {
-      await import('fs/promises').then(fs => fs.writeFile(failLogFile, JSON.stringify(failedAlbums, null, 2)))
+      await import('fs/promises').then((fs) =>
+        fs.writeFile(failLogFile, JSON.stringify(failedAlbums, null, 2))
+      )
       console.log(`❗️ Wrote ${failedAlbums.length} failures to ${failLogFile}`)
     }
   } catch (error) {

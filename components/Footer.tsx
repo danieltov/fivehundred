@@ -19,8 +19,8 @@ export const Footer = () => {
     >
       <GridItem>
         <Heading as='h3' size='lg'>
-          A project from{' '}
-          <NextLink href='https://danieltovar.io' passHref>
+          Built with ♡ by{' '}
+          <NextLink href='#' passHref>
             <Link isExternal fontWeight='bolder' color={colorsAll[5]}>
               Daniel Tovar
             </Link>
@@ -50,6 +50,30 @@ export const Footer = () => {
                   Prisma
                 </Link>
               </NextLink>
+              . Album metadata sourced from{' '}
+              <NextLink href='https://www.allmusic.com/' passHref>
+                <Link isExternal fontWeight='bolder' color={colorsAll[1]}>
+                  AllMusic
+                </Link>
+              </NextLink>
+              , cover art from{' '}
+              <NextLink href='https://musicbrainz.org/' passHref>
+                <Link isExternal fontWeight='bolder' color={colorsAll[3]}>
+                  MusicBrainz
+                </Link>
+              </NextLink>
+              , with streaming links to{' '}
+              <NextLink href='https://spotify.com/' passHref>
+                <Link isExternal fontWeight='bolder' color={colorsAll[0]}>
+                  Spotify
+                </Link>
+              </NextLink>{' '}
+              and{' '}
+              <NextLink href='https://music.apple.com/' passHref>
+                <Link isExternal fontWeight='bolder' color={colorsAll[5]}>
+                  Apple Music
+                </Link>
+              </NextLink>
               .
             </Text>
           </>
@@ -65,6 +89,18 @@ export const Footer = () => {
             <NextLink href='https://www.prisma.io/' passHref>
               <Link isExternal fontWeight='bolder' color={colorsAll[4]}>
                 Prisma
+              </Link>
+            </NextLink>
+            . Data from{' '}
+            <NextLink href='https://www.allmusic.com/' passHref>
+              <Link isExternal fontWeight='bolder' color={colorsAll[1]}>
+                AllMusic
+              </Link>
+            </NextLink>{' '}
+            and{' '}
+            <NextLink href='https://musicbrainz.org/' passHref>
+              <Link isExternal fontWeight='bolder' color={colorsAll[3]}>
+                MusicBrainz
               </Link>
             </NextLink>
             .

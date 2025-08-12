@@ -18,7 +18,7 @@ function decodeHtmlEntities(str: string): string {
     .replace(/&#38;/g, '&')
     .replace(/&#60;/g, '<')
     .replace(/&#62;/g, '>')
-    // Add more as needed
+  // Add more as needed
 }
 
 async function sanitizeEntities() {
@@ -49,7 +49,7 @@ async function sanitizeEntities() {
         if (existing) {
           // CONSOLIDATE: Transfer relationships and delete duplicate
           const albumsWithEncodedGenre = await prisma.album.findMany({
-            where: { genres: { some: { id: genre.id } } }
+            where: { genres: { some: { id: genre.id } } },
           })
 
           for (const album of albumsWithEncodedGenre) {
@@ -58,20 +58,34 @@ async function sanitizeEntities() {
               data: {
                 genres: {
                   connect: { id: existing.id },
-                  disconnect: { id: genre.id }
-                }
-              }
+                  disconnect: { id: genre.id },
+                },
+              },
             })
           }
 
           // Delete the duplicate encoded genre
           await prisma.genre.delete({ where: { id: genre.id } })
-          console.log(`[Genre] Consolidated ${genre.name} -> ${decoded} (${albumsWithEncodedGenre.length} albums transferred)`)
-          changes.push({ table: 'Genre', action: 'consolidated', from: genre.name, to: decoded, transferredAlbums: albumsWithEncodedGenre.length })
+          console.log(
+            `[Genre] Consolidated ${genre.name} -> ${decoded} (${albumsWithEncodedGenre.length} albums transferred)`
+          )
+          changes.push({
+            table: 'Genre',
+            action: 'consolidated',
+            from: genre.name,
+            to: decoded,
+            transferredAlbums: albumsWithEncodedGenre.length,
+          })
         } else {
           // NO EXISTING: Just rename
           await prisma.genre.update({ where: { id: genre.id }, data: { name: decoded } })
-          changes.push({ table: 'Genre', action: 'renamed', id: genre.id, from: genre.name, to: decoded })
+          changes.push({
+            table: 'Genre',
+            action: 'renamed',
+            id: genre.id,
+            from: genre.name,
+            to: decoded,
+          })
           console.log(`[Genre] ${genre.name} -> ${decoded}`)
         }
       }
@@ -87,7 +101,7 @@ async function sanitizeEntities() {
         if (existing) {
           // CONSOLIDATE: Transfer relationships and delete duplicate
           const albumsWithEncodedDescriptor = await prisma.album.findMany({
-            where: { descriptors: { some: { id: descriptor.id } } }
+            where: { descriptors: { some: { id: descriptor.id } } },
           })
 
           for (const album of albumsWithEncodedDescriptor) {
@@ -96,20 +110,34 @@ async function sanitizeEntities() {
               data: {
                 descriptors: {
                   connect: { id: existing.id },
-                  disconnect: { id: descriptor.id }
-                }
-              }
+                  disconnect: { id: descriptor.id },
+                },
+              },
             })
           }
 
           // Delete the duplicate encoded descriptor
           await prisma.descriptor.delete({ where: { id: descriptor.id } })
-          console.log(`[Descriptor] Consolidated ${descriptor.name} -> ${decoded} (${albumsWithEncodedDescriptor.length} albums transferred)`)
-          changes.push({ table: 'Descriptor', action: 'consolidated', from: descriptor.name, to: decoded, transferredAlbums: albumsWithEncodedDescriptor.length })
+          console.log(
+            `[Descriptor] Consolidated ${descriptor.name} -> ${decoded} (${albumsWithEncodedDescriptor.length} albums transferred)`
+          )
+          changes.push({
+            table: 'Descriptor',
+            action: 'consolidated',
+            from: descriptor.name,
+            to: decoded,
+            transferredAlbums: albumsWithEncodedDescriptor.length,
+          })
         } else {
           // NO EXISTING: Just rename
           await prisma.descriptor.update({ where: { id: descriptor.id }, data: { name: decoded } })
-          changes.push({ table: 'Descriptor', action: 'renamed', id: descriptor.id, from: descriptor.name, to: decoded })
+          changes.push({
+            table: 'Descriptor',
+            action: 'renamed',
+            id: descriptor.id,
+            from: descriptor.name,
+            to: decoded,
+          })
           console.log(`[Descriptor] ${descriptor.name} -> ${decoded}`)
         }
       }
@@ -125,7 +153,7 @@ async function sanitizeEntities() {
         if (existing) {
           // CONSOLIDATE: Transfer relationships and delete duplicate
           const albumsWithEncodedArtist = await prisma.album.findMany({
-            where: { artist: { some: { id: artist.id } } }
+            where: { artist: { some: { id: artist.id } } },
           })
 
           for (const album of albumsWithEncodedArtist) {
@@ -134,20 +162,34 @@ async function sanitizeEntities() {
               data: {
                 artist: {
                   connect: { id: existing.id },
-                  disconnect: { id: artist.id }
-                }
-              }
+                  disconnect: { id: artist.id },
+                },
+              },
             })
           }
 
           // Delete the duplicate encoded artist
           await prisma.artist.delete({ where: { id: artist.id } })
-          console.log(`[Artist] Consolidated ${artist.name} -> ${decoded} (${albumsWithEncodedArtist.length} albums transferred)`)
-          changes.push({ table: 'Artist', action: 'consolidated', from: artist.name, to: decoded, transferredAlbums: albumsWithEncodedArtist.length })
+          console.log(
+            `[Artist] Consolidated ${artist.name} -> ${decoded} (${albumsWithEncodedArtist.length} albums transferred)`
+          )
+          changes.push({
+            table: 'Artist',
+            action: 'consolidated',
+            from: artist.name,
+            to: decoded,
+            transferredAlbums: albumsWithEncodedArtist.length,
+          })
         } else {
           // NO EXISTING: Just rename
           await prisma.artist.update({ where: { id: artist.id }, data: { name: decoded } })
-          changes.push({ table: 'Artist', action: 'renamed', id: artist.id, from: artist.name, to: decoded })
+          changes.push({
+            table: 'Artist',
+            action: 'renamed',
+            id: artist.id,
+            from: artist.name,
+            to: decoded,
+          })
           console.log(`[Artist] ${artist.name} -> ${decoded}`)
         }
       }

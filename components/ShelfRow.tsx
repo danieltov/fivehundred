@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Box, Flex, Heading, Link } from '@chakra-ui/layout'
+import { Box } from '@chakra-ui/layout'
 import { useMediaQuery } from '@chakra-ui/react'
 import gsap from 'gsap'
-import NextLink from 'next/link'
 import { useRouter } from 'next/router'
-import { ReactNode, useEffect, useRef } from 'react'
+import { ReactNode, useEffect, useMemo, useRef } from 'react'
 
 import { colorsA, colorsB } from '../lib/constants'
+import { ShelfBox } from './ShelfRow/'
 
 /**
  * Utils
@@ -19,6 +19,7 @@ const getStripeHeight = (count: number) => {
       return 'calc(100vh / 6.25)'
   }
 }
+
 const toPX = (value: string) =>
   typeof window !== 'undefined' &&
   (parseFloat(value) / 100) * (/vh/gi.test(value) ? window.innerHeight : window.innerWidth)
@@ -34,27 +35,56 @@ type Props = {
   cover: string
   disableAnimation: boolean
   type: 'album' | 'detail' | 'home'
+  ranking?: number
 }
 
 /**
- *
- * Component
- *
+ * Main ShelfRow Component
  */
-
-const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation, type }: Props) => {
+const ShelfRow = ({
+  text,
+  count,
+  itemIndex,
+  path,
+  cover,
+  disableAnimation = true,
+  type,
+  ranking,
+}: Props) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)', {
     ssr: true,
     fallback: true,
   })
   const wrapper = useRef<HTMLDivElement | undefined>()
   const router = useRouter()
-  const isHome = router.route === '/'
-  const isEven = !(itemIndex % 2)
-  const fontSize = isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']
-  const bgColors = isEven ? colorsA : colorsB
 
+  // Memoize computed values
+  const computedValues = useMemo(
+    () => ({
+      isHome: router.route === '/',
+      isEven: !(itemIndex % 2),
+      bgColors: !(itemIndex % 2) ? colorsA : colorsB,
+    }),
+    [router.route, itemIndex]
+  )
+
+  const { isHome, isEven, bgColors } = computedValues
+  const fontSize = isHome ? '6xl' : ['xl', '2xl', '3xl', '4xl']
+
+  // Memoize box colors
+  const boxColors = useMemo(
+    () => [
+      bgColors[itemIndex % bgColors.length],
+      bgColors[(itemIndex + 1) % bgColors.length],
+      bgColors[(itemIndex + 2) % bgColors.length],
+    ],
+    [bgColors, itemIndex]
+  )
+
+  // Animation effect
   useEffect(() => {
+    if (disableAnimation) return
+
     const boxWidth = toPX('100vw')
     const totalWidth = boxWidth * 3
     const duration = 60
@@ -63,39 +93,40 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation, type 
     const xValue = `${isEven ? '+' : '-'}=${totalWidth}`
     const mod = gsap.utils.wrap(0, totalWidth)
 
-    if (!disableAnimation)
-      gsap.set(boxes, {
-        x: (i) => i * boxWidth,
-      })
+    gsap.set(boxes, {
+      x: (i) => i * boxWidth,
+    })
 
-    const tl = !disableAnimation && gsap.timeline({ repeat: 3 })
+    const tl = gsap.timeline({ repeat: 3 })
+    tl.to(boxes, {
+      x: xValue,
+      modifiers: { x: (x) => `${mod(parseFloat(x))}px` },
+      duration,
+      ease: 'none',
+    })
 
-    if (!disableAnimation)
-      tl.to(boxes, {
-        x: xValue,
-        modifiers: { x: (x) => `${mod(parseFloat(x))}px` },
-        duration,
-        ease: 'none',
-      })
+    return () => {
+      tl.kill()
+    }
   }, [count, isEven, disableAnimation, itemIndex])
 
-  const leftValue = () => {
+  const leftValue = useMemo(() => {
     if (isMobile && disableAnimation) return '0'
     if (disableAnimation) return '-7.5px'
     return '-100%'
-  }
+  }, [isMobile, disableAnimation])
 
-  // Utility to compute contrasting color (black or white)
-  const getContrastColor = (hex: string) => {
-    // Remove '#' if present
-    const sanitizedHex = hex.replace('#', '')
-    // Parse r, g, b
-    const r = parseInt(sanitizedHex.substring(0, 2), 16)
-    const g = parseInt(sanitizedHex.substring(2, 4), 16)
-    const b = parseInt(sanitizedHex.substring(4, 6), 16)
-    // Calculate luminance
-    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
-    return luminance > 0.5 ? '#111' : '#fff'
+  const commonBoxProps = {
+    isEven,
+    ranking,
+    cover,
+    path,
+    count,
+    itemIndex,
+    type,
+    text,
+    fontSize,
+    isMobile,
   }
 
   return (
@@ -106,134 +137,11 @@ const ShelfRow = ({ text, count, itemIndex, path, cover, disableAnimation, type 
       width='250%'
       height={getStripeHeight(count)}
       overflow='hidden'
-      left={leftValue()}
+      left={leftValue}
     >
-      <Flex
-        justifyContent='space-between'
-        flexDirection={isEven ? 'row' : 'row-reverse'}
-        className='box'
-        width='100vw'
-        position='absolute'
-        height='100%'
-        bg={bgColors[itemIndex % bgColors.length]}
-      >
-        {type === 'album' && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover || '/no-cover.png'})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
-        <NextLink
-          href={`${path}?bg=${bgColors[itemIndex % bgColors.length].replace('#', '')}`}
-          as={path}
-        >
-          <Link>
-            <Heading
-              padding={3}
-              fontSize={fontSize}
-              textAlign={isEven ? 'right' : 'left'}
-              fontWeight='normal'
-              _hover={!isMobile ? {
-                color: getContrastColor(bgColors[itemIndex % bgColors.length]),
-                fontWeight: 800,
-                transition: 'font-weight 0.5s'
-              } : {}}
-            >
-              {text}
-            </Heading>
-          </Link>
-        </NextLink>
-      </Flex>
-      <Flex
-        justifyContent='space-between'
-        flexDirection={isEven ? 'row' : 'row-reverse'}
-        className='box'
-        width='100vw'
-        position='absolute'
-        height='100%'
-        bg={bgColors[(itemIndex + 1) % bgColors.length]}
-      >
-        {type === 'album' && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover || '/no-cover.png'})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
-        <NextLink
-          href={`${path}?bg=${bgColors[(itemIndex + 1) % bgColors.length].replace('#', '')}`}
-          as={path}
-        >
-          <Link>
-            <Heading
-              padding={3}
-              fontSize={fontSize}
-              textAlign={isEven ? 'right' : 'left'}
-              fontWeight='normal'
-              _hover={!isMobile ? {
-                color: getContrastColor(bgColors[(itemIndex + 1) % bgColors.length]),
-                fontWeight: 800,
-                transition: 'font-weight 0.5s'
-              } : {}}
-            >
-              {text}
-            </Heading>
-          </Link>
-        </NextLink>
-      </Flex>
-      <Flex
-        justifyContent='space-between'
-        flexDirection={isEven ? 'row' : 'row-reverse'}
-        className='box'
-        width='100vw'
-        position='absolute'
-        height='100%'
-        bg={bgColors[(itemIndex + 2) % bgColors.length]}
-      >
-        {type === 'album' && (
-          <NextLink href={path}>
-            <Link>
-              <Box
-                minWidth={getStripeHeight(count)}
-                height='100%'
-                bgImg={`url(${cover || '/no-cover.png'})`}
-                bgSize='cover'
-              />
-            </Link>
-          </NextLink>
-        )}
-        <NextLink
-          href={`${path}?bg=${bgColors[(itemIndex + 2) % bgColors.length].replace('#', '')}`}
-          as={path}
-        >
-          <Link>
-            <Heading
-              padding={3}
-              fontSize={fontSize}
-              textAlign={isEven ? 'right' : 'left'}
-              fontWeight='normal'
-              _hover={!isMobile ? {
-                color: getContrastColor(bgColors[(itemIndex + 2) % bgColors.length]),
-                fontWeight: 800,
-                transition: 'font-weight 0.5s'
-              } : {}}
-            >
-              {text}
-            </Heading>
-          </Link>
-        </NextLink>
-      </Flex>
+      {boxColors.map((bgColor, index) => (
+        <ShelfBox key={index} {...commonBoxProps} bgColor={bgColor} />
+      ))}
     </Box>
   )
 }

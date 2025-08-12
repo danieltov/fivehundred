@@ -7,20 +7,20 @@ const prisma = new PrismaClient()
 async function validateMigration() {
   const totalAlbums = await prisma.album.count()
   const albumsWithSpotify = await prisma.album.count({
-    where: { spotifyUri: { not: null } }
+    where: { spotifyUri: { not: null } },
   })
 
   // Find albums missing spotifyUri
   const missing = await prisma.album.findMany({
     where: { spotifyUri: null },
-    select: { id: true, title: true, slug: true }
+    select: { id: true, title: true, slug: true },
   })
-  const failures: any[] = [];
+  const failures: any[] = []
   for (const album of missing) {
     try {
       // You could add more validation logic here if needed
     } catch (err) {
-      failures.push({ id: album.id, title: album.title, slug: album.slug, error: String(err) });
+      failures.push({ id: album.id, title: album.title, slug: album.slug, error: String(err) })
     }
   }
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-')

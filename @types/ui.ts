@@ -19,6 +19,7 @@ export type Album = {
   isAPlus: boolean
   spotifyUri?: string
   appleMusicUrl?: string
+  topRanking?: number
 }
 export type DetailWithAlbums = Detail & {
   albums?: Album[]

@@ -26,9 +26,9 @@ export async function getStaticProps() {
           },
         },
         {
-          albums: { some: {} }
-        }
-      ]
+          albums: { some: {} },
+        },
+      ],
     },
     include: { _count: { select: { albums: true } } },
     orderBy: {

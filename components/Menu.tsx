@@ -13,13 +13,17 @@ import {
   useMediaQuery,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import { AiOutlineMenu } from 'react-icons/ai'
 
-import { colorsAll, links } from '../lib/constants'
+import { links } from '../lib/constants'
 
 export const Menu = () => {
   const [isMobile] = useMediaQuery('(max-width: 768px)')
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const router = useRouter()
+  const isHomePage = router.pathname === '/'
+
   return (
     <>
       <Flex
@@ -54,9 +58,18 @@ export const Menu = () => {
           bg='ivory'
           size='md'
           onClick={onOpen}
+          isDisabled={isHomePage}
+          cursor={isHomePage ? 'not-allowed' : 'pointer'}
         />
       </Flex>
-      <Drawer onClose={onClose} isOpen={isOpen} size='full' placement='top'>
+      <Drawer
+        onClose={onClose}
+        isOpen={isOpen}
+        size='full'
+        placement='top'
+        closeOnOverlayClick={true}
+        closeOnEsc={true}
+      >
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
@@ -69,9 +82,9 @@ export const Menu = () => {
             py='10'
             px={0}
           >
-            {links.map((link, i) => (
+            {links.map((link) => (
               <NextLink href={link.path} passHref key={link.text}>
-                <Link onClick={onClose} width='full'>
+                <Link onClick={() => setTimeout(onClose, isMobile ? 350 : 0)} width='full'>
                   <Heading
                     as='h3'
                     fontSize={['4rem', null, '8rem']}
@@ -79,15 +92,11 @@ export const Menu = () => {
                     lineHeight={0.9}
                     fontWeight={200}
                     textTransform='uppercase'
-                    _hover={
-                      !isMobile
-                        ? {
-                            color: colorsAll[i % colorsAll.length],
-                            fontWeight: 800,
-                            transition: 'font-weight 0.5s',
-                          }
-                        : {}
-                    }
+                    _hover={{
+                      color: link.color,
+                      fontWeight: 800,
+                      transition: isMobile ? 'font-weight 0.25s' : 'font-weight 0.5s',
+                    }}
                   >
                     {link.text}
                   </Heading>
