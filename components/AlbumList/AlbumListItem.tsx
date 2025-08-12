@@ -78,12 +78,11 @@ export const AlbumListItem = ({
             fontWeight='semibold'
             color='black'
             mb={1}
-            noOfLines={1}
             sx={{
               overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
-              maxWidth: [200, null, 300],
+              maxWidth: ['200px', null, '300px'],
             }}
           >
             {albumTitle}
