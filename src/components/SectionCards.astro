@@ -1,0 +1,141 @@
+---
+interface CardCover {
+  src: string
+  alt: string
+}
+interface Card {
+  title: string
+  desc: string
+  href: string
+  covers: CardCover[]
+}
+interface Props {
+  cards: Card[]
+}
+const { cards } = Astro.props
+---
+
+<div class="section-cards-label">Browse</div>
+<div class="section-cards">
+  {cards.map(card => (
+    <a href={card.href} class="section-card">
+      <div class="card-bar"></div>
+      <div class="card-covers">
+        {card.covers.map(c => (
+          <img class="card-cover-img" src={c.src} alt={c.alt} loading="lazy" />
+        ))}
+      </div>
+      <div class="card-body">
+        <div class="card-title">{card.title}</div>
+        <p class="card-desc">{card.desc}</p>
+        <span class="card-link-label">View →</span>
+      </div>
+    </a>
+  ))}
+</div>
+
+<style>
+  .section-cards-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--cream);
+    background: var(--black);
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .section-cards-label::before {
+    content: '';
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 100%; height: 100%;
+    background: var(--yellow);
+    z-index: -1;
+    opacity: 0.7;
+  }
+  .section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 72px;
+  }
+  @media (max-width: 700px) { .section-cards { grid-template-columns: 1fr; } }
+
+  .section-card {
+    border: 3px solid var(--black);
+    background: var(--cream);
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+  }
+  .section-card:hover { transform: translate(-3px, -3px); }
+  .section-card::before {
+    content: '';
+    position: absolute;
+    top: var(--off-lg); left: var(--off-lg);
+    width: 100%; height: 100%;
+    z-index: -1;
+  }
+  .section-card:nth-child(1)::before { background: var(--coral); }
+  .section-card:nth-child(2)::before { background: var(--blue); }
+  .section-card:nth-child(3)::before { background: var(--teal); }
+
+  .card-bar { height: 8px; }
+  .section-card:nth-child(1) .card-bar { background: var(--coral); }
+  .section-card:nth-child(2) .card-bar { background: var(--blue); }
+  .section-card:nth-child(3) .card-bar { background: var(--teal); }
+
+  .card-covers {
+    display: flex;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+  }
+  .card-covers::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+  }
+  .card-cover-img { flex: 1; object-fit: cover; display: block; filter: contrast(1.05); }
+
+  .card-body { padding: 20px 20px 24px; flex: 1; display: flex; flex-direction: column; }
+  .card-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .card-desc {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    opacity: 0.7;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  .card-link-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-start;
+  }
+  .section-card:nth-child(1) .card-link-label { border-color: var(--coral); color: var(--coral); }
+  .section-card:nth-child(2) .card-link-label { border-color: var(--blue); color: var(--blue); }
+  .section-card:nth-child(3) .card-link-label { border-color: var(--teal); color: var(--teal); }
+</style>

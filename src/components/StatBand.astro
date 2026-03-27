@@ -1,0 +1,78 @@
+---
+interface Props {
+  total: number
+  aplus: number
+  top50: number
+}
+const { total, aplus, top50 } = Astro.props
+---
+
+<div class="stat-band">
+  <div class="stat-item">
+    <div class="stat-num">{total}</div>
+    <div class="stat-label">Albums</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num"><em>{aplus}</em></div>
+    <div class="stat-label">A+ Grade</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">{top50}</div>
+    <div class="stat-label">Ranked Favorites</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">∞</div>
+    <div class="stat-label">Return Trips</div>
+  </div>
+</div>
+
+<style>
+  .stat-band {
+    display: flex;
+    align-items: center;
+    border: 3px solid var(--black);
+    margin: 48px 0;
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-band::before {
+    content: '';
+    position: absolute;
+    top: 4px; left: 4px;
+    width: 100%; height: 100%;
+    background: var(--teal);
+    opacity: 0.4;
+    z-index: 0;
+  }
+  .stat-item {
+    flex: 1;
+    padding: 24px 28px;
+    border-right: 2px solid rgba(253,246,227,0.15);
+    position: relative;
+    z-index: 1;
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+    color: var(--cream);
+    margin-bottom: 6px;
+  }
+  .stat-num em { font-style: normal; color: var(--coral); }
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--cream);
+    opacity: 0.5;
+  }
+  @media (max-width: 600px) {
+    .stat-band { flex-direction: column; }
+    .stat-item { border-right: none; border-bottom: 2px solid rgba(253,246,227,0.15); width: 100%; }
+    .stat-item:last-child { border-bottom: none; }
+  }
+</style>
