@@ -3,8 +3,8 @@ import type { GetStaticPaths } from 'astro'
 import Layout from '../../components/Layout.astro'
 import AlbumPoster from '../../components/AlbumPoster.astro'
 import type { AlbumsJson, AccentBucket, AccentColorMap } from '../../types/album'
-import albumsData from '../../../../../data/albums.json'
-import accentColorsData from '../../../../../data/album-accent-colors.json'
+import albumsData from '../../../data/albums.json'
+import accentColorsData from '../../../data/album-accent-colors.json'
 
 const { albums } = albumsData as AlbumsJson
 const accentColors = accentColorsData as AccentColorMap
@@ -28,7 +28,7 @@ function slugHash(slug: string): AccentBucket {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { default: data } = await import('../../../../../data/albums.json')
+  const { default: data } = await import('../../../data/albums.json')
   const { albums: allAlbums } = data as AlbumsJson
   return allAlbums.map(album => ({
     params: { slug: album.slug },
@@ -43,8 +43,7 @@ const accentColor = ACCENT_CSS[bucket]
 
 <Layout
   title={`${album.title} — ${album.artist[0]?.name} | Five Hundred`}
-  description={`${album.title} by ${album.artist[0]?.name}. Genres: ${album.genres.slice(0,3).join(', ')}.`}
-  backLink="/albums"
+  description={`${album.title} by ${album.artist[0]?.name}. Genres: ${album.genres.slice(0,3).map(g => g.name).join(', ')}.`}
 >
   <AlbumPoster album={album} accentColor={accentColor} />
 

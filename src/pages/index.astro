@@ -4,7 +4,7 @@ import StatBand from '../components/StatBand.astro'
 import SectionCards from '../components/SectionCards.astro'
 import CoverCollage from '../components/CoverCollage.astro'
 import type { AlbumsJson } from '../types/album'
-import albumsData from '../../../../data/albums.json'
+import albumsData from '../../data/albums.json'
 
 const { albums } = albumsData as AlbumsJson
 
@@ -13,7 +13,8 @@ const top50Count = albums.filter(a => a.topRanking !== null).length
 
 // Pick 6 covers for collage — first 6 with valid coverArt
 const collageCoverUrls = albums
-  .filter(a => a.coverArt)
+  .filter(a => a.coverArt && a.isAPlus)
+  .sort(() => Math.random() - 0.5)
   .slice(0, 6)
   .map(a => a.coverArt)
 
@@ -34,13 +35,13 @@ const allCovers = albums.slice(0, 4).map(a => ({ src: a.coverArt, alt: a.title }
 const cards = [
   {
     title: 'Top 50',
-    desc: 'The ones I would save first in a fire. Ranked, argued about, and finalized.',
+    desc: 'Fifty albums. One through fifty. The list I would hand someone if they asked what kind of person I am.',
     href: '/top-50',
     covers: top50Covers,
   },
   {
     title: 'A-Plus',
-    desc: 'Near-perfect albums. The ones where repeated listens kept paying off.',
+    desc: 'Near-perfect records. Some of them better than the ones I ranked higher. Taste is complicated.',
     href: '/a-plus',
     covers: aplusCovers,
   },
@@ -80,18 +81,12 @@ const cards = [
 
   <div class="about-strip">
     <div class="about-left">
-      <h2 class="about-heading">What <em>is</em> this?</h2>
-      <p class="about-subtext">A personal listening archive.</p>
+      <h2 class="about-heading">An ongoing <em>argument</em> with myself.</h2>
+      <p class="about-subtext">Est. Sometime in the 2000s</p>
     </div>
     <div class="about-right">
       <p class="about-body">
-        I've been keeping a list of albums I've listened to seriously since 2012.
-        The threshold to make the list is somewhere around an A —
-        albums I found interesting, moving, or significant enough to revisit.
-      </p>
-      <p class="about-body">
-        The Top 50 is my personal canon. The A+ grade means something like "I have
-        strong feelings about this." Everything else just means I thought it was worth your time.
+        I've been listening to records obsessively for most of my life and at some point decided to write them all down. Over two thousand records later, five hundred made the cut at an "A" or above. This is that.
       </p>
       <div class="built-with">
         Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer">Astro</a> ·
@@ -159,7 +154,7 @@ const cards = [
     mix-blend-mode: multiply;
     pointer-events: none;
   }
-  .hero-title.indent { padding-left: 3.2rem; display: block; }
+  .hero-title.indent { margin-left: 3.2rem; display: inline-block; }
 
   .hero-desc {
     font-family: var(--sans);

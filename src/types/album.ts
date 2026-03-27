@@ -3,6 +3,11 @@ export interface Artist {
   slug: string
 }
 
+export interface Descriptor {
+  name: string
+  slug: string
+}
+
 export interface Album {
   id: string
   slug: string
@@ -10,8 +15,8 @@ export interface Album {
   artist: Artist[]
   releaseDate: string
   coverArt: string
-  genres: string[]
-  descriptors: string[]
+  genres: Descriptor[]
+  descriptors: Descriptor[]
   isAPlus: boolean
   owned: boolean
   topRanking: number | null

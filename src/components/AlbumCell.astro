@@ -42,7 +42,7 @@ const topDescriptors = album.descriptors.slice(0, 3)
     <div class="info-artist">{album.artist[0]?.name} · {year}</div>
     <div class="info-descriptors">
       {topDescriptors.map(d => (
-        <span class="descriptor-pill">{d}</span>
+        <span class="descriptor-pill">{d.name}</span>
       ))}
     </div>
   </div>

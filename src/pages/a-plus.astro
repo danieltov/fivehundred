@@ -1,11 +1,13 @@
 ---
 import Layout from '../components/Layout.astro'
 import type { AlbumsJson, Album } from '../types/album'
-import albumsData from '../../../../data/albums.json'
+import albumsData from '../../data/albums.json'
 
 const { albums } = albumsData as AlbumsJson
 
-const aplusAlbums: Album[] = albums.filter(a => a.isAPlus)
+const aplusAlbums: Album[] = albums
+  .filter(a => a.isAPlus)
+  .sort(() => Math.random() - 0.5)
 ---
 
 <Layout title="A-Plus — Five Hundred" activePage="a-plus">
@@ -14,7 +16,7 @@ const aplusAlbums: Album[] = albums.filter(a => a.isAPlus)
       <span class="hero-grade-text">A+</span>
     </div>
     <div class="hero-right">
-      <div class="hero-label">The Beloveds</div>
+      <div class="hero-label">The Ones</div>
       <h1 class="hero-title">The near-perfect ones. The ones where repeated listens kept paying off.</h1>
       <p class="hero-desc">
         These are the albums I kept going back to even when I had four hundred and fifty others I hadn't gotten to yet.
@@ -29,7 +31,7 @@ const aplusAlbums: Album[] = albums.filter(a => a.isAPlus)
       <span class="count-label">A+ Records</span>
     </div>
     <div class="count-item">
-      <span class="count-num">40+</span>
+      <span class="count-num">69</span>
       <span class="count-label">Years of Music</span>
     </div>
     <div class="count-item">
@@ -52,7 +54,7 @@ const aplusAlbums: Album[] = albums.filter(a => a.isAPlus)
             <div class="acard-title">{album.title}</div>
             <div class="acard-artist">{album.artist[0]?.name} · {year}</div>
             <div class="acard-tags">
-              {topDescriptors.map(d => <span class="tag">{d}</span>)}
+              {topDescriptors.map(d => <span class="tag">{d.name}</span>)}
             </div>
           </div>
         </a>
@@ -187,11 +189,11 @@ const aplusAlbums: Album[] = albums.filter(a => a.isAPlus)
   .tag {
     font-family: var(--mono); font-size: 0.55rem; padding: 2px 7px;
     text-transform: uppercase; letter-spacing: 0.06em;
-    border: 1.5px solid; background: transparent; line-height: 1.6;
+    border: 1.5px solid; background: var(--cream); line-height: 1.6;
   }
   .acard:nth-child(5n+1) .tag { border-color: var(--coral); color: var(--coral); }
   .acard:nth-child(5n+2) .tag { border-color: var(--teal); color: var(--teal); }
-  .acard:nth-child(5n+3) .tag { border-color: var(--black); color: var(--black); opacity: 0.6; }
+  .acard:nth-child(5n+3) .tag { border-color: var(--black); color: var(--black); opacity: 0.65; }
   .acard:nth-child(5n+4) .tag { border-color: var(--blue); color: var(--blue); }
   .acard:nth-child(5n+0) .tag { border-color: var(--pink); color: var(--pink); }
 </style>

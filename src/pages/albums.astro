@@ -2,7 +2,7 @@
 import Layout from '../components/Layout.astro'
 import AlbumCell from '../components/AlbumCell.astro'
 import type { AlbumsJson } from '../types/album'
-import albumsData from '../../../../data/albums.json'
+import albumsData from '../../data/albums.json'
 
 const { albums } = albumsData as AlbumsJson
 ---
@@ -14,7 +14,7 @@ const { albums } = albumsData as AlbumsJson
       <h1 class="page-title" data-text="ALBUMS">ALBUMS</h1>
       <p class="page-sub">Every record that cleared an A. Out of over two thousand, these are the ones.</p>
     </div>
-    <div class="count-badge" id="visible-count">{albums.length} Records</div>
+    <div class="count-badge" id="visible-count">500 Records</div>
   </header>
 
   <div class="filter-bar">
@@ -56,6 +56,8 @@ const { albums } = albumsData as AlbumsJson
       <AlbumCell album={album} showRank={true} />
     ))}
   </div>
+
+  <p class="aspirational">Okay, so it's actually {albums.length}. The name is aspirational.</p>
 
   <script src="../scripts/filter.ts"></script>
 </Layout>
@@ -134,4 +136,16 @@ const { albums } = albumsData as AlbumsJson
 
   /* Hide filtered cells */
   :global(.album-cell[hidden]) { display: none !important; }
+
+  .aspirational {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 1;
+    text-align: right;
+    margin-bottom: 72px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--paper-d);
+  }
 </style>

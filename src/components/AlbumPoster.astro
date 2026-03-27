@@ -23,7 +23,7 @@ const spotifyUrl = album.spotifyUri
   ? `https://open.spotify.com/album/${album.spotifyUri.split(':')[2]}`
   : null
 
-const genreList = album.genres.join(' · ')
+const genreList = album.genres.map(g => g.name).join(' · ')
 ---
 
 <div class="poster" style={`--accent: ${accentColor}`}>
@@ -55,7 +55,7 @@ const genreList = album.genres.join(' · ')
       )}
       {album.appleMusicUrl && (
         <a href={album.appleMusicUrl} target="_blank" rel="noopener noreferrer" class="apple-link">
-          ♫ Apple Music
+          ♫ Listen on &#xF8FF; Music
         </a>
       )}
     </div>
@@ -70,7 +70,7 @@ const genreList = album.genres.join(' · ')
           <div class="lineup-tier tier-1">
             {tier1.map((d, i) => (
               <>
-                <span class="d">{d}</span>
+                <span class="d">{d.name}</span>
                 {i < tier1.length - 1 && <span class="lineup-sep">·</span>}
               </>
             ))}
@@ -82,7 +82,7 @@ const genreList = album.genres.join(' · ')
             <div class="lineup-tier tier-2">
               {tier2.map((d, i) => (
                 <>
-                  <span class="d">{d}</span>
+                  <span class="d">{d.name}</span>
                   {i < tier2.length - 1 && <span class="lineup-sep">·</span>}
                 </>
               ))}
@@ -95,7 +95,7 @@ const genreList = album.genres.join(' · ')
             <div class="lineup-tier tier-3">
               {tier3.map((d, i) => (
                 <>
-                  <span class="d">{d}</span>
+                  <span class="d">{d.name}</span>
                   {i < tier3.length - 1 && <span class="lineup-sep">·</span>}
                 </>
               ))}
@@ -108,7 +108,7 @@ const genreList = album.genres.join(' · ')
             <div class="lineup-tier tier-4">
               {tier4.map((d, i) => (
                 <>
-                  <span class="d">{d}</span>
+                  <span class="d">{d.name}</span>
                   {i < tier4.length - 1 && <span class="lineup-sep">·</span>}
                 </>
               ))}
@@ -184,7 +184,7 @@ const genreList = album.genres.join(' · ')
     content: '';
     position: absolute; inset: 0;
     background-image: radial-gradient(circle, rgba(0,0,0,0.25) 1px, transparent 1px);
-    background-size: 5px 5px;
+    background-size: 2px 2px;
     z-index: 2; pointer-events: none;
   }
 
@@ -302,7 +302,7 @@ const genreList = album.genres.join(' · ')
     text-transform: uppercase;
     letter-spacing: 0.25em;
     color: var(--cream);
-    opacity: 0.3;
+    opacity: 0.52;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -371,7 +371,7 @@ const genreList = album.genres.join(' · ')
     text-transform: uppercase;
     letter-spacing: 0.18em;
     color: var(--cream);
-    opacity: 0.35;
+    opacity: 0.6;
     margin-bottom: 6px;
   }
   .meta-value {
