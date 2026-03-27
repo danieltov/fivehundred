@@ -1,11 +1,253 @@
 ---
 import Layout from '../components/Layout.astro'
+import StatBand from '../components/StatBand.astro'
+import SectionCards from '../components/SectionCards.astro'
+import CoverCollage from '../components/CoverCollage.astro'
 import type { AlbumsJson } from '../types/album'
 import albumsData from '../../data/albums.json'
 
 const { albums } = albumsData as AlbumsJson
+
+const aplusCount = albums.filter(a => a.isAPlus).length
+const top50Count = albums.filter(a => a.topRanking !== null).length
+
+// Pick 6 covers for collage — first 6 with valid coverArt
+const collageCoverUrls = albums
+  .filter(a => a.coverArt)
+  .slice(0, 6)
+  .map(a => a.coverArt)
+
+// Section card covers: top3 of each category
+const top50Covers = albums
+  .filter(a => a.topRanking !== null)
+  .sort((a, b) => (a.topRanking ?? 999) - (b.topRanking ?? 999))
+  .slice(0, 4)
+  .map(a => ({ src: a.coverArt, alt: a.title }))
+
+const aplusCovers = albums
+  .filter(a => a.isAPlus)
+  .slice(0, 4)
+  .map(a => ({ src: a.coverArt, alt: a.title }))
+
+const allCovers = albums.slice(0, 4).map(a => ({ src: a.coverArt, alt: a.title }))
+
+const cards = [
+  {
+    title: 'Top 50',
+    desc: 'The ones I would save first in a fire. Ranked, argued about, and finalized.',
+    href: '/top-50',
+    covers: top50Covers,
+  },
+  {
+    title: 'A-Plus',
+    desc: 'Near-perfect albums. The ones where repeated listens kept paying off.',
+    href: '/a-plus',
+    covers: aplusCovers,
+  },
+  {
+    title: 'Albums',
+    desc: 'All five hundred. Every record that cleared an A, out of over two thousand.',
+    href: '/albums',
+    covers: allCovers,
+  },
+]
 ---
 
-<Layout title="Five Hundred">
-  <p>Albums: {albums.length}</p>
+<Layout title="Five Hundred — A Record Collection. Mine.">
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">A Record Collection. Mine.</div>
+      <h1>
+        <span class="hero-title" data-text="FIVE">FIVE</span><br />
+        <span class="hero-title indent" data-text="HUNDRED">HUNDRED</span>
+      </h1>
+      <p class="hero-desc">
+        Five hundred albums I've listened to enough times to have feelings about.
+        Some of them I'd die on a hill for. Most of them I'd just really like to talk about.
+      </p>
+      <div class="hero-cta-row">
+        <a href="/top-50" class="btn btn-primary">View Top 50</a>
+        <a href="/albums" class="btn btn-secondary">Browse All Albums</a>
+      </div>
+    </div>
+    <CoverCollage covers={collageCoverUrls} />
+  </section>
+
+  <div class="riso-divider"></div>
+  <StatBand total={albums.length} aplus={aplusCount} top50={top50Count} />
+
+  <SectionCards cards={cards} />
+
+  <div class="about-strip">
+    <div class="about-left">
+      <h2 class="about-heading">What <em>is</em> this?</h2>
+      <p class="about-subtext">A personal listening archive.</p>
+    </div>
+    <div class="about-right">
+      <p class="about-body">
+        I've been keeping a list of albums I've listened to seriously since 2012.
+        The threshold to make the list is somewhere around an A —
+        albums I found interesting, moving, or significant enough to revisit.
+      </p>
+      <p class="about-body">
+        The Top 50 is my personal canon. The A+ grade means something like "I have
+        strong feelings about this." Everything else just means I thought it was worth your time.
+      </p>
+      <div class="built-with">
+        Built with <a href="https://astro.build" target="_blank">Astro</a> ·
+        Data from <a href="https://rateyourmusic.com" target="_blank">RYM</a>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  /* HERO */
+  .hero {
+    padding: 64px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 48px;
+    align-items: start;
+    min-height: 520px;
+  }
+  @media (max-width: 820px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero > :global(.cover-collage) { display: none; }
+  }
+
+  .hero-left { padding-top: 16px; position: relative; z-index: 2; }
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--teal);
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 4px;
+  }
+
+  .hero-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(3.2rem, 8vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--black);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .hero-title::before {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--coral);
+    transform: translate(-4px, 4px);
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+  .hero-title::after {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--teal);
+    transform: translate(4px, -3px);
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+  .hero-title.indent { padding-left: 3.2rem; display: block; }
+
+  .hero-desc {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 44ch;
+    opacity: 0.8;
+    margin: 28px 0 36px;
+  }
+  .hero-cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  /* ABOUT STRIP */
+  .about-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid var(--black);
+    margin-bottom: 72px;
+    position: relative;
+  }
+  .about-strip::before {
+    content: '';
+    position: absolute;
+    top: var(--off-md); left: var(--off-md);
+    width: 100%; height: 100%;
+    background: var(--yellow);
+    z-index: -1;
+    opacity: 0.6;
+  }
+  .about-left {
+    background: var(--black);
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-left::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 180px; height: 180px;
+    background: var(--coral);
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    opacity: 0.4;
+  }
+  .about-heading {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    color: var(--cream);
+    margin-bottom: 16px;
+    position: relative; z-index: 1;
+  }
+  .about-heading em { font-style: normal; color: var(--coral); }
+  .about-subtext {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--cream);
+    opacity: 0.45;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative; z-index: 1;
+  }
+  .about-right {
+    background: var(--cream);
+    padding: 36px;
+    border-left: 3px solid var(--black);
+  }
+  .about-body {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    opacity: 0.8;
+    margin-bottom: 20px;
+  }
+  .built-with {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    opacity: 0.45;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-top: 2px dashed var(--paper-d);
+    padding-top: 16px;
+    line-height: 1.9;
+  }
+  .built-with a { color: var(--black); text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 640px) {
+    .about-strip { grid-template-columns: 1fr; }
+    .about-right { border-left: none; border-top: 3px solid var(--black); }
+  }
+</style>
