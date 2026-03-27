@@ -1,0 +1,157 @@
+---
+import type { Album } from '../types/album'
+
+interface Props {
+  album: Album
+  showRank?: boolean
+}
+
+const { album, showRank = false } = Astro.props
+
+const year = new Date(album.releaseDate).getFullYear()
+const decade = Math.floor(year / 10) * 10
+// Top 3 descriptors for hover info
+const topDescriptors = album.descriptors.slice(0, 3)
+---
+
+<a
+  href={`/album/${album.slug}`}
+  class="album-cell"
+  data-aplus={album.isAPlus.toString()}
+  data-decade={decade.toString()}
+  data-top50={album.topRanking !== null ? 'true' : 'false'}
+  data-artist={album.artist[0]?.name.toLowerCase() ?? ''}
+  data-title={album.title.toLowerCase()}
+  data-year={year.toString()}
+  data-rank={album.topRanking?.toString() ?? ''}
+>
+  {showRank && album.topRanking !== null && (
+    <div class="rank-flag">
+      <div class="rank-num">{album.topRanking}</div>
+    </div>
+  )}
+
+  <img src={album.coverArt} alt={`${album.title} by ${album.artist[0]?.name}`} loading="lazy" />
+
+  <div class="album-info">
+    <div class="info-badges">
+      {album.isAPlus && <span class="badge badge-aplus">A+</span>}
+      {album.topRanking !== null && <span class="badge badge-rank">#{album.topRanking}</span>}
+    </div>
+    <div class="info-title">{album.title}</div>
+    <div class="info-artist">{album.artist[0]?.name} · {year}</div>
+    <div class="info-descriptors">
+      {topDescriptors.map(d => (
+        <span class="descriptor-pill">{d}</span>
+      ))}
+    </div>
+  </div>
+</a>
+
+<style>
+  .album-cell {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--paper-d);
+    display: block;
+    text-decoration: none;
+  }
+  .album-cell img {
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+  /* Halftone overlay */
+  .album-cell::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 4px 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  /* Hover: scale image */
+  .album-cell:hover img { transform: scale(1.04); filter: contrast(1.05); }
+
+  /* Info panel — slides up on hover */
+  .album-info {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 10px 10px 8px;
+    background: var(--black);
+    transform: translateY(100%);
+    transition: transform 0.2s ease;
+    z-index: 3;
+  }
+  .album-cell:hover .album-info { transform: translateY(0); }
+
+  .info-badges { display: flex; gap: 4px; margin-bottom: 5px; flex-wrap: wrap; }
+  .badge {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.55rem;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    line-height: 1.4;
+  }
+  .badge-aplus { background: var(--coral); color: var(--cream); }
+  .badge-rank  { background: var(--cream); color: var(--black); }
+
+  .info-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.72rem;
+    color: var(--cream);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+  }
+  .info-artist {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    color: var(--cream);
+    opacity: 0.55;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+  }
+  .info-descriptors { display: flex; gap: 4px; flex-wrap: wrap; }
+  .descriptor-pill {
+    font-family: var(--mono);
+    font-size: 0.52rem;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border: 1.5px solid rgba(253,246,227,0.3);
+    color: var(--cream);
+    opacity: 0.75;
+    line-height: 1.5;
+  }
+
+  /* Rank flag — top-left triangle */
+  .rank-flag {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 48px 48px 0 0;
+    border-color: var(--black) transparent transparent transparent;
+    pointer-events: none;
+  }
+  .rank-num {
+    position: absolute;
+    top: -44px; left: 4px;
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.62rem;
+    color: var(--cream);
+    line-height: 1;
+  }
+</style>
