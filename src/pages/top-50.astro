@@ -164,6 +164,13 @@ const rest = ranked.slice(10)         // #11–#50
     position: relative; transition: transform 0.2s ease;
     text-decoration: none; color: var(--black);
   }
+  @media (max-width: 600px) {
+    .hero-card { grid-template-columns: 1fr; min-height: unset; }
+    .hero-cover-wrap { aspect-ratio: 1; max-height: 320px; }
+    .hero-info { padding: 20px 20px 28px; }
+    .hero-rank { font-size: 5rem; }
+    .hero-text { padding-top: 12px; }
+  }
   .hero-card::before {
     content: ''; position: absolute;
     top: var(--off-lg); left: var(--off-lg);
