@@ -29,8 +29,8 @@ function slugHash(slug: string): AccentBucket {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { default: data } = await import('../../../../../data/albums.json')
-  const { albums } = data as AlbumsJson
-  return albums.map(album => ({
+  const { albums: allAlbums } = data as AlbumsJson
+  return allAlbums.map(album => ({
     params: { slug: album.slug },
     props: { album },
   }))
@@ -44,12 +44,8 @@ const accentColor = ACCENT_CSS[bucket]
 <Layout
   title={`${album.title} — ${album.artist[0]?.name} | Five Hundred`}
   description={`${album.title} by ${album.artist[0]?.name}. Genres: ${album.genres.slice(0,3).join(', ')}.`}
+  backLink="/albums"
 >
-  <nav class="site-nav" style="margin-bottom: 0; border-bottom: none;">
-    <a href="/" class="site-wordmark"><span>#500</span>Five Hundred</a>
-    <a href="/albums" class="nav-back">← Albums</a>
-  </nav>
-
   <AlbumPoster album={album} accentColor={accentColor} />
 
   <div class="page-footer">

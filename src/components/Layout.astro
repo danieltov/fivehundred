@@ -5,9 +5,10 @@ interface Props {
   title: string
   description?: string
   activePage?: 'top-50' | 'a-plus' | 'albums'
+  backLink?: string
 }
 
-const { title, description = 'Five hundred albums. Mine.', activePage } = Astro.props
+const { title, description = 'Five hundred albums. Mine.', activePage, backLink } = Astro.props
 ---
 
 <!doctype html>
@@ -33,11 +34,15 @@ const { title, description = 'Five hundred albums. Mine.', activePage } = Astro.
       <a href="/" class="site-wordmark">
         <span>#500</span>Five Hundred
       </a>
-      <ul class="nav-links">
-        <li><a href="/top-50" class={activePage === 'top-50' ? 'active' : ''}>Top 50</a></li>
-        <li><a href="/a-plus" class={activePage === 'a-plus' ? 'active' : ''}>A-Plus</a></li>
-        <li><a href="/albums" class={activePage === 'albums' ? 'active' : ''}>Albums</a></li>
-      </ul>
+      {backLink ? (
+        <a href={backLink} class="nav-back">← Albums</a>
+      ) : (
+        <ul class="nav-links">
+          <li><a href="/top-50" class={activePage === 'top-50' ? 'active' : ''}>Top 50</a></li>
+          <li><a href="/a-plus" class={activePage === 'a-plus' ? 'active' : ''}>A-Plus</a></li>
+          <li><a href="/albums" class={activePage === 'albums' ? 'active' : ''}>Albums</a></li>
+        </ul>
+      )}
     </nav>
 
     <slot />
