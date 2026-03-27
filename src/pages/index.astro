@@ -1,3 +1,11 @@
 ---
+import type { AlbumsJson } from '../types/album'
+import albumsData from '../../data/albums.json'
+
+const { albums } = albumsData as AlbumsJson
 ---
-<html><body><p>Hello Astro</p></body></html>
+<html>
+<body>
+  <p>Albums: {albums.length}</p>
+</body>
+</html>
