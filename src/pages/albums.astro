@@ -1,0 +1,137 @@
+---
+import Layout from '../components/Layout.astro'
+import AlbumCell from '../components/AlbumCell.astro'
+import type { AlbumsJson } from '../types/album'
+import albumsData from '../../../../data/albums.json'
+
+const { albums } = albumsData as AlbumsJson
+---
+
+<Layout title="Albums — Five Hundred" activePage="albums">
+  <header class="page-header">
+    <div>
+      <div class="page-label">Everything</div>
+      <h1 class="page-title" data-text="ALBUMS">ALBUMS</h1>
+      <p class="page-sub">Every record that cleared an A. Out of over two thousand, these are the ones.</p>
+    </div>
+    <div class="count-badge" id="visible-count">{albums.length} Records</div>
+  </header>
+
+  <div class="filter-bar">
+    <div class="filter-group">
+      <span class="filter-group-label">Filter</span>
+      <div class="filter-pills">
+        <button class="pill active" data-type="all">All</button>
+        <button class="pill" data-type="a-plus">A+ Only</button>
+        <button class="pill" data-type="top50">Top 50</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-group-label">Decade</span>
+      <div class="filter-pills">
+        <button class="pill active" data-decade="all">All</button>
+        <button class="pill" data-decade="1950">50s</button>
+        <button class="pill" data-decade="1960">60s</button>
+        <button class="pill" data-decade="1970">70s</button>
+        <button class="pill" data-decade="1980">80s</button>
+        <button class="pill" data-decade="1990">90s</button>
+        <button class="pill" data-decade="2000">00s</button>
+        <button class="pill" data-decade="2010">10s</button>
+        <button class="pill" data-decade="2020">20s</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-group-label">Sort</span>
+      <div class="filter-pills">
+        <button class="pill active" data-sort="default">Ranking</button>
+        <button class="pill" data-sort="artist">Artist A–Z</button>
+        <button class="pill" data-sort="year">Year</button>
+        <button class="pill" data-sort="title">Title A–Z</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="albums-grid" id="albums-grid">
+    {albums.map(album => (
+      <AlbumCell album={album} showRank={true} />
+    ))}
+  </div>
+
+  <script src="../scripts/filter.ts"></script>
+</Layout>
+
+<style>
+  .page-header {
+    padding: 48px 0 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .page-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    position: relative;
+    display: inline-block;
+  }
+  .page-title::before {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--coral);
+    transform: translate(-3px, 3px);
+    opacity: 0.6; mix-blend-mode: multiply; pointer-events: none;
+  }
+  .page-title::after {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--teal);
+    transform: translate(3px, -2px);
+    opacity: 0.6; mix-blend-mode: multiply; pointer-events: none;
+  }
+  .page-sub {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    opacity: 0.45;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 0 24px;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px dashed var(--paper-d);
+    margin-bottom: 24px;
+  }
+  .filter-group { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .filter-group-label {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.4;
+    width: 52px;
+    flex-shrink: 0;
+  }
+  .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3px;
+    margin-bottom: 80px;
+  }
+  @media (max-width: 900px) { .albums-grid { grid-template-columns: repeat(5, 1fr); } }
+  @media (max-width: 700px) { .albums-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 480px) { .albums-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  /* Hide filtered cells */
+  :global(.album-cell[hidden]) { display: none !important; }
+</style>

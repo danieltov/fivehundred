@@ -1,0 +1,84 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Layout from '../../components/Layout.astro'
+import AlbumPoster from '../../components/AlbumPoster.astro'
+import type { AlbumsJson, AccentBucket, AccentColorMap } from '../../types/album'
+import albumsData from '../../../../../data/albums.json'
+import accentColorsData from '../../../../../data/album-accent-colors.json'
+
+const { albums } = albumsData as AlbumsJson
+const accentColors = accentColorsData as AccentColorMap
+
+const ACCENT_CSS: Record<AccentBucket, string> = {
+  cold:     'var(--blue)',
+  warm:     'var(--coral)',
+  dreamy:   'var(--teal)',
+  fierce:   'var(--pink)',
+  pastoral: 'var(--yellow)',
+}
+
+const BUCKETS: AccentBucket[] = ['cold', 'warm', 'dreamy', 'fierce', 'pastoral']
+
+function slugHash(slug: string): AccentBucket {
+  let hash = 0
+  for (let i = 0; i < slug.length; i++) {
+    hash = (hash * 31 + slug.charCodeAt(i)) & 0xffffffff
+  }
+  return BUCKETS[Math.abs(hash) % BUCKETS.length]
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const { default: data } = await import('../../../../../data/albums.json')
+  const { albums: allAlbums } = data as AlbumsJson
+  return allAlbums.map(album => ({
+    params: { slug: album.slug },
+    props: { album },
+  }))
+}
+
+const { album } = Astro.props
+const bucket = accentColors[album.slug] ?? slugHash(album.slug)
+const accentColor = ACCENT_CSS[bucket]
+---
+
+<Layout
+  title={`${album.title} — ${album.artist[0]?.name} | Five Hundred`}
+  description={`${album.title} by ${album.artist[0]?.name}. Genres: ${album.genres.slice(0,3).join(', ')}.`}
+  backLink="/albums"
+>
+  <AlbumPoster album={album} accentColor={accentColor} />
+
+  <div class="page-footer">
+    <span class="page-footer-label">{album.artist[0]?.name} · 500 Records</span>
+    <a href="/albums" class="back-btn">← Back to Albums</a>
+  </div>
+</Layout>
+
+<style>
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 64px;
+    border-top: 2px dashed var(--paper-d);
+    margin-top: 48px;
+  }
+  .page-footer-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    opacity: 0.4;
+  }
+  .back-btn {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--black);
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  .back-btn:hover { opacity: 1; }
+</style>

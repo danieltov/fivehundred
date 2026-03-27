@@ -1,0 +1,388 @@
+---
+import type { Album } from '../types/album'
+
+interface Props {
+  album: Album
+  accentColor: string // CSS value e.g. 'var(--coral)'
+}
+
+const { album, accentColor } = Astro.props
+
+const year = new Date(album.releaseDate).getFullYear()
+const releaseFormatted = new Date(album.releaseDate).toLocaleDateString('en-US', {
+  year: 'numeric', month: 'long', day: 'numeric',
+})
+
+// Descriptor tiers by index position
+const tier1 = album.descriptors.slice(0, 2)
+const tier2 = album.descriptors.slice(2, 6)
+const tier3 = album.descriptors.slice(6, 14)
+const tier4 = album.descriptors.slice(14)
+
+const spotifyUrl = album.spotifyUri
+  ? `https://open.spotify.com/album/${album.spotifyUri.split(':')[2]}`
+  : null
+
+const genreList = album.genres.join(' · ')
+---
+
+<div class="poster" style={`--accent: ${accentColor}`}>
+
+  <!-- Top: cover + title -->
+  <div class="poster-top">
+    <div class="poster-cover">
+      <img src={album.coverArt} alt={`${album.title} by ${album.artist[0]?.name}`} />
+    </div>
+
+    <div class="poster-title-col">
+      <div>
+        <div class="poster-badges">
+          {album.isAPlus && <span class="poster-badge aplus">A+</span>}
+          {album.topRanking !== null && (
+            <span class="poster-badge rank">Ranked #{album.topRanking}</span>
+          )}
+          {album.owned && <span class="poster-badge owned">Owned</span>}
+        </div>
+        <h1 class="poster-album-title" data-text={album.title}>{album.title}</h1>
+        <div class="poster-artist">{album.artist[0]?.name}</div>
+        <div class="poster-year">{releaseFormatted}</div>
+      </div>
+
+      {spotifyUrl && (
+        <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" class="spotify-link">
+          ♫ Listen on Spotify
+        </a>
+      )}
+      {album.appleMusicUrl && (
+        <a href={album.appleMusicUrl} target="_blank" rel="noopener noreferrer" class="apple-link">
+          ♫ Apple Music
+        </a>
+      )}
+    </div>
+  </div>
+
+  <!-- Descriptor lineup -->
+  {album.descriptors.length > 0 && (
+    <div class="poster-descriptors">
+      <div class="descriptor-section-label">Moods &amp; Descriptors</div>
+      <div class="descriptor-lineup">
+        {tier1.length > 0 && (
+          <div class="lineup-tier tier-1">
+            {tier1.map((d, i) => (
+              <>
+                <span class="d">{d}</span>
+                {i < tier1.length - 1 && <span class="lineup-sep">·</span>}
+              </>
+            ))}
+          </div>
+        )}
+        {tier2.length > 0 && (
+          <>
+            <hr class="lineup-rule" />
+            <div class="lineup-tier tier-2">
+              {tier2.map((d, i) => (
+                <>
+                  <span class="d">{d}</span>
+                  {i < tier2.length - 1 && <span class="lineup-sep">·</span>}
+                </>
+              ))}
+            </div>
+          </>
+        )}
+        {tier3.length > 0 && (
+          <>
+            <hr class="lineup-rule" />
+            <div class="lineup-tier tier-3">
+              {tier3.map((d, i) => (
+                <>
+                  <span class="d">{d}</span>
+                  {i < tier3.length - 1 && <span class="lineup-sep">·</span>}
+                </>
+              ))}
+            </div>
+          </>
+        )}
+        {tier4.length > 0 && (
+          <>
+            <hr class="lineup-rule" />
+            <div class="lineup-tier tier-4">
+              {tier4.map((d, i) => (
+                <>
+                  <span class="d">{d}</span>
+                  {i < tier4.length - 1 && <span class="lineup-sep">·</span>}
+                </>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  )}
+
+  <!-- Meta strip -->
+  <div class="poster-meta">
+    <div class="meta-cell">
+      <div class="meta-label">Released</div>
+      <div class="meta-value">{year}</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Genres</div>
+      <div class="meta-value genres">{genreList}</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Owned</div>
+      <div class="meta-value">{album.owned ? 'Yes' : 'No'}</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">Grade</div>
+      <div class="meta-value grade">{album.isAPlus ? 'A+' : 'A'}</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .poster {
+    margin-top: 40px;
+    position: relative;
+    border: 3px solid var(--black);
+    background: var(--black);
+    overflow: hidden;
+  }
+  .poster::before {
+    content: '';
+    position: absolute;
+    top: 8px; left: 8px;
+    width: 100%; height: 100%;
+    background: var(--accent);
+    z-index: -1;
+  }
+
+  /* Cover + title top half */
+  .poster-top {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    min-height: 480px;
+  }
+  @media (max-width: 760px) { .poster-top { grid-template-columns: 1fr; } }
+
+  .poster-cover { position: relative; overflow: hidden; }
+  .poster-cover img {
+    display: block; width: 100%; height: 100%;
+    object-fit: cover;
+    filter: contrast(1.1) saturate(0.85);
+    mix-blend-mode: luminosity;
+  }
+  .poster-cover::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--accent);
+    mix-blend-mode: multiply;
+    opacity: 0.55;
+    z-index: 1;
+  }
+  .poster-cover::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.25) 1px, transparent 1px);
+    background-size: 5px 5px;
+    z-index: 2; pointer-events: none;
+  }
+
+  .poster-title-col {
+    padding: 40px 40px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 3px solid rgba(253,246,227,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  .poster-title-col::before {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -80px;
+    width: 320px; height: 320px;
+    background: var(--teal);
+    border-radius: 50%;
+    opacity: 0.1;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  .poster-badges { display: flex; gap: 8px; align-items: center; margin-bottom: 24px; }
+  .poster-badge {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border: 2px solid var(--cream);
+    color: var(--cream);
+  }
+  .poster-badge.aplus { background: var(--accent); border-color: var(--accent); }
+
+  .poster-album-title {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    color: var(--cream);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .poster-album-title::before {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--accent);
+    transform: translate(-4px, 4px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+  .poster-album-title::after {
+    content: attr(data-text);
+    position: absolute; top: 0; left: 0;
+    color: var(--teal);
+    transform: translate(4px, -3px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
+  .poster-artist {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+    opacity: 0.9;
+  }
+  .poster-year {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--cream);
+    opacity: 0.4;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .spotify-link, .apple-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: var(--cream);
+    border: 2px solid rgba(253,246,227,0.3);
+    padding: 6px 12px;
+    margin-top: 4px;
+    transition: border-color 0.15s, color 0.15s;
+    align-self: flex-start;
+  }
+  .spotify-link:hover { border-color: var(--teal); color: var(--teal); }
+  .apple-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Descriptors */
+  .poster-descriptors {
+    padding: 32px 40px;
+    border-top: 2px solid rgba(253,246,227,0.12);
+  }
+  .descriptor-section-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--cream);
+    opacity: 0.3;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .descriptor-section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(253,246,227,0.15);
+  }
+
+  .descriptor-lineup { display: flex; flex-direction: column; gap: 10px; text-align: center; }
+  .lineup-tier {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .lineup-tier .d {
+    font-family: var(--mono);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cream);
+    line-height: 1.1;
+  }
+  .tier-1 .d { font-size: clamp(1.6rem, 4vw, 2.6rem); letter-spacing: -0.02em; }
+  .tier-2 .d { font-size: clamp(1rem, 2.5vw, 1.5rem); opacity: 0.85; }
+  .tier-3 .d { font-size: clamp(0.75rem, 1.8vw, 1rem); opacity: 0.65; }
+  .tier-4 .d { font-size: 0.65rem; opacity: 0.45; letter-spacing: 0.12em; }
+
+  .lineup-sep {
+    font-family: var(--mono);
+    color: var(--accent);
+    opacity: 0.6;
+  }
+  .tier-1 .lineup-sep { font-size: 1.4rem; }
+  .tier-2 .lineup-sep { font-size: 0.9rem; }
+  .tier-3 .lineup-sep { font-size: 0.7rem; }
+  .tier-4 .lineup-sep { font-size: 0.55rem; }
+
+  .lineup-rule {
+    border: none;
+    border-top: 1px solid rgba(253,246,227,0.1);
+    margin: 4px 0;
+  }
+
+  /* Meta strip */
+  .poster-meta {
+    border-top: 3px solid rgba(253,246,227,0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media (max-width: 640px) { .poster-meta { grid-template-columns: 1fr 1fr; } }
+
+  .meta-cell {
+    padding: 18px 24px;
+    border-right: 2px solid rgba(253,246,227,0.1);
+  }
+  .meta-cell:last-child { border-right: none; }
+  .meta-label {
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--cream);
+    opacity: 0.35;
+    margin-bottom: 6px;
+  }
+  .meta-value {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+  }
+  .meta-value.genres { font-size: 0.65rem; font-weight: 400; opacity: 0.75; }
+  .meta-value.grade { color: var(--accent); font-size: 1.6rem; line-height: 1; }
+</style>

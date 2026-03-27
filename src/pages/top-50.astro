@@ -1,0 +1,301 @@
+---
+import Layout from '../components/Layout.astro'
+import type { AlbumsJson, Album } from '../types/album'
+import albumsData from '../../../../data/albums.json'
+
+const { albums } = albumsData as AlbumsJson
+
+const ranked: Album[] = albums
+  .filter(a => a.topRanking !== null)
+  .sort((a, b) => (a.topRanking ?? 999) - (b.topRanking ?? 999))
+
+const no1 = ranked[0]
+const top10 = ranked.slice(1, 10)    // #2–#10
+const rest = ranked.slice(10)         // #11–#50
+
+---
+
+<Layout title="Top 50 — Five Hundred" activePage="top-50">
+  <header class="page-header">
+    <div class="page-header-inner">
+      <div class="page-label">The Fifty</div>
+      <h1 class="display-title" data-text="TOP 50">TOP 50</h1>
+      <p class="page-sub">The ones I'd save first in a fire. Ranked.</p>
+    </div>
+  </header>
+
+  <!-- #1 Hero card -->
+  {no1 && (
+    <section class="hero-section">
+      <div class="section-label">#1 — The Top</div>
+      <a href={`/album/${no1.slug}`} class="hero-card">
+        <div class="hero-cover-wrap">
+          <img src={no1.coverArt} alt={no1.title} />
+        </div>
+        <div class="hero-info">
+          <div class="hero-rank">01</div>
+          <div class="hero-text">
+            <div class="hero-album">{no1.title}</div>
+            <div class="hero-artist">{no1.artist[0]?.name}</div>
+            <div class="hero-badge">★ All-Time #1</div>
+          </div>
+        </div>
+      </a>
+    </section>
+  )}
+
+  <!-- #2–10 Grid -->
+  {top10.length > 0 && (
+    <section class="top10-section">
+      <div class="section-label">#2 – #10</div>
+      <div class="top10-grid">
+        {top10.map((album) => (
+          <a href={`/album/${album.slug}`} class="top10-card">
+            <div class="top10-cover-wrap">
+              <img src={album.coverArt} alt={album.title} loading="lazy" />
+            </div>
+            <div class="top10-info">
+              <div class="top10-rank">{String(album.topRanking).padStart(2, '0')}</div>
+              <div class="top10-album">{album.title}</div>
+              <div class="top10-artist">{album.artist[0]?.name}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- #11–50 List -->
+  {rest.length > 0 && (
+    <section class="list-section">
+      <div class="section-label">#11 – #50</div>
+      <div class="album-list">
+        {rest.map((album, i) => (
+          <a href={`/album/${album.slug}`} class="album-row">
+            <div class="row-rank">{album.topRanking}</div>
+            <div class="row-cover-wrap">
+              <div class="row-cover-inner">
+                <img class="row-cover" src={album.coverArt} alt={album.title} loading="lazy" />
+              </div>
+            </div>
+            <div class="row-info">
+              <div class="row-album">{album.title}</div>
+              <div class="row-artist">{album.artist[0]?.name}</div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</Layout>
+
+<style>
+  /* PAGE HEADER */
+  .page-header {
+    padding: 72px 0 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before {
+    content: '';
+    position: absolute; top: -60px; right: -80px;
+    width: 340px; height: 340px;
+    background: var(--coral); border-radius: 50%;
+    opacity: 0.3; mix-blend-mode: multiply;
+  }
+  .page-header::after {
+    content: '';
+    position: absolute; top: 0; right: -20px;
+    width: 280px; height: 280px;
+    background: var(--yellow); border-radius: 50%;
+    opacity: 0.4; mix-blend-mode: multiply;
+  }
+  .page-header-inner { position: relative; z-index: 2; }
+  .page-label {
+    font-family: var(--mono); font-size: 0.7rem;
+    text-transform: uppercase; letter-spacing: 0.2em;
+    color: var(--pink); display: inline-block;
+    background: var(--cream); padding: 3px 10px;
+    border: 2px solid var(--pink); margin-bottom: 16px;
+  }
+  .display-title {
+    font-family: var(--mono); font-weight: 700;
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    line-height: 1; letter-spacing: -0.03em;
+    color: var(--black); position: relative; display: inline-block;
+  }
+  .display-title::before {
+    content: attr(data-text); position: absolute; top: 0; left: 0;
+    color: var(--coral); transform: translate(-3px, 3px);
+    opacity: 0.65; mix-blend-mode: multiply;
+  }
+  .display-title::after {
+    content: attr(data-text); position: absolute; top: 0; left: 0;
+    color: var(--teal); transform: translate(3px, -2px);
+    opacity: 0.65; mix-blend-mode: multiply;
+  }
+  .page-sub {
+    font-family: var(--mono); font-size: 0.9rem;
+    margin-top: 20px; max-width: 420px;
+    padding: 14px 16px; background: var(--cream);
+    border-left: 5px solid var(--teal); line-height: 1.6;
+  }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-family: var(--mono); font-size: 0.65rem;
+    text-transform: uppercase; letter-spacing: 0.2em;
+    color: var(--cream); background: var(--black);
+    display: inline-block; padding: 4px 12px;
+    margin-bottom: 28px; position: relative;
+  }
+  .section-label::before {
+    content: ''; position: absolute; top: 3px; left: 3px;
+    width: 100%; height: 100%;
+    background: var(--coral); z-index: -1; opacity: 0.5;
+  }
+
+  /* #1 HERO CARD */
+  .hero-section { margin-bottom: 64px; }
+  .hero-card {
+    display: grid; grid-template-columns: 280px 1fr;
+    border: 3px solid var(--black); background: var(--cream);
+    position: relative; transition: transform 0.2s ease;
+    text-decoration: none; color: var(--black);
+  }
+  .hero-card::before {
+    content: ''; position: absolute;
+    top: var(--off-lg); left: var(--off-lg);
+    width: 100%; height: 100%;
+    background: var(--coral); z-index: -1;
+  }
+  .hero-card:hover { transform: translate(-3px, -3px); }
+  .hero-cover-wrap { position: relative; overflow: hidden; }
+  .hero-cover-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.05); }
+  .hero-cover-wrap::after {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.12) 1px, transparent 1px);
+    background-size: 4px 4px; pointer-events: none;
+  }
+  .hero-info { padding: 36px 40px; display: flex; flex-direction: column; justify-content: space-between; }
+  .hero-rank {
+    font-family: var(--mono); font-weight: 700;
+    font-size: 8rem; line-height: 1;
+    color: var(--coral); opacity: 0.15;
+    align-self: flex-end; user-select: none;
+  }
+  .hero-text { flex: 1; padding-top: 32px; }
+  .hero-album {
+    font-family: var(--mono); font-weight: 700;
+    font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.2; margin-bottom: 12px;
+  }
+  .hero-artist {
+    font-family: var(--mono); font-size: 0.9rem;
+    opacity: 0.6; text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .hero-badge {
+    margin-top: 28px; display: inline-flex; align-items: center;
+    font-family: var(--mono); font-size: 0.65rem;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    border: 2px solid var(--black); padding: 4px 12px;
+    background: var(--coral); color: var(--cream); position: relative;
+  }
+  .hero-badge::before {
+    content: ''; position: absolute; top: 2px; left: 2px;
+    width: 100%; height: 100%; background: var(--yellow); z-index: -1;
+  }
+
+  /* TOP 10 GRID */
+  .top10-section { margin-bottom: 64px; }
+  .top10-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  }
+  @media (max-width: 720px) { .top10-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .top10-grid { grid-template-columns: 1fr; } }
+
+  .top10-card {
+    border: 3px solid var(--black); background: var(--cream);
+    position: relative; transition: transform 0.2s ease;
+    overflow: hidden; text-decoration: none; color: var(--black);
+  }
+  .top10-card:hover { transform: translate(-2px, -2px); }
+  .top10-card::before {
+    content: ''; position: absolute;
+    top: var(--off-md); left: var(--off-md);
+    width: 100%; height: 100%; z-index: -1;
+  }
+  .top10-card:nth-child(1)::before { background: var(--teal); }
+  .top10-card:nth-child(2)::before { background: var(--yellow); }
+  .top10-card:nth-child(3)::before { background: var(--blue); }
+  .top10-card:nth-child(4)::before { background: var(--pink); }
+  .top10-card:nth-child(5)::before { background: var(--coral); }
+  .top10-card:nth-child(6)::before { background: var(--teal); }
+  .top10-card:nth-child(7)::before { background: var(--yellow); }
+  .top10-card:nth-child(8)::before { background: var(--blue); }
+  .top10-card:nth-child(9)::before { background: var(--pink); }
+
+  .top10-cover-wrap { position: relative; aspect-ratio: 1; overflow: hidden; }
+  .top10-cover-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .top10-cover-wrap::after {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 4px 4px; pointer-events: none;
+  }
+  .top10-info { padding: 14px 16px; position: relative; }
+  .top10-rank {
+    position: absolute; top: -18px; right: 14px;
+    font-family: var(--mono); font-weight: 700; font-size: 2.5rem; line-height: 1;
+  }
+  .top10-card:nth-child(1) .top10-rank { color: var(--teal); }
+  .top10-card:nth-child(2) .top10-rank { color: var(--yellow); filter: brightness(0.8); }
+  .top10-card:nth-child(3) .top10-rank { color: var(--blue); }
+  .top10-card:nth-child(4) .top10-rank { color: var(--pink); }
+  .top10-card:nth-child(5) .top10-rank { color: var(--coral); }
+  .top10-card:nth-child(6) .top10-rank { color: var(--teal); }
+  .top10-card:nth-child(7) .top10-rank { color: var(--yellow); filter: brightness(0.8); }
+  .top10-card:nth-child(8) .top10-rank { color: var(--blue); }
+  .top10-card:nth-child(9) .top10-rank { color: var(--pink); }
+  .top10-album { font-family: var(--mono); font-weight: 700; font-size: 0.82rem; line-height: 1.3; margin-bottom: 4px; padding-right: 24px; }
+  .top10-artist { font-family: var(--mono); font-size: 0.7rem; opacity: 0.55; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* LIST #11–50 */
+  .list-section { margin-bottom: 80px; }
+  .album-list { border-top: 3px solid var(--black); }
+  .album-row {
+    display: grid; grid-template-columns: 56px 68px 1fr;
+    align-items: center;
+    border-bottom: 2px dashed var(--paper-d);
+    transition: background 0.15s ease;
+    text-decoration: none; color: var(--black);
+  }
+  .album-row:hover { background: rgba(255,230,109,0.25); }
+  .row-rank {
+    font-family: var(--mono); font-weight: 700;
+    font-size: 1.4rem; line-height: 1;
+    padding: 16px 12px 16px 0; text-align: right;
+  }
+  .album-row:nth-child(5n+1) .row-rank { color: var(--coral); }
+  .album-row:nth-child(5n+2) .row-rank { color: var(--teal); }
+  .album-row:nth-child(5n+3) .row-rank { color: var(--blue); }
+  .album-row:nth-child(5n+4) .row-rank { color: var(--pink); }
+  .album-row:nth-child(5n+0) .row-rank { color: var(--black); opacity: 0.5; }
+  .row-cover-wrap { padding: 10px 12px 10px 8px; }
+  .row-cover-inner { position: relative; width: 48px; height: 48px; }
+  .row-cover-inner::before {
+    content: ''; position: absolute; top: 3px; left: 3px;
+    width: 48px; height: 48px; z-index: 0;
+  }
+  .album-row:nth-child(5n+1) .row-cover-inner::before { background: var(--coral); }
+  .album-row:nth-child(5n+2) .row-cover-inner::before { background: var(--teal); }
+  .album-row:nth-child(5n+3) .row-cover-inner::before { background: var(--blue); }
+  .album-row:nth-child(5n+4) .row-cover-inner::before { background: var(--pink); }
+  .album-row:nth-child(5n+0) .row-cover-inner::before { background: var(--black); opacity: 0.2; }
+  .row-cover {
+    display: block; width: 48px; height: 48px;
+    object-fit: cover; border: 2px solid var(--black);
+    position: relative; z-index: 1;
+  }
+  .row-info { padding: 12px 0; }
+  .row-album { font-family: var(--mono); font-weight: 700; font-size: 0.85rem; line-height: 1.3; margin-bottom: 3px; }
+  .row-artist { font-family: var(--mono); font-size: 0.7rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.06em; }
+</style>
