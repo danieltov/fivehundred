@@ -1,11 +1,11 @@
 ---
+import Layout from '../components/Layout.astro'
 import type { AlbumsJson } from '../types/album'
 import albumsData from '../../data/albums.json'
 
 const { albums } = albumsData as AlbumsJson
 ---
-<html>
-<body>
+
+<Layout title="Five Hundred">
   <p>Albums: {albums.length}</p>
-</body>
-</html>
+</Layout>
