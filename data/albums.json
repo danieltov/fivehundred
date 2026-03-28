@@ -2,7 +2,7 @@
   "generatedAt": "2026-03-26T03:23:53.355Z",
   "albums": [
     {
-      "coverArt": "https://coverartarchive.org/release-group/badaf397-4cf1-4087-9f74-0a83b6180fa1/front-1200",
+      "coverArt": "https://coverartarchive.org/release-group/badaf397-4cf1-4087-9f74-0a83b6180fa1/front-500",
       "id": "cmn81xamvwcbn32hr3jt",
       "isAPlus": false,
       "owned": false,
@@ -266,11 +266,11 @@
           "slug": "samba-jazz"
         },
         {
-          "name": "Samba-can\u00e7\u00e3o",
+          "name": "Samba-canção",
           "slug": "samba-can-o"
         },
         {
-          "name": "Sambalan\u00e7o",
+          "name": "Sambalanço",
           "slug": "sambalan-o"
         }
       ],
@@ -348,8 +348,8 @@
       "isAPlus": false,
       "owned": false,
       "releaseDate": "2025-01-05T06:00:00.000Z",
-      "slug": "bad-bunny-deb\u00ed-tirar-m\u00e1s-fotos",
-      "title": "Deb\u00ed Tirar M\u00e1s Fotos",
+      "slug": "bad-bunny-debí-tirar-más-fotos",
+      "title": "Debí Tirar Más Fotos",
       "appleMusicUrl": "https://music.apple.com/us/album/deb%C3%AD-tirar-m%C3%A1s-fotos-single/1881926571?uo=4",
       "spotifyUri": "spotify:album:5K79FLRUCSysQnVESLcTdb",
       "topRanking": null,
@@ -361,7 +361,7 @@
       ],
       "genres": [
         {
-          "name": "Reggaet\u00f3n",
+          "name": "Reggaetón",
           "slug": "reggaet-n"
         },
         {
@@ -851,7 +851,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "",
+      "coverArt": "https://coverartarchive.org/release-group/a1661206-e67d-40a6-a1c0-d63911ea1835/front-1200",
       "id": "cme8s0loh180602rzfw7mp5a2",
       "isAPlus": false,
       "owned": false,
@@ -869,7 +869,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         }
       ],
@@ -940,7 +940,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         },
         {
@@ -2409,7 +2409,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "",
+      "coverArt": "https://coverartarchive.org/release-group/28438e4f-3710-459f-a332-a1eba9dd1f26/front-1200",
       "id": "cme81ngqj3822q9rz6dchylon",
       "isAPlus": false,
       "owned": false,
@@ -3375,7 +3375,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "",
+      "coverArt": "https://coverartarchive.org/release-group/a159e102-18bb-42ca-a59e-5f96a7eff241/front-1200",
       "id": "cme80zmku5064xwrzutu2b97q",
       "isAPlus": false,
       "owned": false,
@@ -6406,7 +6406,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "",
+      "coverArt": "https://coverartarchive.org/release-group/4885c9c3-5026-3bc6-a5bc-1d7ac896dab1/front-1200",
       "id": "cme8rpxwv06194drzg92s2nau",
       "isAPlus": false,
       "owned": false,
@@ -7300,15 +7300,15 @@
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1987-10-25T05:00:00.000Z",
-      "slug": "sin\u00e9ad-o-connor-the-lion-and-the-cobra",
+      "slug": "sinéad-o-connor-the-lion-and-the-cobra",
       "title": "The Lion and the Cobra",
       "appleMusicUrl": "https://music.apple.com/us/album/the-lion-and-the-cobra/1629181905?uo=4",
       "spotifyUri": null,
       "topRanking": null,
       "artist": [
         {
-          "name": "Sin\u00e9ad O'Connor",
-          "slug": "sin\u00e9ad-o-connor"
+          "name": "Sinéad O'Connor",
+          "slug": "sinéad-o-connor"
         }
       ],
       "genres": [
@@ -7488,7 +7488,7 @@
       ],
       "genres": [
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -7659,7 +7659,7 @@
           "slug": "minimal-synth"
         },
         {
-          "name": "D\u00fcsseldorf School",
+          "name": "Düsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -8001,7 +8001,7 @@
           "slug": "samba-rock"
         },
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         }
       ],
@@ -8926,7 +8926,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "os-mutantes-a-divina-comdia-ou-ando-meio-desligado",
-      "title": "A Divina Com\u00e9dia Ou Ando Meio Desligado",
+      "title": "A Divina Comédia Ou Ando Meio Desligado",
       "appleMusicUrl": "https://music.apple.com/us/album/a-divina-com%C3%A9dia-ou-ando-meio-desligado/1443643367?uo=4",
       "spotifyUri": "spotify:album:7Brj8kqhEO9Zg4daamMieT",
       "topRanking": null,
@@ -8942,7 +8942,7 @@
           "slug": "psychedelic-rock"
         },
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -10531,7 +10531,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         }
       ],
@@ -20121,7 +20121,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -21330,7 +21330,7 @@
           "slug": "cool-jazz"
         },
         {
-          "name": "Samba-can\u00e7\u00e3o",
+          "name": "Samba-canção",
           "slug": "samba-can-o"
         }
       ],
@@ -21443,7 +21443,7 @@
       "topRanking": 15,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -21622,7 +21622,7 @@
       "topRanking": 31,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -21837,7 +21837,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -26739,7 +26739,7 @@
           "slug": "electropop"
         },
         {
-          "name": "Tamborz\u00e3o",
+          "name": "Tamborzão",
           "slug": "tamborz-o"
         },
         {
@@ -26938,7 +26938,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "miles-davis-ascenseur-pour-lchafaud-original-motion-picture-soundtrack",
-      "title": "Ascenseur pour l'\u00c9chafaud",
+      "title": "Ascenseur pour l'Échafaud",
       "appleMusicUrl": "https://music.apple.com/us/album/ascenseur-pour-l%C3%A9chafaud/1389716930?uo=4",
       "spotifyUri": null,
       "topRanking": null,
@@ -27242,13 +27242,13 @@
       "owned": false,
       "releaseDate": "2013-12-13T06:00:00.000Z",
       "slug": "beyonc-beyonc",
-      "title": "Beyonc\u00e9",
+      "title": "Beyoncé",
       "appleMusicUrl": "https://music.apple.com/us/album/beyonc%C3%A9-deluxe/780519939?uo=4",
       "spotifyUri": "spotify:album:2UJwKSBUz6rtW4QLK74kQu",
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -28670,7 +28670,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Jo\u00e3o Gilberto",
+          "name": "João Gilberto",
           "slug": "joo-gilberto"
         }
       ],
@@ -29138,7 +29138,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -29682,7 +29682,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Mon\u00e1e",
+          "name": "Janelle Monáe",
           "slug": "janelle-mone"
         }
       ],
@@ -30565,7 +30565,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Rosal\u00eda",
+          "name": "Rosalía",
           "slug": "rosala"
         }
       ],
@@ -30587,7 +30587,7 @@
           "slug": "alternative-r-b"
         },
         {
-          "name": "Buler\u00eda",
+          "name": "Bulería",
           "slug": "buler-a"
         },
         {
@@ -32772,7 +32772,7 @@
       ],
       "genres": [
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -33934,7 +33934,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -40196,7 +40196,7 @@
           "slug": "electroacoustic"
         },
         {
-          "name": "D\u00fcsseldorf School",
+          "name": "Düsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -40899,7 +40899,7 @@
       "owned": false,
       "releaseDate": "1961-05-25T05:00:00.000Z",
       "slug": "john-coltrane-ol-coltrane",
-      "title": "Ol\u00e9 Coltrane",
+      "title": "Olé Coltrane",
       "appleMusicUrl": "https://music.apple.com/us/album/ol%C3%A9-coltrane/962192458?uo=4",
       "spotifyUri": "spotify:album:5BGkenbuo3xY3CRblRPj8K",
       "topRanking": null,
@@ -44983,7 +44983,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Mon\u00e1e",
+          "name": "Janelle Monáe",
           "slug": "janelle-mone"
         }
       ],
@@ -51799,7 +51799,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "jorge-ben-frica-brasil",
-      "title": "\u00c1frica Brasil",
+      "title": "África Brasil",
       "appleMusicUrl": "https://music.apple.com/us/album/africa-brasil/1444050820?uo=4",
       "spotifyUri": "spotify:album:1jJXtCHztoIKiSG8IbLmq0",
       "topRanking": null,
@@ -51827,7 +51827,7 @@
           "slug": "samba-soul"
         },
         {
-          "name": "Afox\u00e9",
+          "name": "Afoxé",
           "slug": "afox"
         },
         {
@@ -52943,7 +52943,7 @@
           "slug": "free-improvisation"
         },
         {
-          "name": "Musique concr\u00e8te",
+          "name": "Musique concrète",
           "slug": "musique-concr-te"
         },
         {

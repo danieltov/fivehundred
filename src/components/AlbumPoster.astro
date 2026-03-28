@@ -49,16 +49,18 @@ const genreList = album.genres.map(g => g.name).join(' · ')
         <div class="poster-year">{releaseFormatted}</div>
       </div>
 
-      {spotifyUrl && (
-        <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" class="spotify-link">
-          ♫ Listen on Spotify
-        </a>
-      )}
-      {album.appleMusicUrl && (
-        <a href={album.appleMusicUrl} target="_blank" rel="noopener noreferrer" class="apple-link">
-          ♫ Listen on &#xF8FF; Music
-        </a>
-      )}
+      <div class="streaming-links">
+        {spotifyUrl && (
+          <a href={spotifyUrl} target="_blank" rel="noopener noreferrer" class="spotify-link">
+            ♫ Listen on Spotify
+          </a>
+        )}
+        {album.appleMusicUrl && (
+          <a href={album.appleMusicUrl} target="_blank" rel="noopener noreferrer" class="apple-link">
+            ♫ Listen on &#xF8FF; Music
+          </a>
+        )}
+      </div>
     </div>
   </div>
 
@@ -273,6 +275,8 @@ const genreList = album.genres.map(g => g.name).join(' · ')
     text-transform: uppercase;
     letter-spacing: 0.15em;
   }
+
+  .streaming-links { display: flex; flex-direction: column; gap: 10px; }
 
   .spotify-link, .apple-link {
     display: inline-flex;
