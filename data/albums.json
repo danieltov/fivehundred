@@ -2,7 +2,7 @@
   "generatedAt": "2026-03-26T03:23:53.355Z",
   "albums": [
     {
-      "coverArt": "https://coverartarchive.org/release-group/badaf397-4cf1-4087-9f74-0a83b6180fa1/front-500",
+      "coverArt": "/covers/girls-album.jpg",
       "id": "cmn81xamvwcbn32hr3jt",
       "isAPlus": false,
       "owned": false,
@@ -129,7 +129,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7eb6da03-0f1f-3303-b079-8cba2f18c530/front-1200",
+      "coverArt": "/covers/pete-rock-c-l-smooth-mecca-and-the-soul-brother.jpg",
       "id": "cme8s1d49271602rzf4dq5f2c",
       "isAPlus": false,
       "owned": false,
@@ -236,7 +236,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/35393330-4347-36ed-bf94-44da38344282/front-1200",
+      "coverArt": "/covers/jorge-ben-samba-esquema-novo.jpg",
       "id": "cme81lbcr0881q9rzzr305ha2",
       "isAPlus": false,
       "owned": false,
@@ -266,11 +266,11 @@
           "slug": "samba-jazz"
         },
         {
-          "name": "Samba-canção",
+          "name": "Samba-can\u00e7\u00e3o",
           "slug": "samba-can-o"
         },
         {
-          "name": "Sambalanço",
+          "name": "Sambalan\u00e7o",
           "slug": "sambalan-o"
         }
       ],
@@ -343,13 +343,13 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b3073a10-2d7c-484c-b387-e49ae629da3d/front-1200",
+      "coverArt": "/covers/bad-bunny-deb\u00ed-tirar-m\u00e1s-fotos.jpg",
       "id": "cme8s1l22308502rzyd6m1i8f",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "2025-01-05T06:00:00.000Z",
-      "slug": "bad-bunny-debí-tirar-más-fotos",
-      "title": "Debí Tirar Más Fotos",
+      "slug": "bad-bunny-deb\u00ed-tirar-m\u00e1s-fotos",
+      "title": "Deb\u00ed Tirar M\u00e1s Fotos",
       "appleMusicUrl": "https://music.apple.com/us/album/deb%C3%AD-tirar-m%C3%A1s-fotos-single/1881926571?uo=4",
       "spotifyUri": "spotify:album:5K79FLRUCSysQnVESLcTdb",
       "topRanking": null,
@@ -361,7 +361,7 @@
       ],
       "genres": [
         {
-          "name": "Reggaetón",
+          "name": "Reggaet\u00f3n",
           "slug": "reggaet-n"
         },
         {
@@ -566,7 +566,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0ab32249-b73e-3bdd-a2ac-bc84523868ab/front-1200",
+      "coverArt": "/covers/cannonball-adderley-at-the-lighthouse.jpg",
       "id": "cme8s151e243402rz0jhth5ro",
       "isAPlus": false,
       "owned": false,
@@ -621,7 +621,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/509d3727-ba34-3490-9921-21f4ab3b52cc/front-1200",
+      "coverArt": "/covers/yo-la-tengo-and-then-nothing-turned-itself-inside-out.jpg",
       "id": "cme8s0z2c228302rzfb2xz8dw",
       "isAPlus": false,
       "owned": false,
@@ -784,7 +784,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/26421c87-4085-4321-bcd6-411fb72db0d2/front-1200",
+      "coverArt": "/covers/wussy-attica.jpg",
       "id": "cme8s0txj208602rzolxbgp1t",
       "isAPlus": false,
       "owned": false,
@@ -851,7 +851,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a1661206-e67d-40a6-a1c0-d63911ea1835/front-1200",
+      "coverArt": "/covers/ebenezer-obey-juju-jubilee.jpg",
       "id": "cme8s0loh180602rzfw7mp5a2",
       "isAPlus": false,
       "owned": false,
@@ -869,7 +869,7 @@
       ],
       "genres": [
         {
-          "name": "Jùjú",
+          "name": "J\u00f9j\u00fa",
           "slug": "j-j"
         }
       ],
@@ -922,7 +922,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f0357e17-33b3-34d9-b926-d1c69366b471/front-1200",
+      "coverArt": "/covers/king-sunny-ade-juju-music.jpg",
       "id": "cme8s0e7c158702rzqyvmjs7g",
       "isAPlus": false,
       "owned": false,
@@ -940,7 +940,7 @@
       ],
       "genres": [
         {
-          "name": "Jùjú",
+          "name": "J\u00f9j\u00fa",
           "slug": "j-j"
         },
         {
@@ -997,7 +997,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1eb5ec6f-8f49-466b-a855-4906be6e565a/front-1200",
+      "coverArt": "/covers/charli-xcx-brat.jpg",
       "id": "cme8rzs97075802rzpdfhpz2d",
       "isAPlus": false,
       "owned": false,
@@ -1244,7 +1244,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4d9ec1c2-58ec-48a4-aa0a-916718adead0/front-1200",
+      "coverArt": "/covers/taylor-swift-1989.jpg",
       "id": "cme8rq98o09904drz0adikv5c",
       "isAPlus": false,
       "owned": false,
@@ -1367,7 +1367,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/511f4c22-33ee-4efb-a423-6f6f183e21c2/front-1200",
+      "coverArt": "/covers/kylie-minogue-fever.jpg",
       "id": "cme8rqh3112404drzwx1xwxzg",
       "isAPlus": false,
       "owned": false,
@@ -1522,7 +1522,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b7f98deb-4fa5-3608-85bf-dcef64ad8454/front-1200",
+      "coverArt": "/covers/miles-davis-panthalassa-the-music-of-miles-davis-1969-1974.jpg",
       "id": "cme8rppoe02994drzpx1yg4xd",
       "isAPlus": false,
       "owned": false,
@@ -1681,7 +1681,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fc0885e0-0284-3f9d-81ee-17c5e7196346/front-1200",
+      "coverArt": "/covers/the-velvet-underground-white-light-white-heat.jpg",
       "id": "cme81s9mf0452v8rzlcmpe33o",
       "isAPlus": false,
       "owned": false,
@@ -1908,7 +1908,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7eea3a40-7c24-34f9-aa48-958edb5145c5/front-1200",
+      "coverArt": "/covers/brian-wilson-smile.jpg",
       "id": "cme81nzh60272izrzjftlrf8j",
       "isAPlus": true,
       "owned": false,
@@ -2063,7 +2063,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8e8a1db7-1d43-44d3-9796-fd69f12730cb/front-1200",
+      "coverArt": "/covers/lorde-pure-heroine.jpg",
       "id": "cme81oseg5725q9rziju86dzz",
       "isAPlus": false,
       "owned": false,
@@ -2226,7 +2226,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/91ee3856-0ee6-467d-b01d-9d529affc9f4/front-1200",
+      "coverArt": "/covers/vampire-weekend-only-god-was-above-us.jpg",
       "id": "cme81nxqc4506q9rzodklx457",
       "isAPlus": false,
       "owned": false,
@@ -2409,7 +2409,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/28438e4f-3710-459f-a332-a1eba9dd1f26/front-1200",
+      "coverArt": "/covers/the-avalanches-since-i-left-you.jpg",
       "id": "cme81ngqj3822q9rz6dchylon",
       "isAPlus": false,
       "owned": false,
@@ -2636,7 +2636,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/dd0cae7b-5bf2-3db1-b028-87472215400a/front-1200",
+      "coverArt": "/covers/stars-of-the-lid-and-their-refinement-of-the-decline.jpg",
       "id": "cme81msxw2989q9rz75t97oag",
       "isAPlus": false,
       "owned": false,
@@ -2751,7 +2751,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5fdd6ba8-83c1-3a87-b378-d5f61dec5ddd/front-1200",
+      "coverArt": "/covers/brian-eno-ambient-1-music-for-airports.jpg",
       "id": "cme81mctz2341q9rzpgekp19n",
       "isAPlus": false,
       "owned": false,
@@ -2942,7 +2942,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/83920a38-e749-4bbf-a7f6-8aaf77cb9475/front-1200",
+      "coverArt": "/covers/olivia-rodrigo-guts.jpg",
       "id": "cme81lzpt1806q9rz4vgcvod8",
       "isAPlus": false,
       "owned": false,
@@ -3121,7 +3121,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/56dba069-d0a1-4353-b786-db6fc8269139/front-1200",
+      "coverArt": "/covers/sufjan-stevens-javelin.jpg",
       "id": "cme81kwzg0353q9rzpg17jntd",
       "isAPlus": false,
       "owned": false,
@@ -3296,7 +3296,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/cf154081-2678-3778-95cf-cd31c4ea5dfe/front-1200",
+      "coverArt": "/covers/alice-coltrane-journey-in-satchidananda.jpg",
       "id": "cme81090s5944xwrz17htw88z",
       "isAPlus": false,
       "owned": false,
@@ -3375,7 +3375,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a159e102-18bb-42ca-a59e-5f96a7eff241/front-1200",
+      "coverArt": "/covers/the-smashing-pumpkins-siamese-dream.jpg",
       "id": "cme80zmku5064xwrzutu2b97q",
       "isAPlus": false,
       "owned": false,
@@ -3554,7 +3554,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/18257379-85bf-3412-b0df-8e2916ee896e/front-1200",
+      "coverArt": "/covers/marvin-gaye-i-want-you.jpg",
       "id": "cme80z4z84401xwrzvdrvxvp0",
       "isAPlus": false,
       "owned": false,
@@ -3681,7 +3681,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/370f0e88-abf3-3a22-a7cd-9cb0c3ebdc61/front-1200",
+      "coverArt": "/covers/the-go-team-thunder-lightning-strike.jpg",
       "id": "cme80yutg4025xwrz8zn4666m",
       "isAPlus": false,
       "owned": false,
@@ -3904,7 +3904,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7aaf0618-292c-3474-bfbc-d831baf710cf/front-1200",
+      "coverArt": "/covers/the-breeders-last-splash.jpg",
       "id": "cme80yjb83560xwrzinotxdij",
       "isAPlus": false,
       "owned": false,
@@ -4071,7 +4071,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9b5006e5-b276-3a05-bcdd-8d986842320b/front-1200",
+      "coverArt": "/covers/led-zeppelin-houses-of-the-holy.jpg",
       "id": "cme80y4jt3029xwrzqe61ebfl",
       "isAPlus": false,
       "owned": false,
@@ -4162,7 +4162,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/71f1482e-e63f-3b2c-811b-939f62708f2a/front-1200",
+      "coverArt": "/covers/depeche-mode-violator.jpg",
       "id": "cme80xgck1887xwrzxrnyfjtv",
       "isAPlus": false,
       "owned": false,
@@ -4321,7 +4321,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/93929652-f453-312c-a1cf-6989fee6dff3/front-1200",
+      "coverArt": "/covers/rahsaan-roland-kirk-the-inflated-tear.jpg",
       "id": "cme80wn7f0714xwrz0c2atz3t",
       "isAPlus": false,
       "owned": false,
@@ -4408,7 +4408,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/89bc97c8-921a-3758-8481-3b39c564e297/front-1200",
+      "coverArt": "/covers/king-crimson-red.jpg",
       "id": "cme80whco0483xwrzjjqm7vy9",
       "isAPlus": false,
       "owned": false,
@@ -4587,7 +4587,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/153b2ad5-97f7-3bab-91f7-259de916295f/front-1200",
+      "coverArt": "/covers/sam-cooke-night-beat.jpg",
       "id": "cme80wafv0290xwrznde4yptb",
       "isAPlus": false,
       "owned": false,
@@ -4678,7 +4678,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5acc65aa-f2f7-48bc-9dd1-434655700e53/front-1200",
+      "coverArt": "/covers/bruce-springsteen-born-to-run.jpg",
       "id": "cme7ckcka0353aerznbzh4kfr",
       "isAPlus": false,
       "owned": false,
@@ -4857,7 +4857,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ec870873-6a4c-3b0a-81f3-cae8ebf365eb/front-1200",
+      "coverArt": "/covers/wayne-shorter-juju.jpg",
       "id": "cme7chlxy04794urzmxtb90pv",
       "isAPlus": false,
       "owned": false,
@@ -4932,7 +4932,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/48117b90-a16e-34ca-a514-19c702df1158/front-1200",
+      "coverArt": "/covers/daft-punk-discovery.jpg",
       "id": "cme7c6bps0272r2rz49hhtxn0",
       "isAPlus": true,
       "owned": false,
@@ -5119,7 +5119,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/416bb5e5-c7d1-3977-8fd7-7c9daf6c2be6/front-500",
+      "coverArt": "/covers/fleetwood-mac-rumours.jpg",
       "id": "cme7a3j8w053482rzo1rz3q1u",
       "isAPlus": false,
       "owned": false,
@@ -5262,7 +5262,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5cbd9d7b-597a-3c5e-bfd1-c2b364215560/front-500",
+      "coverArt": "/covers/the-velvet-underground-the-velvet-underground-nico.jpg",
       "id": "cme7a3u4b102882rz85seji1f",
       "isAPlus": false,
       "owned": false,
@@ -5445,7 +5445,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0da774d3-40be-3971-bb40-68361009a3b4/front-500",
+      "coverArt": "/covers/john-coltrane-quartet-africa-brass.jpg",
       "id": "cme7a5h9v389482rz19mkoq7z",
       "isAPlus": false,
       "owned": false,
@@ -5528,7 +5528,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ad9df6ad-4498-373c-b6e5-8c46f3168dc5/front-500",
+      "coverArt": "/covers/thelonious-monk-quartet-misterioso.jpg",
       "id": "cme7a59j2343982rzx3v0ho5k",
       "isAPlus": false,
       "owned": false,
@@ -5587,7 +5587,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/79f6bed0-283b-3192-974d-543a3cf45ee6/front-1200",
+      "coverArt": "/covers/madonna-madonna.jpg",
       "id": "cme4gqi6z2608085rzisx03p3b",
       "isAPlus": false,
       "owned": false,
@@ -5726,7 +5726,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5d4d0f2d-9be7-4922-bc9a-cbd2880b12c2/front-500",
+      "coverArt": "/covers/kanye-west-yeezus.jpg",
       "id": "cme3fhqnt270885rzjv2qnhux",
       "isAPlus": true,
       "owned": false,
@@ -5921,7 +5921,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e86d6219-f5a2-4edd-bf2b-3f9eab190ae0/front-500",
+      "coverArt": "/covers/taylor-swift-evermore.jpg",
       "id": "cme4gi0sl1889685rzll36nu7q",
       "isAPlus": false,
       "owned": false,
@@ -6092,7 +6092,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/45536412-c62c-34fc-9524-0bac1d2542c1/front-500",
+      "coverArt": "/covers/erykah-badu-baduizm.jpg",
       "id": "cme4gbtgd1344385rzgwwe1wj9",
       "isAPlus": false,
       "owned": false,
@@ -6227,7 +6227,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/09425c87-54fa-4438-b13e-3e35b70a7953/front-1200",
+      "coverArt": "/covers/joanna-newsom-have-one-on-me.jpg",
       "id": "cme8s00o7104902rzetfask04",
       "isAPlus": false,
       "owned": false,
@@ -6406,7 +6406,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4885c9c3-5026-3bc6-a5bc-1d7ac896dab1/front-1200",
+      "coverArt": "/covers/steve-reich-steve-reich-music-for-18-musicians-1978.jpg",
       "id": "cme8rpxwv06194drzg92s2nau",
       "isAPlus": false,
       "owned": false,
@@ -6545,7 +6545,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/afb1433e-c8b6-3924-8798-c494a3040346/front-500",
+      "coverArt": "/covers/miles-davis-quintet-relaxin-with-the-miles-davis-quintet.jpg",
       "id": "cme4gxe9t3184085rzttbr8yel",
       "isAPlus": false,
       "owned": false,
@@ -6612,7 +6612,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7f8c6066-0a66-33dd-87ac-cce60881cabb/front-1200",
+      "coverArt": "/covers/jeff-mills-live-at-the-liquid-room-tokyo.jpg",
       "id": "cme81og4k5232q9rz4t4xcshb",
       "isAPlus": false,
       "owned": false,
@@ -6743,7 +6743,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b534aa01-d621-31ba-9278-38a500e3cdca/front-1200",
+      "coverArt": "/covers/beastie-boys-paul-s-boutique.jpg",
       "id": "cme81n77a3514q9rz6h3g6blh",
       "isAPlus": false,
       "owned": false,
@@ -6922,7 +6922,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6482fdfd-5db6-3fd4-9db3-f0efbf169ced/front-500",
+      "coverArt": "/covers/miles-davis-quintet-cookin-with-the-miles-davis-quintet.jpg",
       "id": "cme4gesgk1592485rz2ghuaq77",
       "isAPlus": false,
       "owned": false,
@@ -7001,7 +7001,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b6a3952b-9977-351c-a80a-73e023143858/front-500",
+      "coverArt": "/covers/neil-young-after-the-gold-rush.jpg",
       "id": "cme4ga7og1204385rz4r9sgpyu",
       "isAPlus": false,
       "owned": false,
@@ -7124,7 +7124,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e2621417-9236-36b4-9f9e-376c416dc4b0/front-500",
+      "coverArt": "/covers/2pac-all-eyez-on-me.jpg",
       "id": "cme4garv61257685rzc14fjunx",
       "isAPlus": false,
       "owned": false,
@@ -7295,20 +7295,20 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f7158e4b-87d0-3310-85ae-71b15769f4ef/front-1200",
+      "coverArt": "/covers/sin\u00e9ad-o-connor-the-lion-and-the-cobra.jpg",
       "id": "cme80xw0i2614xwrz4aofcdal",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1987-10-25T05:00:00.000Z",
-      "slug": "sinéad-o-connor-the-lion-and-the-cobra",
+      "slug": "sin\u00e9ad-o-connor-the-lion-and-the-cobra",
       "title": "The Lion and the Cobra",
       "appleMusicUrl": "https://music.apple.com/us/album/the-lion-and-the-cobra/1629181905?uo=4",
       "spotifyUri": null,
       "topRanking": null,
       "artist": [
         {
-          "name": "Sinéad O'Connor",
-          "slug": "sinéad-o-connor"
+          "name": "Sin\u00e9ad O'Connor",
+          "slug": "sin\u00e9ad-o-connor"
         }
       ],
       "genres": [
@@ -7470,7 +7470,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f3578417-4c90-3891-a2cf-d1eab06cc084/front-1200",
+      "coverArt": "/covers/os-mutantes-os-mutantes.jpg",
       "id": "cme4gv3332995885rzqz6krbb6",
       "isAPlus": false,
       "owned": false,
@@ -7488,7 +7488,7 @@
       ],
       "genres": [
         {
-          "name": "Tropicália",
+          "name": "Tropic\u00e1lia",
           "slug": "tropic-lia"
         },
         {
@@ -7625,7 +7625,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/33101a28-ae05-3a69-873c-684e336fe2df/front-1200",
+      "coverArt": "/covers/kraftwerk-trans-europe-express.jpg",
       "id": "cme4hu52s1499wmrz5wvstlbj",
       "isAPlus": false,
       "owned": false,
@@ -7659,7 +7659,7 @@
           "slug": "minimal-synth"
         },
         {
-          "name": "Düsseldorf School",
+          "name": "D\u00fcsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -7760,7 +7760,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/871b20d7-95bf-4490-8ac1-e3c1143e9d37/front-1200",
+      "coverArt": "/covers/marvin-gaye-whats-going-on.jpg",
       "id": "cme4h6mwn3974885rzmkr0jiyk",
       "isAPlus": false,
       "owned": false,
@@ -7971,7 +7971,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/65790705-6d7b-3596-a427-fe5b8ab6481d/front-1200",
+      "coverArt": "/covers/novos-baianos-acabou-chorare.jpg",
       "id": "cme4htec60863wmrzv9u2snkn",
       "isAPlus": false,
       "owned": false,
@@ -8001,7 +8001,7 @@
           "slug": "samba-rock"
         },
         {
-          "name": "Tropicália",
+          "name": "Tropic\u00e1lia",
           "slug": "tropic-lia"
         }
       ],
@@ -8102,7 +8102,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8f39d501-59b4-3cc1-b184-7150a0d63547/front-1200",
+      "coverArt": "/covers/david-bowie-blackstar.jpg",
       "id": "cme4h87gt4101885rzqhahcr15",
       "isAPlus": false,
       "owned": false,
@@ -8269,7 +8269,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1a021034-95d1-3a2d-bdca-73b25e455e49/front-1200",
+      "coverArt": "/covers/the-flaming-lips-the-soft-bulletin.jpg",
       "id": "cme4h3ueg3741885rzvtj0o20j",
       "isAPlus": false,
       "owned": false,
@@ -8460,7 +8460,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/19a185f4-f683-3d00-9571-7378ea276068/front-1200",
+      "coverArt": "/covers/harry-nilsson-nilsson-schmilsson.jpg",
       "id": "cme4gu0002907285rzxtyqmzu2",
       "isAPlus": false,
       "owned": false,
@@ -8551,7 +8551,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0ecf90fb-59ad-3194-b96b-57ad00e8bf1e/front-1200",
+      "coverArt": "/covers/miles-davis-a-tribute-to-jack-johnson.jpg",
       "id": "cme3frtms975585rze3ywfj8b",
       "isAPlus": true,
       "owned": false,
@@ -8674,7 +8674,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b7c8c951-8b66-361a-9156-ba9805bedbd5/front-1200",
+      "coverArt": "/covers/thelonious-monk-genius-of-modern-music-vol-2.jpg",
       "id": "cme4gjowr2029585rzovpiw26j",
       "isAPlus": false,
       "owned": false,
@@ -8741,7 +8741,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bca9280e-28b4-327f-8fe0-fd918579e486/front-1200",
+      "coverArt": "/covers/radiohead-amnesiac.jpg",
       "id": "cme4gaxku1268985rzx0igkiui",
       "isAPlus": false,
       "owned": false,
@@ -8920,13 +8920,13 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/79e9593d-3d7e-3dfd-8126-794b76d803e8/front-1200",
+      "coverArt": "/covers/os-mutantes-a-divina-comdia-ou-ando-meio-desligado.jpg",
       "id": "cme4ga0g11195785rzzq1hcfg7",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "os-mutantes-a-divina-comdia-ou-ando-meio-desligado",
-      "title": "A Divina Comédia Ou Ando Meio Desligado",
+      "title": "A Divina Com\u00e9dia Ou Ando Meio Desligado",
       "appleMusicUrl": "https://music.apple.com/us/album/a-divina-com%C3%A9dia-ou-ando-meio-desligado/1443643367?uo=4",
       "spotifyUri": "spotify:album:7Brj8kqhEO9Zg4daamMieT",
       "topRanking": null,
@@ -8942,7 +8942,7 @@
           "slug": "psychedelic-rock"
         },
         {
-          "name": "Tropicália",
+          "name": "Tropic\u00e1lia",
           "slug": "tropic-lia"
         },
         {
@@ -9043,7 +9043,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2c8fd4f3-1523-3604-97dd-18ba222e2f3b/front-1200",
+      "coverArt": "/covers/otis-redding-otis-blue-otis-redding-sings-soul.jpg",
       "id": "cme3fpg0f824085rza9ocmbff",
       "isAPlus": false,
       "owned": false,
@@ -9134,7 +9134,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7d5a684e-73a3-325c-a59c-34c9a941d8d6/front-1200",
+      "coverArt": "/covers/brian-eno-another-green-world.jpg",
       "id": "cme3fj21s372485rz5876dcgk",
       "isAPlus": true,
       "owned": false,
@@ -9313,7 +9313,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/90718403-7634-3786-84bf-2053a7bd4f4c/front-1200",
+      "coverArt": "/covers/prince-sign-o-the-times.jpg",
       "id": "cme3fhtlb282885rzspzceqia",
       "isAPlus": true,
       "owned": false,
@@ -9496,7 +9496,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bdde0830-6795-3a52-aaff-a5daf64184c8/front-500",
+      "coverArt": "/covers/various-artists-taking-tiger-mountain-by-strategy.jpg",
       "id": "cme4gzv5n3399885rzpz47cqjn",
       "isAPlus": false,
       "owned": false,
@@ -9615,7 +9615,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/71641af7-d122-326a-b0bb-f76a8d09810c/front-500",
+      "coverArt": "/covers/pj-harvey-stories-from-the-city-stories-from-the-sea-the-demos.jpg",
       "id": "cme4gzdaq3361785rzi9nf0yvc",
       "isAPlus": false,
       "owned": false,
@@ -9738,7 +9738,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d47f5666-e7cf-35c4-898d-ef778cc3cce0/front-500",
+      "coverArt": "/covers/the-13th-floor-elevators-easter-everywhere.jpg",
       "id": "cme4ggr681772685rznfh3cshu",
       "isAPlus": false,
       "owned": false,
@@ -9881,7 +9881,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0e7a233f-81f8-3e63-ad07-6cdfe2faecc3/front-500",
+      "coverArt": "/covers/aphex-twin-selected-ambient-works-vol-2.jpg",
       "id": "cme3fn50c673685rzg3l962zk",
       "isAPlus": true,
       "owned": false,
@@ -10056,7 +10056,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/12fab6b9-4eaf-33b0-963e-cae03ac332fe/front-500",
+      "coverArt": "/covers/cocteau-twins-heaven-or-las-vegas.jpg",
       "id": "cme4gldk32182385rzfi7m688u",
       "isAPlus": false,
       "owned": false,
@@ -10223,7 +10223,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6c9ae3dd-32ad-472c-96be-69d0a3536261/front-500",
+      "coverArt": "/covers/david-bowie-the-rise-and-fall-of-ziggy-stardust-and-the-spiders-from-mars.jpg",
       "id": "cme3fk9hp470585rzh6k1updn",
       "isAPlus": true,
       "owned": false,
@@ -10374,7 +10374,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c3733436-fcba-3c08-b082-d548df5c5139/front-500",
+      "coverArt": "/covers/a-tribe-called-quest-the-low-end-theory.jpg",
       "id": "cme4h2qjk3639485rzvkk9xti7",
       "isAPlus": false,
       "owned": false,
@@ -10513,7 +10513,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d66265fa-f8e3-3b79-ab11-23eddd92f3ce/front-500",
+      "coverArt": "/covers/king-sunny-ade-best-of-the-classic-years.jpg",
       "id": "cme3fs6bu995185rzot8g44g7",
       "isAPlus": true,
       "owned": false,
@@ -10531,7 +10531,7 @@
       ],
       "genres": [
         {
-          "name": "Jùjú",
+          "name": "J\u00f9j\u00fa",
           "slug": "j-j"
         }
       ],
@@ -10564,7 +10564,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fdd96703-7b21-365e-bdea-38029fbeb84e/front-500",
+      "coverArt": "/covers/the-beach-boys-pet-sounds.jpg",
       "id": "cme3fkkf1494585rzfee4q7y6",
       "isAPlus": true,
       "owned": false,
@@ -10775,7 +10775,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f61603ab-ef6b-386b-a5e0-aaefc00543f1/front-500",
+      "coverArt": "/covers/neil-young-everybody-knows-this-is-nowhere.jpg",
       "id": "cme3fq1m1863485rze3lfpwcv",
       "isAPlus": true,
       "owned": false,
@@ -10898,7 +10898,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a710c7c7-46e6-36ca-9c3c-87c8e79f8daf/front-500",
+      "coverArt": "/covers/neil-young-rust-never-sleeps.jpg",
       "id": "cme3fjknl412285rzl6z4fans",
       "isAPlus": true,
       "owned": false,
@@ -11053,7 +11053,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/58c6d809-bfa7-3b25-acf3-a99d53402b08/front-500",
+      "coverArt": "/covers/stevie-wonder-talking-book.jpg",
       "id": "cme3fqiuj894685rzed4788yo",
       "isAPlus": true,
       "owned": false,
@@ -11168,7 +11168,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ea88b09b-fd34-33cf-a3e5-25a3a2fb4c6f/front-500",
+      "coverArt": "/covers/stevie-wonder-songs-in-the-key-of-life.jpg",
       "id": "cme3fpot3839185rzkxw6ivwd",
       "isAPlus": true,
       "owned": false,
@@ -11403,7 +11403,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e626b377-74c5-3b97-8f16-8cef5e1c04ea/front-500",
+      "coverArt": "/covers/stevie-wonder-innervisions.jpg",
       "id": "cme3fnyex729985rz6cyn3vex",
       "isAPlus": true,
       "owned": false,
@@ -11574,7 +11574,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/493de006-33bf-3404-9bb7-1f3b0c22ce05/front-500",
+      "coverArt": "/covers/lucinda-williams-car-wheels-on-a-gravel-road.jpg",
       "id": "cme3fpc22815085rzi9h3hbcc",
       "isAPlus": true,
       "owned": false,
@@ -11705,7 +11705,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8a01217e-6947-3927-a39b-6691104694f1/front-500",
+      "coverArt": "/covers/kanye-west-the-college-dropout.jpg",
       "id": "cme3fi91a307085rzgiqf63yn",
       "isAPlus": true,
       "owned": false,
@@ -11900,7 +11900,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3c2d6ffe-61b9-46e5-b935-3b8df01f900d/front-500",
+      "coverArt": "/covers/kanye-west-my-beautiful-dark-twisted-fantasy.jpg",
       "id": "cme3fhhhs249185rz759a5qcq",
       "isAPlus": true,
       "owned": false,
@@ -12111,7 +12111,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c563d738-3841-31ce-b29d-ec6b40fd1e7b/front-500",
+      "coverArt": "/covers/kanye-west-late-registration.jpg",
       "id": "cme3flryg568985rzqzybz63w",
       "isAPlus": true,
       "owned": false,
@@ -12278,7 +12278,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a616dcf5-7a1f-3afe-a53b-27281c2bf75e/front-500",
+      "coverArt": "/covers/the-velvet-underground-the-velvet-underground.jpg",
       "id": "cme3fiz6m360585rz05gx960f",
       "isAPlus": true,
       "owned": false,
@@ -12473,7 +12473,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/eb143c5a-9a85-4bce-a78c-f7faf72c0169/front-500",
+      "coverArt": "/covers/vampire-weekend-modern-vampires-of-the-city.jpg",
       "id": "cme3fidao319885rzowmle5fm",
       "isAPlus": true,
       "owned": false,
@@ -12668,7 +12668,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e53310bf-8ccc-3d7f-a0b7-5ca4dbababcb/front-500",
+      "coverArt": "/covers/t-rex-electric-warrior.jpg",
       "id": "cme3fmgas611885rzzokypla1",
       "isAPlus": true,
       "owned": false,
@@ -12771,7 +12771,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f6b1b900-6108-32f0-abbd-2855af9151eb/front-500",
+      "coverArt": "/covers/talking-heads-remain-in-light.jpg",
       "id": "cme3fqxox919885rzjpbtrcui",
       "isAPlus": true,
       "owned": false,
@@ -12994,7 +12994,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release/5fd728bf-f69a-4c45-b68a-4fb30898bb00/39829937702-1200.jpg",
+      "coverArt": "/covers/the-strokes-is-this-it.jpg",
       "id": "cme3fo33p738085rzfjjapvja",
       "isAPlus": true,
       "owned": false,
@@ -13145,7 +13145,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1fb75447-c513-38c4-ad8f-1bfc441aa74c/front-500",
+      "coverArt": "/covers/sufjan-stevens-illinois.jpg",
       "id": "cme3fk52s458385rzi3v5fvzl",
       "isAPlus": true,
       "owned": false,
@@ -13432,7 +13432,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8588c5a5-b491-37a4-8d51-2227346a072e/front-500",
+      "coverArt": "/covers/steely-dan-aja.jpg",
       "id": "cme3fpt4j846485rzhrdez2lo",
       "isAPlus": true,
       "owned": false,
@@ -13627,7 +13627,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/aac8700b-8f62-30fc-ac2a-23b6cb37e3c3/front-500",
+      "coverArt": "/covers/dusty-springfield-dusty-in-memphis.jpg",
       "id": "cme3foj4j760785rzsrl7v9jp",
       "isAPlus": true,
       "owned": false,
@@ -13722,7 +13722,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d8dde278-482c-3cc8-a530-fea70476f3a5/front-500",
+      "coverArt": "/covers/the-smiths-the-queen-is-dead.jpg",
       "id": "cme3fii79330685rzgb72bmiy",
       "isAPlus": true,
       "owned": false,
@@ -13885,7 +13885,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ff8f533c-3cb3-3877-9209-11f433edaad2/front-500",
+      "coverArt": "/covers/patti-smith-horses.jpg",
       "id": "cme3foy13786885rzjca77f04",
       "isAPlus": true,
       "owned": false,
@@ -14072,7 +14072,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d8b8448a-2634-3e92-ac86-cf55e018f825/front-500",
+      "coverArt": "/covers/sly-the-family-stone-theres-a-riot-goin-on.jpg",
       "id": "cme3fm6st594985rzu0isnhjv",
       "isAPlus": true,
       "owned": false,
@@ -14295,7 +14295,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b7d0d3f5-8980-32c6-995d-db6f8226f1ca/front-500",
+      "coverArt": "/covers/sleater-kinney-the-woods.jpg",
       "id": "cme3fcr00066885rzfttsewk9",
       "isAPlus": true,
       "owned": false,
@@ -14446,7 +14446,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1b3233e2-15ed-344e-bc8e-6630455db87f/front-500",
+      "coverArt": "/covers/nina-simone-pastel-blues.jpg",
       "id": "cme3fkpwg507885rzx417sbhd",
       "isAPlus": true,
       "owned": false,
@@ -14565,7 +14565,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/840d6dc5-c003-4b94-9426-ab6544574d02/front-500",
+      "coverArt": "/covers/simon-garfunkel-bridge-over-troubled-water.jpg",
       "id": "cme3fku9b513085rz53px85a5",
       "isAPlus": true,
       "owned": false,
@@ -14700,7 +14700,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4a4213d0-f224-3d51-bcca-476f61162681/front-500",
+      "coverArt": "/covers/the-rolling-stones-sticky-fingers.jpg",
       "id": "cme3fn2km663185rzw1ks15gv",
       "isAPlus": true,
       "owned": false,
@@ -14799,7 +14799,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/de790d3d-a35c-364c-a8fb-adfb73084a45/front-500",
+      "coverArt": "/covers/rem-murmur.jpg",
       "id": "cme3fottu775485rz4946l0ta",
       "isAPlus": true,
       "owned": false,
@@ -14962,7 +14962,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b1392450-e666-3926-a536-22c65f834433/front-500",
+      "coverArt": "/covers/radiohead-ok-computer.jpg",
       "id": "cme3fimng338885rzd3i1v5ym",
       "isAPlus": true,
       "owned": false,
@@ -15141,7 +15141,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e75c0549-ad55-39e3-8025-c72c5d4a3c5d/front-500",
+      "coverArt": "/covers/radiohead-kid-a.jpg",
       "id": "cme3fd8ak134285rzlh5umuc1",
       "isAPlus": true,
       "owned": false,
@@ -15352,7 +15352,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6e335887-60ba-38f0-95af-fae7774336bf/front-500",
+      "coverArt": "/covers/radiohead-in-rainbows.jpg",
       "id": "cme3fjay6389085rz0x6v0g7d",
       "isAPlus": true,
       "owned": false,
@@ -15531,7 +15531,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/01921d99-9d15-3fce-8734-46e58327cfb7/front-500",
+      "coverArt": "/covers/public-enemy-it-takes-a-nation-of-millions-to-hold-us-back.jpg",
       "id": "cme3fbamy039885rzy07u0cl0",
       "isAPlus": true,
       "owned": false,
@@ -15702,7 +15702,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release/3b55bf62-83b6-41bc-90d9-6421cdd0c67e/front-500",
+      "coverArt": "/covers/prince-and-the-revolution-purple-rain.jpg",
       "id": "cme3fqf90889085rz68jisyme",
       "isAPlus": true,
       "owned": false,
@@ -15865,7 +15865,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fd728ba1-2f10-442b-a192-e359fa7d15db/front-500",
+      "coverArt": "/covers/prince-dirty-mind.jpg",
       "id": "cme3ftfz61073185rzfnoh4xlb",
       "isAPlus": true,
       "owned": false,
@@ -15988,7 +15988,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/561be5b7-a39c-3866-859d-d86f30816ae7/front-500",
+      "coverArt": "/covers/prince-1999.jpg",
       "id": "cme3flnvg559285rze94ecppj",
       "isAPlus": true,
       "owned": false,
@@ -16135,7 +16135,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/eb655897-6cc5-3fc1-b9ed-5008eb80c682/front-500",
+      "coverArt": "/covers/outkast-aquemini.jpg",
       "id": "cme3fljrp549685rzqbrnjxhf",
       "isAPlus": true,
       "owned": false,
@@ -16306,7 +16306,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8f310800-045b-3e12-8268-50b3d33a2267/front-500",
+      "coverArt": "/covers/neutral-milk-hotel-in-the-aeroplane-over-the-sea.jpg",
       "id": "cme3fp307797685rzd4iw373w",
       "isAPlus": true,
       "owned": false,
@@ -16553,7 +16553,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/764d0d9e-68b1-39fe-b1d1-eda104926777/front-500",
+      "coverArt": "/covers/thelonious-monk-brilliant-corners.jpg",
       "id": "cme3fmnh3631785rzm919u3r8",
       "isAPlus": true,
       "owned": false,
@@ -16636,7 +16636,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/42d725fb-a8b7-388c-8866-3b02789af326/front-500",
+      "coverArt": "/covers/joni-mitchell-blue.jpg",
       "id": "cme3fkfnk482985rz3bm7jc3z",
       "isAPlus": true,
       "owned": false,
@@ -16799,7 +16799,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/58a66044-fe3b-3b04-98b0-b955c24a2f62/front-500",
+      "coverArt": "/covers/charles-mingus-blues-roots.jpg",
       "id": "cme4htj6n1006wmrz5qjpomop",
       "isAPlus": true,
       "owned": false,
@@ -16886,7 +16886,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/48ec720b-2fc2-35dd-8130-5b186c4abcbc/front-500",
+      "coverArt": "/covers/charles-mingus-mingus-ah-um.jpg",
       "id": "cme3fn9e9681085rzvh0bpcyx",
       "isAPlus": true,
       "owned": false,
@@ -16973,7 +16973,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/48070ee2-1865-3b11-ba36-360b1453a37a/front-500",
+      "coverArt": "/covers/charles-mingus-the-black-saint-and-the-sinner-lady.jpg",
       "id": "cme3fnejp691985rzj7tlw4gg",
       "isAPlus": true,
       "owned": false,
@@ -17116,7 +17116,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/44261ea6-06cf-3fd3-a05c-42dee49c295a/front-500",
+      "coverArt": "/covers/mia-kala.jpg",
       "id": "cme3fl9yx530385rz7swf96d6",
       "isAPlus": true,
       "owned": false,
@@ -17343,7 +17343,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3f68cf91-b4f0-39ef-8318-93dc064a53ba/front-500",
+      "coverArt": "/covers/curtis-mayfield-super-fly-original-soundtrack.jpg",
       "id": "cme3ftc5e1066585rz5v0t3wvp",
       "isAPlus": true,
       "owned": false,
@@ -17482,7 +17482,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bcb70a11-8973-3654-b7a4-00ef82e4af88/front-500",
+      "coverArt": "/covers/madonna-ray-of-light.jpg",
       "id": "cme3fjuob435385rz99p41084",
       "isAPlus": true,
       "owned": false,
@@ -17685,7 +17685,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4516a30e-939c-3b2b-a8ea-f94ae418d3a6/front-500",
+      "coverArt": "/covers/the-kinks-the-village-green-preservation-society.jpg",
       "id": "cme3frj0n959585rzcat33wvi",
       "isAPlus": true,
       "owned": false,
@@ -17816,7 +17816,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9ff8a8fe-6aa7-473a-ae93-8488051e3f2d/front-500",
+      "coverArt": "/covers/carly-rae-jepsen-e-mo-tion.jpg",
       "id": "cme3ft8wd1057985rznrz21x12",
       "isAPlus": true,
       "owned": false,
@@ -17963,7 +17963,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f32fab67-77dd-3937-addc-9062e28e4c37/front-500",
+      "coverArt": "/covers/michael-jackson-thriller.jpg",
       "id": "cme3fqnqc902385rzn9160e2f",
       "isAPlus": true,
       "owned": false,
@@ -18110,7 +18110,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/cac0be2c-509f-40a9-b1ac-a70aa2243a54/front-500",
+      "coverArt": "/covers/grimes-art-angels.jpg",
       "id": "cme4gb41b1279385rznkq3a05m",
       "isAPlus": true,
       "owned": false,
@@ -18265,7 +18265,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/dcff25f1-702d-3b5e-b0da-d48172e6e62a/front-500",
+      "coverArt": "/covers/glenn-gould-bach-the-goldberg-variations-1981-recording.jpg",
       "id": "cme3fs9261003185rz20eqlg8j",
       "isAPlus": true,
       "owned": false,
@@ -18364,7 +18364,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f62ec525-7158-37c1-8535-6eaac62435b3/front-500",
+      "coverArt": "/covers/aretha-franklin-young-gifted-and-black.jpg",
       "id": "cme3fp7t7806185rzie0jzm1z",
       "isAPlus": true,
       "owned": false,
@@ -18467,7 +18467,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7d8f07a7-4c64-3afb-8daf-8f1d4df89a78/front-500",
+      "coverArt": "/covers/aretha-franklin-i-never-loved-a-man-the-way-i-love-you.jpg",
       "id": "cme3frqcy967785rzvwvb7i1v",
       "isAPlus": true,
       "owned": false,
@@ -18570,7 +18570,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6f9e2641-f79b-32f2-a752-f7212e9040e4/front-500",
+      "coverArt": "/covers/brian-eno-before-and-after-science.jpg",
       "id": "cme3frabi945985rz44rtw0ew",
       "isAPlus": true,
       "owned": false,
@@ -18729,7 +18729,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/169b62aa-c3a5-3ed9-bed1-cc47c4bc51ad/front-500",
+      "coverArt": "/covers/bob-dylan-the-freewheelin-bob-dylan.jpg",
       "id": "cme3fq64w873985rz7vqnt7zo",
       "isAPlus": true,
       "owned": false,
@@ -18900,7 +18900,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fb48b1dc-412f-36aa-8820-1023c08c46c6/front-500",
+      "coverArt": "/covers/bob-dylan-highway-61-revisited.jpg",
       "id": "cme3fpx3f852885rzakao4y0r",
       "isAPlus": true,
       "owned": false,
@@ -19043,7 +19043,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/77cf47ba-58cd-3f3d-a5f9-79bf89860421/front-500",
+      "coverArt": "/covers/john-coltrane-a-love-supreme.jpg",
       "id": "cme3frel1953285rzbgwr1r1g",
       "isAPlus": true,
       "owned": false,
@@ -19166,7 +19166,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/aa41b178-9f16-3dc4-84b6-e9ad8b5be4b8/front-500",
+      "coverArt": "/covers/can-future-days.jpg",
       "id": "cme3fnj1c703685rzi9u0sic4",
       "isAPlus": true,
       "owned": false,
@@ -19345,7 +19345,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d28777fc-f135-3394-a033-eafb9ebcffb4/front-500",
+      "coverArt": "/covers/kate-bush-the-dreaming.jpg",
       "id": "cme3fsrno1033085rzfxyy4c0k",
       "isAPlus": true,
       "owned": false,
@@ -19552,7 +19552,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/017f2a37-a78f-3578-9611-fa40408e5d90/front-500",
+      "coverArt": "/covers/kate-bush-hounds-of-love.jpg",
       "id": "cme3fjgfv401485rzo7srczhv",
       "isAPlus": true,
       "owned": false,
@@ -19779,7 +19779,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/686cdbd1-b400-32d8-8cb8-9317a2e41a58/front-500",
+      "coverArt": "/covers/david-bowie-station-to-station.jpg",
       "id": "cme3fr1ns925285rzrtioduiv",
       "isAPlus": true,
       "owned": false,
@@ -19918,7 +19918,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f6a51281-56c4-3538-b915-65a9d4eb29b5/front-500",
+      "coverArt": "/covers/david-bowie-low.jpg",
       "id": "cme3fl3sb519185rzddjue0z3",
       "isAPlus": true,
       "owned": false,
@@ -20109,7 +20109,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b2a6e057-087d-3ae5-a6e5-7f5fa39808ff/front-500",
+      "coverArt": "/covers/bjrk-post.jpg",
       "id": "cme4gvypd3062485rz03w5hcmu",
       "isAPlus": true,
       "owned": false,
@@ -20121,7 +20121,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Björk",
+          "name": "Bj\u00f6rk",
           "slug": "bjrk"
         }
       ],
@@ -20272,7 +20272,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6cadda7c-fbd0-3b19-9546-56915e3305d8/front-500",
+      "coverArt": "/covers/bob-dylan-bringing-it-all-back-home.jpg",
       "id": "cme3ft4aa1046285rzh6zjvzey",
       "isAPlus": true,
       "owned": false,
@@ -20427,7 +20427,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9c1b8072-eb1d-33d2-af8c-984d46e40902/front-500",
+      "coverArt": "/covers/bob-dylan-blood-on-the-tracks.jpg",
       "id": "cme3fsdqs1006385rzkdnctbxa",
       "isAPlus": true,
       "owned": false,
@@ -20558,7 +20558,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/329fb554-2a81-3d8a-8e22-ec2c66810019/front-500",
+      "coverArt": "/covers/bob-dylan-blonde-on-blonde.jpg",
       "id": "cme3fo8gn745385rz9v86d5ar",
       "isAPlus": true,
       "owned": false,
@@ -20713,7 +20713,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/740ec10a-e887-38a6-a04d-fe2069c9e2a7/front-500",
+      "coverArt": "/covers/nick-drake-pink-moon.jpg",
       "id": "cme3fsxqm1040685rz7nffm6hj",
       "isAPlus": true,
       "owned": false,
@@ -20900,7 +20900,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/89896a3e-e309-3ed3-a1a9-36be29ae76b0/front-500",
+      "coverArt": "/covers/miles-davis-milestones.jpg",
       "id": "cme3fgxim159085rzfn7ast16",
       "isAPlus": true,
       "owned": false,
@@ -20979,7 +20979,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8e8a594f-2175-38c7-a871-abb68ec363e7/front-500",
+      "coverArt": "/covers/miles-davis-kind-of-blue.jpg",
       "id": "cme3fj6rj379585rzb693u2ur",
       "isAPlus": true,
       "owned": false,
@@ -21070,7 +21070,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7d0a9612-7636-34fe-84d9-445c8df9c0f3/front-500",
+      "coverArt": "/covers/miles-davis-in-a-silent-way.jpg",
       "id": "cme3frxda979985rzqsdwh4ki",
       "isAPlus": true,
       "owned": false,
@@ -21197,7 +21197,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/82fd3ab5-0fc9-3a36-8832-65afaf05c2fe/front-500",
+      "coverArt": "/covers/miles-davis-filles-de-kilimanjaro.jpg",
       "id": "cme3fs159984785rzo2x8k8da",
       "isAPlus": true,
       "owned": false,
@@ -21300,7 +21300,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b248d212-aace-3c3e-a23d-e13aaac1f87a/front-500",
+      "coverArt": "/covers/stan-getz-getzgilberto.jpg",
       "id": "cme4gk29s2067385rz5k1djkz2",
       "isAPlus": true,
       "owned": false,
@@ -21330,7 +21330,7 @@
           "slug": "cool-jazz"
         },
         {
-          "name": "Samba-canção",
+          "name": "Samba-can\u00e7\u00e3o",
           "slug": "samba-can-o"
         }
       ],
@@ -21431,7 +21431,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/810272e0-aef1-3d85-b2d3-e512e87fc38c/front-500",
+      "coverArt": "/covers/bjrk-homogenic.jpg",
       "id": "cme3fnosc713685rzfq9d03t4",
       "isAPlus": true,
       "owned": false,
@@ -21443,7 +21443,7 @@
       "topRanking": 15,
       "artist": [
         {
-          "name": "Björk",
+          "name": "Bj\u00f6rk",
           "slug": "bjrk"
         }
       ],
@@ -21610,7 +21610,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2c385052-5083-43a2-b1e5-36566d2ae3c0/front-500",
+      "coverArt": "/covers/beyonc-renaissance.jpg",
       "id": "cme3fsi4s1016285rzt818lxjz",
       "isAPlus": true,
       "owned": false,
@@ -21622,7 +21622,7 @@
       "topRanking": 31,
       "artist": [
         {
-          "name": "Beyoncé",
+          "name": "Beyonc\u00e9",
           "slug": "beyonce"
         }
       ],
@@ -21825,7 +21825,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c1f22e07-7bdf-4a4f-8b50-7747c1091ef6/front-500",
+      "coverArt": "/covers/beyonc-lemonade.jpg",
       "id": "cme3fitn4350085rzvjsn8qyr",
       "isAPlus": true,
       "owned": false,
@@ -21837,7 +21837,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyoncé",
+          "name": "Beyonc\u00e9",
           "slug": "beyonce"
         }
       ],
@@ -21984,7 +21984,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/055be730-dcad-31bf-b550-45ba9c202aa3/front-500",
+      "coverArt": "/covers/the-beatles-the-beatles-white-album.jpg",
       "id": "cme4g4dhl1094585rz90xm7u06",
       "isAPlus": true,
       "owned": false,
@@ -22147,7 +22147,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9f7a4c28-8fa2-3113-929c-c47a9f7982c3/front-500",
+      "coverArt": "/covers/the-beatles-sgt-peppers-lonely-hearts-club-band.jpg",
       "id": "cme3fnssr720285rzl0gssuhi",
       "isAPlus": true,
       "owned": false,
@@ -22314,7 +22314,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/dca03435-8adb-30a5-ba82-5a162267ff38/front-500",
+      "coverArt": "/covers/the-beatles-rubber-soul.jpg",
       "id": "cme3fjp0m421585rzpe56v7i5",
       "isAPlus": true,
       "owned": false,
@@ -22449,7 +22449,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/72d15666-99a7-321e-b1f3-a3f8c09dff9f/front-500",
+      "coverArt": "/covers/the-beatles-revolver.jpg",
       "id": "cme3fhmmc256385rzc7lk4w6t",
       "isAPlus": true,
       "owned": false,
@@ -22584,7 +22584,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9162580e-5df4-32de-80cc-f45a8d8a9b1d/front-500",
+      "coverArt": "/covers/the-beatles-abbey-road.jpg",
       "id": "cme3fqs2s909685rzqn7yau78",
       "isAPlus": true,
       "owned": false,
@@ -22739,7 +22739,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7c402a15-f97f-42e3-a4da-408dc4621948/front-500",
+      "coverArt": "/covers/the-beach-boys-the-smile-sessions.jpg",
       "id": "cme4h3hft3707985rznaae0wjk",
       "isAPlus": true,
       "owned": false,
@@ -23022,7 +23022,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/05affa96-5959-32da-8d75-1c9eb985ca59/front-500",
+      "coverArt": "/covers/arcade-fire-funeral.jpg",
       "id": "cme3fqbdd881585rzjbm4tjry",
       "isAPlus": true,
       "owned": false,
@@ -23221,7 +23221,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6086062c-f943-4b85-b1cb-43558425ec1c/front-500",
+      "coverArt": "/covers/fiona-apple-the-idler-wheel-is-wiser-than-the-driver-of-the-screw-and-whipping-cords-will-serve-you-more-than-ropes-will-ever-do.jpg",
       "id": "cme3fmszx644385rzcelz688z",
       "isAPlus": true,
       "owned": false,
@@ -23372,7 +23372,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/882db6d8-e28b-46ba-8a30-277e86fbddf7/front-500",
+      "coverArt": "/covers/fiona-apple-fetch-the-bolt-cutters.jpg",
       "id": "cme3fmxbm652785rzdfm4qhzl",
       "isAPlus": true,
       "owned": false,
@@ -23563,7 +23563,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6842c81d-ea77-3dfd-abf7-4323add3f4d4/front-500",
+      "coverArt": "/covers/aphex-twin-selected-ambient-works-85-92.jpg",
       "id": "cme3fmaxe604585rzssuw2s0f",
       "isAPlus": true,
       "owned": false,
@@ -23706,7 +23706,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/84d79dbe-7ac1-3ebc-9b36-238ddfb8229c/front-500",
+      "coverArt": "/covers/aphex-twin-richard-d-james-album.jpg",
       "id": "cme4gxqg33209685rzoov9dkzn",
       "isAPlus": true,
       "owned": false,
@@ -23853,7 +23853,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/48140466-cff6-3222-bd55-63c27e43190d/front-500",
+      "coverArt": "/covers/portishead-dummy.jpg",
       "id": "cme4ggnfj1761985rz7hupgge5",
       "isAPlus": false,
       "owned": false,
@@ -24052,7 +24052,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/cb76227e-3ac0-3002-9a10-615a5b73cc59/front-500",
+      "coverArt": "/covers/my-bloody-valentine-loveless.jpg",
       "id": "cme4gq5g42579085rz4dq2kq32",
       "isAPlus": false,
       "owned": false,
@@ -24231,7 +24231,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5cbcdd9f-4b7d-3b3c-b9f2-6b0e75971157/front-500",
+      "coverArt": "/covers/lcd-soundsystem-sound-of-silver.jpg",
       "id": "cme4gyocx3294085rze6kkzl8g",
       "isAPlus": false,
       "owned": false,
@@ -24398,7 +24398,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/499c19c8-0dab-4824-884b-6191d145e95b/front-500",
+      "coverArt": "/covers/kendrick-lamar-good-kid-maad-city.jpg",
       "id": "cme4h7xe54084085rz4dr4sffk",
       "isAPlus": false,
       "owned": false,
@@ -24645,7 +24645,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e2af1866-52df-3716-b51c-f18b90996748/front-500",
+      "coverArt": "/covers/penguin-cafe-orchestra-penguin-cafe-orchestra.jpg",
       "id": "cme3fhz84291385rzhrsvkc9k",
       "isAPlus": false,
       "owned": false,
@@ -24776,7 +24776,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/02f3737b-c370-32cc-ac56-e2abcf142abe/front-500",
+      "coverArt": "/covers/townes-van-zandt-our-mother-the-mountain.jpg",
       "id": "cme3fi3cc300185rzg4f72kvn",
       "isAPlus": false,
       "owned": false,
@@ -24907,7 +24907,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/784c0edd-0f37-33a2-9ca5-dff87b4f999c/front-500",
+      "coverArt": "/covers/the-rolling-stones-let-it-bleed.jpg",
       "id": "cme3fjz8d449885rz14z9ccjv",
       "isAPlus": false,
       "owned": false,
@@ -25002,7 +25002,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7f5132f0-1d58-3d83-be6a-e32d22219e17/front-500",
+      "coverArt": "/covers/james-brown-star-time.jpg",
       "id": "cme3fle8z539785rz2ojt0mn3",
       "isAPlus": false,
       "owned": false,
@@ -25085,7 +25085,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d76912e5-b648-32a5-b521-384be78266d5/front-500",
+      "coverArt": "/covers/my-bloody-valentine-you-made-me-realise.jpg",
       "id": "cme3fod0w754485rz0rpgnyov",
       "isAPlus": false,
       "owned": false,
@@ -25220,7 +25220,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/02c05025-e031-30a0-afee-d92cea9d79dd/front-500",
+      "coverArt": "/covers/the-knife-silent-shout.jpg",
       "id": "cme3fpk33832085rztrgkw3y3",
       "isAPlus": false,
       "owned": false,
@@ -25411,7 +25411,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/da40e720-2097-3730-8a7f-0c2ddbff4a96/front-500",
+      "coverArt": "/covers/the-jimi-hendrix-experience-are-you-experienced.jpg",
       "id": "cme3fm1r2585085rzkc98pg8b",
       "isAPlus": false,
       "owned": false,
@@ -25538,7 +25538,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/47ba2d59-5544-34a4-b108-dc08c0956298/front-500",
+      "coverArt": "/covers/the-jimi-hendrix-experience-electric-ladyland.jpg",
       "id": "cme3fr5pv934585rza98ywsxt",
       "isAPlus": false,
       "owned": false,
@@ -25717,7 +25717,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1f5ef8d3-10ca-30eb-b41e-85b16987d412/front-500",
+      "coverArt": "/covers/david-bowie-heroes.jpg",
       "id": "cme4g8z4t1112185rzpzwm74uq",
       "isAPlus": false,
       "owned": false,
@@ -25852,7 +25852,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9980ffe5-c5b5-3a83-8c1e-1ec6618f97ca/front-500",
+      "coverArt": "/covers/bob-dylan-love-and-theft.jpg",
       "id": "cme4g95zm1128985rzvxl1iiug",
       "isAPlus": false,
       "owned": false,
@@ -25939,7 +25939,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/608977e4-5c3d-3254-af1a-7e46fe6674c5/front-500",
+      "coverArt": "/covers/the-go-betweens-16-lovers-lane.jpg",
       "id": "cme4g9clm1149785rzcgptgty8",
       "isAPlus": false,
       "owned": false,
@@ -26046,7 +26046,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1c1b50ec-828b-3d7c-9b1b-54cb1fe97d55/front-500",
+      "coverArt": "/covers/kanye-west-808s-heartbreak.jpg",
       "id": "cme4g9mh41172285rzq0wu2sjq",
       "isAPlus": false,
       "owned": false,
@@ -26261,7 +26261,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bbce0087-d386-4246-a51d-dbcdfdbe8fb2/front-500",
+      "coverArt": "/covers/radiohead-a-moon-shaped-pool.jpg",
       "id": "cme4g9wj11182885rzeggt2w33",
       "isAPlus": false,
       "owned": false,
@@ -26456,7 +26456,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/26987c39-5914-483b-a897-d43ce6aad9b1/front-500",
+      "coverArt": "/covers/the-rolling-stones-aftermath.jpg",
       "id": "cme4gafhi1224485rz27gzujc9",
       "isAPlus": false,
       "owned": false,
@@ -26543,7 +26543,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/50f8710f-3ae6-319b-85a7-afe783f13449/front-500",
+      "coverArt": "/covers/david-bowie-aladdin-sane.jpg",
       "id": "cme4galer1244085rzzltjkr87",
       "isAPlus": false,
       "owned": false,
@@ -26614,7 +26614,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b13b8a1f-56ba-4966-bec9-d09e73de16f4/front-500",
+      "coverArt": "/covers/art-blakey-the-jazz-messengers-moanin.jpg",
       "id": "cme4gb7bl1290085rzbuu1jbbo",
       "isAPlus": false,
       "owned": false,
@@ -26693,7 +26693,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/32d38e25-27e8-45bc-b79b-931f5a609546/front-500",
+      "coverArt": "/covers/mia-arular.jpg",
       "id": "cme4gbcwe1300985rzmslda0k0",
       "isAPlus": false,
       "owned": false,
@@ -26739,7 +26739,7 @@
           "slug": "electropop"
         },
         {
-          "name": "Tamborzão",
+          "name": "Tamborz\u00e3o",
           "slug": "tamborz-o"
         },
         {
@@ -26932,13 +26932,13 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c5bfc8df-ca3a-3cd1-a8b7-b453e023a84c/front-500",
+      "coverArt": "/covers/miles-davis-ascenseur-pour-lchafaud-original-motion-picture-soundtrack.jpg",
       "id": "cme4gbfiu1308685rzyc83qmxl",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "miles-davis-ascenseur-pour-lchafaud-original-motion-picture-soundtrack",
-      "title": "Ascenseur pour l'Échafaud",
+      "title": "Ascenseur pour l'\u00c9chafaud",
       "appleMusicUrl": "https://music.apple.com/us/album/ascenseur-pour-l%C3%A9chafaud/1389716930?uo=4",
       "spotifyUri": null,
       "topRanking": null,
@@ -27027,7 +27027,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/766977a5-162d-4d03-9511-bfe581268bfa/front-500",
+      "coverArt": "/covers/tedeschi-trucks-band-i-am-the-moon-ii-ascension.jpg",
       "id": "cme4gbnkm1328385rz2jv3atua",
       "isAPlus": false,
       "owned": false,
@@ -27066,7 +27066,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/25a721dc-0940-359e-8b0d-4be9d5616348/front-1200",
+      "coverArt": "/covers/miles-davis-bags-groove.jpg",
       "id": "cme4gc0l61363885rzraq307pq",
       "isAPlus": false,
       "owned": false,
@@ -27129,7 +27129,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6e672bbd-7c7f-32f8-8335-c603be99d13b/front-500",
+      "coverArt": "/covers/the-rolling-stones-beggars-banquet.jpg",
       "id": "cme4gc7c41379685rzab1c0g5z",
       "isAPlus": false,
       "owned": false,
@@ -27236,19 +27236,19 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3e1387d0-c3c0-4b02-8abe-b6bb40b409b6/front-500",
+      "coverArt": "/covers/beyonc-beyonc.jpg",
       "id": "cme4gcbqr1390185rzwjllvkv9",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "2013-12-13T06:00:00.000Z",
       "slug": "beyonc-beyonc",
-      "title": "Beyoncé",
+      "title": "Beyonc\u00e9",
       "appleMusicUrl": "https://music.apple.com/us/album/beyonc%C3%A9-deluxe/780519939?uo=4",
       "spotifyUri": "spotify:album:2UJwKSBUz6rtW4QLK74kQu",
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyoncé",
+          "name": "Beyonc\u00e9",
           "slug": "beyonce"
         }
       ],
@@ -27359,7 +27359,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9b7fd241-b8b6-3b0a-862c-de826b1189ed/front-500",
+      "coverArt": "/covers/laurie-anderson-big-science.jpg",
       "id": "cme4gchg11401385rz0r7epm4u",
       "isAPlus": false,
       "owned": false,
@@ -27494,7 +27494,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a9e30282-5b37-3f92-b897-b9659a1a312b/front-500",
+      "coverArt": "/covers/miles-davis-bitches-brew.jpg",
       "id": "cme4gclwn1412185rz7nvbe8l2",
       "isAPlus": false,
       "owned": false,
@@ -27649,7 +27649,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b9c6879f-3a34-3aa0-a68f-73ced2608f7a/front-500",
+      "coverArt": "/covers/depeche-mode-black-celebration.jpg",
       "id": "cme4gcrmr1423085rzlfy3233s",
       "isAPlus": false,
       "owned": false,
@@ -27784,7 +27784,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b3d96626-4d46-4012-b6cb-e8d8b192a4f1/front-500",
+      "coverArt": "/covers/dangelo-and-the-vanguard-black-messiah.jpg",
       "id": "cme4gcws11436185rz56i8i2yh",
       "isAPlus": false,
       "owned": false,
@@ -27931,7 +27931,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0b8e14e1-d44d-3770-8617-5c6137a444a8/front-500",
+      "coverArt": "/covers/britney-spears-blackout.jpg",
       "id": "cme4gd1lq1445885rztzi2ganx",
       "isAPlus": false,
       "owned": false,
@@ -28086,7 +28086,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c63baaaa-10c0-4b86-ad7e-1f39d7e2eccc/front-500",
+      "coverArt": "/covers/john-coltrane-blue-train.jpg",
       "id": "cme4gd6ja1454885rzpm4wkulh",
       "isAPlus": false,
       "owned": false,
@@ -28165,7 +28165,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1e151a63-e906-4903-b108-b3ecf21218b4/front-500",
+      "coverArt": "/covers/robyn-body-talk.jpg",
       "id": "cme4gdde81468585rz15t175vf",
       "isAPlus": false,
       "owned": false,
@@ -28308,7 +28308,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d742fded-00e7-3746-a63d-aa2def3fdbcc/front-500",
+      "coverArt": "/covers/nick-drake-bryter-layter.jpg",
       "id": "cme4gdn591498685rzq7hs7sx9",
       "isAPlus": false,
       "owned": false,
@@ -28455,7 +28455,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c65de046-7a48-4269-b4e5-4db0ed328f47/front-500",
+      "coverArt": "/covers/tyler-the-creator-call-me-if-you-get-lost.jpg",
       "id": "cme4gds951512885rzfupbsmms",
       "isAPlus": false,
       "owned": false,
@@ -28658,7 +28658,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9e4072b4-11c3-3fe6-be4f-4a607bbb94f9/front-500",
+      "coverArt": "/covers/joo-gilberto-chega-de-saudade.jpg",
       "id": "cme4ge1mf1538285rzegru6sba",
       "isAPlus": false,
       "owned": false,
@@ -28670,7 +28670,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "João Gilberto",
+          "name": "Jo\u00e3o Gilberto",
           "slug": "joo-gilberto"
         }
       ],
@@ -28753,7 +28753,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ffa420fb-1bb3-3b67-8577-165429008835/front-500",
+      "coverArt": "/covers/nico-chelsea-girl.jpg",
       "id": "cme4ge6p81545485rzapos5wjy",
       "isAPlus": false,
       "owned": false,
@@ -28876,7 +28876,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/19c331a6-c93e-3ef4-82cf-24adf4f4b14b/front-500",
+      "coverArt": "/covers/rem-chronic-town.jpg",
       "id": "cme4geaux1551185rznvf13b3a",
       "isAPlus": false,
       "owned": false,
@@ -28987,7 +28987,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4f348977-6f44-39f9-b243-071927ecc6a4/front-500",
+      "coverArt": "/covers/pavement-crooked-rain-crooked-rain.jpg",
       "id": "cme4gf49m1620785rzsrzap665",
       "isAPlus": false,
       "owned": false,
@@ -29126,7 +29126,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6891a28c-5865-36e2-9e5f-c9fac1d3595f/front-500",
+      "coverArt": "/covers/bjrk-debut.jpg",
       "id": "cme4gfaj81636085rz8qc7sura",
       "isAPlus": false,
       "owned": false,
@@ -29138,7 +29138,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Björk",
+          "name": "Bj\u00f6rk",
           "slug": "bjrk"
         }
       ],
@@ -29289,7 +29289,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fc325dd3-73ed-36aa-9c77-6b65a958e3cf/front-500",
+      "coverArt": "/covers/bob-dylan-desire.jpg",
       "id": "cme4gfgej1655785rz0b050z93",
       "isAPlus": false,
       "owned": false,
@@ -29392,7 +29392,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/20bbd8b3-35fa-4a29-9a94-13f4f01bf9ca/front-500",
+      "coverArt": "/covers/caroline-polachek-desire-i-want-to-turn-into-you.jpg",
       "id": "cme4gfmx81673385rzbbkm8m98",
       "isAPlus": false,
       "owned": false,
@@ -29551,7 +29551,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/209b45b7-8b2f-3e07-b194-efff9cde80dd/front-500",
+      "coverArt": "/covers/sleater-kinney-dig-me-out.jpg",
       "id": "cme4gfr2n1682485rz8kj4s2g9",
       "isAPlus": false,
       "owned": false,
@@ -29670,7 +29670,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c3b6435c-2698-4909-9879-d80439e180fe/front-500",
+      "coverArt": "/covers/janelle-mone-dirty-computer.jpg",
       "id": "cme4gfxk41694485rzvk26mdme",
       "isAPlus": false,
       "owned": false,
@@ -29682,7 +29682,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Monáe",
+          "name": "Janelle Mon\u00e1e",
           "slug": "janelle-mone"
         }
       ],
@@ -29861,7 +29861,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/494bf606-d2f7-36d0-8340-eadad8601d2b/front-500",
+      "coverArt": "/covers/the-cure-disintegration.jpg",
       "id": "cme4gg2mg1707485rzeu17p1o1",
       "isAPlus": false,
       "owned": false,
@@ -30052,7 +30052,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1aa41b19-5a72-341b-bd91-4cf61d1dab6b/front-500",
+      "coverArt": "/covers/pixies-doolittle.jpg",
       "id": "cme4gg8lh1718385rzci1oo9l4",
       "isAPlus": false,
       "owned": false,
@@ -30207,7 +30207,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d705a3ed-be7a-459c-ac74-58cddaf98576/front-500",
+      "coverArt": "/covers/big-thief-dragon-new-warm-mountain-i-believe-in-you.jpg",
       "id": "cme4gghyu1744385rznzo5tnw0",
       "isAPlus": false,
       "owned": false,
@@ -30410,7 +30410,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a4b405a6-0577-3b77-b46d-06af1b98fbd2/front-500",
+      "coverArt": "/covers/can-ege-bamyasi.jpg",
       "id": "cme4ggwvl1786785rzcpe2kpbh",
       "isAPlus": false,
       "owned": false,
@@ -30553,7 +30553,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bb525db3-81e4-4c05-b529-23fa05f35c12/front-500",
+      "coverArt": "/covers/rosala-el-mal-querer.jpg",
       "id": "cme4gh3dw1806385rzj0arfz7n",
       "isAPlus": false,
       "owned": false,
@@ -30565,7 +30565,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Rosalía",
+          "name": "Rosal\u00eda",
           "slug": "rosala"
         }
       ],
@@ -30587,7 +30587,7 @@
           "slug": "alternative-r-b"
         },
         {
-          "name": "Bulería",
+          "name": "Buler\u00eda",
           "slug": "buler-a"
         },
         {
@@ -30696,7 +30696,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8743886f-f38c-3441-8694-030dae089cbf/front-500",
+      "coverArt": "/covers/duke-ellington-ellington-uptown.jpg",
       "id": "cme4gh8d51819785rzoyfoiugc",
       "isAPlus": false,
       "owned": false,
@@ -30783,7 +30783,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c7af2ab6-81b0-3f92-8253-9417d00f1361/front-1200",
+      "coverArt": "/covers/duke-ellington-ellington-at-newport-1999.jpg",
       "id": "cme4ghcmk1832185rzmlltpgva",
       "isAPlus": false,
       "owned": false,
@@ -30878,7 +30878,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4b2186f5-ff00-3227-ae11-783ba93e1089/front-500",
+      "coverArt": "/covers/dj-shadow-endtroducing.jpg",
       "id": "cme4ghjk41847085rz01e223rd",
       "isAPlus": false,
       "owned": false,
@@ -31045,7 +31045,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/610fb60f-900a-3c42-ac7d-f6b6aa8035f9/front-500",
+      "coverArt": "/covers/wu-tang-clan-enter-the-wu-tang-36-chambers.jpg",
       "id": "cme4ghpby1860985rz3rgs8si3",
       "isAPlus": false,
       "owned": false,
@@ -31260,7 +31260,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d0493944-992b-3534-9174-8320c1879837/front-500",
+      "coverArt": "/covers/gang-of-four-entertainment.jpg",
       "id": "cme4ghuyd1874085rz8of15kx3",
       "isAPlus": false,
       "owned": false,
@@ -31423,7 +31423,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c186db82-9988-367e-8486-2e38e9b6c8db/front-500",
+      "coverArt": "/covers/liz-phair-exile-in-guyville.jpg",
       "id": "cme4gi7z11905085rz0n6vn2ex",
       "isAPlus": false,
       "owned": false,
@@ -31614,7 +31614,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4838a3c9-fd2b-30a5-83eb-e32545b5d7fc/front-500",
+      "coverArt": "/covers/the-rolling-stones-exile-on-main-st.jpg",
       "id": "cme4gidga1919285rz98tqm1t2",
       "isAPlus": false,
       "owned": false,
@@ -31737,7 +31737,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9e3bff06-c552-345b-a10b-aeb6061e1a8a/front-500",
+      "coverArt": "/covers/the-kinks-face-to-face.jpg",
       "id": "cme4gij6o1930585rzah1cex5j",
       "isAPlus": false,
       "owned": false,
@@ -31832,7 +31832,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f378dcb1-841b-3be1-9d96-779036562de1/front-500",
+      "coverArt": "/covers/talking-heads-fear-of-music.jpg",
       "id": "cme4ginwh1940485rz6ysfmcsg",
       "isAPlus": false,
       "owned": false,
@@ -32015,7 +32015,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2eaf4eef-f6bb-3fff-a4e2-79d639bde1d0/front-500",
+      "coverArt": "/covers/julee-cruise-floating-into-the-night.jpg",
       "id": "cme4gits61950585rzr8nddziv",
       "isAPlus": false,
       "owned": false,
@@ -32198,7 +32198,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f1d08326-c23b-4b43-be3b-20b33ab10bf6/front-500",
+      "coverArt": "/covers/taylor-swift-folklore.jpg",
       "id": "cme4giznx1964185rzemz5b377",
       "isAPlus": false,
       "owned": false,
@@ -32373,7 +32373,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/72fd9993-17b8-3402-9f8d-c39cb3d2c27e/front-500",
+      "coverArt": "/covers/roxy-music-for-your-pleasure.jpg",
       "id": "cme4gj61o1983585rzdl0ygzr8",
       "isAPlus": false,
       "owned": false,
@@ -32508,7 +32508,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/95e58ee5-5421-38b0-a937-803b004c7ae8/front-500",
+      "coverArt": "/covers/stevie-wonder-fulfillingness-first-finale.jpg",
       "id": "cme4gjbqa1995285rznjbf5i82",
       "isAPlus": false,
       "owned": false,
@@ -32635,7 +32635,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9fe3ccc2-9649-3ac3-bc7f-a82d9b6ee815/front-500",
+      "coverArt": "/covers/spoon-ga-ga-ga-ga-ga.jpg",
       "id": "cme4gjgjs2004285rzceyositl",
       "isAPlus": false,
       "owned": false,
@@ -32754,7 +32754,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2df16c69-a343-3c95-a9a9-c9a7c9db2bb7/front-500",
+      "coverArt": "/covers/gal-costa-gal-costa-1969.jpg",
       "id": "cme4gjljr2016585rz7gsah3m2",
       "isAPlus": false,
       "owned": false,
@@ -32772,7 +32772,7 @@
       ],
       "genres": [
         {
-          "name": "Tropicália",
+          "name": "Tropic\u00e1lia",
           "slug": "tropic-lia"
         },
         {
@@ -32921,7 +32921,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2cdca11d-3e45-3152-93e5-4d2a4ddb1bc6/front-500",
+      "coverArt": "/covers/john-coltrane-giant-steps.jpg",
       "id": "cme4gkdpg2098785rz5ylc2sja",
       "isAPlus": false,
       "owned": false,
@@ -33008,7 +33008,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/836422a2-9619-38a5-9e70-022b40eec3c4/front-500",
+      "coverArt": "/covers/spoon-girls-can-tell.jpg",
       "id": "cme4gkjkz2109285rza16hzvce",
       "isAPlus": false,
       "owned": false,
@@ -33107,7 +33107,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/19847822-1430-3380-9cf1-bc45545b34ac/front-500",
+      "coverArt": "/covers/paul-simon-graceland.jpg",
       "id": "cme4gksld2130385rzgna9vsod",
       "isAPlus": false,
       "owned": false,
@@ -33298,7 +33298,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d44c50ad-61fd-3fce-95fc-27024d7f1d30/front-500",
+      "coverArt": "/covers/kanye-west-graduation.jpg",
       "id": "cme4gkxcb2143385rz47wf9tee",
       "isAPlus": false,
       "owned": false,
@@ -33465,7 +33465,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d03a3ae3-4a33-4c50-8501-00710070549c/front-500",
+      "coverArt": "/covers/deerhunter-halcyon-digest.jpg",
       "id": "cme4gl3052155985rzlkjqqxkj",
       "isAPlus": false,
       "owned": false,
@@ -33616,7 +33616,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f81500a3-d01a-30e7-8ec9-75f672e9a775/front-500",
+      "coverArt": "/covers/the-smiths-hatful-of-hollow.jpg",
       "id": "cme4gl7oc2167285rzx4ljg33r",
       "isAPlus": false,
       "owned": false,
@@ -33775,7 +33775,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/90d9be4c-30be-3e28-949a-66ee22c3a63a/front-500",
+      "coverArt": "/covers/brian-eno-here-come-the-warm-jets.jpg",
       "id": "cme4glimc2194585rz32kfkv47",
       "isAPlus": false,
       "owned": false,
@@ -33922,7 +33922,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a32fb3f5-0c38-47cc-980c-44cc181c52de/front-500",
+      "coverArt": "/covers/beyonc-homecoming-the-live-album.jpg",
       "id": "cme4glrf02217285rzcbr6woas",
       "isAPlus": false,
       "owned": false,
@@ -33934,7 +33934,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyoncé",
+          "name": "Beyonc\u00e9",
           "slug": "beyonce"
         }
       ],
@@ -34053,7 +34053,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9b643b98-ea0d-4c17-9dd1-8cfe2a92248f/front-500",
+      "coverArt": "/covers/the-roots-how-i-got-over.jpg",
       "id": "cme4glxme2232785rzdi5vd66y",
       "isAPlus": false,
       "owned": false,
@@ -34164,7 +34164,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/743b0b2e-a23a-3182-950e-232f8cb0dfb7/front-500",
+      "coverArt": "/covers/david-bowie-hunky-dory.jpg",
       "id": "cme4gm3hx2247385rzbqize83k",
       "isAPlus": false,
       "owned": false,
@@ -34299,7 +34299,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/901ddfef-b428-3022-a7b9-429f56513831/front-500",
+      "coverArt": "/covers/yo-la-tengo-i-can-hear-the-heart-beating-as-one.jpg",
       "id": "cme4gm97z2259785rz2p49cwxp",
       "isAPlus": false,
       "owned": false,
@@ -34482,7 +34482,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4a40960b-44b3-313c-8540-cde054d41bd9/front-500",
+      "coverArt": "/covers/al-green-im-still-in-love-with-you.jpg",
       "id": "cme4gmecq2272485rzvszy7mrj",
       "isAPlus": false,
       "owned": false,
@@ -34585,7 +34585,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/66be5deb-75d5-3737-9037-1c745891d3ec/front-500",
+      "coverArt": "/covers/belle-and-sebastian-if-youre-feeling-sinister.jpg",
       "id": "cme4gmkv72289285rz7hzwr9r2",
       "isAPlus": false,
       "owned": false,
@@ -34748,7 +34748,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/28298e2c-4d70-3eed-a0f5-a3280c662b3d/front-500",
+      "coverArt": "/covers/nas-illmatic.jpg",
       "id": "cme4gmq832300885rzewt2uv1u",
       "isAPlus": false,
       "owned": false,
@@ -34915,7 +34915,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fc97b087-221c-4ea4-9dd9-5277a52eb84a/front-500",
+      "coverArt": "/covers/clairo-immunity.jpg",
       "id": "cme4gmvk82313085rzq95to8yy",
       "isAPlus": false,
       "owned": false,
@@ -35050,7 +35050,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a903a977-5932-4cc2-a064-57a596658b3d/front-500",
+      "coverArt": "/covers/jamie-xx-in-colour.jpg",
       "id": "cme4gn2gt2327785rzlganhje2",
       "isAPlus": false,
       "owned": false,
@@ -35233,7 +35233,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3ca21b19-b33a-3fba-b4ac-205dcace771d/front-500",
+      "coverArt": "/covers/james-brown-in-the-jungle-groove.jpg",
       "id": "cme4gn8c82338285rzxobyqgvu",
       "isAPlus": false,
       "owned": false,
@@ -35292,7 +35292,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/70745e26-405e-35ca-89d8-54c1720cfc46/front-500",
+      "coverArt": "/covers/pj-harvey-is-this-desire.jpg",
       "id": "cme4gnd682347085rzagbncjpy",
       "isAPlus": false,
       "owned": false,
@@ -35439,7 +35439,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f3fa613a-ad70-48f2-8585-33644bff2011/front-500",
+      "coverArt": "/covers/charlie-parker-jazz-at-massey-hall.jpg",
       "id": "cme4gnj0w2360785rzv8tz8u7r",
       "isAPlus": false,
       "owned": false,
@@ -35510,7 +35510,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3346a9d9-031e-49e2-84b0-3734d790d7e5/front-500",
+      "coverArt": "/covers/kids-see-ghosts-kids-see-ghosts.jpg",
       "id": "cme4gnu8d2388285rz3x377huz",
       "isAPlus": false,
       "owned": false,
@@ -35689,7 +35689,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/22f978cb-26e6-3757-a13a-347970574eec/front-500",
+      "coverArt": "/covers/pharoah-sanders-karma.jpg",
       "id": "cme4go1ae2407785rzg1mh9d86",
       "isAPlus": false,
       "owned": false,
@@ -35896,7 +35896,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f40ad871-3f38-38e7-a78a-3dcf01d8ded7/front-500",
+      "coverArt": "/covers/spoon-kill-the-moonlight.jpg",
       "id": "cme4go8t72422285rz1w71hwj6",
       "isAPlus": false,
       "owned": false,
@@ -36023,7 +36023,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0539b843-2228-36f5-965d-f370d05f66c3/front-500",
+      "coverArt": "/covers/sparks-kimono-my-house.jpg",
       "id": "cme4godju2433285rz23yzxauj",
       "isAPlus": false,
       "owned": false,
@@ -36158,7 +36158,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e723ff31-ea1c-3747-914e-f2ea221159f3/front-500",
+      "coverArt": "/covers/billie-holiday-lady-sings-the-blues.jpg",
       "id": "cme4gojdr2447985rzgnra96xo",
       "isAPlus": false,
       "owned": false,
@@ -36249,7 +36249,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bff544a7-56e0-3ed6-9e0f-3b676cca9111/front-500",
+      "coverArt": "/covers/the-beatles-let-it-be.jpg",
       "id": "cme4goore2462885rzzqfea72z",
       "isAPlus": false,
       "owned": false,
@@ -36340,7 +36340,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8b6b2628-7bd4-3fed-9d65-cf4e5dc45939/front-500",
+      "coverArt": "/covers/rem-lifes-rich-pageant.jpg",
       "id": "cme4gourl2475385rzrpcl8klp",
       "isAPlus": false,
       "owned": false,
@@ -36459,7 +36459,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1f75a8df-176c-3d23-8f1f-b0c8935682ec/front-500",
+      "coverArt": "/covers/madonna-like-a-prayer.jpg",
       "id": "cme4gp0yu2487485rzl2cp6ob8",
       "isAPlus": false,
       "owned": false,
@@ -36582,7 +36582,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/4be9d91f-6ed7-34b8-aa5e-45be79819273/front-500",
+      "coverArt": "/covers/the-velvet-underground-loaded.jpg",
       "id": "cme4gpdhc2515485rz7sl749q8",
       "isAPlus": false,
       "owned": false,
@@ -36705,7 +36705,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/68cd609c-112c-3240-b6e4-9daa51e1f0a7/front-500",
+      "coverArt": "/covers/the-clash-london-calling.jpg",
       "id": "cme4gpiyu2528585rzd7hvr5gz",
       "isAPlus": false,
       "owned": false,
@@ -36856,7 +36856,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/50c58427-cafb-4bd8-bdd7-f54edad59b63/front-500",
+      "coverArt": "/covers/julia-holter-loud-city-song.jpg",
       "id": "cme4gpok92540985rz4o7f15fq",
       "isAPlus": false,
       "owned": false,
@@ -37063,7 +37063,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/329a3607-9b56-351c-84e7-c6f8f19d8056/front-500",
+      "coverArt": "/covers/the-smiths-louder-than-bombs.jpg",
       "id": "cme4gpv152557285rz5tr2m87z",
       "isAPlus": false,
       "owned": false,
@@ -37190,7 +37190,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fb3770f6-83fb-32b7-85c4-1f522a92287e/front-500",
+      "coverArt": "/covers/nirvana-mtv-unplugged-in-new-york.jpg",
       "id": "cme4gqbdx2593185rzrj5zd5k5",
       "isAPlus": false,
       "owned": false,
@@ -37321,7 +37321,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ab570ccb-b06b-3746-8147-4903163ba895/front-500",
+      "coverArt": "/covers/madvillain-madvillainy.jpg",
       "id": "cme4gqn2i2618085rzqxb66934",
       "isAPlus": false,
       "owned": false,
@@ -37500,7 +37500,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a334e612-e736-3b4f-82b4-c4dfb774983c/front-500",
+      "coverArt": "/covers/funkadelic-maggot-brain.jpg",
       "id": "cme4gqt6o2627385rzqwima1xj",
       "isAPlus": false,
       "owned": false,
@@ -37675,7 +37675,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9d445733-9f7d-3653-aed8-8099e5c9d1e8/front-500",
+      "coverArt": "/covers/the-beatles-magical-mystery-tour.jpg",
       "id": "cme4gr0ad2649185rzwu2euy3g",
       "isAPlus": false,
       "owned": false,
@@ -37826,7 +37826,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/25bdfd28-72ca-3d1f-88fc-dcf67df91720/front-500",
+      "coverArt": "/covers/erykah-badu-mamas-gun.jpg",
       "id": "cme4gr5mq2667085rzuiv3xx3u",
       "isAPlus": false,
       "owned": false,
@@ -38001,7 +38001,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2b9f99d8-becf-3fc3-86a6-2bdd4cef93fe/front-500",
+      "coverArt": "/covers/television-marquee-moon.jpg",
       "id": "cme4grb522679285rz1eljdfi7",
       "isAPlus": false,
       "owned": false,
@@ -38164,7 +38164,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9fd2415f-182f-39c1-aa02-5acb36f99bef/front-500",
+      "coverArt": "/covers/tricky-maxinquaye.jpg",
       "id": "cme4grhkb2692585rz4b9h4fb9",
       "isAPlus": false,
       "owned": false,
@@ -38391,7 +38391,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0d56a04c-045a-37db-bcc3-6c7099e94f16/front-500",
+      "coverArt": "/covers/the-smiths-meat-is-murder.jpg",
       "id": "cme4grnqg2704685rz3n5hmysk",
       "isAPlus": false,
       "owned": false,
@@ -38562,7 +38562,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/668e80e0-b35e-4471-9788-0a3d797fe42c/front-500",
+      "coverArt": "/covers/lorde-melodrama.jpg",
       "id": "cme4grt212719185rzemyosufo",
       "isAPlus": false,
       "owned": false,
@@ -38721,7 +38721,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b059890c-d415-3e65-aaed-52c810565922/front-500",
+      "coverArt": "/covers/animal-collective-merriweather-post-pavilion.jpg",
       "id": "cme4gryjs2732785rzynu4jgnf",
       "isAPlus": false,
       "owned": false,
@@ -38956,7 +38956,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6f9f6899-c0d3-311d-ae87-a10ae6bc53a9/front-500",
+      "coverArt": "/covers/massive-attack-mezzanine.jpg",
       "id": "cme4gs4co2747885rzhvlpf2mm",
       "isAPlus": false,
       "owned": false,
@@ -39151,7 +39151,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c2afedfb-034a-3683-ad47-e4404cd7c485/front-500",
+      "coverArt": "/covers/a-tribe-called-quest-midnight-marauders.jpg",
       "id": "cme4gsai82762285rzm680mq8f",
       "isAPlus": false,
       "owned": false,
@@ -39286,7 +39286,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0dcc84fb-c592-46e9-ba92-a52bb44dd553/front-500",
+      "coverArt": "/covers/taylor-swift-midnights.jpg",
       "id": "cme4gsfht2772985rzh08swt3o",
       "isAPlus": false,
       "owned": false,
@@ -39461,7 +39461,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/60fa4ab0-bf92-3184-80ca-6dcadbb5c748/front-500",
+      "coverArt": "/covers/miles-davis-quintet-miles-smiles.jpg",
       "id": "cme4gskji2781285rzsx50xp53",
       "isAPlus": false,
       "owned": false,
@@ -39532,7 +39532,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/48848da6-67a2-3e36-bb11-3e9fa18c1d9b/front-500",
+      "coverArt": "/covers/charles-mingus-mingus-mingus-mingus-mingus-mingus.jpg",
       "id": "cme4gstud2799485rzwn7ndcdf",
       "isAPlus": false,
       "owned": false,
@@ -39611,7 +39611,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1c18538e-e9be-3449-8be1-f3cdc7b493e0/front-500",
+      "coverArt": "/covers/duke-ellington-money-jungle.jpg",
       "id": "cme4gsy1f2812085rzjtrjz59q",
       "isAPlus": false,
       "owned": false,
@@ -39694,7 +39694,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/16506432-d133-3b2f-a504-dc88966dad2a/front-500",
+      "coverArt": "/covers/van-morrison-moondance.jpg",
       "id": "cme4gt3472821685rz165tzma0",
       "isAPlus": false,
       "owned": false,
@@ -39809,7 +39809,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2cecb2c0-cac3-3c55-8083-577308746230/front-500",
+      "coverArt": "/covers/talking-heads-more-songs-about-buildings-and-food.jpg",
       "id": "cme4gt8g62836685rz47zms30k",
       "isAPlus": false,
       "owned": false,
@@ -39936,7 +39936,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5a253b10-e9f8-334c-b343-7f14e92402c2/front-500",
+      "coverArt": "/covers/stevie-wonder-music-of-my-mind.jpg",
       "id": "cme4gtdnd2847785rz9cxxadhd",
       "isAPlus": false,
       "owned": false,
@@ -40039,7 +40039,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/139e8c9d-091c-47c9-ba12-30045d653fad/front-500",
+      "coverArt": "/covers/john-coltrane-my-favorite-things.jpg",
       "id": "cme4gtjai2858785rz12cx78k9",
       "isAPlus": false,
       "owned": false,
@@ -40158,7 +40158,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/00b3e683-47fa-3302-add0-4c0cecc5224e/front-500",
+      "coverArt": "/covers/neu-neu.jpg",
       "id": "cme4gtobf2867485rznw6n74i0",
       "isAPlus": false,
       "owned": false,
@@ -40196,7 +40196,7 @@
           "slug": "electroacoustic"
         },
         {
-          "name": "Düsseldorf School",
+          "name": "D\u00fcsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -40309,7 +40309,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c091b282-aa91-3bc0-9c95-938db1f1f930/front-500",
+      "coverArt": "/covers/arcade-fire-neon-bible.jpg",
       "id": "cme4gttk62879385rzusile8zs",
       "isAPlus": false,
       "owned": false,
@@ -40504,7 +40504,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/3e756ef5-ffa4-3d48-83ae-f7f856a2b989/front-500",
+      "coverArt": "/covers/nina-simone-nina-simone-sings-the-blues.jpg",
       "id": "cme4gu5wd2927785rz92bhsojw",
       "isAPlus": false,
       "owned": false,
@@ -40583,7 +40583,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/df0bfd42-78a9-40c3-a45f-a12e10d446f8/front-500",
+      "coverArt": "/covers/beck-odelay.jpg",
       "id": "cme4guig72959885rzg4uyim10",
       "isAPlus": false,
       "owned": false,
@@ -40754,7 +40754,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9a4a9ebf-f4f7-3dba-9b80-0b274cbc80f9/front-500",
+      "coverArt": "/covers/the-zombies-odessey-and-oracle.jpg",
       "id": "cme4gun4r2972185rzi0xgknik",
       "isAPlus": false,
       "owned": false,
@@ -40893,13 +40893,13 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9ba035a7-3f7c-3d96-9e07-0e0d45af41af/front-500",
+      "coverArt": "/covers/john-coltrane-ol-coltrane.jpg",
       "id": "cme4gusc02979985rzjvtmbh3p",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1961-05-25T05:00:00.000Z",
       "slug": "john-coltrane-ol-coltrane",
-      "title": "Olé Coltrane",
+      "title": "Ol\u00e9 Coltrane",
       "appleMusicUrl": "https://music.apple.com/us/album/ol%C3%A9-coltrane/962192458?uo=4",
       "spotifyUri": "spotify:album:5BGkenbuo3xY3CRblRPj8K",
       "topRanking": null,
@@ -41000,7 +41000,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b26d1ec6-2500-3ecf-9528-7bc5a360efbe/front-500",
+      "coverArt": "/covers/aretha-franklin-aretha-now.jpg",
       "id": "cme3frmkj962585rzfir9osty",
       "isAPlus": false,
       "owned": false,
@@ -41079,7 +41079,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c18cb54e-36ec-37d6-8c8a-e9f7848ffa68/front-500",
+      "coverArt": "/covers/various-artists-one-kiss-can-lead-to-another-girl-group-sounds-lost-and-found.jpg",
       "id": "cme4guwwh2988885rzcxo9qp73",
       "isAPlus": false,
       "owned": false,
@@ -41186,7 +41186,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bc6c2573-bc7d-346a-8880-0e34b8fb7e50/front-500",
+      "coverArt": "/covers/eric-dolphy-out-to-lunch.jpg",
       "id": "cme4gv7uu3005285rztah0ai0e",
       "isAPlus": false,
       "owned": false,
@@ -41301,7 +41301,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0c1a4d70-5926-3ae8-aa25-466fe65639fe/front-500",
+      "coverArt": "/covers/blondie-parallel-lines.jpg",
       "id": "cme4gvdo23015985rz356m56la",
       "isAPlus": false,
       "owned": false,
@@ -41424,7 +41424,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c4d4589f-c6d0-31d1-a9cd-38e31e7cfa70/front-500",
+      "coverArt": "/covers/charles-mingus-pithecanthropus-erectus.jpg",
       "id": "cme4gvnoe3035385rziyoyd53o",
       "isAPlus": false,
       "owned": false,
@@ -41523,7 +41523,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/de208292-8db5-3aed-a14a-b37a84d8c521/front-500",
+      "coverArt": "/covers/the-beatles-please-please-me.jpg",
       "id": "cme4gvss83047885rzbshe4qox",
       "isAPlus": false,
       "owned": false,
@@ -41626,7 +41626,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d51d3947-55f5-3672-8d30-23755dda3cdf/front-500",
+      "coverArt": "/covers/ween-quebec.jpg",
       "id": "cme4gwbnr3093385rzm646j8ch",
       "isAPlus": false,
       "owned": false,
@@ -41889,7 +41889,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/aa997ea0-2936-40bd-884d-3af8a0e064dc/front-500",
+      "coverArt": "/covers/daft-punk-random-access-memories.jpg",
       "id": "cme4gwkan3110385rzvjgbz4np",
       "isAPlus": false,
       "owned": false,
@@ -42068,7 +42068,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2836fcb0-2fd3-3de8-b7cc-53141d666894/front-500",
+      "coverArt": "/covers/digable-planets-reachin-a-new-refutation-of-time-and-space.jpg",
       "id": "cme4gwoxk3121685rzqujbn6oy",
       "isAPlus": false,
       "owned": false,
@@ -42175,7 +42175,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a7f852ba-08bc-36f1-92f3-4dc127f4b70a/front-500",
+      "coverArt": "/covers/jay-z-reasonable-doubt.jpg",
       "id": "cme4gww323140385rzjwt0n1aj",
       "isAPlus": false,
       "owned": false,
@@ -42458,7 +42458,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/eec55734-1387-3aa3-af3d-ff0ae8083806/front-500",
+      "coverArt": "/covers/rem-reckoning.jpg",
       "id": "cme4gx3xc3159385rzemh77sp4",
       "isAPlus": false,
       "owned": false,
@@ -42661,7 +42661,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/9a076153-ff33-4ea5-a53e-250c18fca001/front-500",
+      "coverArt": "/covers/taylor-swift-red.jpg",
       "id": "cme4gx9983174485rzmkfqv5j5",
       "isAPlus": false,
       "owned": false,
@@ -42796,7 +42796,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c93200c0-b1fa-4fd8-beff-036fad9509fa/front-500",
+      "coverArt": "/covers/burial-rival-dealer.jpg",
       "id": "cme4gxw9c3224985rzotkwefsb",
       "isAPlus": false,
       "owned": false,
@@ -42923,7 +42923,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/cf29d6a2-a18a-3bb6-a861-495148baee1f/front-500",
+      "coverArt": "/covers/sonny-rollins-saxophone-colossus.jpg",
       "id": "cme4gy24i3242585rzl2lol6k0",
       "isAPlus": false,
       "owned": false,
@@ -43182,7 +43182,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/966fede2-31b2-3b6a-ab50-4a650d3bb97d/front-500",
+      "coverArt": "/covers/miles-davis-sketches-of-spain.jpg",
       "id": "cme4gy8ar3255585rz13o0wlui",
       "isAPlus": false,
       "owned": false,
@@ -43285,7 +43285,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/07eb42bc-78e5-4ee7-b7ec-62904a66ca8a/front-500",
+      "coverArt": "/covers/cannonball-adderley-somethin-else.jpg",
       "id": "cme4gydcz3268785rzhyn034vt",
       "isAPlus": false,
       "owned": false,
@@ -43460,7 +43460,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ab0ea2d3-a273-3d7f-855b-f9930a1395cf/front-500",
+      "coverArt": "/covers/the-kinks-something-else-by-the-kinks.jpg",
       "id": "cme4gyjk43282285rz65ljaepa",
       "isAPlus": false,
       "owned": false,
@@ -43619,7 +43619,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2ee919fe-eab8-3fb5-a069-ef0220c29e09/front-500",
+      "coverArt": "/covers/outkast-southernplayalisticadillacmuzik.jpg",
       "id": "cme4gyu8s3308385rzwv6atsph",
       "isAPlus": false,
       "owned": false,
@@ -43822,7 +43822,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fd29e2cd-9bd7-32c6-adf9-ce80ab1cadfc/front-500",
+      "coverArt": "/covers/talk-talk-spirit-of-eden.jpg",
       "id": "cme4gz0s63324985rzaecnns51",
       "isAPlus": false,
       "owned": false,
@@ -44017,7 +44017,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/37889165-4443-4248-abd0-3c1703d9c02a/front-500",
+      "coverArt": "/covers/st-vincent-st-vincent.jpg",
       "id": "cme4gz61f3337685rznq6u3e98",
       "isAPlus": false,
       "owned": false,
@@ -44168,7 +44168,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a9c80acf-5017-4301-8da0-2d6dfb502400/front-500",
+      "coverArt": "/covers/st-vincent-strange-mercy.jpg",
       "id": "cme4gzi493374385rzzf43q5ma",
       "isAPlus": false,
       "owned": false,
@@ -44323,7 +44323,7 @@
       "accentBucket": "dreamy"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/53bcf9cf-db1e-3887-80f5-9f23c87a0f64/front-500",
+      "coverArt": "/covers/the-smiths-strangeways-here-we-come.jpg",
       "id": "cme4gznsc3383785rzl2et1hrj",
       "isAPlus": false,
       "owned": false,
@@ -44470,7 +44470,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e6440cd2-5e8e-367d-bc49-cc042b5ef524/front-500",
+      "coverArt": "/covers/jefferson-airplane-surrealistic-pillow.jpg",
       "id": "cme4gzsnw3394685rzai8wt0ys",
       "isAPlus": false,
       "owned": false,
@@ -44593,7 +44593,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d99084ee-de04-3ba1-8203-5f1a7e5355ee/front-500",
+      "coverArt": "/covers/talking-heads-talking-heads-77.jpg",
       "id": "cme4h01ia3411685rziajb4flg",
       "isAPlus": false,
       "owned": false,
@@ -44720,7 +44720,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/705027f6-370d-4e0a-931f-3960fe07a8ba/front-500",
+      "coverArt": "/covers/sufjan-stevens-the-age-of-adz.jpg",
       "id": "cme4h086g3427685rz5rqwlwjj",
       "isAPlus": false,
       "owned": false,
@@ -44971,7 +44971,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7c5bb286-ac24-443c-81cc-4f5f6261c343/front-500",
+      "coverArt": "/covers/janelle-mone-the-archandroid.jpg",
       "id": "cme4h0dde3443485rzjexn4gs0",
       "isAPlus": false,
       "owned": false,
@@ -44983,7 +44983,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Monáe",
+          "name": "Janelle Mon\u00e1e",
           "slug": "janelle-mone"
         }
       ],
@@ -45198,7 +45198,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/387bc6cc-ac60-365f-819b-fbc78c486065/front-500",
+      "coverArt": "/covers/the-beatles-the-beatles-second-album.jpg",
       "id": "cme4h0k373460185rzrvx77gl6",
       "isAPlus": false,
       "owned": false,
@@ -45269,7 +45269,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8ea92211-a70b-3993-9301-bb80e0d1a24a/front-500",
+      "coverArt": "/covers/radiohead-the-bends.jpg",
       "id": "cme4h0rgg3475285rz3zkzfapl",
       "isAPlus": false,
       "owned": false,
@@ -45404,7 +45404,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/11ae8c9c-27c1-3308-9761-edb87c8f54ea/front-500",
+      "coverArt": "/covers/jay-z-the-blueprint.jpg",
       "id": "cme4h0wpv3484985rzpv8x4xnq",
       "isAPlus": false,
       "owned": false,
@@ -45531,7 +45531,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/ad444843-7160-33d7-b0c9-fc99f2c14a99/front-500",
+      "coverArt": "/covers/dr-dre-the-chronic.jpg",
       "id": "cme4h14kh3496685rzv2jeol46",
       "isAPlus": false,
       "owned": false,
@@ -45690,7 +45690,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/072ec17c-aa60-3070-99ab-fce9e9009d97/front-500",
+      "coverArt": "/covers/talk-talk-the-colour-of-spring.jpg",
       "id": "cme4h1g4b3525485rzrefka40w",
       "isAPlus": false,
       "owned": false,
@@ -45825,7 +45825,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/7c4cab8d-dead-3870-b501-93c90fd0a580/front-500",
+      "coverArt": "/covers/nine-inch-nails-the-downward-spiral.jpg",
       "id": "cme4h1sce3559385rz587ffzm6",
       "isAPlus": false,
       "owned": false,
@@ -46172,7 +46172,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/20b4c8b3-e922-44a3-90e8-fa00acad8ed4/front-500",
+      "coverArt": "/covers/lady-gaga-the-fame-monster.jpg",
       "id": "cme4h1z8y3574685rzk5ltzxhb",
       "isAPlus": false,
       "owned": false,
@@ -46347,7 +46347,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f997cb8f-f393-46e5-87eb-5a152e0a2480/front-500",
+      "coverArt": "/covers/u2-the-joshua-tree.jpg",
       "id": "cme4h24se3588785rznijybbp9",
       "isAPlus": false,
       "owned": false,
@@ -46470,7 +46470,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e8f3a858-20f8-3798-80ac-65264afa4672/front-500",
+      "coverArt": "/covers/kate-bush-the-kick-inside.jpg",
       "id": "cme4h29mq3598985rzj44ai9rt",
       "isAPlus": false,
       "owned": false,
@@ -46617,7 +46617,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8c18657a-6338-490d-a952-897663596b96/front-500",
+      "coverArt": "/covers/kanye-west-the-life-of-pablo.jpg",
       "id": "cme4h2f203610985rzydu5nrah",
       "isAPlus": false,
       "owned": false,
@@ -46832,7 +46832,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/041884b1-1ac5-3c8b-93cc-ac928c78c4a0/front-500",
+      "coverArt": "/covers/modest-mouse-the-lonesome-crowded-west.jpg",
       "id": "cme4h2l8j3627285rzcncflh9j",
       "isAPlus": false,
       "owned": false,
@@ -47095,7 +47095,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8a5e2b8e-c2f9-3751-976c-12f8de17bff8/front-500",
+      "coverArt": "/covers/joanna-newsom-the-milk-eyed-mender.jpg",
       "id": "cme4h2w7s3649585rztyzmaw82",
       "isAPlus": false,
       "owned": false,
@@ -47258,7 +47258,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8691d12c-abd8-385c-b1eb-d841190124f7/front-500",
+      "coverArt": "/covers/lauryn-hill-the-miseducation-of-lauryn-hill.jpg",
       "id": "cme4h32473659885rzusqlee4a",
       "isAPlus": false,
       "owned": false,
@@ -47433,7 +47433,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a8e26959-b3b2-3440-a74a-0dc06cd6310d/front-500",
+      "coverArt": "/covers/modest-mouse-the-moon-antarctica.jpg",
       "id": "cme4h35q13673985rz9jxyrv1l",
       "isAPlus": false,
       "owned": false,
@@ -47512,7 +47512,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d428149d-7ad9-3fbe-85de-acbee37ab050/front-500",
+      "coverArt": "/covers/james-brown-the-payback.jpg",
       "id": "cme4h3ayx3690185rzm1eqostk",
       "isAPlus": false,
       "owned": false,
@@ -47635,7 +47635,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/91811b68-aa6e-35b3-a5e1-6a2733eb6ae9/front-500",
+      "coverArt": "/covers/the-smiths-the-smiths.jpg",
       "id": "cme4h3nzl3722985rz2q04tj55",
       "isAPlus": false,
       "owned": false,
@@ -47802,7 +47802,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/88b86fe0-26f5-3949-817a-8082145e704d/front-500",
+      "coverArt": "/covers/the-stone-roses-the-stone-roses.jpg",
       "id": "cme4h3zzb3757285rzzibva8jc",
       "isAPlus": false,
       "owned": false,
@@ -47961,7 +47961,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/161863df-8451-4567-96c7-6ebd360c15f5/front-500",
+      "coverArt": "/covers/arcade-fire-the-suburbs.jpg",
       "id": "cme4h456i3771085rzn4uz6ujz",
       "isAPlus": false,
       "owned": false,
@@ -48156,7 +48156,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/8898e5eb-48aa-4eea-8569-d3a2e9adaf02/front-500",
+      "coverArt": "/covers/lcd-soundsystem-this-is-happening.jpg",
       "id": "cme4h4f3r3787885rzfqvj1rxp",
       "isAPlus": false,
       "owned": false,
@@ -48367,7 +48367,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/035a7881-3e2c-39d2-b110-fe26a4de94e5/front-500",
+      "coverArt": "/covers/the-dave-brubeck-quartet-time-out.jpg",
       "id": "cme4h4lcj3801085rzyblzib1a",
       "isAPlus": false,
       "owned": false,
@@ -48490,7 +48490,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2a976d93-1131-3821-9bcb-6c79542d93aa/front-500",
+      "coverArt": "/covers/pj-harvey-to-bring-you-my-love.jpg",
       "id": "cme4h4rn13812985rzr5athq57",
       "isAPlus": false,
       "owned": false,
@@ -48633,7 +48633,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d9103c72-3807-4378-9ce7-b6f3e8fdd547/front-500",
+      "coverArt": "/covers/kendrick-lamar-to-pimp-a-butterfly.jpg",
       "id": "cme4h4wf83825585rzbutjtllz",
       "isAPlus": false,
       "owned": false,
@@ -48904,7 +48904,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/6c8345df-f822-33af-b64a-eff2e46941b9/front-500",
+      "coverArt": "/covers/lou-reed-transformer.jpg",
       "id": "cme4h55bn3847285rzsn3bsnf8",
       "isAPlus": false,
       "owned": false,
@@ -49035,7 +49035,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e0023081-c755-377d-9bbf-fd7551d5d14c/front-500",
+      "coverArt": "/covers/cocteau-twins-treasure.jpg",
       "id": "cme4h5a7x3862585rz9n4nyvzn",
       "isAPlus": false,
       "owned": false,
@@ -49174,7 +49174,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/eb9c3e50-cfa9-3502-af63-41d39c4c3fa6/front-500",
+      "coverArt": "/covers/madonna-true-blue.jpg",
       "id": "cme4h5fiu3873185rzw8zeb3ma",
       "isAPlus": false,
       "owned": false,
@@ -49277,7 +49277,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/22deeac8-6009-31ad-a069-26e85d246412/front-500",
+      "coverArt": "/covers/fleetwood-mac-tusk.jpg",
       "id": "cme4h5khl3884985rzb1x3r1hh",
       "isAPlus": false,
       "owned": false,
@@ -49444,7 +49444,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/17c86f9c-f12d-4c45-a9e7-cd7331fb0602/front-500",
+      "coverArt": "/covers/mountain-twin-peaks.jpg",
       "id": "cme4h5ply3896185rzmxwaf3to",
       "isAPlus": false,
       "owned": false,
@@ -49511,7 +49511,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/04bedda9-4ba9-3a19-8fe3-922b86557d8a/front-500",
+      "coverArt": "/covers/culture-two-sevens-clash.jpg",
       "id": "cme4h5v6c3908585rzf7enlof8",
       "isAPlus": false,
       "owned": false,
@@ -49634,7 +49634,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/42352def-1aab-3000-b548-895ebd869cb6/front-500",
+      "coverArt": "/covers/joy-division-unknown-pleasures.jpg",
       "id": "cme4h60ou3918685rzilcup9q8",
       "isAPlus": false,
       "owned": false,
@@ -49805,7 +49805,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fddedc4f-7a2e-3d7d-9ec5-1705c416f3f4/front-500",
+      "coverArt": "/covers/burial-untrue.jpg",
       "id": "cme4h653p3928785rz15lugigf",
       "isAPlus": false,
       "owned": false,
@@ -49996,7 +49996,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/852f9715-24b3-37d5-b8a5-456f5e19b41e/front-500",
+      "coverArt": "/covers/joy-division-closer.jpg",
       "id": "cme4gegzz1560685rzmkxdq007",
       "isAPlus": false,
       "owned": false,
@@ -50175,7 +50175,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b23d3137-df51-3047-a6a5-b5efbde50f22/front-500",
+      "coverArt": "/covers/janet-jackson-control.jpg",
       "id": "cme4gemv11578285rze3prlsre",
       "isAPlus": false,
       "owned": false,
@@ -50366,7 +50366,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/c9c53dc7-fe1a-35ba-84e3-bb66e8318ee9/front-500",
+      "coverArt": "/covers/viktor-vaughn-vaudeville-villain.jpg",
       "id": "cme4h6b2i3943485rzb2elrrez",
       "isAPlus": false,
       "owned": false,
@@ -50553,7 +50553,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/b445860f-edd9-4160-841c-fccf5533ecbd/front-500",
+      "coverArt": "/covers/a-tribe-called-quest-we-got-it-from-here-thank-you-4-your-service.jpg",
       "id": "cme4h6g0g3955885rzh4qvae0v",
       "isAPlus": false,
       "owned": false,
@@ -50720,7 +50720,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/38d0e2a3-06a0-4c2e-ac5d-faf1b2d7e563/front-500",
+      "coverArt": "/covers/jessie-ware-whats-your-pleasure.jpg",
       "id": "cme4h6tg43993485rzzopr6ois",
       "isAPlus": false,
       "owned": false,
@@ -50903,7 +50903,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/72375978-a9a1-4254-b957-85565c716b7e/front-500",
+      "coverArt": "/covers/billie-eilish-when-we-all-fall-asleep-where-do-we-go.jpg",
       "id": "cme4h703v4016085rz0nhbscuv",
       "isAPlus": false,
       "owned": false,
@@ -51078,7 +51078,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5fdea541-32fc-3b17-b7c4-50b40f65203d/front-500",
+      "coverArt": "/covers/creedence-clearwater-revival-willy-and-the-poor-boys.jpg",
       "id": "cme4h75pv4030485rzs9rtqia9",
       "isAPlus": false,
       "owned": false,
@@ -51161,7 +51161,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/07088662-1c13-35ca-bc5f-bbcf371b6e2b/front-500",
+      "coverArt": "/covers/pink-floyd-wish-you-were-here.jpg",
       "id": "cme4h7b6p4041685rzh5965xv5",
       "isAPlus": false,
       "owned": false,
@@ -51332,7 +51332,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/95f2ba4b-2dd9-38d1-8158-a416a391489c/front-500",
+      "coverArt": "/covers/wilco-yankee-hotel-foxtrot.jpg",
       "id": "cme4h7hij4054285rz0ec6iveq",
       "isAPlus": false,
       "owned": false,
@@ -51515,7 +51515,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/d3de5856-816a-4759-bf9c-d5ff0e5cd740/front-500",
+      "coverArt": "/covers/fela-kuti-zombie.jpg",
       "id": "cme4h7lzd4064385rzm9ic05ya",
       "isAPlus": false,
       "owned": false,
@@ -51630,7 +51630,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f8f4167d-897c-4b25-a171-638374d1dfa4/front-500",
+      "coverArt": "/covers/frank-ocean-channel-orange.jpg",
       "id": "cme4h7s9w4073085rzpvkoih6i",
       "isAPlus": false,
       "owned": false,
@@ -51793,13 +51793,13 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/a5e2f270-c00e-3309-84d1-2c4285565ee3/front-500",
+      "coverArt": "/covers/jorge-ben-frica-brasil.jpg",
       "id": "cme4h82dd4093585rz68w5rl1f",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "jorge-ben-frica-brasil",
-      "title": "África Brasil",
+      "title": "\u00c1frica Brasil",
       "appleMusicUrl": "https://music.apple.com/us/album/africa-brasil/1444050820?uo=4",
       "spotifyUri": "spotify:album:1jJXtCHztoIKiSG8IbLmq0",
       "topRanking": null,
@@ -51827,7 +51827,7 @@
           "slug": "samba-soul"
         },
         {
-          "name": "Afoxé",
+          "name": "Afox\u00e9",
           "slug": "afox"
         },
         {
@@ -51964,7 +51964,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/2b581513-39cc-3a81-9c50-79a8dbf5c031/front-500",
+      "coverArt": "/covers/the-beach-boys-the-beach-boys-today.jpg",
       "id": "cme4h9iri4176485rzghtb6yw8",
       "isAPlus": false,
       "owned": false,
@@ -52087,7 +52087,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0ac24e7e-dc5f-460b-a030-93ef70970280/front-500",
+      "coverArt": "/covers/the-beatles-a-hard-days-night-original-motion-picture-soundtrack.jpg",
       "id": "cme4ht9ot0780wmrzbesqk4tt",
       "isAPlus": false,
       "owned": false,
@@ -52198,7 +52198,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/1c288979-ce2f-4e4b-90e4-845908cf7ffc/front-500",
+      "coverArt": "/covers/burial-kindred.jpg",
       "id": "cme4htns31141wmrzyssfyhyd",
       "isAPlus": false,
       "owned": false,
@@ -52325,7 +52325,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/41146f8d-3b99-3957-81a3-d8198bb025df/front-500",
+      "coverArt": "/covers/sun-kil-moon-ghosts-of-the-great-highway.jpg",
       "id": "cme4gk9142086485rzjv0rstvg",
       "isAPlus": false,
       "owned": false,
@@ -52492,7 +52492,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/e4a67add-6aab-390c-bb82-53939fb9cd0a/front-500",
+      "coverArt": "/covers/sade-love-deluxe.jpg",
       "id": "cme4gq0f42569585rzwtpe977k",
       "isAPlus": false,
       "owned": false,
@@ -52663,7 +52663,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/02adb8a7-496c-3a9a-a324-662df73fdba5/front-500",
+      "coverArt": "/covers/a-tribe-called-quest-peoples-instinctive-travels-and-the-paths-of-rhythm.jpg",
       "id": "cme4gvila3026685rzogssx5ua",
       "isAPlus": false,
       "owned": false,
@@ -52794,7 +52794,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/21c5d11d-7228-3827-996e-abeb6d0e08d3/front-500",
+      "coverArt": "/covers/charles-mingus-the-clown.jpg",
       "id": "cme4h1aop3513685rzgs24zq9b",
       "isAPlus": false,
       "owned": false,
@@ -52881,7 +52881,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/0da340a0-6ad7-4fc2-a272-6f94393a7831/front-500",
+      "coverArt": "/covers/frank-ocean-blonde.jpg",
       "id": "cme3fsmdx1025885rz5ot16brv",
       "isAPlus": false,
       "owned": false,
@@ -52943,7 +52943,7 @@
           "slug": "free-improvisation"
         },
         {
-          "name": "Musique concrète",
+          "name": "Musique concr\u00e8te",
           "slug": "musique-concr-te"
         },
         {
@@ -53172,7 +53172,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f4a26672-dcd8-342d-ad09-2b612d91c9fb/front-500",
+      "coverArt": "/covers/simon-garfunkel-bookends.jpg",
       "id": "cme4gdh9b1484785rzjuz8y48c",
       "isAPlus": false,
       "owned": false,
@@ -53315,7 +53315,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/21666540-83c8-4c54-9be1-0363a0848f33/front-500",
+      "coverArt": "/covers/sufjan-stevens-carrie-lowell.jpg",
       "id": "cme4gdx0m1526785rzj114bgvr",
       "isAPlus": false,
       "owned": false,
@@ -53550,7 +53550,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/5243f39c-c344-3989-a0f6-2a2f75a9d827/front-500",
+      "coverArt": "/covers/de-la-soul-3-feet-high-and-rising.jpg",
       "id": "cme4g9j6z1162785rzkwm9fkoj",
       "isAPlus": false,
       "owned": false,
@@ -53725,7 +53725,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/33726877-dd41-301b-9f1e-498ebbadc7d8/front-500",
+      "coverArt": "/covers/steely-dan-countdown-to-ecstasy.jpg",
       "id": "cme4gexq51605485rzbwqnh3xw",
       "isAPlus": false,
       "owned": false,
@@ -53860,7 +53860,7 @@
       "accentBucket": null
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/49f122e4-8eef-3c69-93d4-a4369dc408d8/front-500",
+      "coverArt": "/covers/miles-davis-get-up-with-it.jpg",
       "id": "cme4gjx5l2049985rzarg6wwld",
       "isAPlus": false,
       "owned": false,
@@ -54031,7 +54031,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/fe676d05-f97c-303a-890b-da53c69e5d42/front-500",
+      "coverArt": "/covers/hole-live-through-this.jpg",
       "id": "cme4gp6fl2502785rzyzfgo24x",
       "isAPlus": false,
       "owned": false,
@@ -54210,7 +54210,7 @@
       "accentBucket": "fierce"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/24fd0887-9e83-42e3-b27e-e7f89ead4c03/front-500",
+      "coverArt": "/covers/lana-del-rey-norman-fucking-rockwell.jpg",
       "id": "cme4guboi2946185rz5l7a2omk",
       "isAPlus": false,
       "owned": false,
@@ -54381,7 +54381,7 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/86871123-60e4-30a5-aae3-36e810e0964b/front-500",
+      "coverArt": "/covers/sly-the-family-stone-stand.jpg",
       "id": "cme4gz8xo3347385rzwrm5lhy8",
       "isAPlus": false,
       "owned": false,
@@ -54520,7 +54520,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/51d1dbfa-b621-3eed-a611-2591718eba6a/front-500",
+      "coverArt": "/covers/the-beach-boys-summer-days-and-summer-nights.jpg",
       "id": "cme4httyo1260wmrzw28dqewd",
       "isAPlus": false,
       "owned": false,
@@ -54619,7 +54619,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/bdde0830-6795-3a52-aaff-a5daf64184c8/front-500",
+      "coverArt": "/covers/brian-eno-taking-tiger-mountain-by-strategy.jpg",
       "id": "cme4htypo1365wmrz9xsa3wwt",
       "isAPlus": false,
       "owned": false,
@@ -54734,7 +54734,7 @@
       "accentBucket": "cold"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/f15ac13d-3bc7-3b54-b889-610384ebc970/front-500",
+      "coverArt": "/covers/bo-diddley-bo-diddley-1958.jpg",
       "id": "cme4hu7xg1606wmrzg1u1qpy0",
       "isAPlus": false,
       "owned": false,
@@ -54821,7 +54821,7 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "https://coverartarchive.org/release-group/829d8a22-367c-477d-8ea4-4b831ed4eca3/front-500",
+      "coverArt": "/covers/the-social-experiment-surf.jpg",
       "id": "cme4hucua1664wmrz31tuf6ga",
       "isAPlus": false,
       "owned": false,
@@ -54938,7 +54938,7 @@
         }
       ],
       "releaseDate": "1973-10-13T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/322f18bb-5491-38e9-9044-c0a468651eec/front-500",
+      "coverArt": "/covers/herbie-hancock-head-hunters.jpg",
       "genres": [
         {
           "name": "Jazz-Funk",
@@ -55057,7 +55057,7 @@
         }
       ],
       "releaseDate": "1997-06-25T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/c68a633d-ea8c-35af-834d-8e835deb7ac2/front-500",
+      "coverArt": "/covers/ween-the-mollusk.jpg",
       "genres": [
         {
           "name": "Neo-Psychedelia",
@@ -55200,7 +55200,7 @@
         }
       ],
       "releaseDate": "2007-03-20T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/2dd67771-d6af-3bb3-9f71-5ee241c095cd/front-500",
+      "coverArt": "/covers/panda-bear-person-pitch.jpg",
       "genres": [
         {
           "name": "Psychedelic Pop",
@@ -55327,7 +55327,7 @@
         }
       ],
       "releaseDate": "1967-12-27T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/34291a49-8df9-304e-bd39-16b11d829d5f/front-500",
+      "coverArt": "/covers/leonard-cohen-songs-of-leonard-cohen.jpg",
       "genres": [
         {
           "name": "Contemporary Folk",
@@ -55438,7 +55438,7 @@
         }
       ],
       "releaseDate": "1972-09-25T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/8c292627-3459-3852-8ebc-226c12db175d/front-500",
+      "coverArt": "/covers/black-sabbath-vol-4.jpg",
       "genres": [
         {
           "name": "Heavy Metal",
@@ -55549,7 +55549,7 @@
         }
       ],
       "releaseDate": "1970-09-01T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/0c24e81f-b710-3e24-a4fa-12950e153585/front-500",
+      "coverArt": "/covers/curtis-mayfield-curtis.jpg",
       "genres": [
         {
           "name": "Chicago Soul",
@@ -55656,7 +55656,7 @@
         }
       ],
       "releaseDate": "1972-01-01T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/df26277b-ccea-3f53-a4ae-226535859a22/front-500",
+      "coverArt": "/covers/cymande-cymande.jpg",
       "genres": [
         {
           "name": "Funk",
@@ -55755,7 +55755,7 @@
         }
       ],
       "releaseDate": "1961-01-01T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/74a22423-bc30-3f20-8339-bcee59483819/front-500",
+      "coverArt": "/covers/max-roach-we-insist.jpg",
       "genres": [
         {
           "name": "Avant-Garde Jazz",
@@ -55866,7 +55866,7 @@
         }
       ],
       "releaseDate": "1970-02-26T00:00:00.000Z",
-      "coverArt": "https://coverartarchive.org/release-group/4a05547f-0eb3-3eba-9e01-a9d440d4d041/front-500",
+      "coverArt": "/covers/the-beatles-hey-jude.jpg",
       "genres": [
         {
           "name": "Pop Rock",
