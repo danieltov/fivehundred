@@ -1,5 +1,5 @@
 // scripts/gen-accent-colors.js
-// One-off: generates data/album-accent-colors.json
+// Assigns accentBucket to albums in data/albums.json that are missing one.
 // Usage: node scripts/gen-accent-colors.js
 // Requires ANTHROPIC_API_KEY in environment.
 // Checkpoints to data/accent-colors-checkpoint.json on every write.
@@ -12,9 +12,8 @@ import https from 'https'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 
-const ALBUMS_PATH   = join(ROOT, 'data', 'albums.json')
-const OUTPUT_PATH   = join(ROOT, 'data', 'album-accent-colors.json')
-const CKPT_PATH     = join(ROOT, 'data', 'accent-colors-checkpoint.json')
+const ALBUMS_PATH = join(ROOT, 'data', 'albums.json')
+const CKPT_PATH   = join(ROOT, 'data', 'accent-colors-checkpoint.json')
 
 const BUCKETS = ['cold', 'warm', 'dreamy', 'fierce', 'pastoral']
 const BUCKET_DEFS = {
@@ -26,11 +25,8 @@ const BUCKET_DEFS = {
 }
 const DELAY_MS = 1000
 
-const { albums } = JSON.parse(readFileSync(ALBUMS_PATH, 'utf8'))
-
-const existing = existsSync(OUTPUT_PATH)
-  ? JSON.parse(readFileSync(OUTPUT_PATH, 'utf8'))
-  : {}
+const catalog = JSON.parse(readFileSync(ALBUMS_PATH, 'utf8'))
+const { albums } = catalog
 
 const checkpoint = existsSync(CKPT_PATH)
   ? new Set(JSON.parse(readFileSync(CKPT_PATH, 'utf8')))
@@ -72,7 +68,7 @@ function callClaude(prompt) {
 }
 
 async function getBucket(album) {
-  const leadingDescriptors = album.descriptors.slice(0, 6).join(', ')
+  const leadingDescriptors = album.descriptors.slice(0, 6).map(d => d.name).join(', ')
   const prompt = `Album: "${album.title}" by ${album.artist[0]?.name}
 Leading descriptors: ${leadingDescriptors}
 
@@ -93,7 +89,8 @@ Reply with exactly one word: cold, warm, dreamy, fierce, pastoral, or null.`
 }
 
 async function main() {
-  console.log(`Processing ${albums.length} albums...`)
+  const todo = albums.filter(a => a.accentBucket === undefined || a.accentBucket === null && !checkpoint.has(a.slug))
+  console.log(`${todo.length} albums need accentBucket assignment...`)
   let processed = 0
 
   for (const album of albums) {
@@ -103,18 +100,18 @@ async function main() {
     }
 
     const bucket = await getBucket(album)
-    existing[album.slug] = bucket
+    album.accentBucket = bucket
     checkpoint.add(album.slug)
     processed++
 
-    writeFileSync(OUTPUT_PATH, JSON.stringify(existing, null, 2))
+    writeFileSync(ALBUMS_PATH, JSON.stringify(catalog, null, 2))
     writeFileSync(CKPT_PATH, JSON.stringify([...checkpoint], null, 2))
 
     console.log(`[${processed}/${albums.length}] ${album.slug} → ${bucket ?? 'null'}`)
     await sleep(DELAY_MS)
   }
 
-  console.log('Done. Output:', OUTPUT_PATH)
+  console.log('Done.')
 }
 
 main().catch(console.error)

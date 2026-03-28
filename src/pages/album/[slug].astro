@@ -2,12 +2,10 @@
 import type { GetStaticPaths } from 'astro'
 import Layout from '../../components/Layout.astro'
 import AlbumPoster from '../../components/AlbumPoster.astro'
-import type { AlbumsJson, AccentBucket, AccentColorMap } from '../../types/album'
+import type { AlbumsJson, AccentBucket } from '../../types/album'
 import albumsData from '../../../data/albums.json'
-import accentColorsData from '../../../data/album-accent-colors.json'
 
 const { albums } = albumsData as AlbumsJson
-const accentColors = accentColorsData as AccentColorMap
 
 const ACCENT_CSS: Record<AccentBucket, string> = {
   cold:     'var(--blue)',
@@ -37,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 const { album } = Astro.props
-const bucket = accentColors[album.slug] ?? slugHash(album.slug)
+const bucket = album.accentBucket ?? slugHash(album.slug)
 const accentColor = ACCENT_CSS[bucket]
 ---
 

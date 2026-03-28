@@ -8,6 +8,8 @@ export interface Descriptor {
   slug: string
 }
 
+export type AccentBucket = 'cold' | 'warm' | 'dreamy' | 'fierce' | 'pastoral'
+
 export interface Album {
   id: string
   slug: string
@@ -22,13 +24,10 @@ export interface Album {
   topRanking: number | null
   appleMusicUrl: string | null
   spotifyUri: string | null
+  accentBucket: AccentBucket | null
 }
 
 export interface AlbumsJson {
   generatedAt: string
   albums: Album[]
 }
-
-export type AccentBucket = 'cold' | 'warm' | 'dreamy' | 'fierce' | 'pastoral'
-
-export type AccentColorMap = Record<string, AccentBucket | null>
