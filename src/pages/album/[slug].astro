@@ -43,7 +43,7 @@ const accentColor = ACCENT_CSS[bucket]
   title={`${album.title} — ${album.artist[0]?.name} | Five Hundred`}
   description={`${album.title} by ${album.artist[0]?.name}. Genres: ${album.genres.slice(0,3).map(g => g.name).join(', ')}.`}
 >
-  <AlbumPoster album={album} accentColor={accentColor} />
+  <AlbumPoster album={album} accentColor={accentColor} bucket={bucket} />
 
   <div class="page-footer">
     <span class="page-footer-label">{album.artist[0]?.name} · 500 Records</span>

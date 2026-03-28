@@ -4,9 +4,10 @@ import type { Album } from '../types/album'
 interface Props {
   album: Album
   accentColor: string // CSS value e.g. 'var(--coral)'
+  bucket: string
 }
 
-const { album, accentColor } = Astro.props
+const { album, accentColor, bucket } = Astro.props
 
 const year = new Date(album.releaseDate).getFullYear()
 const releaseFormatted = new Date(album.releaseDate).toLocaleDateString('en-US', {
@@ -37,7 +38,7 @@ const genreList = album.genres.map(g => g.name).join(' · ')
     <div class="poster-title-col">
       <div>
         <div class="poster-badges">
-          {album.isAPlus && <span class="poster-badge aplus">A+</span>}
+          {album.isAPlus && <span class="poster-badge aplus" data-bucket={bucket}>A+</span>}
           {album.topRanking !== null && (
             <span class="poster-badge rank">Ranked #{album.topRanking}</span>
           )}
@@ -221,6 +222,8 @@ const genreList = album.genres.map(g => g.name).join(' · ')
     color: var(--cream);
   }
   .poster-badge.aplus { background: var(--accent); border-color: var(--accent); }
+  .poster-badge.aplus[data-bucket="pastoral"],
+  .poster-badge.aplus[data-bucket="warm"] { color: var(--black); }
 
   .poster-album-title {
     font-family: var(--mono);
