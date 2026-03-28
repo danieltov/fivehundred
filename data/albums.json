@@ -266,11 +266,11 @@
           "slug": "samba-jazz"
         },
         {
-          "name": "Samba-can\u00e7\u00e3o",
+          "name": "Samba-canção",
           "slug": "samba-can-o"
         },
         {
-          "name": "Sambalan\u00e7o",
+          "name": "Sambalanço",
           "slug": "sambalan-o"
         }
       ],
@@ -343,13 +343,13 @@
       "accentBucket": "warm"
     },
     {
-      "coverArt": "/covers/bad-bunny-deb\u00ed-tirar-m\u00e1s-fotos.jpg",
+      "coverArt": "/covers/bad-bunny-debí-tirar-más-fotos.jpg",
       "id": "cme8s1l22308502rzyd6m1i8f",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "2025-01-05T06:00:00.000Z",
-      "slug": "bad-bunny-deb\u00ed-tirar-m\u00e1s-fotos",
-      "title": "Deb\u00ed Tirar M\u00e1s Fotos",
+      "slug": "bad-bunny-debí-tirar-más-fotos",
+      "title": "Debí Tirar Más Fotos",
       "appleMusicUrl": "https://music.apple.com/us/album/deb%C3%AD-tirar-m%C3%A1s-fotos-single/1881926571?uo=4",
       "spotifyUri": "spotify:album:5K79FLRUCSysQnVESLcTdb",
       "topRanking": null,
@@ -361,7 +361,7 @@
       ],
       "genres": [
         {
-          "name": "Reggaet\u00f3n",
+          "name": "Reggaetón",
           "slug": "reggaet-n"
         },
         {
@@ -869,7 +869,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         }
       ],
@@ -940,7 +940,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         },
         {
@@ -7295,20 +7295,20 @@
       "accentBucket": null
     },
     {
-      "coverArt": "/covers/sin\u00e9ad-o-connor-the-lion-and-the-cobra.jpg",
+      "coverArt": "/covers/sinéad-o-connor-the-lion-and-the-cobra.jpg",
       "id": "cme80xw0i2614xwrz4aofcdal",
       "isAPlus": false,
       "owned": false,
       "releaseDate": "1987-10-25T05:00:00.000Z",
-      "slug": "sin\u00e9ad-o-connor-the-lion-and-the-cobra",
+      "slug": "sinéad-o-connor-the-lion-and-the-cobra",
       "title": "The Lion and the Cobra",
       "appleMusicUrl": "https://music.apple.com/us/album/the-lion-and-the-cobra/1629181905?uo=4",
       "spotifyUri": null,
       "topRanking": null,
       "artist": [
         {
-          "name": "Sin\u00e9ad O'Connor",
-          "slug": "sin\u00e9ad-o-connor"
+          "name": "Sinéad O'Connor",
+          "slug": "sinéad-o-connor"
         }
       ],
       "genres": [
@@ -7488,7 +7488,7 @@
       ],
       "genres": [
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -7659,7 +7659,7 @@
           "slug": "minimal-synth"
         },
         {
-          "name": "D\u00fcsseldorf School",
+          "name": "Düsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -8001,7 +8001,7 @@
           "slug": "samba-rock"
         },
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         }
       ],
@@ -8926,7 +8926,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "os-mutantes-a-divina-comdia-ou-ando-meio-desligado",
-      "title": "A Divina Com\u00e9dia Ou Ando Meio Desligado",
+      "title": "A Divina Comédia Ou Ando Meio Desligado",
       "appleMusicUrl": "https://music.apple.com/us/album/a-divina-com%C3%A9dia-ou-ando-meio-desligado/1443643367?uo=4",
       "spotifyUri": "spotify:album:7Brj8kqhEO9Zg4daamMieT",
       "topRanking": null,
@@ -8942,7 +8942,7 @@
           "slug": "psychedelic-rock"
         },
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -10531,7 +10531,7 @@
       ],
       "genres": [
         {
-          "name": "J\u00f9j\u00fa",
+          "name": "Jùjú",
           "slug": "j-j"
         }
       ],
@@ -20121,7 +20121,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -21330,7 +21330,7 @@
           "slug": "cool-jazz"
         },
         {
-          "name": "Samba-can\u00e7\u00e3o",
+          "name": "Samba-canção",
           "slug": "samba-can-o"
         }
       ],
@@ -21443,7 +21443,7 @@
       "topRanking": 15,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -21622,7 +21622,7 @@
       "topRanking": 31,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -21837,7 +21837,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -26739,7 +26739,7 @@
           "slug": "electropop"
         },
         {
-          "name": "Tamborz\u00e3o",
+          "name": "Tamborzão",
           "slug": "tamborz-o"
         },
         {
@@ -26938,7 +26938,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "miles-davis-ascenseur-pour-lchafaud-original-motion-picture-soundtrack",
-      "title": "Ascenseur pour l'\u00c9chafaud",
+      "title": "Ascenseur pour l'Échafaud",
       "appleMusicUrl": "https://music.apple.com/us/album/ascenseur-pour-l%C3%A9chafaud/1389716930?uo=4",
       "spotifyUri": null,
       "topRanking": null,
@@ -27025,45 +27025,6 @@
         }
       ],
       "accentBucket": "cold"
-    },
-    {
-      "coverArt": "/covers/tedeschi-trucks-band-i-am-the-moon-ii-ascension.jpg",
-      "id": "cme4gbnkm1328385rz2jv3atua",
-      "isAPlus": false,
-      "owned": false,
-      "releaseDate": "2022-07-01T05:00:00.000Z",
-      "slug": "tedeschi-trucks-band-i-am-the-moon-ii-ascension",
-      "title": "I Am the Moon: II. Ascension",
-      "appleMusicUrl": "https://music.apple.com/us/album/i-am-the-moon-ii-ascension/1619009215?uo=4",
-      "spotifyUri": "spotify:album:1kAOpSgqnN3ya5cFIeZMbM",
-      "topRanking": null,
-      "artist": [
-        {
-          "name": "Tedeschi Trucks Band",
-          "slug": "tedeschi-trucks-band"
-        }
-      ],
-      "genres": [
-        {
-          "name": "Southern Rock",
-          "slug": "southern-rock"
-        },
-        {
-          "name": "Blues Rock",
-          "slug": "blues-rock"
-        },
-        {
-          "name": "Jam Band",
-          "slug": "jam-band"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        }
-      ],
-      "accentBucket": null
     },
     {
       "coverArt": "/covers/miles-davis-bags-groove.jpg",
@@ -27242,13 +27203,13 @@
       "owned": false,
       "releaseDate": "2013-12-13T06:00:00.000Z",
       "slug": "beyonc-beyonc",
-      "title": "Beyonc\u00e9",
+      "title": "Beyoncé",
       "appleMusicUrl": "https://music.apple.com/us/album/beyonc%C3%A9-deluxe/780519939?uo=4",
       "spotifyUri": "spotify:album:2UJwKSBUz6rtW4QLK74kQu",
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -28670,7 +28631,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Jo\u00e3o Gilberto",
+          "name": "João Gilberto",
           "slug": "joo-gilberto"
         }
       ],
@@ -29138,7 +29099,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Bj\u00f6rk",
+          "name": "Björk",
           "slug": "bjrk"
         }
       ],
@@ -29682,7 +29643,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Mon\u00e1e",
+          "name": "Janelle Monáe",
           "slug": "janelle-mone"
         }
       ],
@@ -30565,7 +30526,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Rosal\u00eda",
+          "name": "Rosalía",
           "slug": "rosala"
         }
       ],
@@ -30587,7 +30548,7 @@
           "slug": "alternative-r-b"
         },
         {
-          "name": "Buler\u00eda",
+          "name": "Bulería",
           "slug": "buler-a"
         },
         {
@@ -32772,7 +32733,7 @@
       ],
       "genres": [
         {
-          "name": "Tropic\u00e1lia",
+          "name": "Tropicália",
           "slug": "tropic-lia"
         },
         {
@@ -33934,7 +33895,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Beyonc\u00e9",
+          "name": "Beyoncé",
           "slug": "beyonce"
         }
       ],
@@ -34913,141 +34874,6 @@
         }
       ],
       "accentBucket": null
-    },
-    {
-      "coverArt": "/covers/clairo-immunity.jpg",
-      "id": "cme4gmvk82313085rzq95to8yy",
-      "isAPlus": false,
-      "owned": false,
-      "releaseDate": "2019-08-02T05:00:00.000Z",
-      "slug": "clairo-immunity",
-      "title": "Immunity",
-      "appleMusicUrl": null,
-      "spotifyUri": "spotify:album:2DDv7gTOpB3D3kDEHddP9z",
-      "topRanking": null,
-      "artist": [
-        {
-          "name": "Clairo",
-          "slug": "clairo"
-        }
-      ],
-      "genres": [
-        {
-          "name": "Bedroom Pop",
-          "slug": "bedroom-pop"
-        },
-        {
-          "name": "Alt-Pop",
-          "slug": "alt-pop"
-        },
-        {
-          "name": "Alternative R&amp;B",
-          "slug": "alternative-r-b"
-        },
-        {
-          "name": "Dream Pop",
-          "slug": "dream-pop"
-        },
-        {
-          "name": "Indietronica",
-          "slug": "indietronica"
-        },
-        {
-          "name": "Indie Rock",
-          "slug": "indie-rock"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "melancholic",
-          "slug": "melancholic"
-        },
-        {
-          "name": "mellow",
-          "slug": "mellow"
-        },
-        {
-          "name": "melodic",
-          "slug": "melodic"
-        },
-        {
-          "name": "warm",
-          "slug": "warm"
-        },
-        {
-          "name": "lush",
-          "slug": "lush"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
-          "name": "love",
-          "slug": "love"
-        },
-        {
-          "name": "lethargic",
-          "slug": "lethargic"
-        },
-        {
-          "name": "romantic",
-          "slug": "romantic"
-        },
-        {
-          "name": "LGBTQ",
-          "slug": "lgbtq"
-        },
-        {
-          "name": "longing",
-          "slug": "longing"
-        },
-        {
-          "name": "sentimental",
-          "slug": "sentimental"
-        },
-        {
-          "name": "summer",
-          "slug": "summer"
-        },
-        {
-          "name": "introspective",
-          "slug": "introspective"
-        },
-        {
-          "name": "atmospheric",
-          "slug": "atmospheric"
-        },
-        {
-          "name": "ethereal",
-          "slug": "ethereal"
-        },
-        {
-          "name": "suburban",
-          "slug": "suburban"
-        },
-        {
-          "name": "bittersweet",
-          "slug": "bittersweet"
-        },
-        {
-          "name": "bisexual",
-          "slug": "bisexual"
-        },
-        {
-          "name": "adolescence",
-          "slug": "adolescence"
-        },
-        {
-          "name": "anxious",
-          "slug": "anxious"
-        },
-        {
-          "name": "nostalgia",
-          "slug": "nostalgia"
-        }
-      ],
-      "accentBucket": "dreamy"
     },
     {
       "coverArt": "/covers/jamie-xx-in-colour.jpg",
@@ -40196,7 +40022,7 @@
           "slug": "electroacoustic"
         },
         {
-          "name": "D\u00fcsseldorf School",
+          "name": "Düsseldorf School",
           "slug": "d-sseldorf-school"
         }
       ],
@@ -40899,7 +40725,7 @@
       "owned": false,
       "releaseDate": "1961-05-25T05:00:00.000Z",
       "slug": "john-coltrane-ol-coltrane",
-      "title": "Ol\u00e9 Coltrane",
+      "title": "Olé Coltrane",
       "appleMusicUrl": "https://music.apple.com/us/album/ol%C3%A9-coltrane/962192458?uo=4",
       "spotifyUri": "spotify:album:5BGkenbuo3xY3CRblRPj8K",
       "topRanking": null,
@@ -44983,7 +44809,7 @@
       "topRanking": null,
       "artist": [
         {
-          "name": "Janelle Mon\u00e1e",
+          "name": "Janelle Monáe",
           "slug": "janelle-mone"
         }
       ],
@@ -49444,73 +49270,6 @@
       "accentBucket": "pastoral"
     },
     {
-      "coverArt": "/covers/mountain-twin-peaks.jpg",
-      "id": "cme4h5ply3896185rzmxwaf3to",
-      "isAPlus": false,
-      "owned": false,
-      "releaseDate": "1970-01-01T06:00:00.000Z",
-      "slug": "mountain-twin-peaks",
-      "title": "Twin Peaks",
-      "appleMusicUrl": "https://music.apple.com/us/album/twin-peaks-live/186235710?uo=4",
-      "spotifyUri": "spotify:album:2K4FPQu1byL60wp3PnaNTX",
-      "topRanking": null,
-      "artist": [
-        {
-          "name": "Mountain",
-          "slug": "mountain"
-        }
-      ],
-      "genres": [
-        {
-          "name": "Hard Rock",
-          "slug": "hard-rock"
-        },
-        {
-          "name": "Jam Band",
-          "slug": "jam-band"
-        },
-        {
-          "name": "Psychedelic Rock",
-          "slug": "psychedelic-rock"
-        },
-        {
-          "name": "Progressive Rock",
-          "slug": "progressive-rock"
-        },
-        {
-          "name": "Blues Rock",
-          "slug": "blues-rock"
-        },
-        {
-          "name": "Heavy Psych",
-          "slug": "heavy-psych"
-        },
-        {
-          "name": "Heavy Metal",
-          "slug": "heavy-metal"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "heavy",
-          "slug": "heavy"
-        },
-        {
-          "name": "jamming",
-          "slug": "jamming"
-        },
-        {
-          "name": "improvisation",
-          "slug": "improvisation"
-        },
-        {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        }
-      ],
-      "accentBucket": "fierce"
-    },
-    {
       "coverArt": "/covers/culture-two-sevens-clash.jpg",
       "id": "cme4h5v6c3908585rzf7enlof8",
       "isAPlus": false,
@@ -51799,7 +51558,7 @@
       "owned": false,
       "releaseDate": "1970-01-01T06:00:00.000Z",
       "slug": "jorge-ben-frica-brasil",
-      "title": "\u00c1frica Brasil",
+      "title": "África Brasil",
       "appleMusicUrl": "https://music.apple.com/us/album/africa-brasil/1444050820?uo=4",
       "spotifyUri": "spotify:album:1jJXtCHztoIKiSG8IbLmq0",
       "topRanking": null,
@@ -51827,7 +51586,7 @@
           "slug": "samba-soul"
         },
         {
-          "name": "Afox\u00e9",
+          "name": "Afoxé",
           "slug": "afox"
         },
         {
@@ -52943,7 +52702,7 @@
           "slug": "free-improvisation"
         },
         {
-          "name": "Musique concr\u00e8te",
+          "name": "Musique concrète",
           "slug": "musique-concr-te"
         },
         {
@@ -55941,6 +55700,327 @@
       "appleMusicUrl": null,
       "spotifyUri": null,
       "accentBucket": "warm"
+    },
+    {
+      "id": "cme4h5ply3896185rzmxwaf3to",
+      "slug": "angelo-badalamenti-twin-peaks",
+      "title": "Twin Peaks",
+      "artist": [
+        {
+          "name": "Angelo Badalamenti",
+          "slug": "angelo-badalamenti"
+        }
+      ],
+      "releaseDate": "1990-09-11T00:00:00.000Z",
+      "coverArt": "/covers/angelo-badalamenti-twin-peaks.jpg",
+      "genres": [
+        {
+          "name": "Television Music",
+          "slug": "television-music"
+        },
+        {
+          "name": "Dark Jazz",
+          "slug": "dark-jazz"
+        },
+        {
+          "name": "Ambient",
+          "slug": "ambient"
+        },
+        {
+          "name": "Crime Jazz",
+          "slug": "crime-jazz"
+        },
+        {
+          "name": "Lounge",
+          "slug": "lounge"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "mysterious",
+          "slug": "mysterious"
+        },
+        {
+          "name": "ominous",
+          "slug": "ominous"
+        },
+        {
+          "name": "nocturnal",
+          "slug": "nocturnal"
+        },
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "suspenseful",
+          "slug": "suspenseful"
+        },
+        {
+          "name": "dark",
+          "slug": "dark"
+        },
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        },
+        {
+          "name": "ethereal",
+          "slug": "ethereal"
+        },
+        {
+          "name": "mellow",
+          "slug": "mellow"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "melancholic",
+          "slug": "melancholic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "longing",
+          "slug": "longing"
+        },
+        {
+          "name": "hazy",
+          "slug": "hazy"
+        },
+        {
+          "name": "melodic",
+          "slug": "melodic"
+        },
+        {
+          "name": "smooth",
+          "slug": "smooth"
+        },
+        {
+          "name": "dreams",
+          "slug": "dreams"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/twin-peaks-soundtrack-from/374382340",
+      "spotifyUri": "spotify:album:6iGX2bbzKEocRY0HzdQ9zX",
+      "accentBucket": "cold"
+    },
+    {
+      "id": "cme4gbnkm1328385rz2jv3atub",
+      "slug": "john-coltrane-ascension",
+      "title": "Ascension",
+      "artist": [
+        {
+          "name": "John Coltrane",
+          "slug": "john-coltrane"
+        }
+      ],
+      "releaseDate": "1966-02-01T00:00:00.000Z",
+      "coverArt": "/covers/john-coltrane-ascension.jpg",
+      "genres": [
+        {
+          "name": "Free Jazz",
+          "slug": "free-jazz"
+        },
+        {
+          "name": "Spiritual Jazz",
+          "slug": "spiritual-jazz"
+        },
+        {
+          "name": "Experimental Big Band",
+          "slug": "experimental-big-band"
+        },
+        {
+          "name": "Post-Bop",
+          "slug": "post-bop"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "chaotic",
+          "slug": "chaotic"
+        },
+        {
+          "name": "avant-garde",
+          "slug": "avant-garde"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "improvisation",
+          "slug": "improvisation"
+        },
+        {
+          "name": "spiritual",
+          "slug": "spiritual"
+        },
+        {
+          "name": "passionate",
+          "slug": "passionate"
+        },
+        {
+          "name": "manic",
+          "slug": "manic"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "dissonant",
+          "slug": "dissonant"
+        },
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "technical",
+          "slug": "technical"
+        },
+        {
+          "name": "noisy",
+          "slug": "noisy"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/ascension/1443121026",
+      "spotifyUri": "spotify:album:2TtadFmrnrFZecasfj0p4t",
+      "accentBucket": "fierce"
+    },
+    {
+      "id": "cme4gmvk82313085rzq95to8yz",
+      "slug": "jon-hopkins-immunity",
+      "title": "Immunity",
+      "artist": [
+        {
+          "name": "Jon Hopkins",
+          "slug": "jon-hopkins"
+        }
+      ],
+      "releaseDate": "2013-06-03T00:00:00.000Z",
+      "coverArt": "/covers/jon-hopkins-immunity.jpg",
+      "genres": [
+        {
+          "name": "Microhouse",
+          "slug": "microhouse"
+        },
+        {
+          "name": "IDM",
+          "slug": "idm"
+        },
+        {
+          "name": "Tech House",
+          "slug": "tech-house"
+        },
+        {
+          "name": "Ambient",
+          "slug": "ambient"
+        },
+        {
+          "name": "Ambient Techno",
+          "slug": "ambient-techno"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
+        },
+        {
+          "name": "nocturnal",
+          "slug": "nocturnal"
+        },
+        {
+          "name": "lush",
+          "slug": "lush"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic"
+        },
+        {
+          "name": "mysterious",
+          "slug": "mysterious"
+        },
+        {
+          "name": "ethereal",
+          "slug": "ethereal"
+        },
+        {
+          "name": "bittersweet",
+          "slug": "bittersweet"
+        },
+        {
+          "name": "melancholic",
+          "slug": "melancholic"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "uplifting",
+          "slug": "uplifting"
+        },
+        {
+          "name": "warm",
+          "slug": "warm"
+        },
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/immunity/766062577",
+      "spotifyUri": "spotify:album:7H7UxuxjGSJuV7LcCFUxTD",
+      "accentBucket": "cold"
     }
   ]
 }
