@@ -401,8 +401,8 @@ const filteredAlbums = aplusAlbums.filter(a => !newThisMonthSlugs.has(a.slug))
   }
 
   @media (max-width: 580px) {
-    .acard.feature { grid-column: span 1; grid-template-columns: 1fr; }
-    .acard.feature .acard-cover { min-height: 0; aspect-ratio: 1; }
+    .acard.feature { grid-column: span 2; grid-template-columns: 1fr; }
+    .acard.feature .acard-cover { height: auto; min-height: 0; aspect-ratio: 1; }
   }
 
   /* DARK CARD — every even feature (10th, 20th…) */
