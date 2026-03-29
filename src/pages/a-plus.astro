@@ -14,6 +14,7 @@ const newThisMonth: Album[] = aplusAlbums.filter(a => {
   const d = new Date(a.createdAt)
   return d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear()
 })
+const newThisMonthSlugs = new Set(newThisMonth.map(a => a.slug))
 const monthLabel = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }).toUpperCase()
 ---
 
@@ -81,7 +82,7 @@ const monthLabel = now.toLocaleDateString('en-US', { month: 'long', year: 'numer
   )}
 
   <div class="aplus-grid">
-    {aplusAlbums.map(album => {
+    {aplusAlbums.filter(a => !newThisMonthSlugs.has(a.slug)).map(album => {
       const year = new Date(album.releaseDate).getFullYear()
       const topDescriptors = album.descriptors.slice(0, 3)
       return (
