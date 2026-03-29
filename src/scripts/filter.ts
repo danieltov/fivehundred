@@ -3,8 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('albums-grid')
-  const countBadge = document.getElementById('visible-count')
-  if (!grid || !countBadge) return
+  if (!grid) return
 
   let activeDecade = 'all'
   let activeSort = 'recent'
@@ -36,22 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Filter logic ---
 
   function applyFilters() {
-    const cells = grid!.querySelectorAll<HTMLElement>('.album-cell')
-    let visible = 0
-
-    cells.forEach(cell => {
-      const decade = cell.dataset.decade ?? ''
-      const decadePass = activeDecade === 'all' || decade === activeDecade
-
+    grid!.querySelectorAll<HTMLElement>('.album-cell').forEach(cell => {
+      const decadePass = activeDecade === 'all' || cell.dataset.decade === activeDecade
       if (decadePass) {
         cell.removeAttribute('hidden')
-        visible++
       } else {
         cell.setAttribute('hidden', '')
       }
     })
-
-    countBadge!.textContent = `${visible} Records`
   }
 
   // --- Sort logic ---
