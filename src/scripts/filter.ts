@@ -6,9 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const countBadge = document.getElementById('visible-count')
   if (!grid || !countBadge) return
 
-  let activeType = 'all'
   let activeDecade = 'all'
-  let activeSort = 'default'
+  let activeSort = 'recent'
 
   // --- Pill click handlers ---
 
@@ -16,14 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     group.forEach(p => p.classList.remove('active'))
     clicked.classList.add('active')
   }
-
-  document.querySelectorAll<HTMLButtonElement>('.pill[data-type]').forEach(pill => {
-    pill.addEventListener('click', () => {
-      activeType = pill.dataset.type ?? 'all'
-      setActivePill(document.querySelectorAll<HTMLButtonElement>('.pill[data-type]'), pill)
-      applyFilters()
-    })
-  })
 
   document.querySelectorAll<HTMLButtonElement>('.pill[data-decade]').forEach(pill => {
     pill.addEventListener('click', () => {
@@ -35,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll<HTMLButtonElement>('.pill[data-sort]').forEach(pill => {
     pill.addEventListener('click', () => {
-      activeSort = pill.dataset.sort ?? 'default'
+      activeSort = pill.dataset.sort ?? 'recent'
       setActivePill(document.querySelectorAll<HTMLButtonElement>('.pill[data-sort]'), pill)
       applySort()
       applyFilters()
@@ -49,18 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let visible = 0
 
     cells.forEach(cell => {
-      const isAplus = cell.dataset.aplus === 'true'
-      const isTop50 = cell.dataset.top50 === 'true'
       const decade = cell.dataset.decade ?? ''
-
-      const typePass =
-        activeType === 'all' ||
-        (activeType === 'a-plus' && isAplus) ||
-        (activeType === 'top50' && isTop50)
-
       const decadePass = activeDecade === 'all' || decade === activeDecade
 
-      if (typePass && decadePass) {
+      if (decadePass) {
         cell.removeAttribute('hidden')
         visible++
       } else {
@@ -86,15 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (activeSort === 'year') {
         return parseInt(a.dataset.year ?? '0') - parseInt(b.dataset.year ?? '0')
       }
-      // default: by rank (ranked first, then unranked)
-      const rankA = a.dataset.rank ? parseInt(a.dataset.rank) : Infinity
-      const rankB = b.dataset.rank ? parseInt(b.dataset.rank) : Infinity
-      return rankA - rankB
+      // recent: newest createdAt first; missing createdAt sorts to end
+      const tsA = a.dataset.created ? new Date(a.dataset.created).getTime() : 0
+      const tsB = b.dataset.created ? new Date(b.dataset.created).getTime() : 0
+      return tsB - tsA
     })
 
     cells.forEach(cell => grid!.appendChild(cell))
   }
 
-  // Initialize sort
+  // Initialize
   applySort()
+  applyFilters()
 })

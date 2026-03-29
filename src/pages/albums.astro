@@ -19,14 +19,6 @@ const { albums } = albumsData as AlbumsJson
 
   <div class="filter-bar">
     <div class="filter-group">
-      <span class="filter-group-label">Filter</span>
-      <div class="filter-pills">
-        <button class="pill active" data-type="all">All</button>
-        <button class="pill" data-type="a-plus">A+ Only</button>
-        <button class="pill" data-type="top50">Top 50</button>
-      </div>
-    </div>
-    <div class="filter-group">
       <span class="filter-group-label">Decade</span>
       <div class="filter-pills">
         <button class="pill active" data-decade="all">All</button>
@@ -43,17 +35,17 @@ const { albums } = albumsData as AlbumsJson
     <div class="filter-group">
       <span class="filter-group-label">Sort</span>
       <div class="filter-pills">
-        <button class="pill active" data-sort="default">Ranking</button>
+        <button class="pill active" data-sort="recent">Recent</button>
+        <button class="pill" data-sort="title">Title A–Z</button>
         <button class="pill" data-sort="artist">Artist A–Z</button>
         <button class="pill" data-sort="year">Year</button>
-        <button class="pill" data-sort="title">Title A–Z</button>
       </div>
     </div>
   </div>
 
   <div class="albums-grid" id="albums-grid">
     {albums.map(album => (
-      <AlbumCell album={album} showRank={true} />
+      <AlbumCell album={album} />
     ))}
   </div>
 
