@@ -659,12 +659,64 @@
       ],
       "descriptors": [
         {
-          "name": "acoustic",
-          "slug": "acoustic"
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "party",
+          "slug": "party"
+        },
+        {
+          "name": "uplifting",
+          "slug": "uplifting"
+        },
+        {
+          "name": "melodic",
+          "slug": "melodic"
+        },
+        {
+          "name": "suspenseful",
+          "slug": "suspenseful"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
         },
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "manic",
+          "slug": "manic"
+        },
+        {
+          "name": "progressive",
+          "slug": "progressive"
+        },
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "bouncy",
+          "slug": "bouncy"
+        },
+        {
+          "name": "improvisation",
+          "slug": "improvisation"
+        },
+        {
+          "name": "theatrical",
+          "slug": "theatrical"
+        },
+        {
+          "name": "technical",
+          "slug": "technical"
         },
         {
           "name": "female vocalist",
