@@ -2,6 +2,683 @@
   "generatedAt": "2026-03-26T03:23:53.355Z",
   "albums": [
     {
+      "id": "c91m0v2mllpm9aua2p2gp2rxc",
+      "slug": "max-roach-we-insist",
+      "title": "We Insist! Max Roach's Freedom Now Suite",
+      "artist": [
+        {
+          "name": "Max Roach",
+          "slug": "max-roach"
+        }
+      ],
+      "releaseDate": "1961-01-01T00:00:00.000Z",
+      "coverArt": "/covers/max-roach-we-insist.jpg",
+      "genres": [
+        {
+          "name": "Avant-Garde Jazz",
+          "slug": "avant-garde-jazz"
+        },
+        {
+          "name": "Vocal Jazz",
+          "slug": "vocal-jazz"
+        },
+        {
+          "name": "Afro-Jazz",
+          "slug": "afro-jazz"
+        },
+        {
+          "name": "Hard Bop",
+          "slug": "hard-bop"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "political",
+          "slug": "political"
+        },
+        {
+          "name": "protest",
+          "slug": "protest"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "conscious",
+          "slug": "conscious"
+        },
+        {
+          "name": "serious",
+          "slug": "serious"
+        },
+        {
+          "name": "avant-garde",
+          "slug": "avant-garde"
+        },
+        {
+          "name": "passionate",
+          "slug": "passionate"
+        },
+        {
+          "name": "concept album",
+          "slug": "concept-album"
+        },
+        {
+          "name": "improvisation",
+          "slug": "improvisation"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "rebellious",
+          "slug": "rebellious"
+        },
+        {
+          "name": "tribal",
+          "slug": "tribal"
+        },
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "sombre",
+          "slug": "sombre"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "abstract",
+          "slug": "abstract"
+        },
+        {
+          "name": "suite",
+          "slug": "suite"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/we-insist-max-roachs-freedom-now-suite-remastered/1880966670",
+      "spotifyUri": null,
+      "accentBucket": "fierce"
+    },
+    {
+      "id": "cp2g13j71of8k05u5o7l12vwk",
+      "slug": "the-beatles-hey-jude",
+      "title": "Hey Jude",
+      "artist": [
+        {
+          "name": "The Beatles",
+          "slug": "the-beatles"
+        }
+      ],
+      "releaseDate": "1970-02-26T00:00:00.000Z",
+      "coverArt": "/covers/the-beatles-hey-jude.jpg",
+      "genres": [
+        {
+          "name": "Pop Rock",
+          "slug": "pop-rock"
+        },
+        {
+          "name": "Merseybeat",
+          "slug": "merseybeat"
+        },
+        {
+          "name": "Psychedelic Pop",
+          "slug": "psychedelic-pop"
+        },
+        {
+          "name": "Psychedelic Rock",
+          "slug": "psychedelic-rock"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "mellow",
+          "slug": "mellow"
+        },
+        {
+          "name": "playful",
+          "slug": "playful"
+        },
+        {
+          "name": "sentimental",
+          "slug": "sentimental"
+        },
+        {
+          "name": "warm",
+          "slug": "warm"
+        },
+        {
+          "name": "uplifting",
+          "slug": "uplifting"
+        },
+        {
+          "name": "melodic",
+          "slug": "melodic"
+        },
+        {
+          "name": "love",
+          "slug": "love"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
+        },
+        {
+          "name": "quirky",
+          "slug": "quirky"
+        },
+        {
+          "name": "happy",
+          "slug": "happy"
+        },
+        {
+          "name": "romantic",
+          "slug": "romantic"
+        },
+        {
+          "name": "psychedelic",
+          "slug": "psychedelic"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": null,
+      "spotifyUri": null,
+      "accentBucket": "warm"
+    },
+    {
+      "id": "cme4h5ply3896185rzmxwaf3to",
+      "slug": "angelo-badalamenti-twin-peaks",
+      "title": "Twin Peaks",
+      "artist": [
+        {
+          "name": "Angelo Badalamenti",
+          "slug": "angelo-badalamenti"
+        }
+      ],
+      "releaseDate": "1990-09-11T00:00:00.000Z",
+      "coverArt": "/covers/angelo-badalamenti-twin-peaks.jpg",
+      "genres": [
+        {
+          "name": "Television Music",
+          "slug": "television-music"
+        },
+        {
+          "name": "Dark Jazz",
+          "slug": "dark-jazz"
+        },
+        {
+          "name": "Ambient",
+          "slug": "ambient"
+        },
+        {
+          "name": "Crime Jazz",
+          "slug": "crime-jazz"
+        },
+        {
+          "name": "Lounge",
+          "slug": "lounge"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "mysterious",
+          "slug": "mysterious"
+        },
+        {
+          "name": "ominous",
+          "slug": "ominous"
+        },
+        {
+          "name": "nocturnal",
+          "slug": "nocturnal"
+        },
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "suspenseful",
+          "slug": "suspenseful"
+        },
+        {
+          "name": "dark",
+          "slug": "dark"
+        },
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        },
+        {
+          "name": "ethereal",
+          "slug": "ethereal"
+        },
+        {
+          "name": "mellow",
+          "slug": "mellow"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "melancholic",
+          "slug": "melancholic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "longing",
+          "slug": "longing"
+        },
+        {
+          "name": "hazy",
+          "slug": "hazy"
+        },
+        {
+          "name": "melodic",
+          "slug": "melodic"
+        },
+        {
+          "name": "smooth",
+          "slug": "smooth"
+        },
+        {
+          "name": "dreams",
+          "slug": "dreams"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/twin-peaks-soundtrack-from/374382340",
+      "spotifyUri": "spotify:album:6iGX2bbzKEocRY0HzdQ9zX",
+      "accentBucket": "cold"
+    },
+    {
+      "id": "cme4gbnkm1328385rz2jv3atub",
+      "slug": "john-coltrane-ascension",
+      "title": "Ascension",
+      "artist": [
+        {
+          "name": "John Coltrane",
+          "slug": "john-coltrane"
+        }
+      ],
+      "releaseDate": "1966-02-01T00:00:00.000Z",
+      "coverArt": "/covers/john-coltrane-ascension.jpg",
+      "genres": [
+        {
+          "name": "Free Jazz",
+          "slug": "free-jazz"
+        },
+        {
+          "name": "Spiritual Jazz",
+          "slug": "spiritual-jazz"
+        },
+        {
+          "name": "Experimental Big Band",
+          "slug": "experimental-big-band"
+        },
+        {
+          "name": "Post-Bop",
+          "slug": "post-bop"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "chaotic",
+          "slug": "chaotic"
+        },
+        {
+          "name": "avant-garde",
+          "slug": "avant-garde"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "improvisation",
+          "slug": "improvisation"
+        },
+        {
+          "name": "spiritual",
+          "slug": "spiritual"
+        },
+        {
+          "name": "passionate",
+          "slug": "passionate"
+        },
+        {
+          "name": "manic",
+          "slug": "manic"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "dissonant",
+          "slug": "dissonant"
+        },
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "technical",
+          "slug": "technical"
+        },
+        {
+          "name": "noisy",
+          "slug": "noisy"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/ascension/1443121026",
+      "spotifyUri": "spotify:album:2TtadFmrnrFZecasfj0p4t",
+      "accentBucket": "fierce"
+    },
+    {
+      "id": "cme4gmvk82313085rzq95to8yz",
+      "slug": "jon-hopkins-immunity",
+      "title": "Immunity",
+      "artist": [
+        {
+          "name": "Jon Hopkins",
+          "slug": "jon-hopkins"
+        }
+      ],
+      "releaseDate": "2013-06-03T00:00:00.000Z",
+      "coverArt": "/covers/jon-hopkins-immunity.jpg",
+      "genres": [
+        {
+          "name": "Microhouse",
+          "slug": "microhouse"
+        },
+        {
+          "name": "IDM",
+          "slug": "idm"
+        },
+        {
+          "name": "Tech House",
+          "slug": "tech-house"
+        },
+        {
+          "name": "Ambient",
+          "slug": "ambient"
+        },
+        {
+          "name": "Ambient Techno",
+          "slug": "ambient-techno"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
+        },
+        {
+          "name": "nocturnal",
+          "slug": "nocturnal"
+        },
+        {
+          "name": "lush",
+          "slug": "lush"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic"
+        },
+        {
+          "name": "mysterious",
+          "slug": "mysterious"
+        },
+        {
+          "name": "ethereal",
+          "slug": "ethereal"
+        },
+        {
+          "name": "bittersweet",
+          "slug": "bittersweet"
+        },
+        {
+          "name": "melancholic",
+          "slug": "melancholic"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "uplifting",
+          "slug": "uplifting"
+        },
+        {
+          "name": "warm",
+          "slug": "warm"
+        },
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        }
+      ],
+      "isAPlus": false,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/immunity/766062577",
+      "spotifyUri": "spotify:album:7H7UxuxjGSJuV7LcCFUxTD",
+      "accentBucket": "cold"
+    },
+    {
+      "id": "cme4h9xkw1821385rz7f2bk4mp",
+      "slug": "aphex-twin-windowlicker",
+      "title": "Windowlicker",
+      "artist": [
+        {
+          "name": "Aphex Twin",
+          "slug": "aphex-twin"
+        }
+      ],
+      "releaseDate": "1999-03-22T00:00:00.000Z",
+      "coverArt": "/covers/aphex-twin-windowlicker.jpg",
+      "genres": [
+        {
+          "name": "IDM",
+          "slug": "idm"
+        },
+        {
+          "name": "Glitch",
+          "slug": "glitch"
+        },
+        {
+          "name": "Graphical Sound",
+          "slug": "graphical-sound"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "playful",
+          "slug": "playful"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        },
+        {
+          "name": "sensual",
+          "slug": "sensual"
+        },
+        {
+          "name": "quirky",
+          "slug": "quirky"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
+        },
+        {
+          "name": "noisy",
+          "slug": "noisy"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "chaotic",
+          "slug": "chaotic"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "humorous",
+          "slug": "humorous"
+        },
+        {
+          "name": "avant-garde",
+          "slug": "avant-garde"
+        },
+        {
+          "name": "psychedelic",
+          "slug": "psychedelic"
+        },
+        {
+          "name": "maximalist",
+          "slug": "maximalist"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/windowlicker-ep/281953326",
+      "spotifyUri": "spotify:album:64XdBdXNdguPHzBg8bdk5A",
+      "accentBucket": "dreamy"
+    },
+    {
+      "id": "cme4hb2qn1938085rz8d3cl5nq",
+      "slug": "benny-goodman-the-famous-1938-carnegie-hall-jazz-concert",
+      "title": "The Famous 1938 Carnegie Hall Jazz Concert",
+      "artist": [
+        {
+          "name": "Benny Goodman",
+          "slug": "benny-goodman"
+        }
+      ],
+      "releaseDate": "1950-11-01T00:00:00.000Z",
+      "coverArt": "/covers/benny-goodman-the-famous-1938-carnegie-hall-jazz-concert.jpg",
+      "genres": [
+        {
+          "name": "Big Band",
+          "slug": "big-band"
+        },
+        {
+          "name": "Swing",
+          "slug": "swing"
+        },
+        {
+          "name": "Vocal Jazz",
+          "slug": "vocal-jazz"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "playful",
+          "slug": "playful"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/the-famous-1938-carnegie-hall-jazz-concert-live/169853677",
+      "spotifyUri": "spotify:album:2A5VEgkHV7hXVFdFcQAvEN",
+      "accentBucket": "warm"
+    },
+    {
       "coverArt": "/covers/girls-album.jpg",
       "id": "cmn81xamvwcbn32hr3jt",
       "isAPlus": false,
@@ -55502,683 +56179,6 @@
       "appleMusicUrl": "https://music.apple.com/us/album/cymande/1783165176",
       "spotifyUri": null,
       "accentBucket": "dreamy"
-    },
-    {
-      "id": "c91m0v2mllpm9aua2p2gp2rxc",
-      "slug": "max-roach-we-insist",
-      "title": "We Insist! Max Roach's Freedom Now Suite",
-      "artist": [
-        {
-          "name": "Max Roach",
-          "slug": "max-roach"
-        }
-      ],
-      "releaseDate": "1961-01-01T00:00:00.000Z",
-      "coverArt": "/covers/max-roach-we-insist.jpg",
-      "genres": [
-        {
-          "name": "Avant-Garde Jazz",
-          "slug": "avant-garde-jazz"
-        },
-        {
-          "name": "Vocal Jazz",
-          "slug": "vocal-jazz"
-        },
-        {
-          "name": "Afro-Jazz",
-          "slug": "afro-jazz"
-        },
-        {
-          "name": "Hard Bop",
-          "slug": "hard-bop"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "political",
-          "slug": "political"
-        },
-        {
-          "name": "protest",
-          "slug": "protest"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
-          "name": "conscious",
-          "slug": "conscious"
-        },
-        {
-          "name": "serious",
-          "slug": "serious"
-        },
-        {
-          "name": "avant-garde",
-          "slug": "avant-garde"
-        },
-        {
-          "name": "passionate",
-          "slug": "passionate"
-        },
-        {
-          "name": "concept album",
-          "slug": "concept-album"
-        },
-        {
-          "name": "improvisation",
-          "slug": "improvisation"
-        },
-        {
-          "name": "rhythmic",
-          "slug": "rhythmic"
-        },
-        {
-          "name": "energetic",
-          "slug": "energetic"
-        },
-        {
-          "name": "rebellious",
-          "slug": "rebellious"
-        },
-        {
-          "name": "tribal",
-          "slug": "tribal"
-        },
-        {
-          "name": "acoustic",
-          "slug": "acoustic"
-        },
-        {
-          "name": "sombre",
-          "slug": "sombre"
-        },
-        {
-          "name": "complex",
-          "slug": "complex"
-        },
-        {
-          "name": "abstract",
-          "slug": "abstract"
-        },
-        {
-          "name": "suite",
-          "slug": "suite"
-        }
-      ],
-      "isAPlus": true,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/we-insist-max-roachs-freedom-now-suite-remastered/1880966670",
-      "spotifyUri": null,
-      "accentBucket": "fierce"
-    },
-    {
-      "id": "cp2g13j71of8k05u5o7l12vwk",
-      "slug": "the-beatles-hey-jude",
-      "title": "Hey Jude",
-      "artist": [
-        {
-          "name": "The Beatles",
-          "slug": "the-beatles"
-        }
-      ],
-      "releaseDate": "1970-02-26T00:00:00.000Z",
-      "coverArt": "/covers/the-beatles-hey-jude.jpg",
-      "genres": [
-        {
-          "name": "Pop Rock",
-          "slug": "pop-rock"
-        },
-        {
-          "name": "Merseybeat",
-          "slug": "merseybeat"
-        },
-        {
-          "name": "Psychedelic Pop",
-          "slug": "psychedelic-pop"
-        },
-        {
-          "name": "Psychedelic Rock",
-          "slug": "psychedelic-rock"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "mellow",
-          "slug": "mellow"
-        },
-        {
-          "name": "playful",
-          "slug": "playful"
-        },
-        {
-          "name": "sentimental",
-          "slug": "sentimental"
-        },
-        {
-          "name": "warm",
-          "slug": "warm"
-        },
-        {
-          "name": "uplifting",
-          "slug": "uplifting"
-        },
-        {
-          "name": "melodic",
-          "slug": "melodic"
-        },
-        {
-          "name": "love",
-          "slug": "love"
-        },
-        {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
-          "name": "quirky",
-          "slug": "quirky"
-        },
-        {
-          "name": "happy",
-          "slug": "happy"
-        },
-        {
-          "name": "romantic",
-          "slug": "romantic"
-        },
-        {
-          "name": "psychedelic",
-          "slug": "psychedelic"
-        }
-      ],
-      "isAPlus": true,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": null,
-      "spotifyUri": null,
-      "accentBucket": "warm"
-    },
-    {
-      "id": "cme4h5ply3896185rzmxwaf3to",
-      "slug": "angelo-badalamenti-twin-peaks",
-      "title": "Twin Peaks",
-      "artist": [
-        {
-          "name": "Angelo Badalamenti",
-          "slug": "angelo-badalamenti"
-        }
-      ],
-      "releaseDate": "1990-09-11T00:00:00.000Z",
-      "coverArt": "/covers/angelo-badalamenti-twin-peaks.jpg",
-      "genres": [
-        {
-          "name": "Television Music",
-          "slug": "television-music"
-        },
-        {
-          "name": "Dark Jazz",
-          "slug": "dark-jazz"
-        },
-        {
-          "name": "Ambient",
-          "slug": "ambient"
-        },
-        {
-          "name": "Crime Jazz",
-          "slug": "crime-jazz"
-        },
-        {
-          "name": "Lounge",
-          "slug": "lounge"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "mysterious",
-          "slug": "mysterious"
-        },
-        {
-          "name": "ominous",
-          "slug": "ominous"
-        },
-        {
-          "name": "nocturnal",
-          "slug": "nocturnal"
-        },
-        {
-          "name": "atmospheric",
-          "slug": "atmospheric"
-        },
-        {
-          "name": "suspenseful",
-          "slug": "suspenseful"
-        },
-        {
-          "name": "dark",
-          "slug": "dark"
-        },
-        {
-          "name": "surreal",
-          "slug": "surreal"
-        },
-        {
-          "name": "ethereal",
-          "slug": "ethereal"
-        },
-        {
-          "name": "mellow",
-          "slug": "mellow"
-        },
-        {
-          "name": "instrumental",
-          "slug": "instrumental"
-        },
-        {
-          "name": "melancholic",
-          "slug": "melancholic"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
-          "name": "longing",
-          "slug": "longing"
-        },
-        {
-          "name": "hazy",
-          "slug": "hazy"
-        },
-        {
-          "name": "melodic",
-          "slug": "melodic"
-        },
-        {
-          "name": "smooth",
-          "slug": "smooth"
-        },
-        {
-          "name": "dreams",
-          "slug": "dreams"
-        }
-      ],
-      "isAPlus": false,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/twin-peaks-soundtrack-from/374382340",
-      "spotifyUri": "spotify:album:6iGX2bbzKEocRY0HzdQ9zX",
-      "accentBucket": "cold"
-    },
-    {
-      "id": "cme4gbnkm1328385rz2jv3atub",
-      "slug": "john-coltrane-ascension",
-      "title": "Ascension",
-      "artist": [
-        {
-          "name": "John Coltrane",
-          "slug": "john-coltrane"
-        }
-      ],
-      "releaseDate": "1966-02-01T00:00:00.000Z",
-      "coverArt": "/covers/john-coltrane-ascension.jpg",
-      "genres": [
-        {
-          "name": "Free Jazz",
-          "slug": "free-jazz"
-        },
-        {
-          "name": "Spiritual Jazz",
-          "slug": "spiritual-jazz"
-        },
-        {
-          "name": "Experimental Big Band",
-          "slug": "experimental-big-band"
-        },
-        {
-          "name": "Post-Bop",
-          "slug": "post-bop"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "chaotic",
-          "slug": "chaotic"
-        },
-        {
-          "name": "avant-garde",
-          "slug": "avant-garde"
-        },
-        {
-          "name": "instrumental",
-          "slug": "instrumental"
-        },
-        {
-          "name": "dense",
-          "slug": "dense"
-        },
-        {
-          "name": "improvisation",
-          "slug": "improvisation"
-        },
-        {
-          "name": "spiritual",
-          "slug": "spiritual"
-        },
-        {
-          "name": "passionate",
-          "slug": "passionate"
-        },
-        {
-          "name": "manic",
-          "slug": "manic"
-        },
-        {
-          "name": "complex",
-          "slug": "complex"
-        },
-        {
-          "name": "dissonant",
-          "slug": "dissonant"
-        },
-        {
-          "name": "acoustic",
-          "slug": "acoustic"
-        },
-        {
-          "name": "technical",
-          "slug": "technical"
-        },
-        {
-          "name": "noisy",
-          "slug": "noisy"
-        },
-        {
-          "name": "energetic",
-          "slug": "energetic"
-        },
-        {
-          "name": "hypnotic",
-          "slug": "hypnotic"
-        }
-      ],
-      "isAPlus": false,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/ascension/1443121026",
-      "spotifyUri": "spotify:album:2TtadFmrnrFZecasfj0p4t",
-      "accentBucket": "fierce"
-    },
-    {
-      "id": "cme4gmvk82313085rzq95to8yz",
-      "slug": "jon-hopkins-immunity",
-      "title": "Immunity",
-      "artist": [
-        {
-          "name": "Jon Hopkins",
-          "slug": "jon-hopkins"
-        }
-      ],
-      "releaseDate": "2013-06-03T00:00:00.000Z",
-      "coverArt": "/covers/jon-hopkins-immunity.jpg",
-      "genres": [
-        {
-          "name": "Microhouse",
-          "slug": "microhouse"
-        },
-        {
-          "name": "IDM",
-          "slug": "idm"
-        },
-        {
-          "name": "Tech House",
-          "slug": "tech-house"
-        },
-        {
-          "name": "Ambient",
-          "slug": "ambient"
-        },
-        {
-          "name": "Ambient Techno",
-          "slug": "ambient-techno"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "atmospheric",
-          "slug": "atmospheric"
-        },
-        {
-          "name": "instrumental",
-          "slug": "instrumental"
-        },
-        {
-          "name": "hypnotic",
-          "slug": "hypnotic"
-        },
-        {
-          "name": "rhythmic",
-          "slug": "rhythmic"
-        },
-        {
-          "name": "nocturnal",
-          "slug": "nocturnal"
-        },
-        {
-          "name": "lush",
-          "slug": "lush"
-        },
-        {
-          "name": "mechanical",
-          "slug": "mechanical"
-        },
-        {
-          "name": "futuristic",
-          "slug": "futuristic"
-        },
-        {
-          "name": "mysterious",
-          "slug": "mysterious"
-        },
-        {
-          "name": "ethereal",
-          "slug": "ethereal"
-        },
-        {
-          "name": "bittersweet",
-          "slug": "bittersweet"
-        },
-        {
-          "name": "melancholic",
-          "slug": "melancholic"
-        },
-        {
-          "name": "dense",
-          "slug": "dense"
-        },
-        {
-          "name": "complex",
-          "slug": "complex"
-        },
-        {
-          "name": "uplifting",
-          "slug": "uplifting"
-        },
-        {
-          "name": "warm",
-          "slug": "warm"
-        },
-        {
-          "name": "surreal",
-          "slug": "surreal"
-        }
-      ],
-      "isAPlus": false,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/immunity/766062577",
-      "spotifyUri": "spotify:album:7H7UxuxjGSJuV7LcCFUxTD",
-      "accentBucket": "cold"
-    },
-    {
-      "id": "cme4h9xkw1821385rz7f2bk4mp",
-      "slug": "aphex-twin-windowlicker",
-      "title": "Windowlicker",
-      "artist": [
-        {
-          "name": "Aphex Twin",
-          "slug": "aphex-twin"
-        }
-      ],
-      "releaseDate": "1999-03-22T00:00:00.000Z",
-      "coverArt": "/covers/aphex-twin-windowlicker.jpg",
-      "genres": [
-        {
-          "name": "IDM",
-          "slug": "idm"
-        },
-        {
-          "name": "Glitch",
-          "slug": "glitch"
-        },
-        {
-          "name": "Graphical Sound",
-          "slug": "graphical-sound"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "surreal",
-          "slug": "surreal"
-        },
-        {
-          "name": "instrumental",
-          "slug": "instrumental"
-        },
-        {
-          "name": "playful",
-          "slug": "playful"
-        },
-        {
-          "name": "hypnotic",
-          "slug": "hypnotic"
-        },
-        {
-          "name": "sensual",
-          "slug": "sensual"
-        },
-        {
-          "name": "quirky",
-          "slug": "quirky"
-        },
-        {
-          "name": "futuristic",
-          "slug": "futuristic"
-        },
-        {
-          "name": "rhythmic",
-          "slug": "rhythmic"
-        },
-        {
-          "name": "noisy",
-          "slug": "noisy"
-        },
-        {
-          "name": "mechanical",
-          "slug": "mechanical"
-        },
-        {
-          "name": "energetic",
-          "slug": "energetic"
-        },
-        {
-          "name": "complex",
-          "slug": "complex"
-        },
-        {
-          "name": "chaotic",
-          "slug": "chaotic"
-        },
-        {
-          "name": "dense",
-          "slug": "dense"
-        },
-        {
-          "name": "atmospheric",
-          "slug": "atmospheric"
-        },
-        {
-          "name": "humorous",
-          "slug": "humorous"
-        },
-        {
-          "name": "avant-garde",
-          "slug": "avant-garde"
-        },
-        {
-          "name": "psychedelic",
-          "slug": "psychedelic"
-        },
-        {
-          "name": "maximalist",
-          "slug": "maximalist"
-        }
-      ],
-      "isAPlus": true,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/windowlicker-ep/281953326",
-      "spotifyUri": "spotify:album:64XdBdXNdguPHzBg8bdk5A",
-      "accentBucket": "dreamy"
-    },
-    {
-      "id": "cme4hb2qn1938085rz8d3cl5nq",
-      "slug": "benny-goodman-the-famous-1938-carnegie-hall-jazz-concert",
-      "title": "The Famous 1938 Carnegie Hall Jazz Concert",
-      "artist": [
-        {
-          "name": "Benny Goodman",
-          "slug": "benny-goodman"
-        }
-      ],
-      "releaseDate": "1950-11-01T00:00:00.000Z",
-      "coverArt": "/covers/benny-goodman-the-famous-1938-carnegie-hall-jazz-concert.jpg",
-      "genres": [
-        {
-          "name": "Big Band",
-          "slug": "big-band"
-        },
-        {
-          "name": "Swing",
-          "slug": "swing"
-        },
-        {
-          "name": "Vocal Jazz",
-          "slug": "vocal-jazz"
-        }
-      ],
-      "descriptors": [
-        {
-          "name": "acoustic",
-          "slug": "acoustic"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
-          "name": "playful",
-          "slug": "playful"
-        }
-      ],
-      "isAPlus": true,
-      "owned": false,
-      "topRanking": null,
-      "appleMusicUrl": "https://music.apple.com/us/album/the-famous-1938-carnegie-hall-jazz-concert-live/169853677",
-      "spotifyUri": "spotify:album:2A5VEgkHV7hXVFdFcQAvEN",
-      "accentBucket": "warm"
     }
   ]
 }
