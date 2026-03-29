@@ -41,10 +41,6 @@
           "slug": "protest"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "conscious",
           "slug": "conscious"
         },
@@ -55,6 +51,10 @@
         {
           "name": "avant-garde",
           "slug": "avant-garde"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "passionate",
@@ -663,12 +663,12 @@
           "slug": "acoustic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         }
       ],
       "isAPlus": true,
@@ -735,10 +735,6 @@
           "slug": "love"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
@@ -749,6 +745,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -866,12 +866,12 @@
           "slug": "sampling"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "Islamic",
           "slug": "islamic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "serious",
@@ -1505,10 +1505,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melancholic",
           "slug": "melancholic"
         },
@@ -1517,12 +1513,16 @@
           "slug": "atmospheric"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         }
       ],
       "accentBucket": "cold"
@@ -1730,10 +1730,6 @@
           "slug": "introspective"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "hedonism",
           "slug": "hedonism"
         },
@@ -1744,6 +1740,10 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "bittersweet",
@@ -1961,10 +1961,6 @@
           "slug": "romantic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "breakup",
           "slug": "breakup"
         },
@@ -1979,6 +1975,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "playful",
@@ -2104,12 +2104,12 @@
           "slug": "energetic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "romantic",
           "slug": "romantic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "passionate",
@@ -2784,10 +2784,6 @@
           "slug": "introspective"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "atmospheric",
           "slug": "atmospheric"
         },
@@ -2802,6 +2798,10 @@
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "sparse",
@@ -2951,10 +2951,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
@@ -2973,6 +2969,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "urban",
@@ -4784,10 +4784,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -4806,6 +4802,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "longing",
@@ -4883,16 +4883,16 @@
           "slug": "romantic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sombre",
           "slug": "sombre"
         },
         {
           "name": "nocturnal",
           "slug": "nocturnal"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "atmospheric",
@@ -5308,10 +5308,6 @@
           "slug": "warm"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "romantic",
           "slug": "romantic"
         },
@@ -5326,6 +5322,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -5844,20 +5844,20 @@
           "slug": "melodic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "mellow",
           "slug": "mellow"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "soft",
@@ -6308,10 +6308,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -6330,6 +6326,10 @@
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "uplifting",
@@ -6646,10 +6646,6 @@
           "slug": "mellow"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
@@ -6660,6 +6656,10 @@
         {
           "name": "poetic",
           "slug": "poetic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "love",
@@ -6825,12 +6825,12 @@
           "slug": "lush"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "spiritual",
           "slug": "spiritual"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "soothing",
@@ -7734,12 +7734,12 @@
           "slug": "pastoral"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "poetic",
@@ -8024,10 +8024,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -8046,6 +8042,10 @@
         {
           "name": "raw",
           "slug": "raw"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "triumphant",
@@ -8203,16 +8203,16 @@
           "slug": "energetic"
         },
         {
+          "name": "sarcastic",
+          "slug": "sarcastic"
+        },
+        {
           "name": "male vocalist",
           "slug": "male-vocalist"
         },
         {
           "name": "female vocalist",
           "slug": "female-vocalist"
-        },
-        {
-          "name": "sarcastic",
-          "slug": "sarcastic"
         },
         {
           "name": "humorous",
@@ -8489,12 +8489,12 @@
           "slug": "lush"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "Christian",
           "slug": "christian"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "concept album",
@@ -8831,12 +8831,12 @@
           "slug": "poetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melancholic",
           "slug": "melancholic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "concept album",
@@ -9193,12 +9193,12 @@
           "slug": "playful"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "quirky",
           "slug": "quirky"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "longing",
@@ -9760,10 +9760,6 @@
           "slug": "passionate"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "longing",
           "slug": "longing"
         },
@@ -9778,6 +9774,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "bittersweet",
@@ -10225,10 +10225,6 @@
           "slug": "quirky"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "surreal",
           "slug": "surreal"
         },
@@ -10239,6 +10235,10 @@
         {
           "name": "avant-garde",
           "slug": "avant-garde"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "abstract",
@@ -10332,10 +10332,6 @@
           "slug": "urban"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -10350,6 +10346,10 @@
         {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "optimistic",
@@ -10471,16 +10471,16 @@
           "slug": "spiritual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "cryptic",
           "slug": "cryptic"
         },
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "drugs",
@@ -10777,10 +10777,6 @@
           "slug": "atmospheric"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
         },
@@ -10791,6 +10787,10 @@
         {
           "name": "soothing",
           "slug": "soothing"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "warm",
@@ -10948,16 +10948,16 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
         {
           "name": "anthemic",
           "slug": "anthemic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "bittersweet",
@@ -11103,12 +11103,12 @@
           "slug": "sampling"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "conscious",
           "slug": "conscious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "playful",
@@ -11230,12 +11230,12 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "uplifting",
           "slug": "uplifting"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         }
       ],
       "accentBucket": "warm"
@@ -11504,12 +11504,12 @@
           "slug": "melancholic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -11635,16 +11635,16 @@
           "slug": "introspective"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
         {
           "name": "rebellious",
           "slug": "rebellious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -11778,10 +11778,6 @@
           "slug": "love"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -11796,6 +11792,10 @@
         {
           "name": "romantic",
           "slug": "romantic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "uplifting",
@@ -11901,12 +11901,12 @@
           "slug": "happy"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "warm",
@@ -12124,10 +12124,6 @@
           "slug": "political"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -12142,6 +12138,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "urban",
@@ -12295,10 +12295,6 @@
           "slug": "pastoral"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -12313,6 +12309,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "sentimental",
@@ -12434,16 +12434,16 @@
           "slug": "conscious"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "boastful",
@@ -12836,10 +12836,6 @@
           "slug": "sampling"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "humorous",
           "slug": "humorous"
         },
@@ -12854,6 +12850,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "uplifting",
@@ -13007,12 +13007,12 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "soft",
           "slug": "soft"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "nocturnal",
@@ -13230,16 +13230,16 @@
           "slug": "lush"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "urban",
           "slug": "urban"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "philosophical",
@@ -13377,10 +13377,6 @@
           "slug": "sexual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sensual",
           "slug": "sensual"
         },
@@ -13395,6 +13391,10 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -13516,16 +13516,16 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "abstract",
           "slug": "abstract"
         },
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "repetitive",
@@ -13711,10 +13711,6 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -13725,6 +13721,10 @@
         {
           "name": "raw",
           "slug": "raw"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "bittersweet",
@@ -14149,10 +14149,6 @@
           "slug": "mellow"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "soft",
           "slug": "soft"
         },
@@ -14163,6 +14159,10 @@
         {
           "name": "complex",
           "slug": "complex"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "nocturnal",
@@ -14344,10 +14344,6 @@
           "slug": "romantic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -14362,6 +14358,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "love",
@@ -14634,16 +14634,16 @@
           "slug": "rebellious"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "raw",
           "slug": "raw"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "cryptic",
@@ -15036,12 +15036,12 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "heavy",
           "slug": "heavy"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "rebellious",
@@ -15163,10 +15163,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -15185,6 +15181,10 @@
         {
           "name": "sombre",
           "slug": "sombre"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "spiritual",
@@ -15282,10 +15282,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "soft",
           "slug": "soft"
         },
@@ -15300,6 +15296,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "poetic",
@@ -15421,10 +15421,6 @@
           "slug": "sexual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "hedonism",
           "slug": "hedonism"
         },
@@ -15435,6 +15431,10 @@
         {
           "name": "raw",
           "slug": "raw"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rebellious",
@@ -15520,10 +15520,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "atmospheric",
           "slug": "atmospheric"
         },
@@ -15534,6 +15530,10 @@
         {
           "name": "melancholic",
           "slug": "melancholic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -15687,16 +15687,16 @@
           "slug": "alienation"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "futuristic",
           "slug": "futuristic"
         },
         {
           "name": "existential",
           "slug": "existential"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "lonely",
@@ -16077,10 +16077,6 @@
           "slug": "lush"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
@@ -16095,6 +16091,10 @@
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "atmospheric",
@@ -16598,16 +16598,16 @@
           "slug": "playful"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
         },
         {
           "name": "party",
           "slug": "party"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "energetic",
@@ -16864,10 +16864,6 @@
           "slug": "conscious"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
         },
@@ -16882,6 +16878,10 @@
         {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -17357,10 +17357,6 @@
           "slug": "melancholic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -17371,6 +17367,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -17865,16 +17865,16 @@
           "slug": "playful"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "conscious",
           "slug": "conscious"
         },
         {
           "name": "urban",
           "slug": "urban"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "sampling",
@@ -18207,10 +18207,6 @@
           "slug": "spiritual"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "ethereal",
           "slug": "ethereal"
         },
@@ -18221,6 +18217,10 @@
         {
           "name": "hypnotic",
           "slug": "hypnotic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "meditative",
@@ -18545,12 +18545,12 @@
           "slug": "happy"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "uplifting",
           "slug": "uplifting"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "optimistic",
@@ -18692,10 +18692,6 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "romantic",
           "slug": "romantic"
         },
@@ -18710,6 +18706,10 @@
         {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "playful",
@@ -18851,12 +18851,12 @@
           "slug": "fantasy"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "manic",
           "slug": "manic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "uplifting",
@@ -19081,10 +19081,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -19103,6 +19099,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "anthemic",
@@ -19180,10 +19180,6 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "love",
           "slug": "love"
         },
@@ -19198,6 +19194,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "mellow",
@@ -19303,16 +19303,16 @@
           "slug": "ethereal"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "futuristic",
           "slug": "futuristic"
         },
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "lush",
@@ -19629,12 +19629,12 @@
           "slug": "sarcastic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "conscious",
@@ -20078,10 +20078,6 @@
           "slug": "playful"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "surreal",
           "slug": "surreal"
         },
@@ -20092,6 +20088,10 @@
         {
           "name": "complex",
           "slug": "complex"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "quirky",
@@ -20269,10 +20269,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "concept album",
           "slug": "concept-album"
         },
@@ -20291,6 +20287,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -20504,16 +20504,16 @@
           "slug": "lonely"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
         {
           "name": "cocaine",
           "slug": "cocaine"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -20647,10 +20647,6 @@
           "slug": "lonely"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "futuristic",
           "slug": "futuristic"
         },
@@ -20661,6 +20657,10 @@
         {
           "name": "cryptic",
           "slug": "cryptic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "sombre",
@@ -20834,10 +20834,6 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "quirky",
           "slug": "quirky"
         },
@@ -20848,6 +20844,10 @@
         {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -22168,12 +22168,12 @@
           "slug": "ethereal"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "atmospheric",
           "slug": "atmospheric"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "introspective",
@@ -22359,16 +22359,16 @@
           "slug": "party"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
         {
           "name": "LGBTQ",
           "slug": "lgbtq"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "hedonism",
@@ -22558,16 +22558,16 @@
           "slug": "breakup"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "eclectic",
@@ -22725,16 +22725,16 @@
           "slug": "playful"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "quirky",
           "slug": "quirky"
         },
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -22888,16 +22888,16 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "concept album",
           "slug": "concept-album"
         },
         {
           "name": "eclectic",
           "slug": "eclectic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "lush",
@@ -23039,10 +23039,6 @@
           "slug": "love"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -23053,6 +23049,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "romantic",
@@ -23170,10 +23170,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "eclectic",
           "slug": "eclectic"
         },
@@ -23184,6 +23180,10 @@
         {
           "name": "quirky",
           "slug": "quirky"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "warm",
@@ -23313,10 +23313,6 @@
           "slug": "warm"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "medley",
           "slug": "medley"
         },
@@ -23327,6 +23323,10 @@
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -23946,10 +23946,6 @@
           "slug": "introspective"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "anxious",
           "slug": "anxious"
         },
@@ -23964,6 +23960,10 @@
         {
           "name": "lonely",
           "slug": "lonely"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "love",
@@ -24113,10 +24113,6 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "progressive",
           "slug": "progressive"
         },
@@ -24127,6 +24123,10 @@
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "rebellious",
@@ -25501,10 +25501,6 @@
           "slug": "melancholic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "longing",
           "slug": "longing"
         },
@@ -25515,6 +25511,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -25612,10 +25612,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sexual",
           "slug": "sexual"
         },
@@ -25634,6 +25630,10 @@
         {
           "name": "raw",
           "slug": "raw"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -25735,12 +25735,12 @@
           "slug": "party"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "sexual",
@@ -25822,12 +25822,12 @@
           "slug": "dense"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "female vocalist",
@@ -26442,10 +26442,6 @@
           "slug": "atmospheric"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "abstract",
           "slug": "abstract"
         },
@@ -26456,6 +26452,10 @@
         {
           "name": "progressive",
           "slug": "progressive"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "anxious",
@@ -26569,10 +26569,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "poetic",
           "slug": "poetic"
         },
@@ -26591,6 +26587,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -26783,12 +26783,12 @@
           "slug": "melancholic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -27169,10 +27169,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rebellious",
           "slug": "rebellious"
         },
@@ -27191,6 +27187,10 @@
         {
           "name": "breakup",
           "slug": "breakup"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "psychedelic",
@@ -27248,10 +27248,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -27270,6 +27266,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -27434,10 +27434,6 @@
           "slug": "political"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
@@ -27452,6 +27448,10 @@
         {
           "name": "summer",
           "slug": "summer"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "eclectic",
@@ -27807,10 +27807,6 @@
           "slug": "rebellious"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -27821,6 +27817,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -27930,16 +27930,16 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "urban",
           "slug": "urban"
         },
         {
           "name": "sensual",
           "slug": "sensual"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "melodic",
@@ -28049,10 +28049,6 @@
           "slug": "bittersweet"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -28063,6 +28059,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "poetic",
@@ -28331,10 +28331,6 @@
           "slug": "nocturnal"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sombre",
           "slug": "sombre"
         },
@@ -28345,6 +28341,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melancholic",
@@ -28478,12 +28478,12 @@
           "slug": "sexual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "urban",
           "slug": "urban"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -28617,16 +28617,16 @@
           "slug": "sensual"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "dark",
           "slug": "dark"
         },
         {
           "name": "party",
           "slug": "party"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "hedonism",
@@ -28867,12 +28867,12 @@
           "slug": "romantic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "uplifting",
@@ -29141,10 +29141,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "boastful",
           "slug": "boastful"
         },
@@ -29163,6 +29159,10 @@
         {
           "name": "summer",
           "slug": "summer"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "lush",
@@ -29332,16 +29332,16 @@
           "slug": "mellow"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "soft",
           "slug": "soft"
         },
         {
           "name": "calm",
           "slug": "calm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "summer",
@@ -29427,10 +29427,6 @@
           "slug": "melancholic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -29445,6 +29441,10 @@
         {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "introspective",
@@ -29566,16 +29566,16 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "nocturnal",
           "slug": "nocturnal"
         },
         {
           "name": "abstract",
           "slug": "abstract"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -29661,10 +29661,6 @@
           "slug": "playful"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -29679,6 +29675,10 @@
         {
           "name": "sarcastic",
           "slug": "sarcastic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "satirical",
@@ -29812,10 +29812,6 @@
           "slug": "passionate"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "quirky",
           "slug": "quirky"
         },
@@ -29826,6 +29822,10 @@
         {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -29975,10 +29975,6 @@
           "slug": "poetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -29993,6 +29989,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "female vocalist",
@@ -30070,10 +30070,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "eclectic",
           "slug": "eclectic"
         },
@@ -30092,6 +30088,10 @@
         {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "melodic",
@@ -30241,16 +30241,16 @@
           "slug": "rebellious"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
         {
           "name": "LGBTQ",
           "slug": "lgbtq"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "raw",
@@ -30901,10 +30901,6 @@
           "slug": "eclectic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "pastoral",
           "slug": "pastoral"
         },
@@ -30919,6 +30915,10 @@
         {
           "name": "peaceful",
           "slug": "peaceful"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "love",
@@ -31239,10 +31239,6 @@
           "slug": "concept-album"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -31257,6 +31253,10 @@
         {
           "name": "folklore",
           "slug": "folklore"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "melodic",
@@ -32097,10 +32097,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "sarcastic",
           "slug": "sarcastic"
         },
@@ -32119,6 +32115,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "introspective",
@@ -32296,10 +32296,6 @@
           "slug": "raw"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sexual",
           "slug": "sexual"
         },
@@ -32310,6 +32306,10 @@
         {
           "name": "hedonism",
           "slug": "hedonism"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "energetic",
@@ -32415,10 +32415,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sarcastic",
           "slug": "sarcastic"
         },
@@ -32433,6 +32429,10 @@
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "humorous",
@@ -32872,10 +32872,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -32894,6 +32890,10 @@
         {
           "name": "calm",
           "slug": "calm"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "mellow",
@@ -33059,16 +33059,16 @@
           "slug": "nocturnal"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "hedonism",
           "slug": "hedonism"
         },
         {
           "name": "anxious",
           "slug": "anxious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "sensual",
@@ -33202,16 +33202,16 @@
           "slug": "passionate"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
         },
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "optimistic",
@@ -33321,10 +33321,6 @@
           "slug": "rhythmic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -33339,6 +33335,10 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "quirky",
@@ -33456,16 +33456,16 @@
           "slug": "warm"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
         {
           "name": "summer",
           "slug": "summer"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "lush",
@@ -33682,10 +33682,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -33704,6 +33700,10 @@
         {
           "name": "quirky",
           "slug": "quirky"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -33813,10 +33813,6 @@
           "slug": "warm"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "eclectic",
           "slug": "eclectic"
         },
@@ -33827,6 +33823,10 @@
         {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -34298,16 +34298,16 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "lonely",
           "slug": "lonely"
         },
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -34465,12 +34465,12 @@
           "slug": "abstract"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "manic",
           "slug": "manic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "sarcastic",
@@ -34616,16 +34616,16 @@
           "slug": "boastful"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "uplifting",
           "slug": "uplifting"
         },
         {
           "name": "conscious",
           "slug": "conscious"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "energetic",
@@ -34743,16 +34743,16 @@
           "slug": "mellow"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "anxious",
           "slug": "anxious"
         },
         {
           "name": "philosophical",
           "slug": "philosophical"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "political",
@@ -34862,16 +34862,16 @@
           "slug": "quirky"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
         },
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -35168,12 +35168,12 @@
           "slug": "passionate"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "sensual",
@@ -35442,12 +35442,12 @@
           "slug": "sampling"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "conscious",
           "slug": "conscious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -35776,10 +35776,6 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "party",
           "slug": "party"
         },
@@ -35790,6 +35786,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         }
       ],
       "accentBucket": "warm"
@@ -35835,10 +35835,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melancholic",
           "slug": "melancholic"
         },
@@ -35857,6 +35853,10 @@
         {
           "name": "lonely",
           "slug": "lonely"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "cold",
@@ -36061,10 +36061,6 @@
           "slug": "spiritual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "psychedelic",
           "slug": "psychedelic"
         },
@@ -36079,6 +36075,10 @@
         {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -36447,10 +36447,6 @@
           "slug": "minimalistic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -36465,6 +36461,10 @@
         {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -36693,10 +36693,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melancholic",
           "slug": "melancholic"
         },
@@ -36715,6 +36711,10 @@
         {
           "name": "soft",
           "slug": "soft"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "sentimental",
@@ -36784,10 +36784,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -36806,6 +36802,10 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "uplifting",
@@ -36879,10 +36879,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -36897,6 +36893,10 @@
         {
           "name": "conscious",
           "slug": "conscious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "abstract",
@@ -37006,10 +37006,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "eclectic",
           "slug": "eclectic"
         },
@@ -37028,6 +37024,10 @@
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "playful",
@@ -37117,10 +37117,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -37139,6 +37135,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "humorous",
@@ -37272,12 +37272,12 @@
           "slug": "rebellious"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -37737,10 +37737,6 @@
           "slug": "acoustic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melancholic",
           "slug": "melancholic"
         },
@@ -37755,6 +37751,10 @@
         {
           "name": "sombre",
           "slug": "sombre"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -38059,10 +38059,6 @@
           "slug": "rhythmic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "apocalyptic",
           "slug": "apocalyptic"
         },
@@ -38073,6 +38069,14 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "political",
@@ -38097,10 +38101,6 @@
         {
           "name": "spiritual",
           "slug": "spiritual"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
         },
         {
           "name": "warm",
@@ -38254,12 +38254,12 @@
           "slug": "surreal"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "quirky",
@@ -38373,10 +38373,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
         },
@@ -38395,6 +38391,10 @@
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "soothing",
@@ -38548,10 +38548,6 @@
           "slug": "rhythmic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "poetic",
           "slug": "poetic"
         },
@@ -38566,6 +38562,10 @@
         {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "philosophical",
@@ -39109,10 +39109,6 @@
           "slug": "introspective"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "breakup",
           "slug": "breakup"
         },
@@ -39127,6 +39123,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "lonely",
@@ -39833,10 +39833,6 @@
           "slug": "nocturnal"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
@@ -39851,6 +39847,10 @@
         {
           "name": "self-hatred",
           "slug": "self-hatred"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -40237,10 +40237,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "acoustic",
           "slug": "acoustic"
         },
@@ -40259,6 +40255,10 @@
         {
           "name": "pastoral",
           "slug": "pastoral"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "mellow",
@@ -40372,12 +40372,12 @@
           "slug": "playful"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "urban",
           "slug": "urban"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -40479,10 +40479,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -40501,6 +40497,10 @@
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "happy",
@@ -40868,12 +40868,16 @@
           "slug": "anxious"
         },
         {
+          "name": "orchestral",
+          "slug": "orchestral"
+        },
+        {
           "name": "male vocalist",
           "slug": "male-vocalist"
         },
         {
-          "name": "orchestral",
-          "slug": "orchestral"
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "melodic",
@@ -40890,10 +40894,6 @@
         {
           "name": "nocturnal",
           "slug": "nocturnal"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
         },
         {
           "name": "concept album",
@@ -41035,10 +41035,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -41057,6 +41053,10 @@
         {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "love",
@@ -41531,10 +41531,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -41553,6 +41549,10 @@
         {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "summer",
@@ -41638,10 +41638,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -41660,6 +41656,10 @@
         {
           "name": "sentimental",
           "slug": "sentimental"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "Wall of Sound",
@@ -41848,10 +41848,6 @@
           "slug": "melodic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
@@ -41866,6 +41862,10 @@
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "rhythmic",
@@ -42074,16 +42074,16 @@
           "slug": "romantic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
         {
           "name": "optimistic",
           "slug": "optimistic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "happy",
@@ -44715,10 +44715,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
         },
@@ -44737,6 +44733,10 @@
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "quirky",
@@ -44878,12 +44878,12 @@
           "slug": "poetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "romantic",
           "slug": "romantic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -45037,10 +45037,6 @@
           "slug": "drugs"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "surreal",
           "slug": "surreal"
         },
@@ -45049,12 +45045,16 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -45148,16 +45148,16 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
         },
         {
           "name": "quirky",
           "slug": "quirky"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "urban",
@@ -45820,12 +45820,12 @@
           "slug": "anxious"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "bittersweet",
@@ -45955,10 +45955,6 @@
           "slug": "sampling"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
         },
@@ -45969,6 +45965,10 @@
         {
           "name": "urban",
           "slug": "urban"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "crime",
@@ -46237,10 +46237,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
         },
@@ -46259,6 +46255,10 @@
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "introspective",
@@ -46719,10 +46719,6 @@
           "slug": "anthemic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
@@ -46737,6 +46733,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "nocturnal",
@@ -46902,16 +46902,16 @@
           "slug": "uplifting"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "atmospheric",
           "slug": "atmospheric"
         },
         {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "Christian",
@@ -47033,12 +47033,12 @@
           "slug": "sensual"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "melodic",
           "slug": "melodic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "passionate",
@@ -47654,12 +47654,12 @@
           "slug": "playful"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "pastoral",
@@ -47813,10 +47813,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "love",
           "slug": "love"
         },
@@ -47835,6 +47831,10 @@
         {
           "name": "breakup",
           "slug": "breakup"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "passionate",
@@ -47968,10 +47968,6 @@
       ],
       "descriptors": [
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "dense",
           "slug": "dense"
         },
@@ -47990,6 +47986,10 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "conscious",
@@ -48063,16 +48063,16 @@
           "slug": "repetitive"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "uplifting",
           "slug": "uplifting"
         },
         {
           "name": "hypnotic",
           "slug": "hypnotic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "aggressive",
@@ -48178,10 +48178,6 @@
           "slug": "poetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
@@ -48192,6 +48188,10 @@
         {
           "name": "LGBTQ",
           "slug": "lgbtq"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "melodic",
@@ -48524,12 +48524,16 @@
           "slug": "melodic"
         },
         {
+          "name": "suburban",
+          "slug": "suburban"
+        },
+        {
           "name": "male vocalist",
           "slug": "male-vocalist"
         },
         {
-          "name": "suburban",
-          "slug": "suburban"
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "summer",
@@ -48542,10 +48546,6 @@
         {
           "name": "poetic",
           "slug": "poetic"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
         },
         {
           "name": "warm",
@@ -48719,16 +48719,16 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
         },
         {
           "name": "repetitive",
           "slug": "repetitive"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "deadpan",
@@ -48918,16 +48918,16 @@
           "slug": "eclectic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "quirky",
           "slug": "quirky"
         },
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "energetic",
@@ -49045,16 +49045,16 @@
           "slug": "love"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "raw",
           "slug": "raw"
         },
         {
           "name": "sexual",
           "slug": "sexual"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "ominous",
@@ -49455,12 +49455,12 @@
           "slug": "urban"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "humorous",
@@ -49586,12 +49586,12 @@
           "slug": "cryptic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "lush",
           "slug": "lush"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "nocturnal",
@@ -49709,10 +49709,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "love",
           "slug": "love"
         },
@@ -49731,6 +49727,10 @@
         {
           "name": "sensual",
           "slug": "sensual"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "party",
@@ -49828,16 +49828,8 @@
           "slug": "eclectic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "bittersweet",
           "slug": "bittersweet"
-        },
-        {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
         },
         {
           "name": "love",
@@ -49850,6 +49842,14 @@
         {
           "name": "energetic",
           "slug": "energetic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -49975,10 +49975,6 @@
           "slug": "spiritual"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "rhythmic",
           "slug": "rhythmic"
         },
@@ -49993,6 +49989,10 @@
         {
           "name": "tropical",
           "slug": "tropical"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "passionate",
@@ -51224,10 +51224,6 @@
           "slug": "lush"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "love",
           "slug": "love"
         },
@@ -51238,6 +51234,10 @@
         {
           "name": "nocturnal",
           "slug": "nocturnal"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "party",
@@ -51383,10 +51383,6 @@
           "slug": "dark"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "nocturnal",
           "slug": "nocturnal"
         },
@@ -51401,6 +51397,10 @@
         {
           "name": "melancholic",
           "slug": "melancholic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "lonely",
@@ -51562,16 +51562,16 @@
           "slug": "energetic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "warm",
           "slug": "warm"
         },
         {
           "name": "uplifting",
           "slug": "uplifting"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "bittersweet",
@@ -51645,16 +51645,16 @@
           "slug": "atmospheric"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "concept album",
           "slug": "concept-album"
         },
         {
           "name": "introspective",
           "slug": "introspective"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "longing",
@@ -51820,10 +51820,6 @@
           "slug": "melancholic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "poetic",
           "slug": "poetic"
         },
@@ -51834,6 +51830,10 @@
         {
           "name": "love",
           "slug": "love"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "autumn",
@@ -52289,16 +52289,16 @@
           "slug": "rhythmic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "psychedelic",
           "slug": "psychedelic"
         },
         {
           "name": "tropical",
           "slug": "tropical"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "warm",
@@ -52571,10 +52571,6 @@
           "slug": "melodic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "romantic",
           "slug": "romantic"
         },
@@ -52585,6 +52581,10 @@
         {
           "name": "happy",
           "slug": "happy"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "uplifting",
@@ -52996,12 +52996,12 @@
           "slug": "romantic"
         },
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "atmospheric",
           "slug": "atmospheric"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "mellow",
@@ -53151,12 +53151,12 @@
           "slug": "rhythmic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "conscious",
           "slug": "conscious"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "urban",
@@ -53660,16 +53660,16 @@
           "slug": "soft"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "introspective",
           "slug": "introspective"
         },
         {
           "name": "bittersweet",
           "slug": "bittersweet"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "warm",
@@ -54050,12 +54050,12 @@
           "slug": "uplifting"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "optimistic",
           "slug": "optimistic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "psychedelic",
@@ -54205,16 +54205,16 @@
           "slug": "complex"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
         },
         {
           "name": "quirky",
           "slug": "quirky"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
@@ -54499,10 +54499,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "rebellious",
           "slug": "rebellious"
         },
@@ -54521,6 +54517,10 @@
         {
           "name": "passionate",
           "slug": "passionate"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "anxious",
@@ -54694,10 +54694,6 @@
       ],
       "descriptors": [
         {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
-        },
-        {
           "name": "longing",
           "slug": "longing"
         },
@@ -54716,6 +54712,10 @@
         {
           "name": "mellow",
           "slug": "mellow"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "romantic",
@@ -54877,16 +54877,20 @@
           "slug": "psychedelic"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "energetic",
           "slug": "energetic"
         },
         {
           "name": "optimistic",
           "slug": "optimistic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
         },
         {
           "name": "conscious",
@@ -54899,10 +54903,6 @@
         {
           "name": "happy",
           "slug": "happy"
-        },
-        {
-          "name": "female vocalist",
-          "slug": "female-vocalist"
         },
         {
           "name": "philosophical",
@@ -55103,10 +55103,6 @@
           "slug": "quirky"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "surreal",
           "slug": "surreal"
         },
@@ -55117,6 +55113,10 @@
         {
           "name": "avant-garde",
           "slug": "avant-garde"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "abstract",
@@ -55230,12 +55230,12 @@
           "slug": "raw"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "playful",
           "slug": "playful"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "party",
@@ -55899,10 +55899,6 @@
           "slug": "drugs"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "sombre",
           "slug": "sombre"
         },
@@ -55913,6 +55909,10 @@
         {
           "name": "rhythmic",
           "slug": "rhythmic"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "psychedelic",
@@ -56022,12 +56022,12 @@
           "slug": "uplifting"
         },
         {
-          "name": "male vocalist",
-          "slug": "male-vocalist"
-        },
-        {
           "name": "warm",
           "slug": "warm"
+        },
+        {
+          "name": "male vocalist",
+          "slug": "male-vocalist"
         },
         {
           "name": "rhythmic",
