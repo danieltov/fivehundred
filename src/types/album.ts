@@ -25,6 +25,7 @@ export interface Album {
   appleMusicUrl: string | null
   spotifyUri: string | null
   accentBucket: AccentBucket | null
+  createdAt?: string
 }
 
 export interface AlbumsJson {
