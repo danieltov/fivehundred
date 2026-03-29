@@ -56021,6 +56021,164 @@
       "appleMusicUrl": "https://music.apple.com/us/album/immunity/766062577",
       "spotifyUri": "spotify:album:7H7UxuxjGSJuV7LcCFUxTD",
       "accentBucket": "cold"
+    },
+    {
+      "id": "cme4h9xkw1821385rz7f2bk4mp",
+      "slug": "aphex-twin-windowlicker",
+      "title": "Windowlicker",
+      "artist": [
+        {
+          "name": "Aphex Twin",
+          "slug": "aphex-twin"
+        }
+      ],
+      "releaseDate": "1999-03-22T00:00:00.000Z",
+      "coverArt": "/covers/aphex-twin-windowlicker.jpg",
+      "genres": [
+        {
+          "name": "IDM",
+          "slug": "idm"
+        },
+        {
+          "name": "Glitch",
+          "slug": "glitch"
+        },
+        {
+          "name": "Graphical Sound",
+          "slug": "graphical-sound"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "surreal",
+          "slug": "surreal"
+        },
+        {
+          "name": "instrumental",
+          "slug": "instrumental"
+        },
+        {
+          "name": "playful",
+          "slug": "playful"
+        },
+        {
+          "name": "hypnotic",
+          "slug": "hypnotic"
+        },
+        {
+          "name": "sensual",
+          "slug": "sensual"
+        },
+        {
+          "name": "quirky",
+          "slug": "quirky"
+        },
+        {
+          "name": "futuristic",
+          "slug": "futuristic"
+        },
+        {
+          "name": "rhythmic",
+          "slug": "rhythmic"
+        },
+        {
+          "name": "noisy",
+          "slug": "noisy"
+        },
+        {
+          "name": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "name": "energetic",
+          "slug": "energetic"
+        },
+        {
+          "name": "complex",
+          "slug": "complex"
+        },
+        {
+          "name": "chaotic",
+          "slug": "chaotic"
+        },
+        {
+          "name": "dense",
+          "slug": "dense"
+        },
+        {
+          "name": "atmospheric",
+          "slug": "atmospheric"
+        },
+        {
+          "name": "humorous",
+          "slug": "humorous"
+        },
+        {
+          "name": "avant-garde",
+          "slug": "avant-garde"
+        },
+        {
+          "name": "psychedelic",
+          "slug": "psychedelic"
+        },
+        {
+          "name": "maximalist",
+          "slug": "maximalist"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/windowlicker-ep/281953326",
+      "spotifyUri": "spotify:album:64XdBdXNdguPHzBg8bdk5A",
+      "accentBucket": "dreamy"
+    },
+    {
+      "id": "cme4hb2qn1938085rz8d3cl5nq",
+      "slug": "benny-goodman-the-famous-1938-carnegie-hall-jazz-concert",
+      "title": "The Famous 1938 Carnegie Hall Jazz Concert",
+      "artist": [
+        {
+          "name": "Benny Goodman",
+          "slug": "benny-goodman"
+        }
+      ],
+      "releaseDate": "1950-11-01T00:00:00.000Z",
+      "coverArt": "/covers/benny-goodman-the-famous-1938-carnegie-hall-jazz-concert.jpg",
+      "genres": [
+        {
+          "name": "Big Band",
+          "slug": "big-band"
+        },
+        {
+          "name": "Swing",
+          "slug": "swing"
+        },
+        {
+          "name": "Vocal Jazz",
+          "slug": "vocal-jazz"
+        }
+      ],
+      "descriptors": [
+        {
+          "name": "acoustic",
+          "slug": "acoustic"
+        },
+        {
+          "name": "female vocalist",
+          "slug": "female-vocalist"
+        },
+        {
+          "name": "playful",
+          "slug": "playful"
+        }
+      ],
+      "isAPlus": true,
+      "owned": false,
+      "topRanking": null,
+      "appleMusicUrl": "https://music.apple.com/us/album/the-famous-1938-carnegie-hall-jazz-concert-live/169853677",
+      "spotifyUri": "spotify:album:2A5VEgkHV7hXVFdFcQAvEN",
+      "accentBucket": "warm"
     }
   ]
 }
