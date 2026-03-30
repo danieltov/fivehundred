@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-03-26T03:23:53.355Z",
   "albums": [
     {
       "id": "c91m0v2mllpm9aua2p2gp2rxc",
@@ -1999,7 +1998,7 @@
       "title": "1989",
       "appleMusicUrl": "https://music.apple.com/us/album/1989-taylors-version-deluxe/1713845538?uo=4",
       "spotifyUri": "spotify:album:2QJmrSgbdM35R67eoGQo4j",
-      "topRanking": 39,
+      "topRanking": 41,
       "artist": [
         {
           "name": "Taylor Swift",
@@ -5711,7 +5710,7 @@
       "title": "Discovery",
       "appleMusicUrl": "https://music.apple.com/us/album/discovery/697194953?uo=4",
       "spotifyUri": "spotify:album:2noRn2Aes5aoNVsU6iWThc",
-      "topRanking": 22,
+      "topRanking": 24,
       "artist": [
         {
           "name": "Daft Punk",
@@ -5899,7 +5898,7 @@
       "title": "Rumours",
       "appleMusicUrl": "https://music.apple.com/us/album/rumours/594061854?uo=4",
       "spotifyUri": "spotify:album:1bt6q2SruMsBtcerNVtpZB",
-      "topRanking": 34,
+      "topRanking": 36,
       "artist": [
         {
           "name": "Fleetwood Mac",
@@ -6043,7 +6042,7 @@
       "title": "The Velvet Underground & Nico",
       "appleMusicUrl": "https://music.apple.com/us/album/the-velvet-underground-nico-45th-anniversary-edition/1440851613?uo=4",
       "spotifyUri": "spotify:album:4xwx0x7k6c5VuThz5qVqmV",
-      "topRanking": 10,
+      "topRanking": 11,
       "artist": [
         {
           "name": "The Velvet Underground",
@@ -10695,7 +10694,7 @@
       "title": "Selected Ambient Works Volume II",
       "appleMusicUrl": "https://music.apple.com/us/album/selected-ambient-works-volume-ii-expanded-edition/1749665545?uo=4",
       "spotifyUri": "spotify:album:2SZZihZiCsFo87NKxDfxlH",
-      "topRanking": 20,
+      "topRanking": 22,
       "artist": [
         {
           "name": "Aphex Twin",
@@ -10871,7 +10870,7 @@
       "title": "Heaven or Las Vegas",
       "appleMusicUrl": "https://music.apple.com/us/album/heaven-or-las-vegas-remastered/258198881?uo=4",
       "spotifyUri": "spotify:album:5lEphbceIgaK1XxWeSrC9E",
-      "topRanking": 27,
+      "topRanking": 29,
       "artist": [
         {
           "name": "Cocteau Twins",
@@ -11039,7 +11038,7 @@
       "title": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
       "appleMusicUrl": "https://music.apple.com/us/album/the-rise-and-fall-of-ziggy-stardust-and-the/1039796877?uo=4",
       "spotifyUri": "spotify:album:48D1hRORqJq52qsnUYZX56",
-      "topRanking": 18,
+      "topRanking": 20,
       "artist": [
         {
           "name": "David Bowie",
@@ -11191,7 +11190,7 @@
       "title": "The Low End Theory",
       "appleMusicUrl": null,
       "spotifyUri": "spotify:album:1p12OAWwudgMqfMzjMvl2a",
-      "topRanking": 35,
+      "topRanking": 37,
       "artist": [
         {
           "name": "A Tribe Called Quest",
@@ -11383,7 +11382,7 @@
       "title": "Pet Sounds",
       "appleMusicUrl": "https://music.apple.com/us/album/pet-sounds/1440841241?uo=4",
       "spotifyUri": "spotify:album:2CNEkSE8TADXRT2AzcEt1b",
-      "topRanking": 12,
+      "topRanking": 13,
       "artist": [
         {
           "name": "The Beach Boys",
@@ -11719,7 +11718,7 @@
       "title": "Rust Never Sleeps",
       "appleMusicUrl": "https://music.apple.com/us/album/rust-never-sleeps/1015767135?uo=4",
       "spotifyUri": "spotify:album:2QqocFdpBkxOBLcIRo6UuJ",
-      "topRanking": 25,
+      "topRanking": 27,
       "artist": [
         {
           "name": "Neil Young",
@@ -11991,7 +11990,7 @@
       "title": "Songs in the Key of Life",
       "appleMusicUrl": "https://music.apple.com/us/album/songs-in-the-key-of-life/1440788438?uo=4",
       "spotifyUri": "spotify:album:6YUCc2RiXcEKS9ibuZxjt0",
-      "topRanking": 19,
+      "topRanking": 21,
       "artist": [
         {
           "name": "Stevie Wonder",
@@ -13303,7 +13302,7 @@
       "title": "Modern Vampires of the City",
       "appleMusicUrl": "https://music.apple.com/us/album/modern-vampires-of-the-city/613184430?uo=4",
       "spotifyUri": "spotify:album:1GXMNFfoHF4sN7lG8gZq1j",
-      "topRanking": 43,
+      "topRanking": 45,
       "artist": [
         {
           "name": "Vampire Weekend",
@@ -13603,7 +13602,7 @@
       "title": "Remain in Light",
       "appleMusicUrl": "https://music.apple.com/us/album/remain-in-light/300948043?uo=4",
       "spotifyUri": "spotify:album:1JvXxLsm0PxlGH4LXzqMGq",
-      "topRanking": 8,
+      "topRanking": 7,
       "artist": [
         {
           "name": "Talking Heads",
@@ -13827,7 +13826,7 @@
       "title": "Is This It",
       "appleMusicUrl": null,
       "spotifyUri": "spotify:album:2k8KgmDp9oHrmu0MIj4XDE",
-      "topRanking": 37,
+      "topRanking": 39,
       "artist": [
         {
           "name": "The Strokes",
@@ -13979,7 +13978,7 @@
       "title": "Illinois",
       "appleMusicUrl": "https://music.apple.com/us/album/illinois/328074546?uo=4",
       "spotifyUri": "spotify:album:1pOl0KEC1iQnA6F0XxV4To",
-      "topRanking": 14,
+      "topRanking": 15,
       "artist": [
         {
           "name": "Sufjan Stevens",
@@ -14267,7 +14266,7 @@
       "title": "Aja",
       "appleMusicUrl": "https://music.apple.com/us/album/aja/1706428459?uo=4",
       "spotifyUri": "spotify:album:1hOK2ey9W76x9GnftSRgrw",
-      "topRanking": 38,
+      "topRanking": 40,
       "artist": [
         {
           "name": "Steely Dan",
@@ -14559,7 +14558,7 @@
       "title": "The Queen Is Dead",
       "appleMusicUrl": "https://music.apple.com/us/album/the-queen-is-dead/800092985?uo=4",
       "spotifyUri": "spotify:album:5Y0p2XCgRRIjna91aQE8q7",
-      "topRanking": 24,
+      "topRanking": 26,
       "artist": [
         {
           "name": "The Smiths",
@@ -14723,7 +14722,7 @@
       "title": "Horses",
       "appleMusicUrl": "https://music.apple.com/us/album/horses/1038568061?uo=4",
       "spotifyUri": "spotify:album:0OeuSeP8wp8n8OuTqYb61C",
-      "topRanking": 49,
+      "topRanking": 43,
       "artist": [
         {
           "name": "Patti Smith",
@@ -15135,7 +15134,7 @@
       "title": "The Woods",
       "appleMusicUrl": "https://music.apple.com/us/album/the-woods-bonus-track-version/912880848?uo=4",
       "spotifyUri": "spotify:album:73ctstwnbNifu5U902X2zL",
-      "topRanking": 50,
+      "topRanking": 47,
       "artist": [
         {
           "name": "Sleater-Kinney",
@@ -15543,7 +15542,7 @@
       "title": "Sticky Fingers",
       "appleMusicUrl": "https://music.apple.com/us/album/sticky-fingers-2015-remaster/1440812661?uo=4",
       "spotifyUri": "spotify:album:29m6DinzdaD0OPqWKGyMdz",
-      "topRanking": 23,
+      "topRanking": 25,
       "artist": [
         {
           "name": "The Rolling Stones",
@@ -15643,7 +15642,7 @@
       "title": "Murmur",
       "appleMusicUrl": "https://music.apple.com/us/album/murmur/1440872981?uo=4",
       "spotifyUri": "spotify:album:4Mw9Gcu1LT7JaipXdwrq1Q",
-      "topRanking": 17,
+      "topRanking": 19,
       "artist": [
         {
           "name": "R.E.M.",
@@ -15987,7 +15986,7 @@
       "title": "Kid A",
       "appleMusicUrl": "https://music.apple.com/us/album/kid-a/1097862870?uo=4",
       "spotifyUri": "spotify:album:6GjwtEZcfenmOf6l18N7T7",
-      "topRanking": 16,
+      "topRanking": 18,
       "artist": [
         {
           "name": "Radiohead",
@@ -16379,7 +16378,7 @@
       "title": "It Takes a Nation of Millions to Hold Us Back",
       "appleMusicUrl": null,
       "spotifyUri": "spotify:album:1Rj1daFzMlYzLv7lJl14hz",
-      "topRanking": null,
+      "topRanking": 9,
       "artist": [
         {
           "name": "Public Enemy",
@@ -17159,7 +17158,7 @@
       "title": "In the Aeroplane Over the Sea",
       "appleMusicUrl": "https://music.apple.com/us/album/in-the-aeroplane-over-the-sea/1839077554?uo=4",
       "spotifyUri": "spotify:album:0vVekV45lOaVKs6RZQQNob",
-      "topRanking": 41,
+      "topRanking": null,
       "artist": [
         {
           "name": "Neutral Milk Hotel",
@@ -17407,7 +17406,7 @@
       "title": "Brilliant Corners",
       "appleMusicUrl": "https://music.apple.com/us/album/brilliant-corners/1440942347?uo=4",
       "spotifyUri": "spotify:album:5gWF47eGSbv4BOfxoFcQtd",
-      "topRanking": null,
+      "topRanking": 32,
       "artist": [
         {
           "name": "Thelonious Monk",
@@ -17491,7 +17490,7 @@
       "title": "Blue",
       "appleMusicUrl": "https://music.apple.com/us/album/blue/1492263092?uo=4",
       "spotifyUri": "spotify:album:1vz94WpXDVYIEGja8cjFNa",
-      "topRanking": 9,
+      "topRanking": 10,
       "artist": [
         {
           "name": "Joni Mitchell",
@@ -17831,7 +17830,7 @@
       "title": "The Black Saint and the Sinner Lady",
       "appleMusicUrl": "https://music.apple.com/us/album/the-black-saint-and-the-sinner-lady/1443280597?uo=4",
       "spotifyUri": "spotify:album:6Sts4Yh7KsDFwq2yTWrGGV",
-      "topRanking": 21,
+      "topRanking": 23,
       "artist": [
         {
           "name": "Charles Mingus",
@@ -18343,7 +18342,7 @@
       "title": "Ray of Light",
       "appleMusicUrl": "https://music.apple.com/us/album/ray-of-light/952887?uo=4",
       "spotifyUri": "spotify:album:6cuNyrSmRjBeekioLdLkvI",
-      "topRanking": 48,
+      "topRanking": 50,
       "artist": [
         {
           "name": "Madonna",
@@ -18679,7 +18678,7 @@
       "title": "Emotion",
       "appleMusicUrl": "https://music.apple.com/us/album/e-mo-tion/1442810070?uo=4",
       "spotifyUri": "spotify:album:2oj3FG6fos7zAQJxLQGzou",
-      "topRanking": 46,
+      "topRanking": 48,
       "artist": [
         {
           "name": "Carly Rae Jepsen",
@@ -18975,7 +18974,7 @@
       "title": "Art Angels",
       "appleMusicUrl": null,
       "spotifyUri": "spotify:album:7J84ixPVFehy6FcLk8rhk3",
-      "topRanking": 47,
+      "topRanking": 49,
       "artist": [
         {
           "name": "Grimes",
@@ -19335,7 +19334,7 @@
       "title": "I Never Loved a Man the Way I Love You",
       "appleMusicUrl": "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826?uo=4",
       "spotifyUri": "spotify:album:5WndWfzGwCkHzAbQXVkg2V",
-      "topRanking": 44,
+      "topRanking": 46,
       "artist": [
         {
           "name": "Aretha Franklin",
@@ -19915,7 +19914,7 @@
       "title": "A Love Supreme",
       "appleMusicUrl": "https://music.apple.com/us/album/a-love-supreme/1440713018?uo=4",
       "spotifyUri": "spotify:album:7Eoz7hJvaX1eFkbpQxC5PA",
-      "topRanking": 30,
+      "topRanking": 16,
       "artist": [
         {
           "name": "John Coltrane",
@@ -20039,7 +20038,7 @@
       "title": "Future Days",
       "appleMusicUrl": "https://music.apple.com/us/album/future-days-remastered/826492492?uo=4",
       "spotifyUri": "spotify:album:22ZgHorVJzcZ4m8YBZCw4w",
-      "topRanking": 40,
+      "topRanking": 42,
       "artist": [
         {
           "name": "Can",
@@ -21439,7 +21438,7 @@
       "title": "Blonde on Blonde",
       "appleMusicUrl": "https://music.apple.com/us/album/blonde-on-blonde/178049863?uo=4",
       "spotifyUri": "spotify:album:4NP1rhnsPdYpnyJP0p0k0L",
-      "topRanking": 11,
+      "topRanking": 12,
       "artist": [
         {
           "name": "Bob Dylan",
@@ -21595,7 +21594,7 @@
       "title": "Pink Moon",
       "appleMusicUrl": "https://music.apple.com/us/album/pink-moon/1567147188?uo=4",
       "spotifyUri": "spotify:album:5mwOo1zikswhmfHvtqVSXg",
-      "topRanking": 26,
+      "topRanking": 28,
       "artist": [
         {
           "name": "Nick Drake",
@@ -21863,7 +21862,7 @@
       "title": "Kind of Blue",
       "appleMusicUrl": "https://music.apple.com/us/album/kind-of-blue/268443092?uo=4",
       "spotifyUri": "spotify:album:1weenld61qoidwYuZ1GESA",
-      "topRanking": 13,
+      "topRanking": 14,
       "artist": [
         {
           "name": "Miles Davis",
@@ -22319,7 +22318,7 @@
       "title": "Homogenic",
       "appleMusicUrl": "https://music.apple.com/us/album/homogenic-live/371572866?uo=4",
       "spotifyUri": "spotify:album:0HMsmYvoT1h2x1C4di5faf",
-      "topRanking": 15,
+      "topRanking": 17,
       "artist": [
         {
           "name": "Björk",
@@ -22499,7 +22498,7 @@
       "title": "Renaissance",
       "appleMusicUrl": "https://music.apple.com/us/album/renaissance/1636789969?uo=4",
       "spotifyUri": "spotify:album:6FJxoadUE4JNVwWHghBwnb",
-      "topRanking": 31,
+      "topRanking": 33,
       "artist": [
         {
           "name": "Beyoncé",
@@ -23479,7 +23478,7 @@
       "title": "Abbey Road",
       "appleMusicUrl": "https://music.apple.com/us/album/abbey-road-2019-mix/1474815798?uo=4",
       "spotifyUri": "spotify:album:0ETFjACtuP2ADo6LFhL6HN",
-      "topRanking": 7,
+      "topRanking": 8,
       "artist": [
         {
           "name": "The Beatles",
@@ -23919,7 +23918,7 @@
       "title": "Funeral",
       "appleMusicUrl": "https://music.apple.com/us/album/funeral/1249417623?uo=4",
       "spotifyUri": "spotify:album:6ZB8qaR9JNuS0Q0bG1nbcH",
-      "topRanking": 36,
+      "topRanking": 38,
       "artist": [
         {
           "name": "Arcade Fire",
@@ -24119,7 +24118,7 @@
       "title": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do",
       "appleMusicUrl": "https://music.apple.com/us/album/the-idler-wheel-is-wiser-than-the-driver-of/1462213924?uo=4",
       "spotifyUri": "spotify:album:6B5favhKTShFTjRLsKIUfa",
-      "topRanking": 33,
+      "topRanking": 35,
       "artist": [
         {
           "name": "Fiona Apple",
@@ -24755,7 +24754,7 @@
       "title": "Dummy",
       "appleMusicUrl": "https://music.apple.com/us/album/dummy/1440653096?uo=4",
       "spotifyUri": "spotify:album:3539EbNgIdEDGBKkUf4wno",
-      "topRanking": 32,
+      "topRanking": 34,
       "artist": [
         {
           "name": "Portishead",
@@ -24955,7 +24954,7 @@
       "title": "Loveless",
       "appleMusicUrl": null,
       "spotifyUri": "spotify:album:3GH4IiI6jQAIvnHVdb5FB6",
-      "topRanking": 28,
+      "topRanking": 30,
       "artist": [
         {
           "name": "My Bloody Valentine",
@@ -25135,7 +25134,7 @@
       "title": "Sound of Silver",
       "appleMusicUrl": "https://music.apple.com/us/album/sound-of-silver/742432549?uo=4",
       "spotifyUri": "spotify:album:1R8kkopLT4IAxzMMkjic6X",
-      "topRanking": 42,
+      "topRanking": 44,
       "artist": [
         {
           "name": "LCD Soundsystem",
@@ -25303,7 +25302,7 @@
       "title": "good kid, m.A.A.d city",
       "appleMusicUrl": "https://music.apple.com/us/album/good-kid-m-a-a-d-city-deluxe-version/1440860389?uo=4",
       "spotifyUri": "spotify:album:6PBZN8cbwkqm1ERj2BGXJ1",
-      "topRanking": 29,
+      "topRanking": null,
       "artist": [
         {
           "name": "Kendrick Lamar",
@@ -35523,7 +35522,7 @@
       "title": "If You're Feeling Sinister",
       "appleMusicUrl": "https://music.apple.com/us/album/if-youre-feeling-sinister/1589190376?uo=4",
       "spotifyUri": null,
-      "topRanking": 45,
+      "topRanking": null,
       "artist": [
         {
           "name": "Belle and Sebastian",
@@ -49527,7 +49526,7 @@
       "title": "To Pimp a Butterfly",
       "appleMusicUrl": "https://music.apple.com/us/album/to-pimp-a-butterfly/1440871877?uo=4",
       "spotifyUri": "spotify:album:7ycBtnsMtyVbbwTfJwRjSP",
-      "topRanking": null,
+      "topRanking": 31,
       "artist": [
         {
           "name": "Kendrick Lamar",
