@@ -1991,14 +1991,14 @@
     {
       "coverArt": "/covers/taylor-swift-1989.jpg",
       "id": "cme8rq98o09904drz0adikv5c",
-      "isAPlus": false,
+      "isAPlus": true,
       "owned": false,
       "releaseDate": "2014-10-27T05:00:00.000Z",
       "slug": "taylor-swift-1989",
       "title": "1989",
       "appleMusicUrl": "https://music.apple.com/us/album/1989-taylors-version-deluxe/1713845538?uo=4",
       "spotifyUri": "spotify:album:2QJmrSgbdM35R67eoGQo4j",
-      "topRanking": 41,
+      "topRanking": null,
       "artist": [
         {
           "name": "Taylor Swift",
@@ -12398,7 +12398,7 @@
       "title": "Car Wheels on a Gravel Road",
       "appleMusicUrl": "https://music.apple.com/us/album/car-wheels-on-a-gravel-road/1440915686?uo=4",
       "spotifyUri": "spotify:album:3iC6dJobZulVXp0F4Bojig",
-      "topRanking": null,
+      "topRanking": 41,
       "artist": [
         {
           "name": "Lucinda Williams",
