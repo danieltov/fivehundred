@@ -25,6 +25,10 @@ const spotifyUrl = album.spotifyUri
   : null
 
 const genreList = album.genres.map(g => g.name).join(' · ')
+
+const addedLabel = album.createdAt
+  ? new Date(album.createdAt).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })
+  : null
 ---
 
 <div class="poster" style={`--accent: ${accentColor}`}>
@@ -42,7 +46,6 @@ const genreList = album.genres.map(g => g.name).join(' · ')
           {album.topRanking !== null && (
             <span class="poster-badge rank">Ranked #{album.topRanking}</span>
           )}
-          {album.owned && <span class="poster-badge owned">Owned</span>}
         </div>
         <h1 class="poster-album-title" data-text={album.title}>{album.title}</h1>
         <div class="poster-artist">{album.artist[0]?.name}</div>
@@ -132,10 +135,12 @@ const genreList = album.genres.map(g => g.name).join(' · ')
       <div class="meta-label">Genres</div>
       <div class="meta-value genres">{genreList}</div>
     </div>
-    <div class="meta-cell">
-      <div class="meta-label">Owned</div>
-      <div class="meta-value">{album.owned ? 'Yes' : 'No'}</div>
-    </div>
+    {addedLabel && (
+      <div class="meta-cell">
+        <div class="meta-label">Added</div>
+        <div class="meta-value">{addedLabel}</div>
+      </div>
+    )}
     <div class="meta-cell">
       <div class="meta-label">Grade</div>
       <div class="meta-value grade">{album.isAPlus ? 'A+' : 'A'}</div>
