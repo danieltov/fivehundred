@@ -11,12 +11,27 @@ const { albums } = albumsData as AlbumsJson
 const aplusCount = albums.filter(a => a.isAPlus).length
 const top50Count = albums.filter(a => a.topRanking !== null).length
 
-// Pick 6 covers for collage — first 6 with valid coverArt
-const collageCoverUrls = albums
+// Pick 6 covers for collage — no repeated artist or primary genre
+const shuffled = albums
   .filter(a => a.coverArt && a.isAPlus)
   .sort(() => Math.random() - 0.5)
-  .slice(0, 6)
-  .map(a => a.coverArt)
+
+const seenArtists = new Set<string>()
+const seenGenres = new Set<string>()
+const collageAlbums: typeof shuffled = []
+
+for (const a of shuffled) {
+  if (collageAlbums.length === 6) break
+  const artistKey = a.artist[0]?.slug ?? a.artist[0]?.name
+  const genreKey = a.genres[0]?.slug ?? a.genres[0]?.name
+  if (artistKey && seenArtists.has(artistKey)) continue
+  if (genreKey && seenGenres.has(genreKey)) continue
+  collageAlbums.push(a)
+  if (artistKey) seenArtists.add(artistKey)
+  if (genreKey) seenGenres.add(genreKey)
+}
+
+const collageCoverUrls = collageAlbums.map(a => a.coverArt)
 
 // Section card covers: top3 of each category
 const top50Covers = albums
